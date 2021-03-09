@@ -5423,25 +5423,27 @@ c = 2
             <guid>/2020/07/2020-07-09 emmet in visual studio code makes me sad/</guid>
             <pubDate>Wed, 08 Jul 2020 05:00:00 GMT</pubDate>
             <description><![CDATA[Emmet in VS Code is a great tool to speed up writing html but it always gets confused when I do stuff like w-3/4
-
 ]]></description>
             <content:encoded><![CDATA[<p>Emmet in VS Code is a great tool to speed up writing html but it always gets confused when I do stuff like <code>w-3/4</code></p>
+<!-- more -->
 <img class="mx-auto max-w-md" src="/media/vscode-emmet/vscode-emmet.gif">
 ]]></content:encoded>
             <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
+            <enclosure url="/media/vscode-emmet/vscode-emmet.gif"/>
         </item>
         <item>
             <title><![CDATA[Who Says Pawns Cannot Mate Kings?]]></title>
-            <link>/2020/07/2021-01-21 who says pawns cannot mate/</link>
-            <guid>/2020/07/2021-01-21 who says pawns cannot mate/</guid>
-            <pubDate>Wed, 08 Jul 2020 05:00:00 GMT</pubDate>
+            <link>/2021/01/2021-01-21 who says pawns cannot mate/</link>
+            <guid>/2021/01/2021-01-21 who says pawns cannot mate/</guid>
+            <pubDate>Wed, 20 Jan 2021 06:00:00 GMT</pubDate>
             <description><![CDATA[This was a fun quick game I played tonight. I thought this was a neat mate. If that c2 pawn had just 1 more turn then I would have had been forced to draw by repetition.
-
 ]]></description>
             <content:encoded><![CDATA[<p>This was a fun quick game I played tonight. I thought this was a neat mate. If that c2 pawn had just 1 more turn then I would have had been forced to draw by repetition.</p>
+<!-- more -->
 <img class="mx-auto max-w-md" src="/media/chess/chess fun 2021-01-21_20-29.png">
 ]]></content:encoded>
             <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
+            <enclosure url="/media/chess/chess fun 2021-01-21_20-29.png"/>
         </item>
     </channel>
 </rss>

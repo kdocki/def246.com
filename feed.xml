@@ -5717,9 +5717,9 @@ c = 2
         <link href="/2020/07/2020-07-09 emmet in visual studio code makes me sad/"/>
         <updated>2020-07-08T05:00:00.000Z</updated>
         <summary type="html"><![CDATA[Emmet in VS Code is a great tool to speed up writing html but it always gets confused when I do stuff like w-3/4
-
 ]]></summary>
         <content type="html"><![CDATA[<p>Emmet in VS Code is a great tool to speed up writing html but it always gets confused when I do stuff like <code>w-3/4</code></p>
+<!-- more -->
 <img class="mx-auto max-w-md" src="/media/vscode-emmet/vscode-emmet.gif">
 ]]></content>
         <author>
@@ -5730,19 +5730,19 @@ c = 2
     </entry>
     <entry>
         <title type="html"><![CDATA[Who Says Pawns Cannot Mate Kings?]]></title>
-        <id>/2020/07/2021-01-21 who says pawns cannot mate/</id>
-        <link href="/2020/07/2021-01-21 who says pawns cannot mate/"/>
-        <updated>2020-07-08T05:00:00.000Z</updated>
+        <id>/2021/01/2021-01-21 who says pawns cannot mate/</id>
+        <link href="/2021/01/2021-01-21 who says pawns cannot mate/"/>
+        <updated>2021-01-20T06:00:00.000Z</updated>
         <summary type="html"><![CDATA[This was a fun quick game I played tonight. I thought this was a neat mate. If that c2 pawn had just 1 more turn then I would have had been forced to draw by repetition.
-
 ]]></summary>
         <content type="html"><![CDATA[<p>This was a fun quick game I played tonight. I thought this was a neat mate. If that c2 pawn had just 1 more turn then I would have had been forced to draw by repetition.</p>
+<!-- more -->
 <img class="mx-auto max-w-md" src="/media/chess/chess fun 2021-01-21_20-29.png">
 ]]></content>
         <author>
             <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
-            <uri>/2020/07/2021-01-21 who says pawns cannot mate/</uri>
+            <uri>/2021/01/2021-01-21 who says pawns cannot mate/</uri>
         </author>
     </entry>
 </feed>
