@@ -1,0 +1,165 @@
+<html>
+    <head>
+        <title>Kelvin</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+
+<link rel="stylesheet" type="text/css" href="/assets/site.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather" rel="stylesheet">
+<link rel="stylesheet" href="/assets/highlight/styles/default.css">
+<script src="/assets/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script>
+  if (location.hostname != "def246.com") {
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+  ':35729/livereload.js?snipver=1"></' + 'script>')
+  }
+</script> 
+
+        <meta name="author" content="Kelvin">
+        <meta name="description" content="Ever wanted to see errors happening on your application? I use rollbar for this. And unless your app has over 5000 errors a month, it is free.
+Installing Rollbar for Laravel is super easy. Below is the code you get when you first sign up for Rollbar.
+">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Rollbar is Awesome">
+        <meta property="og:url" content="http://def246.com/2015/11/2015-11-19_rollbar-is-awesome/">
+        <meta property="og:site_name" content="def246">
+        <meta property="og:description" content="Ever wanted to see errors happening on your application? I use rollbar for this. And unless your app has over 5000 errors a month, it is free.
+Installing Rollbar for Laravel is super easy. Below is the code you get when you first sign up for Rollbar.
+">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Rollbar is Awesome">
+        <meta name="twitter:description" content="Ever wanted to see errors happening on your application? I use rollbar for this. And unless your app has over 5000 errors a month, it is free.
+Installing Rollbar for Laravel is super easy. Below is the code you get when you first sign up for Rollbar.
+">
+    </head>
+<body>
+
+    <div class="bg-gray-200">
+  <div class="container mx-auto px-4">
+      <nav class="flex flex-wrap items-center justify-between p-4">
+        <div class="lg:order-2 w-auto lg:w-1/5 sm:text-center"><a class="text-2xl text-gray-900 hover:text-gray-700" href="/">Kelvin</a></div>
+
+        <div class="navbar-menu lg:order-3 lg:block w-full lg:w-2/5 lg:text-right">
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/">Home</a>
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/posts">Blog</a>
+        </div>
+      </nav>
+    </div>
+</div>
+
+
+    <div class="container mx-auto">
+        <div class="flex">
+            <div class="w-3/3 min-w-full px-1">
+                <div class="flex items-center">
+                    <div class="w-1/5 pt-4">
+                        
+                        <a href="/2015/11/2015-11-18_laravel-integration-testing-for-large-app/">Previous article</a>
+                        
+                    </div>
+                    <div class="w-3/5">
+                        <h1 class="mt-8 text-center text-3xl text-blue-600">
+                            Rollbar is Awesome
+                        </h1>
+                    </div>
+                    <div class="w-1/5 pt-4 text-right">
+                        
+                        <a href="/2016/03/2016-03-09_homestead-bash-commands/">Next article</a>
+                        
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="post-body h-full py-8 bg-white border-t">
+                        <p>Ever wanted to see errors happening on your application? I use rollbar for this. And unless your app has over 5000 errors a month, it is free.</p>
+<p>Installing Rollbar for Laravel is super easy. Below is the code you get when you first sign up for Rollbar.</p>
+<!-- more -->
+<pre><code>&lt;?php
+// installs global error and exception handlers
+Rollbar::init(array('access_token' =&gt; 'YOUR_ACCESS_TOKEN_HERE'));
+
+// Message at level 'info'
+Rollbar::report_message('testing 123', 'info');
+
+// Catch an exception and send it to Rollbar
+try {
+    throw new Exception('test exception');
+} catch (Exception $e) {
+    Rollbar::report_exception($e);
+}
+
+// Will also be reported by the exception handler
+throw new Exception('test 2');
+?&gt;
+</code></pre>
+<p>You’ll also want to install rollbar library with composer.</p>
+<pre><code>composer require rollbar/rollbar
+</code></pre>
+<p>Next, where to place the error handling code? In Laravel 5, you’ll want to add it to <code>app\Exceptions\Handler.php</code> like so…</p>
+<pre><code>
+    /**
+     * Report or log an exception.
+     *
+     * This is a great spot to send exceptions to Sentry, Bugsnag, etc.
+     *
+     * @param  \Exception  $e
+     * @return void
+     */
+    public function report(Exception $e)
+    {
+        // use this rollbar for production environments
+        if (config('app.env') === 'production')
+        {
+            Rollbar::init(array('access_token' =&gt; 'YOUR_PROD_ACCESS_TOKEN'));
+
+            Rollbar::report_exception($e);
+        }
+
+        // maybe use your own DEV rollbar here?
+        if (config('app.env') === 'local')
+        {
+            Rollbar::init(array('access_token' =&gt; 'YOUR_DEV_ACCESS_TOKEN'));
+
+            Rollbar::report_exception($e);
+        }
+
+        parent::report($e);
+    }
+}
+</code></pre>
+<p>This tool will keep track of all the errors your visitors are seeing. It doesn’t replace writing tests for the application necessarily but it does give an extra layer of comfort knowing when your application is erroring. Some times you can find and fix errors before a client has time to email you that screenshot and upload it to JIRA or Trello. Then you just say, <em>yeah, I fixed that like 5 minutes ago dawg…</em>* and walk off with a gangsta smile on your face.</p>
+
+                    </div>                        
+                </div>
+
+                <div class="text-right">
+                    <div>post by Kelvin on 11/19/2015</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="disqus_thread"></div>
+
+        <script>
+            var disqus_shortname = '';
+            var disqus_url = 'def246.com//2015/11/2015-11-19_rollbar-is-awesome/';
+          
+            (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//go.disqus.com/embed.js';
+
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+
+    </div>
+</body>
+</html>

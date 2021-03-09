@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <title>Kelvin</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+
+<link rel="stylesheet" type="text/css" href="/assets/site.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather" rel="stylesheet">
+<link rel="stylesheet" href="/assets/highlight/styles/default.css">
+<script src="/assets/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script>
+  if (location.hostname != "def246.com") {
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+  ':35729/livereload.js?snipver=1"></' + 'script>')
+  }
+</script> 
+
+        <meta name="author" content="Kelvin">
+        <meta name="description" content="So I created a simplistic asset pipeline (sprockets style) interface for Deployd framework. The node package basically piggy backs off of the awesome mincer.js nodejs package. I was investigating Deployd as a way to do quick to life prototypes in nodejs. Unfortunately, it looks like Deployd might be dead or no longer maintained - so it is very unlikely that I will be doing any more with dpd-mincer. However, it was fun to see how difficult it is to work with deployd, and it actually was simple enough after a few console.log() to figure out what was inside some dpd objects.
+">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Deployd Mincer">
+        <meta property="og:url" content="http://def246.com/2013/07/2013-07-19_deployd-mincer/">
+        <meta property="og:site_name" content="def246">
+        <meta property="og:description" content="So I created a simplistic asset pipeline (sprockets style) interface for Deployd framework. The node package basically piggy backs off of the awesome mincer.js nodejs package. I was investigating Deployd as a way to do quick to life prototypes in nodejs. Unfortunately, it looks like Deployd might be dead or no longer maintained - so it is very unlikely that I will be doing any more with dpd-mincer. However, it was fun to see how difficult it is to work with deployd, and it actually was simple enough after a few console.log() to figure out what was inside some dpd objects.
+">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Deployd Mincer">
+        <meta name="twitter:description" content="So I created a simplistic asset pipeline (sprockets style) interface for Deployd framework. The node package basically piggy backs off of the awesome mincer.js nodejs package. I was investigating Deployd as a way to do quick to life prototypes in nodejs. Unfortunately, it looks like Deployd might be dead or no longer maintained - so it is very unlikely that I will be doing any more with dpd-mincer. However, it was fun to see how difficult it is to work with deployd, and it actually was simple enough after a few console.log() to figure out what was inside some dpd objects.
+">
+    </head>
+<body>
+
+    <div class="bg-gray-200">
+  <div class="container mx-auto px-4">
+      <nav class="flex flex-wrap items-center justify-between p-4">
+        <div class="lg:order-2 w-auto lg:w-1/5 sm:text-center"><a class="text-2xl text-gray-900 hover:text-gray-700" href="/">Kelvin</a></div>
+
+        <div class="navbar-menu lg:order-3 lg:block w-full lg:w-2/5 lg:text-right">
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/">Home</a>
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/posts">Blog</a>
+        </div>
+      </nav>
+    </div>
+</div>
+
+
+    <div class="container mx-auto">
+        <div class="flex">
+            <div class="w-3/3 min-w-full px-1">
+                <div class="flex items-center">
+                    <div class="w-1/5 pt-4">
+                        
+                        <a href="/2013/07/2013-07-10_select2-jquery/">Previous article</a>
+                        
+                    </div>
+                    <div class="w-3/5">
+                        <h1 class="mt-8 text-center text-3xl text-blue-600">
+                            Deployd Mincer
+                        </h1>
+                    </div>
+                    <div class="w-1/5 pt-4 text-right">
+                        
+                        <a href="/2013/07/2013-07-24_twitter-bootstrap-modals-in-backbone-marionette/">Next article</a>
+                        
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="post-body h-full py-8 bg-white border-t">
+                        <p>So I created a <a href="https://github.com/kdocki/dpd-mincer">simplistic asset pipeline</a> (sprockets style) interface for <a href="http://www.deployd.com">Deployd</a> framework. The node package basically piggy backs off of the awesome <a href="https://github.com/nodeca/mincer">mincer.js</a> nodejs package. I was investigating Deployd as a way to do quick to life prototypes in nodejs. <strong>Unfortunately, it looks like Deployd might be dead or no longer maintained</strong> - so it is very unlikely that I will be doing any more with <a href="https://npmjs.org/package/dpd-mincer">dpd-mincer</a>. However, it was fun to see how difficult it is to work with deployd, and it actually was simple enough after a few <code>console.log()</code> to figure out what was inside some dpd objects.</p>
+<!-- more --> 
+<p>Check out <a href="https://github.com/kdocki/dpd-mincer">dpd-mincer on github</a></p>
+<p>The one thing that stinks though about Deployd is that it is almost like a restful MVC but without the V. If you could render a view (like underscore template or handlebars) - it would be awesome at prototyping. But instead you end up creating the resources in Deployd and then consuming the JSON via your favorite javascript engine, e.g. Marionette or AngularJS, both libraries which take time to setup, at which point you are no longer prototyping.</p>
+
+                    </div>                        
+                </div>
+
+                <div class="text-right">
+                    <div>post by Kelvin on 07/19/2013</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="disqus_thread"></div>
+
+        <script>
+            var disqus_shortname = '';
+            var disqus_url = 'def246.com//2013/07/2013-07-19_deployd-mincer/';
+          
+            (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//go.disqus.com/embed.js';
+
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+
+    </div>
+</body>
+</html>

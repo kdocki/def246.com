@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <title>Kelvin</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+
+<link rel="stylesheet" type="text/css" href="/assets/site.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather" rel="stylesheet">
+<link rel="stylesheet" href="/assets/highlight/styles/default.css">
+<script src="/assets/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script>
+  if (location.hostname != "def246.com") {
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+  ':35729/livereload.js?snipver=1"></' + 'script>')
+  }
+</script> 
+
+        <meta name="author" content="Kelvin">
+        <meta name="description" content="So you hear your boss or client say, I want my reports in “Excel and/or PDF,” and you think, “crap, now I gotta go find a library for my language.” And the requester isn’t often thinking about how much $$$ when they mention they want pdfs. So I had this same experience at UALR and I didn’t know the first thing about constructing pdf files. Thankfully, I found a free (with open source projects) Pdf library for Java called iText and within a day was able to construct a decent looking pdf file.
+">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Creating PDFs in Java with iText">
+        <meta property="og:url" content="http://def246.com/2012/02/2012-02-06_creating-pdfs-in-java-with-itext/">
+        <meta property="og:site_name" content="def246">
+        <meta property="og:description" content="So you hear your boss or client say, I want my reports in “Excel and/or PDF,” and you think, “crap, now I gotta go find a library for my language.” And the requester isn’t often thinking about how much $$$ when they mention they want pdfs. So I had this same experience at UALR and I didn’t know the first thing about constructing pdf files. Thankfully, I found a free (with open source projects) Pdf library for Java called iText and within a day was able to construct a decent looking pdf file.
+">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Creating PDFs in Java with iText">
+        <meta name="twitter:description" content="So you hear your boss or client say, I want my reports in “Excel and/or PDF,” and you think, “crap, now I gotta go find a library for my language.” And the requester isn’t often thinking about how much $$$ when they mention they want pdfs. So I had this same experience at UALR and I didn’t know the first thing about constructing pdf files. Thankfully, I found a free (with open source projects) Pdf library for Java called iText and within a day was able to construct a decent looking pdf file.
+">
+    </head>
+<body>
+
+    <div class="bg-gray-200">
+  <div class="container mx-auto px-4">
+      <nav class="flex flex-wrap items-center justify-between p-4">
+        <div class="lg:order-2 w-auto lg:w-1/5 sm:text-center"><a class="text-2xl text-gray-900 hover:text-gray-700" href="/">Kelvin</a></div>
+
+        <div class="navbar-menu lg:order-3 lg:block w-full lg:w-2/5 lg:text-right">
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/">Home</a>
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/posts">Blog</a>
+        </div>
+      </nav>
+    </div>
+</div>
+
+
+    <div class="container mx-auto">
+        <div class="flex">
+            <div class="w-3/3 min-w-full px-1">
+                <div class="flex items-center">
+                    <div class="w-1/5 pt-4">
+                        
+                        <a href="/2012/01/2012-01-28_unboxing-the-boxee-box/">Previous article</a>
+                        
+                    </div>
+                    <div class="w-3/5">
+                        <h1 class="mt-8 text-center text-3xl text-blue-600">
+                            Creating PDFs in Java with iText
+                        </h1>
+                    </div>
+                    <div class="w-1/5 pt-4 text-right">
+                        
+                        <a href="/2012/02/2012-02-16_restful-data-sources/">Next article</a>
+                        
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="post-body h-full py-8 bg-white border-t">
+                        <p>So you hear your boss or client say, <em>I want my reports in “Excel and/or PDF,”</em> and you think, “<strong>crap</strong>, now I gotta go find a library for my language.” And the requester isn’t often thinking about how much <span data-color="green">$$$</span> when they mention they want pdfs. So I had this same experience at UALR and I didn’t know the first thing about constructing pdf files. Thankfully, I found a <strong>free</strong> (with open source projects) Pdf library for Java called <a href="http://itextpdf.com/">iText</a> and within a day was able to construct a decent looking pdf file.</p>
+<!-- more -->
+<p>Here are some <a href="http://itextpdf.com/book/examples.php">examples</a> which enabled me to rapidly create my pdf reports. Specifically these two (<a href="http://itextpdf.com/examples/iia.php?id=205">1</a>) (<a href="http://itextpdf.com/examples/iia.php?id=28">2</a>) were helpful to me. You can see my <a href="http://projects.oscelot.org/gf/project/course-evals/scmsvn/?action=browse&amp;path=%2Ftrunk%2Fsrc%2Forg%2Foscelot%2Fb2evals%2Futils%2FPdfHelper.java&amp;view=markup">PdfHelper here in subversion</a>. The coolest part I think is the percentage bars I made without having to create images - I just use spaces and two contrasting colors to keep it simple.</p>
+<pre><code>public static Paragraph getPercentAndBar(double percent, Paragraph paragraph)
+{
+        Chunk spacer;
+        Chunk negative_spacer;
+        Integer divider = 1;
+        Integer number_of_spaces = (int) (percent / divider);
+        Integer max_number_of_spaces = (int) (100 / divider);
+
+        DecimalFormat df = new DecimalFormat(&quot;#.#&quot;);
+        df.setMinimumFractionDigits(0);
+        df.setMaximumFractionDigits(1);
+
+        Font small = new Font();
+        small.setSize(4);
+
+        StringBuffer spaces = new StringBuffer(&quot;&quot;);
+        for(int i = 0; i &lt; number_of_spaces; i++) spaces.append(&quot; &quot;);
+        spacer = new Chunk(spaces.toString(), small);
+        spacer.setBackground(new BaseColor(0x7a, 0x7a, 0x7a));
+
+        StringBuffer filler_spaces = new StringBuffer(&quot;&quot;);
+        for(int i = 0; i &lt; max_number_of_spaces - number_of_spaces; i++) filler_spaces.append(&quot; &quot;);
+        negative_spacer = new Chunk(filler_spaces.toString(), small);
+        negative_spacer.setBackground(new BaseColor(0xAa, 0xAa, 0xAa));
+
+        paragraph.add(spacer);
+        paragraph.add(negative_spacer);
+        paragraph.add(getSpaces(2));
+        paragraph.add(getSpacing(df.format(percent), 5) + df.format(percent) + &quot;%&quot;);
+
+        return paragraph;
+}
+</code></pre>
+
+                    </div>                        
+                </div>
+
+                <div class="text-right">
+                    <div>post by Kelvin on 02/06/2012</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="disqus_thread"></div>
+
+        <script>
+            var disqus_shortname = '';
+            var disqus_url = 'def246.com//2012/02/2012-02-06_creating-pdfs-in-java-with-itext/';
+          
+            (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//go.disqus.com/embed.js';
+
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<html>
+    <head>
+        <title>Kelvin</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+
+<link rel="stylesheet" type="text/css" href="/assets/site.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather" rel="stylesheet">
+<link rel="stylesheet" href="/assets/highlight/styles/default.css">
+<script src="/assets/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script>
+  if (location.hostname != "def246.com") {
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+  ':35729/livereload.js?snipver=1"></' + 'script>')
+  }
+</script> 
+
+        <meta name="author" content="Kelvin">
+        <meta name="description" content="Here I am going to walk through an example of how to use macros and additional views to get rid of logic in our Laravel views.
+">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Macros in Laravel (Hexagonal Pattern Design Part 2)">
+        <meta property="og:url" content="http://def246.com/2014/01/2014-01-16_hexagonal-pattern-design-macros/">
+        <meta property="og:site_name" content="def246">
+        <meta property="og:description" content="Here I am going to walk through an example of how to use macros and additional views to get rid of logic in our Laravel views.
+">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Macros in Laravel (Hexagonal Pattern Design Part 2)">
+        <meta name="twitter:description" content="Here I am going to walk through an example of how to use macros and additional views to get rid of logic in our Laravel views.
+">
+    </head>
+<body>
+
+    <div class="bg-gray-200">
+  <div class="container mx-auto px-4">
+      <nav class="flex flex-wrap items-center justify-between p-4">
+        <div class="lg:order-2 w-auto lg:w-1/5 sm:text-center"><a class="text-2xl text-gray-900 hover:text-gray-700" href="/">Kelvin</a></div>
+
+        <div class="navbar-menu lg:order-3 lg:block w-full lg:w-2/5 lg:text-right">
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/">Home</a>
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/posts">Blog</a>
+        </div>
+      </nav>
+    </div>
+</div>
+
+
+    <div class="container mx-auto">
+        <div class="flex">
+            <div class="w-3/3 min-w-full px-1">
+                <div class="flex items-center">
+                    <div class="w-1/5 pt-4">
+                        
+                        <a href="/2014/01/2014-01-15_hexagonal-pattern-design-scenarios/">Previous article</a>
+                        
+                    </div>
+                    <div class="w-3/5">
+                        <h1 class="mt-8 text-center text-3xl text-blue-600">
+                            Macros in Laravel (Hexagonal Pattern Design Part 2)
+                        </h1>
+                    </div>
+                    <div class="w-1/5 pt-4 text-right">
+                        
+                        <a href="/2014/02/2014-02-20_hexagonal-pattern-design-presenters/">Next article</a>
+                        
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="post-body h-full py-8 bg-white border-t">
+                        <p>Here I am going to walk through an example of how to use macros and additional views to get rid of logic in our Laravel views.</p>
+<!-- more --> 
+<p>Let’s pretend we have a form to create a user and one of the fields we can edit is first_name. So we might expect some HTML like below</p>
+<pre><code>&lt;div class=&quot;control-group&quot;&gt;
+    &lt;label class=&quot;control-label&quot; for=&quot;inputFirstName&quot;&gt;First Name&lt;/label&gt;
+    &lt;div class=&quot;controls&quot;&gt;
+        &lt;input type=&quot;text&quot; id=&quot;inputFirstName&quot; placeholder=&quot;First name&quot; value=&quot;&lt;?= $user-&gt;first_name ?&gt;&quot;&gt;
+        &lt;?php if ($errors-&gt;has('first_name'): ?&gt;
+            &lt;div class=&quot;errors&quot;&gt;
+                &lt;?= $errors-&gt;first('first_name') ?&gt;  
+            &lt;/div&gt;
+        &lt;?php endif ?&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>I can simplify the conditional with a macro called show_message_when.</p>
+<pre><code>&lt;div class=&quot;control-group&quot;&gt;
+    &lt;label class=&quot;control-label&quot; for=&quot;inputFirstName&quot;&gt;First Name&lt;/label&gt;
+    &lt;div class=&quot;controls&quot;&gt;
+        &lt;input type=&quot;text&quot; id=&quot;inputFirstName&quot; placeholder=&quot;First name&quot; value=&quot;&lt;?= $user-&gt;first_name ?&gt;&quot;&gt;
+        &lt;?= HTML::show_message_when('first_name', $errors) ?&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>And voila! No more logic in our views, it’s all evaluating variables now and all the logic has been extracted away. This makes testing a breeze, as we don’t have to worry about conditional structure in our view - assuming the variables are in place then the system just works.</p>
+<p>This is a simple view in the first place but we can <strong>always</strong> extract out conditional logic from a view. That really only leaves foreach/loop logic, but that doesn’t bother me as much as conditionals so I usually leave those in place if they are simple. You <strong>could</strong> though create a <a href="http://laravel.com/docs/html#custom-macros">macro</a> to help with loops if you really wanted to do so. Let’s see another before and after example…</p>
+<p>** Before **</p>
+<pre><code>&lt;div class=&quot;container&quot;&gt;
+ 
+    &lt;?php if (!$users): ?&gt;
+        &lt;div class=&quot;empty row&quot;&gt;No users found&lt;/div&gt;
+    &lt;?php endif ?&gt;
+ 
+    &lt;table class=&quot;table&quot;&gt;
+        &lt;th&gt;
+            &lt;td&gt;Id&lt;/td&gt;
+            &lt;td&gt;First Name&lt;/td&gt;
+            &lt;td&gt;Last Name&lt;/td&gt;
+            &lt;td&gt;Score&lt;/td&gt;
+        &lt;/th&gt;
+ 
+        &lt;?php foreach ($users as $user): ?&gt;
+            &lt;tr&gt;
+                &lt;td class=&quot;id&quot;&gt;&lt;?= $user-&gt;id ?&gt;&lt;/td&gt;
+                &lt;td class=&quot;first_name&quot;&gt;&lt;?= $user-&gt;first_name ?&gt;&lt;/td&gt;
+                &lt;td class=&quot;last_name&quot;&gt;&lt;?= $user-&gt;last_name ?&gt;&lt;/td&gt;
+                &lt;td class=&quot;score&quot;&gt;&lt;?= $user-&gt;rank * $user-&gt;proficiency * 
+                ($user-&gt;updated_at-&gt;diffInDays() - $user-&gt;created_at-&gt;diffInDays()) 
+                * 1 / Globals::average_rank() &lt;/td&gt; 
+            &lt;/tr&gt;   
+        &lt;?php endforeach ?&gt;
+    &lt;/table&gt;
+ 
+    &lt;div class=&quot;my pagination row&quot;&gt;
+        &lt;?= $users-&gt;links() ?&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p><strong>After</strong></p>
+<pre><code>&lt;div class=&quot;container&quot;&gt;
+ 
+    &lt;?= HTML::not_found($users, 'No users found!') ?&gt;
+ 
+    &lt;table class=&quot;table&quot;&gt;
+        &lt;th&gt;
+            &lt;td&gt;Id&lt;/td&gt;
+            &lt;td&gt;First Name&lt;/td&gt;
+            &lt;td&gt;Last Name&lt;/td&gt;
+            &lt;td&gt;Score&lt;/td&gt;
+        &lt;/th&gt;
+ 
+        &lt;?= HTML::foreach('user', 'user.itemview', $users) ?&gt;
+    &lt;/table&gt;
+ 
+    &lt;div class=&quot;my pagination row&quot;&gt;
+        &lt;?= $users-&gt;links() ?&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>And in <code>app/views/user/itemview.php</code> you might have something like this</p>
+<pre><code>&lt;tr&gt;
+    &lt;td class=&quot;id&quot;&gt;&lt;?= $user-&gt;id ?&gt;&lt;/td&gt;
+    &lt;td class=&quot;first_name&quot;&gt;&lt;?= $user-&gt;first_name ?&gt;&lt;/td&gt;
+    &lt;td class=&quot;last_name&quot;&gt;&lt;?= $user-&gt;last_name ?&gt;&lt;/td&gt;
+    &lt;td class=&quot;score&quot;&gt;&lt;?= $user-&gt;score ?&gt; &lt;/td&gt; 
+&lt;/tr&gt;
+</code></pre>
+<p>So you’re probably wondering what these macros look like? Well, I have made a <a href="https://gist.github.com/kdocki/ccdfacd391b143dbb7f7#file-macros-php">macros.php gist</a> to share with you guys. Now send me a beer. ^_^</p>
+<pre><code>/**
+ * HTML::show_message_when('first_name', $errors)
+ */
+HTML::macro('show_message_when', function show_message_when($name, $errors, $attributes = array())
+{
+    $attributes_string = &quot;&quot;;
+    $content_string = &quot;&quot;;
+ 
+    $attributes['class'] = isset($attributes['class']) ?: &quot;&quot;;
+    $attributes['class'] .= &quot; $name&quot;;
+ 
+    if ($errors-&gt;has($name))
+    {
+        $attributes['class'] .= &quot; alert&quot;;
+        $attributes['class'] .= &quot; alert-danger&quot;;
+        $content_string = $errors-&gt;first($name);
+    }
+ 
+    foreach ($attributes as $key =&gt; $value) {
+        $attributes_string = &quot; $key = \&quot;&quot; . $value . &quot;\&quot;&quot;; 
+    }
+ 
+    return &quot;&lt;div $attributes_string&gt;$content_string&lt;/div&gt;&quot;;
+});
+ 
+ 
+/**
+ * HTML::foreach('user', 'user.itemview', $users)
+ */
+HTML::macro('foreach', function($name, $view, $items)
+{
+    var html = &quot;&quot;;
+ 
+    foreach ($items as $item)
+    {
+       html .= View::make($view, [$name =&gt; $item]);
+    }
+ 
+    return html;
+});
+ 
+/**
+ * HTML::not_found($users, 'No users found!')
+ */
+HTML::macro('not_found', function($items, $message = 'None found!')
+{
+   return '&lt;div class=&quot;empty row&quot;&gt;' . $message . '&lt;/div&gt;';
+});
+</code></pre>
+<p>So that about wraps it up.  I use macros all the time in my views. You don’t always have to use <code>HTML::macro</code> either. In fact, one macro I use often is just a normal function which I call like <code>active(...)</code> or <code>HTML::active(...)</code> and it allows me to set a class to active when we are visiting the right place.</p>
+<pre><code>&lt;li class=&quot;&lt;?= active(&quot;foobar.index&quot;) ?&gt;&quot;&gt;
+	&lt;a href=&quot;&lt;?= route(&quot;foobar.index&quot;) ?&gt;&quot;&gt;
+		&lt;i class=&quot;fa fa-eye&quot;&gt;&lt;/i&gt;
+		&lt;span class=&quot;hidden-sm&quot;&gt;My Watchlists&lt;/span&gt;
+	&lt;/a&gt;
+&lt;/li&gt;
+</code></pre>
+<p>If you didn’t get anything else out of this besides the fact that you can use macros to keep your views clean then I think I can pat myself on the back. Now go, change the world my friend! My next blog will be talking about using presenters to keep views clean in the hexagonal pattern.</p>
+
+                    </div>                        
+                </div>
+
+                <div class="text-right">
+                    <div>post by Kelvin on 01/16/2014</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="disqus_thread"></div>
+
+        <script>
+            var disqus_shortname = '';
+            var disqus_url = 'def246.com//2014/01/2014-01-16_hexagonal-pattern-design-macros/';
+          
+            (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//go.disqus.com/embed.js';
+
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+
+    </div>
+</body>
+</html>

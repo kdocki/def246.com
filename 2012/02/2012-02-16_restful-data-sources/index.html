@@ -1,0 +1,209 @@
+<html>
+    <head>
+        <title>Kelvin</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+
+<link rel="stylesheet" type="text/css" href="/assets/site.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather" rel="stylesheet">
+<link rel="stylesheet" href="/assets/highlight/styles/default.css">
+<script src="/assets/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script>
+  if (location.hostname != "def246.com") {
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+  ':35729/livereload.js?snipver=1"></' + 'script>')
+  }
+</script> 
+
+        <meta name="author" content="Kelvin">
+        <meta name="description" content="We have come so far in technology yet still use the same relational SQL database methodologies as we did in the 90’s. We waste countless hours and money on SQL discussing details which have nothing to do with the actual data we place inside this storage space. When we are finished with the database, we still have plenty of work left, building applications to access and mutate that same data set.
+">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Restful Data Sources">
+        <meta property="og:url" content="http://def246.com/2012/02/2012-02-16_restful-data-sources/">
+        <meta property="og:site_name" content="def246">
+        <meta property="og:description" content="We have come so far in technology yet still use the same relational SQL database methodologies as we did in the 90’s. We waste countless hours and money on SQL discussing details which have nothing to do with the actual data we place inside this storage space. When we are finished with the database, we still have plenty of work left, building applications to access and mutate that same data set.
+">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Restful Data Sources">
+        <meta name="twitter:description" content="We have come so far in technology yet still use the same relational SQL database methodologies as we did in the 90’s. We waste countless hours and money on SQL discussing details which have nothing to do with the actual data we place inside this storage space. When we are finished with the database, we still have plenty of work left, building applications to access and mutate that same data set.
+">
+    </head>
+<body>
+
+    <div class="bg-gray-200">
+  <div class="container mx-auto px-4">
+      <nav class="flex flex-wrap items-center justify-between p-4">
+        <div class="lg:order-2 w-auto lg:w-1/5 sm:text-center"><a class="text-2xl text-gray-900 hover:text-gray-700" href="/">Kelvin</a></div>
+
+        <div class="navbar-menu lg:order-3 lg:block w-full lg:w-2/5 lg:text-right">
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/">Home</a>
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/posts">Blog</a>
+        </div>
+      </nav>
+    </div>
+</div>
+
+
+    <div class="container mx-auto">
+        <div class="flex">
+            <div class="w-3/3 min-w-full px-1">
+                <div class="flex items-center">
+                    <div class="w-1/5 pt-4">
+                        
+                        <a href="/2012/02/2012-02-06_creating-pdfs-in-java-with-itext/">Previous article</a>
+                        
+                    </div>
+                    <div class="w-3/5">
+                        <h1 class="mt-8 text-center text-3xl text-blue-600">
+                            Restful Data Sources
+                        </h1>
+                    </div>
+                    <div class="w-1/5 pt-4 text-right">
+                        
+                        <a href="/2012/03/2012-03-02_henry-markram-simulating-the-brain/">Next article</a>
+                        
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="post-body h-full py-8 bg-white border-t">
+                        <p>We have come so far in technology yet still use the same relational SQL database methodologies as we did in the 90’s. We <em>waste</em> countless hours and money on SQL discussing details which have nothing to do with the actual data we place inside this storage space. When we are finished with the database, we still have plenty of work left, building applications to access and mutate that same data set.</p>
+<!-- more --> 
+<p><a href="http://www.bryny.com/stu_sql.htm"><img src="/media/restful-data-sources/sqltricks.gif" alt=""></a></p>
+<p>Thus, only a programmer can access the data. Those same programmers whom likely don’t fully understand the information collected and stored within the database. Programmers care about stuff like, <strong>structure</strong>, <strong>performance</strong>, <strong>security</strong>, <strong>servers</strong> and whatnot but data is just data. Later programmers will use an ORM to piece back together the data which was broken apart into a relational database only to re-structure the data into an object format. I could go on and on here, but my point is: <em>SQL can be really stupid.</em> Objects are easy. Resources are easy too. This got me to thinking…</p>
+<p>Not too long ago I was skimming a research paper about <a href="http://dret.net/netdret/docs/wilde-www2010-restful-sql.pdf">HTTP Database Connector (HDBC)</a> because about two years ago I came up with an idea. The idea was simple. <strong>Data is accessed via the web</strong>, thus why not just access your data via a RESTful web data source instead through a custom built application fetching off of back end SQL database(s)? At the time I thought the idea to be revolutionary, but I’m certainly not the first to come up with this idea though: <a href="http://www.jasondb.com/jasondb/jasondb.html">JasonDB</a>, <a href="http://www.devreference.org/bookmarks/couchdb-restful-database-json-documents-php-how-to.html">CouchDB</a>, <a href="http://code.google.com/p/restdb/">Google RestDB</a>.</p>
+<p>I think most anyone can understand objects, especially subject matter experts (SME) on particular objects, e.g. a chemist understand the toxicology of lead and mercury but knows nothing about SQL. Let’s use an example to illustrate. Both ways we just want to get the price of a wheel for a specific car.</p>
+<div class="row"><div class="col-sm-6">
+**The SQL Way**
+<pre><code>Db = new Database(&quot;jdbc://hostname:port:user:pass&quot;);
+Sql = &quot;select price from wheel where car_id = ?&quot;;
+Rows = Db.getSelectQuery(Sql, &quot;00026213938&quot;);
+price = null;
+for each Row in Rows; do
+   price = row[0];
+</code></pre>
+</div><div class="col-sm-6">
+**Object Way**
+<pre><code>Db = new Database(&quot;http://some.place/data&quot;);
+Db.Authenticate(&quot;user&quot;, &quot;pass&quot;);
+price = Db.car(&quot;00026213938&quot;).wheel.price
+</code></pre>
+</div></div>
+<p>Accessing and manipulating data shouldn’t be difficult. I think using REST as a gateway framework to our data sets, we keep things simple for the poor programmer (sucker) who has to design a web application around the data for the people that actually make use of the data.</p>
+<p>I wrote this paper about rest a few years ago and it reflects a brainstorming/soapbox approach to how ReST might be used to help the overall challenges we face in web development. Since that time Facebook has implemented the GraphAPI and other providers have started using ReST-ful apis to expose data.</p>
+<h3>This is what happens when I get bored (A paper I wrote two years ago)</h3>
+<p>This morning I woke up. A thought occured to me. I am so very small in a big world, a world that is always busy. Why do I even bother with knowledge? The more I seem to know the more I realize I don’t know. And the internet, an even busier world than our own is always evolving. Facebook, twitter, google docs, google maps, google this, google that, dropbox, piscasa, and the list goes on and on for what seems like infinity.</p>
+<p>As a computer scientist I have a somewhat jaded view of the Internet and the technology surrounding it. One particular example is of an architecture that is built to run parrellel with the Internet: REpresentational State Transfer (REST). After reading Roy Fielding’s paper that first proposed this archaric idea many years ago - I felt that my eyes had been opened to a dark secert place in the Internet, a place that I had known about many years but had never really ventured there.</p>
+<p>However, I’m a web/system developer and I have worked as an systems administrator as well. And to be frank, while web services are a wonderful idea, there are some problems that developers and administrators run into when implementing and maintaining them. I started to observe how I could simplify everyone else’s work just by doing a little smart programming.</p>
+<p>But first I want to cover REST and some “terminology” so that we can all agree on the semantics.</p>
+<p>REST has nouns, adjectives and verbs.</p>
+<p>Nouns
+A noun is a resource, for example: cats, dogs, students, movies, people, circles, nouns, places, etcs. What did you notice about all those listed nouns? They are all plural. While it is not nesscary, it is good design to make your resources (URI) plural when using REST. You can have an unlimited number of nouns.</p>
+<p>Adjectives
+A noun can exist, but without descriptions it is a pretty boring noun. Adjectives can be seen as properties of a noun. If our noun was cat then a few adjectives might be: fur type, eye color, size, gender. These adjectives are part of what makes a cat a cat. You wouldn’t expect to have motor as an adjective of a cat, cat’s don’t have motors.</p>
+<p>Verbs
+Unlike nouns, verbs are limited. But this is the beauty of REST. We can simplify actions. You can only have a select few. Here they are: GET, POST, PUT, DELETE, PATCH, OPTIONS, HEAD. These verbs are to allow you to implement ‘CRUD’ operations on your existing nouns. For example,</p>
+<pre><code>GET http://foobar.com/cup/1
+POST http://foobar.com/cup/1
+PUT http://foobar.com/cup/1
+DELETE http://foobar.com/cup/1
+</code></pre>
+<p>… and I will cover PATCH, HEAD and OPTIONS in a minute. But first, let’s cover our CRUD (create, read, update, delete) operations. It is important that we are on the same page here.</p>
+<pre><code>GET does a 'read' operation
+POST 'creates' a new resource
+PUT 'updates' an existing resource (the entire thing, no partial updates allowed!)
+DELETE 'delete's an existing resource
+</code></pre>
+<p>Let’s talk about PUT. When we put a resource back (update it) we must be sure to list all the adjectives describing that noun. If we do not we run the risk of dropping those adjectives. This is why a PATCH method was proposed and approved. Many people want to update a noun partially. They want you to know everything about their noun, but change one little adjective. For example, let’s say the cat’s name has changed from peppe le pue to scrodinger but nothing else has changed about the cat. I want to PATCH that cat’s name, else I have to GET the cat and then PUT him back. There are many questions that come up about this, including locking the cat up so no one else can touch him, if someone changes a cat the same time I do, what happens to the cat? Let’s ignore those questions, they aren’t important for this paper.</p>
+<p>Usage Scenario</p>
+<pre><code>We have three users. The back-end developer, the administrator and the end-user developer. The back-end developer creates the back-end resources and the URI to those resources. The administrator controls who has access to those resources. And finally the end-user developer engages documentation and finally the resources and uses the data from those resources to implement another product.
+
+Is this the way it goes? Is this as good as it gets? And this doesn't include the technical writer who writes documentation for the end-user developer, explaining how to use the resources available. But I want to keep it DaD (developer administrator developer) and leave out QA testers and managers and other people who make our lives worth living. Let's assume that every user is tech-savvy. Ha. Okay, or not.
+</code></pre>
+<p>This problem is taking up my time
+I hear people say that REST takes an indefinate about of time to start up. The road to RESTiality is a long one. Why? If it takes the back-end developer 5 weeks before he can finish something to show the administrator and the administrator has to configure/setup the system for 4 weeks and the end-user developer takes 3 weeks to successfully use the system; then it has taken 3 months before any real end-user progress has occurred. That is all based on these useless and factious numbers I just made up. How can we speed this process up?</p>
+<p>Here is a list of mangled thoughts about the above usage scenario (it is rather generic on purpose)
+- Assessability (ease of use)
+- Knowledge Transfer
+- Documentation
+- Lack of standards for web browsers (and development tools)
+- Service Orientied Minds</p>
+<p>Accessability (Ease of use)
+The RESTful mind tries to tackle this issue by using ‘standards’ like http basic authentication and URIs that can be requested and responded to via HTTP. Issues of security still exist though: user management for example. How do you manage users? And who has access to what? What if someone looses an eye or a password? So many service providers have switched to oauth to help with their woes of security. Some have setup complicated role based systems to solve their problems. The question is how should it be done?</p>
+<p>Knowledge Transfer
+Everyone has to know something about the system in order for it to work successfully. How do manage the knowledge from the back-end developer to the end-user developer? And also the administrator?</p>
+<p>Lack of standards
+One example is that	many browsers are not directly compatiable with PUT. This makes PUT more difficult to work with than GET and POST and thus, some developers just outright ignore PUT. In fact, this is where some of the complexity comes from. Take for example, POST /cat/update.php?id=1&amp;name=scrodinger and at first glance this might not seem ‘complex’ but it is not REST. As you read more, you will find out that I dispise ?params&amp;this=kind of urls - I find this harder to read than say /id/1/name/scrodinger (and it’s SEO friendly). But that asside, what makes this difficult to work with? First off, how many ‘verbs’ does cat have? For all I know we could have /cat/makeitjump.php and /cat/feedit.php and /cat/petit.php. We have opened up the world of unlimited actions, and actions can be complicated functions of a noun. Thus I say, keep it simple, stupid (KISS) and get back to the basics of CRUD.</p>
+<p>Service Orientied Minds
+It seems that many service providers (Google, twitter, facebook) have switching to using something almost REST. Why? Accessability, ease of use, they like it better than SOAP? Who doesn’t like taking it easy better than cleaning? Another reason may be that developers don’t want services, they want structured data and scalability. This means developers can take <em>your</em> data and use it for their own purposes. They don’t want to learn your language and verbs [$client-&gt;getBoaConstrictor(324, ‘fQn’)]. Developers want the universal nouns and descriptions of those nouns without the head ache of  Isn’t data what computer’s are all about anyway? Managing, manipulating and corrupting raw data.</p>
+<p>“I want a system that is as simple as possible for everyone: from back-end developer (BEd) to front-end developer (FEd).” “And as generic as possible” “And a long jacket.”</p>
+<p>I propose using some MVC framework (in my example Zend) which can be used as a defacto API system for many (think CLOUD here) developers. It can sit on top of many heterogenous data sources concurrently (don’t think 1 data source 1 MVC app here). A csv or xml file can be a model resource, an oracle database table, a postgresql and mysql database - and all from the same system.</p>
+<ol>
+<li>
+<p>RESTful controllers and models (Zend_Restful_Model_DbTable) to inherit from. This makes it simpler for the BEd to list configuration of models that are transformed into resources auto-magicaly. The developer can spend time explaining resources with annotations and less time writting code to access and manipulate data sources.</p>
+</li>
+<li>
+<p>Create security plugins that tie into existing frameworks. Facebook security, OAuth, Ldap, etc. I can update my configuration file (application.ini) and supply the minimal information for a plug-n-play effect. This means I supply you the configuration, everything else just works.</p>
+</li>
+<li>
+<p>Web interface for managing access to resources. Some resources will be open to the world, others will be locked. The idea here is that you will have users on the system and each user can request keys to given locked resources. This is already coded and ready to go for the user.</p>
+</li>
+<li>
+<p>Web interface for managing data sources. Administrators can easily add/edit (no removal) of new data sources from their pool of existing data sources. Removal of data sources means the removal of resources which should be treated as quasi-permenant and somewhat dependable.</p>
+</li>
+<li>
+<p>Documentation uses a documentor (with annotations) to auto-magically create documentation for the FEd. This also compiles information we know about resources and displays to a FEd. Take for example a database table. We can easily fetch the ‘adjectives’ of our resource and some example data to allow the FE developer more insight into how to fetch data from our resource. We can provide examples in different langagues (use cases) because our verb-age is limited and thus we can show how to fetch this resource in python, php, c++, jquery (javascript), and the list goes on and on. And the beauty of this is that the code to fetch/manipulate a resource RESTfully… the code is almost identical regardless of the resource being used. Documentation is a time killer, and no developer really likes to spend time compiling documentation.</p>
+</li>
+<li>
+<p>Apply magic methods ideology to REST. Unforunately, some browsers may or may not supply ‘data’ if you PUT or PATCH. How can we solve this? We can make magic methods to hack around (if everyone is doing it, then is it a hack?). For example: __method: PUT could be passed as a parameter to POST (this is how Ruby on Rails handles it). But I don’t want the developer to have to code this. So this is an example of how (see #1) implementing our own RESTful controllers, models, plugins can handle this type of workaround. The type of workaround that might take a developer extra time to implement.</p>
+</li>
+<li>
+<p>Sitemaps. This is a ‘WSDL’ for REST. It tells the FEd what resources are available (as hyper links) and each will show documentation. We call this context switching in Zend (for example, if we find that the call is an XmlHttpRequest then we automatically display json instead of say… html or xml).</p>
+</li>
+<li>
+<p>JSON. It is pracitcally universal. We aren’t going to worry about different markup langauges and content delivery so much, as JSON can be used in many languages, is easy to work with and thus my pick for data. Later the system can add context switches if we find this is needed.</p>
+</li>
+<li>
+<p>There are some resources which are not really structured data. They have an id and simply exist on the file system as a file (Zend_Restful_Model_File). However, we can still keep metadata about this file (which can be seen as an adjective). One example resource might be a png image file. This is not structed data by any means and perhaps it is a file served out to other users for some reason. But should we treat this resource any differently? We might still want to protect it (if needed) and provide it to users to GET, PUT, POST, DELETE. I know what you’re thinking. Apache .htaccess, right? And what about users who requested XHR but they get a png back? This is why the documentor would need to handle non-structured data. It can show them an example of requests (by making the real requests itself) and thus the developer can know from the documentation that this does not deliver JSON but a PNG instead.</p>
+</li>
+</ol>
+<p>Example Product
+Sleepy DB. My RESTful Database implementation. This is my version of a RESTful database. It is your model(s). You can create, read, update, delete to any resourses you define. It has a UI that helps you crud resources as well. There are other databases (jasondb) which attempt to do RESTful db for the web but I have bigger plans for mine. Mainly, user friendli-ness. (You don’t have to be a developer to use it).</p>
+<p>Sleepy DB is built in Zend and has no databases. It simply uses my API system as a database for it’s models. All data models are built using the Restful API system (Zend_Restful_Model_Api) built and runs over HTTPS via the cloud. Data can be stored and protected and served to other users. It is very much like Dropbox, except that Dropbox does not provide documentation on every file. It seems that Dropbox would likely be a good Model from which a BEd could inherit from. Zend_Restful_Model_Dropbox. A developer could extend this class and provide only the configuration needed to use Dropbox as a model. (On second thought, who knows?)</p>
+<p>I hope you enjoyed my paper. I didn’t use big words to try and confuse anyone. I like simple. The biggest word I used I believe was hetrogenous data sources - which I meant different types of data sources - in case you missed that. And in case you missed it… the big picture idea is: simplify for everyone, generic enough for everyone. But if you missed the big picture then maybe you should read this paper again.</p>
+
+                    </div>                        
+                </div>
+
+                <div class="text-right">
+                    <div>post by Kelvin on 02/16/2012</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="disqus_thread"></div>
+
+        <script>
+            var disqus_shortname = '';
+            var disqus_url = 'def246.com//2012/02/2012-02-16_restful-data-sources/';
+          
+            (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//go.disqus.com/embed.js';
+
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+
+    </div>
+</body>
+</html>

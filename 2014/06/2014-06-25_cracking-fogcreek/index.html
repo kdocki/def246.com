@@ -1,0 +1,225 @@
+<html>
+    <head>
+        <title>Kelvin</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+
+<link rel="stylesheet" type="text/css" href="/assets/site.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather" rel="stylesheet">
+<link rel="stylesheet" href="/assets/highlight/styles/default.css">
+<script src="/assets/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script>
+  if (location.hostname != "def246.com") {
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+  ':35729/livereload.js?snipver=1"></' + 'script>')
+  }
+</script> 
+
+        <meta name="author" content="Kelvin">
+        <meta name="description" content="You ever apply for a job and they make you do a little programming question? These are fun sarcasm because they usually have some math involved and it provides me a small and unimportant challenge - similar to a video game.
+">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Cracking Fogcreek">
+        <meta property="og:url" content="http://def246.com/2014/06/2014-06-25_cracking-fogcreek/">
+        <meta property="og:site_name" content="def246">
+        <meta property="og:description" content="You ever apply for a job and they make you do a little programming question? These are fun sarcasm because they usually have some math involved and it provides me a small and unimportant challenge - similar to a video game.
+">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Cracking Fogcreek">
+        <meta name="twitter:description" content="You ever apply for a job and they make you do a little programming question? These are fun sarcasm because they usually have some math involved and it provides me a small and unimportant challenge - similar to a video game.
+">
+    </head>
+<body>
+
+    <div class="bg-gray-200">
+  <div class="container mx-auto px-4">
+      <nav class="flex flex-wrap items-center justify-between p-4">
+        <div class="lg:order-2 w-auto lg:w-1/5 sm:text-center"><a class="text-2xl text-gray-900 hover:text-gray-700" href="/">Kelvin</a></div>
+
+        <div class="navbar-menu lg:order-3 lg:block w-full lg:w-2/5 lg:text-right">
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/">Home</a>
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/posts">Blog</a>
+        </div>
+      </nav>
+    </div>
+</div>
+
+
+    <div class="container mx-auto">
+        <div class="flex">
+            <div class="w-3/3 min-w-full px-1">
+                <div class="flex items-center">
+                    <div class="w-1/5 pt-4">
+                        
+                        <a href="/2014/06/2014-06-16_switching-my-blog/">Previous article</a>
+                        
+                    </div>
+                    <div class="w-3/5">
+                        <h1 class="mt-8 text-center text-3xl text-blue-600">
+                            Cracking Fogcreek
+                        </h1>
+                    </div>
+                    <div class="w-1/5 pt-4 text-right">
+                        
+                        <a href="/2014/07/2014-07-23_laravel-blade-var-extension/">Next article</a>
+                        
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="post-body h-full py-8 bg-white border-t">
+                        <p>You ever apply for a job and they make you do a little programming question? These are fun <em>sarcasm</em> because they usually have some math involved and it provides me a small and unimportant challenge - similar to a video game.</p>
+<!-- more -->
+<h3>The Question</h3>
+<p>Find a 9 letter string of characters that contains only letters from</p>
+<pre><code>acdegilmnoprstuw
+</code></pre>
+<p>such that the hash(the_string) is</p>
+<pre><code>910897038977002
+</code></pre>
+<p>if hash is defined by the following pseudo-code:</p>
+<pre><code>    Int64 hash (String s) {
+        Int64 h = 7
+        String letters = &quot;acdegilmnoprstuw&quot;
+        for(Int32 i = 0; i &lt; s.length; i++) {
+            h = (h * 37 + letters.indexOf(s[i]))
+        }
+        return h
+    }
+</code></pre>
+<p>For example, if we were trying to find the 7 letter string where hash(the_string) was 680131659347, the answer would be “leepadg”.)</p>
+<h3>My Answer</h3>
+<p>First I need to define the alphabet we can pick letters from. The bigger the alphabet the more difficult it is to brute force an answer. I wrote a brute force approach as a comparasion and just in case I can’t figure this out solution, but I ended up solving the problem the non-brute force way before execution was finished.</p>
+<p>That was just luck though because the answer starts with an ‘a’ which happens to be one of the first characters of the alphabet. If our answer had started with a ‘w’ then we would have searched about <strong>15^9 (over 38 billion)</strong> different hash combinations which would take many lifetimes to accomplish.</p>
+<p>It’s never good to have code that dramatically changes execution time depending on input, especially code that takes 100s of years to complete, so instead we are going to use math and reverse engineer the hashing algorithm so that we can find answers in constant time regardless of input.</p>
+<p>So here is our given alphabet.</p>
+<pre><code>var alphabet = &quot;acdegilmnoprstuw&quot;;
+</code></pre>
+<p>Next I establish the base we are in. There are fifteen letters in this alphabet so we are using the mathematical base 15 (HEX).</p>
+<pre><code>var base = alphabet.length;
+</code></pre>
+<p>Next I duplicate the hash function from the question. I use this to hash various results and to also test that hashing the string <em>leepadg</em> returns 680131659347.</p>
+<pre><code>function hash(the_string)
+{
+    var h = 7;
+
+    for (var i = 0; i &lt; the_string.length; i++)
+    {
+        h = (h * 37 + alphabet.indexOf(the_string[i]));
+    }
+
+    return h;
+}
+</code></pre>
+<p>The mathematical formula for this hash function expanded is</p>
+<p>{% blockquote %}
+37^9 * 7 + 37^8 * s1 + 37^7 * s2 + … + 37^2 * s7 + 37^1 * s8 + 37^0 * s9 = 910897038977002
+{% endblockquote %}</p>
+<p>where s1 is the first character in our 9 digit string and s9 is the last. The value of s1 thru s9 cannot be greater than 15 or less than 0 either.</p>
+<p>Now the real magic comes in. All I am going to do is cut down the number of searches needed to find the answer <em>dramatically</em>. I still use <code>hash</code> function though, instead of searching for billions of solutions, we smartly guide our search with this algorithm below.</p>
+<p>We start with the smallest possible hash the answer could be. Since the letter a is the smallest letter in the alphabet there can be no string <strong>before</strong> the string <code>aaaaaaaaa</code>. Now if I treat this string like it is some very large number in the base of 15 of our alphabet then I start at the very highest power which is the very first ‘a’. If you don’t get this let me explain in further detail.</p>
+<p>It might be strange to see <code>aaaaaaaaa</code> as a number. But what if this was written as <code>111111111</code> instead? The highest power is the first 1 which is 1 * 10^9 = 10000000. Since we are treating letters of our alphabet as a set of numbers we can do the same thing. We are used to dealing with the set of real numbers, but in this we only need to worry about the set of characters inside of our alphabet.</p>
+<p>Let A = 910897038977002. We were given this number and it is the one we are trying to crack.</p>
+<p>So if we look at <code>A - hash('aaaaaaaaa')</code> there are three possible outcomes. The result is bigger than 0, smaller than 0 or exactly 0.</p>
+<p>So let’s talk about each one of those possibilities.</p>
+<ul>
+<li>If the answer is 0 we are finished, and we have found our solution.</li>
+<li>If the answer here is less than 0 then there is no possible solution.</li>
+<li>If the answer here is more than 0 then we need to continue looking for solutions.</li>
+</ul>
+<p>Our job is to traverse through every letter from beginning to end and find the highest letter possible for each power. This will give us an answer if there is a solution. In this case <code>A - hash('aaaaaaaaa') &gt; 0</code> but <code>A - hash('caaaaaaaa') &lt; 0</code> so we know the first letter must begin with an <code>a</code>. If this doesn’t make sense then allow me to explain differently.</p>
+<p>Let’s play this algorithm out but imagine we are dealing with just simple normal numbers. We have the answer 422. We want to find the number 422. So we start with the lowest number 000. Next we ask ourselves a series of questions in this order</p>
+<p>000 &lt; 422 (yes)
+100 &lt; 422 (yes)
+200 &lt; 422 (yes)
+300 &lt; 422 (yes)
+400 &lt; 422 (yes)
+500 &lt; 422 (no)</p>
+<p>Now on to the next power</p>
+<p>410 &lt; 422 (yes)
+420 &lt; 422 (yes)
+430 &lt; 422 (no)</p>
+<p>Now to the smallest power</p>
+<p>421 &lt; 422 (yes)
+422 = 422 (solution found)</p>
+<p>This gives you an idea of the alogrithm we are using but the only difference is that we make use of the <code>hash(string)</code> function each time we do our comparison. This is essentially much like prime factorization, especially since the number 37 is a prime number and we are subtracting powers of 37 away from the answer in order to find our reverse hash. So let’s look at the implementation</p>
+<pre><code>function reverse_hash(A)
+{
+    var answer = 'aaaaaaaaa';
+
+    // subtract away the max amount possible without going negative
+    // we start with 'aaaaaaaaa' and work our way up, one letter at
+    // a time (from beginning 'a').
+    for (var column = 0; column &lt; 9; column++)
+    {
+        var charAt = 0;
+        var next = answer;
+
+        // we cannot ever go more than the base of our alphabet
+        while (charAt &lt; base + 1)
+        {
+            // replace the letters at the given column
+            next = next.replaceAt(column, alphabet[charAt++]);
+
+            // we did not go negative so we can update our answer
+            if (A - hash(next) &gt;= 0)
+            {
+                answer = next;
+            }
+            else
+            {
+                break; // go to the next column in answer
+            }
+        }
+    }
+
+    return answer;
+}
+</code></pre>
+<p>Finally I add a helper function to the String.prototype to replace characters. I normally wouldn’t mess with String.prototype but since I am not using this application on a large scale it doesn’t matter.</p>
+<pre><code>String.prototype.replaceAt = function(index, letter)
+{
+    return this.substr(0, index)
+        + letter
+        + this.substr(index+letter.length);
+}
+</code></pre>
+<p>To find the reversed hash answer in just milliseconds we can use our new <code>reverse_hash</code> command.</p>
+<pre><code>var answer = reverse_hash(910897038977002);
+</code></pre>
+<p>And that is it. Oh and if you are wondering what the answer is: <code>asparagus</code> There is probably another 20 ways to solve this problem but this is the way I chose. Did you actually make it here? Wow… I figured I would have bored most people off by this line.</p>
+
+                    </div>                        
+                </div>
+
+                <div class="text-right">
+                    <div>post by Kelvin on 06/25/2014</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="disqus_thread"></div>
+
+        <script>
+            var disqus_shortname = '';
+            var disqus_url = 'def246.com//2014/06/2014-06-25_cracking-fogcreek/';
+          
+            (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//go.disqus.com/embed.js';
+
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+
+    </div>
+</body>
+</html>

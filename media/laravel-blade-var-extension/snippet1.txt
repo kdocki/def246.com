@@ -1,0 +1,16 @@
+```
+@extends('layouts.application')
+
+@var('users', 'User.paginate')
+@var('userList', 'User.lists', ['first_name', 'id'])
+
+@section('content')
+	{{ Form::select('users', $userList) }}
+
+	@foreach ($users as $user)
+		<div>
+			{{ $user->name }}
+		</div>
+	@endforeach
+@stop
+```

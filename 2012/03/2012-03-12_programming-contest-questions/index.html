@@ -1,0 +1,284 @@
+<html>
+    <head>
+        <title>Kelvin</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+
+<link rel="stylesheet" type="text/css" href="/assets/site.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather" rel="stylesheet">
+<link rel="stylesheet" href="/assets/highlight/styles/default.css">
+<script src="/assets/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script>
+  if (location.hostname != "def246.com") {
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+  ':35729/livereload.js?snipver=1"></' + 'script>')
+  }
+</script> 
+
+        <meta name="author" content="Kelvin">
+        <meta name="description" content="I was a judge for uca’s annual alar’s programming contest years 2008 - 2010. It was a pretty fun experience, we got to spend the day judging other’s code and lots of free food.
+During my recent computer cleaning, I found a few problems I wrote for the contest. I typically had some of the easier problems at the contest
+(there were about a dozen total problems).
+Therefore, I decided to share with you my three programming contest questions, 1) Dr. Bob’s Crazy People Party, 2) Palpatine’s Florist and 3) Modular Primes.
+">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Programming Contest Questions">
+        <meta property="og:url" content="http://def246.com/2012/03/2012-03-12_programming-contest-questions/">
+        <meta property="og:site_name" content="def246">
+        <meta property="og:description" content="I was a judge for uca’s annual alar’s programming contest years 2008 - 2010. It was a pretty fun experience, we got to spend the day judging other’s code and lots of free food.
+During my recent computer cleaning, I found a few problems I wrote for the contest. I typically had some of the easier problems at the contest
+(there were about a dozen total problems).
+Therefore, I decided to share with you my three programming contest questions, 1) Dr. Bob’s Crazy People Party, 2) Palpatine’s Florist and 3) Modular Primes.
+">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Programming Contest Questions">
+        <meta name="twitter:description" content="I was a judge for uca’s annual alar’s programming contest years 2008 - 2010. It was a pretty fun experience, we got to spend the day judging other’s code and lots of free food.
+During my recent computer cleaning, I found a few problems I wrote for the contest. I typically had some of the easier problems at the contest
+(there were about a dozen total problems).
+Therefore, I decided to share with you my three programming contest questions, 1) Dr. Bob’s Crazy People Party, 2) Palpatine’s Florist and 3) Modular Primes.
+">
+    </head>
+<body>
+
+    <div class="bg-gray-200">
+  <div class="container mx-auto px-4">
+      <nav class="flex flex-wrap items-center justify-between p-4">
+        <div class="lg:order-2 w-auto lg:w-1/5 sm:text-center"><a class="text-2xl text-gray-900 hover:text-gray-700" href="/">Kelvin</a></div>
+
+        <div class="navbar-menu lg:order-3 lg:block w-full lg:w-2/5 lg:text-right">
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/">Home</a>
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/posts">Blog</a>
+        </div>
+      </nav>
+    </div>
+</div>
+
+
+    <div class="container mx-auto">
+        <div class="flex">
+            <div class="w-3/3 min-w-full px-1">
+                <div class="flex items-center">
+                    <div class="w-1/5 pt-4">
+                        
+                        <a href="/2012/03/2012-03-03_nostalgia-with-css-sprites/">Previous article</a>
+                        
+                    </div>
+                    <div class="w-3/5">
+                        <h1 class="mt-8 text-center text-3xl text-blue-600">
+                            Programming Contest Questions
+                        </h1>
+                    </div>
+                    <div class="w-1/5 pt-4 text-right">
+                        
+                        <a href="/2012/03/2012-03-26_how-to-read-a-csv-file-in-bash/">Next article</a>
+                        
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="post-body h-full py-8 bg-white border-t">
+                        <p>I was a judge for <a href="http://uca.edu/">uca</a>’s annual <a href="http://uca.edu/news/uca-to-host-applied-research-conference/">alar’s programming contest</a> years 2008 - 2010. It was a pretty fun experience, we got to spend the day judging other’s code and lots of free food.</p>
+<p>During my recent computer cleaning, I found a few problems I wrote for the contest. I typically had some of the easier problems at the contest
+(there were about a dozen total problems).</p>
+<p>Therefore, I decided to share with you my three programming contest questions, 1) Dr. Bob’s Crazy People Party, 2) Palpatine’s Florist and 3) Modular Primes.</p>
+<!-- more --> 
+<h3>Dr. Bob’s Crazy-People Party (2008)</h3>
+<p>{% blockquote %}This problem is a good example of where we should transform divide and conquer into dynamic programming or implement a top down memory function.{% endblockquote %}</p>
+<p>**Congratulations, you have been invited to Dr. Bob’s Crazy-People Party for Quixotic Number Crunchers! Unfortunately, in order to enter the party house you must first answer a question. Since you know Dr. Bob likes Fibonacci n-step numbers you assume that will be the question. You decide to write a program to calculate <code>Fn(x)</code> for you so you won’t be stuck outside the party.</p>
+<p><strong>Fibonacci n-step</strong> number is defined as:</p>
+<pre><code>Fn(1) = 1, Fn(2) = 1
+Fn(x) = Fn(x-1) + Fn(x-2) + … + Fn(x-n)
+</code></pre>
+<p>Assume that <code>if x &lt;= 0 then Fn(x) = 0</code>, also don’t worry about <code>x &gt; n</code>, Bob isn’t <strong>that</strong> crazy</p>
+<p><strong>Some Examples</strong></p>
+<pre><code>F3(10) = F3(9) + F3(8) + F3(7)
+       = 81 + 44 + 24            # Notice, to find F3(9) we need to know F3(8) + F3(7) + F3(6)
+       = 149                     # And likewise for F3(8), F3(7), F3(6), …, F3(1)
+
+</code></pre>
+<p>(<strong>Hint:</strong> <code>Fn(x)</code> is recursive in nature; however, if you write the program recursively it will probably be too slow and you will miss the party if Dr. Bob asks for a high value of n or x)</p>
+<p>The program should loop until it sees a non-number input for n or x. Example, in order to end the program type q for the value of n or x. See below for some input/output examples.</p>
+<p><strong>Input/Output Examples</strong></p>
+<pre><code>n=7         n=5           n=10         n=30                 n=2        n=3
+x=10        x=20          x=12         x=41                 x=8        x=5
+ans=149     ans=203513    ans=1023     ans=549755811072     ans=21     ans=7
+</code></pre>
+<p>Here is the gist of it:</p>
+<pre><code>$F1 = array(0 =&gt; 0, 1 =&gt; 1, 2 =&gt; 1);
+$Fn = array(1 =&gt; $F1);
+
+function Fn($step, $x)
+{
+	global $Fn;
+	if (!isset($Fn[$step][$x])) SeiveFn($step, $x);
+	return $Fn[$step][$x];
+}
+
+echo Fn($n = 10, $x = 12);  // 1023
+</code></pre>
+<p>So what is this Seive? I named it this because of the <a href="http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes">Sieve of Eratosthenes</a>. The idea is to remember the all the previous prime numbers you found in order to find the next. We aren’t dealing with prime numbers in this case but instead Fibonacci numbers but the idea is the same. This is a way to calculate the Fn for a specific <code>$n</code> and <code>$x</code> and store the results in a two dimensional array for next time we try to find another value for the pair ($n, $x).</p>
+<pre><code>function SeiveFn($step, $x)
+{
+	global $Fn;
+
+	if(!isset($Fn[$step]))
+	{
+		if(!isset($Fn[$step - 1])) SeiveFn($step - 1, $x);
+		$Fn[$step] = $Fn[$step - 1];
+	}
+
+	for($i = $step + 1; $i &lt;= $x; $i++)
+	{
+		$sum = 0;
+		for($n = $i - 1; $n &gt;= $i - $step; $n--) $sum = $sum + $Fn[$step][$n];
+		$Fn[$step][$i] = $sum;
+	}
+}
+</code></pre>
+<p>You can see <a href="/media/programming-contest-questions/fibonacci-n-step.zip">answer source code here in php</a>.</p>
+<h3>Emperor Palpatine’s Florist (2009)</h3>
+<p>You are a florist and you’ve received a call from Emperor Palpatine, something about executing <code>Order 66</code>. Basically he wants you to deliver flowers to certain Jedi warriors. However, you must deliver the flowers in a specific order, the first bouquet should go to the highest ranking Jedi, the second bouquet to the second highest, and so on down the chain of rank until the last flowers are delivered to the lowest ranking Jedi.</p>
+<p>In case you are unsure of rank (shame, shame), he has given you a list of Jedi names in two columns. This list compares two Jedi members and you should read this as, first Jedi rank &gt; second Jedi rank.</p>
+<p>Your list looks as follows:</p>
+<pre><code>Windu Mundi
+Yoda Yaddle
+Yoda Poof
+Windu Obi-wan
+Yaddle Poof
+Obi-wan Skywalker
+Yoda Windu
+Yaddle Obi-wan
+Mundi Yaddle
+Yoda Skywalker
+Skywalker Poof
+</code></pre>
+<p>Note: From the first line we can tell that Windu is higher rank than Mundi. Thus we should also infer that anyone lesser in rank than Mundi is also lesser rank than Windu.</p>
+<p>Return a list of names in order of rank based on this list above so you can deliver the flowers as the Emperor wishes. Be prepared to use another list in case the Emperor wants to add additional rankings to the list (don’t just do this by hand).</p>
+<p>You can see <a href="/media/programming-contest-questions/palpatine-florist.zip">example solution for this in php</a>. The trick is just to print higher in rank, yourself, then everyone lower in rank and you keep a memory array to make sure you only print yourself once.</p>
+<pre><code>function sortList($keys, $list)
+{
+	# get a list of people that are better than me then print my name
+	foreach ($keys as $name) { whoIsBetter($name, $list); printJedi($name); }
+
+	# get a list of people worse than me
+	foreach ($keys as $name) { whoIsWorse($name, $list); }
+}
+
+$p = array(); # global variable to keep up with Jedi names we have printed
+function printJedi($name)
+{
+	if($GLOBALS['p'][$name] != 1) print &quot;$name\n&quot;;
+	$GLOBALS['p'][$name] = 1;
+}
+
+function whoIsBetter($name, $list)
+{
+	foreach ($list as $key =&gt; $value)
+	{
+		if($key != $name)
+		{
+			foreach ($value as $item) { if($item == $name) printJedi(&quot;$key&quot;); }
+		}
+	}
+}
+
+function whoIsWorse($name, $list)
+{
+	foreach ($list[$name] as $value){ printJedi($value); }
+}
+</code></pre>
+<h3>Modular Primes (2010)</h3>
+<p>I didn’t get very creative with this one. Essentially, I asked the teams to find the two smallest prime numbers which has a pattern found from <a href="http://en.wikipedia.org/wiki/Wilson's_theorem#Applications">Wilson’s theorem</a>. See <a href="/media/programming-contest-questions/modular-primes.zip">entire source code</a> or read the code below for more details. The first answer for range 2 through 10 would be 5039 because:</p>
+<pre><code>Answer: 5039
+   -&gt; 2 (2519) + 1 = 5039
+   -&gt; 3 (1679) + 2 = 5039
+   -&gt; 4 (1259) + 3 = 5039
+   -&gt; 5 (1007) + 4 = 5039
+   -&gt; 6 (839) + 5 = 5039
+   -&gt; 7 (719) + 6 = 5039
+   -&gt; 8 (629) + 7 = 5039
+   -&gt; 9 (559) + 8 = 5039
+   -&gt; 10 (503) + 9 = 5039
+</code></pre>
+<p>The teams had to find the next prime that matches this same pattern for range 2 to 10 and I asked to be able to check for other ranges besides 2 through 10.</p>
+<pre><code>/* Find primes P, with following pattern
+ * 2(p2) + 1 = P
+ * 3(p3) + 2 = P
+ * 4(p4) + 3 = P
+ * ...
+ * N(pN) + (N-1) = P
+ *
+ * This is a variation of Wilson's theorem for a prime number 'n'
+ *      (n-1)! = -1 mod n
+ */
+function main()
+{
+	$max = 10;    # check mod 2 - 10
+	$i = 5000;    # start iterator at 5000 (I already know the answer and it is greater than 5000)
+	$count = 2;   # how many primes should we find with this pattern?
+
+	while ($count != 0)
+	{
+
+		# find a possible answer
+		$answer = $i;
+		for($n=2; $n&lt;=$max; $n++)
+		{
+			if ($i % $n != ($n-1)) { $answer = 0; break; }
+		}
+
+		# check to see if this is an answer and also primality
+		if($answer == $i &amp;&amp; isPrime($answer))
+		{
+			print &quot;Answer: $answer\n&quot;;
+			for($n=2; $n&lt;=$max; $n++)
+			{
+				$mod = $answer % $n;
+				$divisor=($answer - $mod)/$n;
+
+				print &quot; -&gt; $n ($divisor) + $mod = &quot; . $answer ;
+				print &quot;\n&quot;;
+			}
+			print &quot;\n&quot;;
+			$count--;
+		}
+		$i++;
+	}
+}
+</code></pre>
+<p>That wraps it up. It was fun being a contest judge. As I said earlier, my questions were usually among the first answered. Not having your question answered at all just means it was too complex anyway and what’s the point of that? The goal is to see how well people can program - not to attempt to baffle and frustrate a team for five hours.</p>
+
+                    </div>                        
+                </div>
+
+                <div class="text-right">
+                    <div>post by Kelvin on 03/12/2012</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="disqus_thread"></div>
+
+        <script>
+            var disqus_shortname = '';
+            var disqus_url = 'def246.com//2012/03/2012-03-12_programming-contest-questions/';
+          
+            (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//go.disqus.com/embed.js';
+
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+
+    </div>
+</body>
+</html>

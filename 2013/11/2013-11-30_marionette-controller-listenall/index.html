@@ -1,0 +1,179 @@
+<html>
+    <head>
+        <title>Kelvin</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+
+<link rel="stylesheet" type="text/css" href="/assets/site.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather" rel="stylesheet">
+<link rel="stylesheet" href="/assets/highlight/styles/default.css">
+<script src="/assets/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script>
+  if (location.hostname != "def246.com") {
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+  ':35729/livereload.js?snipver=1"></' + 'script>')
+  }
+</script> 
+
+        <meta name="author" content="Kelvin">
+        <meta name="description" content="If you’ve used Marionette for a while, you’ll find that there is still quite a bit of boilerplate to write. This doesn’t bother me that much but I’ve noticed a very familiar pattern in my marionette controllers. It looks a lot like this…
+">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Marionette.Controller.listenAll">
+        <meta property="og:url" content="http://def246.com/2013/11/2013-11-30_marionette-controller-listenall/">
+        <meta property="og:site_name" content="def246">
+        <meta property="og:description" content="If you’ve used Marionette for a while, you’ll find that there is still quite a bit of boilerplate to write. This doesn’t bother me that much but I’ve noticed a very familiar pattern in my marionette controllers. It looks a lot like this…
+">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Marionette.Controller.listenAll">
+        <meta name="twitter:description" content="If you’ve used Marionette for a while, you’ll find that there is still quite a bit of boilerplate to write. This doesn’t bother me that much but I’ve noticed a very familiar pattern in my marionette controllers. It looks a lot like this…
+">
+    </head>
+<body>
+
+    <div class="bg-gray-200">
+  <div class="container mx-auto px-4">
+      <nav class="flex flex-wrap items-center justify-between p-4">
+        <div class="lg:order-2 w-auto lg:w-1/5 sm:text-center"><a class="text-2xl text-gray-900 hover:text-gray-700" href="/">Kelvin</a></div>
+
+        <div class="navbar-menu lg:order-3 lg:block w-full lg:w-2/5 lg:text-right">
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/">Home</a>
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/posts">Blog</a>
+        </div>
+      </nav>
+    </div>
+</div>
+
+
+    <div class="container mx-auto">
+        <div class="flex">
+            <div class="w-3/3 min-w-full px-1">
+                <div class="flex items-center">
+                    <div class="w-1/5 pt-4">
+                        
+                        <a href="/2013/11/2013-11-30_arnold-c-programming-language/">Previous article</a>
+                        
+                    </div>
+                    <div class="w-3/5">
+                        <h1 class="mt-8 text-center text-3xl text-blue-600">
+                            Marionette.Controller.listenAll
+                        </h1>
+                    </div>
+                    <div class="w-1/5 pt-4 text-right">
+                        
+                        <a href="/2013/12/2013-12-12_csrf-token-protection-in-laravel/">Next article</a>
+                        
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="post-body h-full py-8 bg-white border-t">
+                        <p>If you’ve used Marionette for a while, you’ll find that there is still quite a bit of boilerplate to write. This doesn’t bother me that much but I’ve noticed a very familiar pattern in my marionette controllers. It looks a lot like this…</p>
+<!-- more --> 
+<pre><code>App.module('Sidebar.Show', function(Show, App, Backbone, Marionette, $, _) {
+    Show.Controller = Marionette.Controller.extend({
+        initialize : function() {
+            var foobars = App.request('foobar:entities');
+            var view = new Show.View();
+
+            App.execute('when:done', foobars, function() {
+                App.Region_Content.show(view);
+            });
+
+            this.listenTo(view, 'some:event', this.onSomeEvent);
+
+            // ... may have several events on the view
+
+            this.listenTo(view, 'something:clicked', this.onSomethingClicked);
+            this.listenTo(view, 'something:else', this.onSomethingElse);
+        },
+
+        onSomeEvent : function() {
+            // ...
+        },
+
+        onSomethingClicked : function() {
+            // ...
+        }
+
+        onSomethingElse : function() {
+            // ...
+        }
+
+    });
+});
+</code></pre>
+<p>Like I said, I have no problem with writing a little extra code to help clarify things, but here is one of those cases where I think I can cut down on some boilerplate. Notice below the code is almost identical except I cut out the <code>this.listenTo</code> and just use a <code>this.listenAll</code></p>
+<pre><code>App.module('Sidebar.Show', function(Show, App, Backbone, Marionette, $, _) {
+    Show.Controller = Marionette.Controller.extend({
+        initialize : function() {
+            var foobars = App.request('foobar:entities');
+            var view = new Show.View();
+
+            App.execute('when:done', foobars, function() {
+                App.Region_Content.show(view);
+            });
+
+            this.listenAll(view);
+        },
+
+        onSomeEvent : function() {
+            // ...
+        },
+
+        onSomethingClicked : function() {
+            // ...
+        }
+
+        onSomethingElse : function() {
+            // ...
+        }
+
+    });
+});
+</code></pre>
+<p>So now that you see how <code>listenAll</code> works, the next logical question is, how do I get it into my marionette application? Easy, just use the code below. Notice I’m not doing a <code>Marionette.Controller.extend({})</code> here primarily because I like this function so much I wanted it baked naively into the <code>Marionette.Controller</code>.</p>
+<pre><code>Marionette.Controller.prototype.listenAll = function(obj) {
+    var controller = this;
+
+    this.listenTo(obj, 'all', function() {
+        controller.triggerMethod.apply(this, arguments)
+    });
+}
+</code></pre>
+<p>That about sums it up. The last thing I’d like to say is that the <code>triggerMethod</code> function is pretty neat. There is a lot that can be learned by just skimming through the <a href="http://marionettejs.com/docs/backbone.marionette.html">Marionette annotated source</a>.</p>
+
+                    </div>                        
+                </div>
+
+                <div class="text-right">
+                    <div>post by Kelvin on 11/30/2013</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="disqus_thread"></div>
+
+        <script>
+            var disqus_shortname = '';
+            var disqus_url = 'def246.com//2013/11/2013-11-30_marionette-controller-listenall/';
+          
+            (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//go.disqus.com/embed.js';
+
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+
+    </div>
+</body>
+</html>

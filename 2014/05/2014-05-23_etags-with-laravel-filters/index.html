@@ -1,0 +1,225 @@
+<html>
+    <head>
+        <title>Kelvin</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+
+<link rel="stylesheet" type="text/css" href="/assets/site.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather" rel="stylesheet">
+<link rel="stylesheet" href="/assets/highlight/styles/default.css">
+<script src="/assets/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script>
+  if (location.hostname != "def246.com") {
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+  ':35729/livereload.js?snipver=1"></' + 'script>')
+  }
+</script> 
+
+        <meta name="author" content="Kelvin">
+        <meta name="description" content="ETags PHONE HOME?! No. So what are ETags? Wikipedia has this to say:
+{% blockquote %}
+The ETag or entity tag is part of HTTP, the protocol for the World Wide Web. It is one of several mechanisms that HTTP provides for web cache validation, and which allows a client to make conditional requests. This allows caches to be more efficient, and saves bandwidth, as a web server does not need to send a full response if the content has not changed. ETags can also be used for optimistic concurrency control as a way to help prevent simultaneous updates of a resource from overwriting each other.
+{% endblockquote %}
+">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="ETags With Laravel Filters">
+        <meta property="og:url" content="http://def246.com/2014/05/2014-05-23_etags-with-laravel-filters/">
+        <meta property="og:site_name" content="def246">
+        <meta property="og:description" content="ETags PHONE HOME?! No. So what are ETags? Wikipedia has this to say:
+{% blockquote %}
+The ETag or entity tag is part of HTTP, the protocol for the World Wide Web. It is one of several mechanisms that HTTP provides for web cache validation, and which allows a client to make conditional requests. This allows caches to be more efficient, and saves bandwidth, as a web server does not need to send a full response if the content has not changed. ETags can also be used for optimistic concurrency control as a way to help prevent simultaneous updates of a resource from overwriting each other.
+{% endblockquote %}
+">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="ETags With Laravel Filters">
+        <meta name="twitter:description" content="ETags PHONE HOME?! No. So what are ETags? Wikipedia has this to say:
+{% blockquote %}
+The ETag or entity tag is part of HTTP, the protocol for the World Wide Web. It is one of several mechanisms that HTTP provides for web cache validation, and which allows a client to make conditional requests. This allows caches to be more efficient, and saves bandwidth, as a web server does not need to send a full response if the content has not changed. ETags can also be used for optimistic concurrency control as a way to help prevent simultaneous updates of a resource from overwriting each other.
+{% endblockquote %}
+">
+    </head>
+<body>
+
+    <div class="bg-gray-200">
+  <div class="container mx-auto px-4">
+      <nav class="flex flex-wrap items-center justify-between p-4">
+        <div class="lg:order-2 w-auto lg:w-1/5 sm:text-center"><a class="text-2xl text-gray-900 hover:text-gray-700" href="/">Kelvin</a></div>
+
+        <div class="navbar-menu lg:order-3 lg:block w-full lg:w-2/5 lg:text-right">
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/">Home</a>
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/posts">Blog</a>
+        </div>
+      </nav>
+    </div>
+</div>
+
+
+    <div class="container mx-auto">
+        <div class="flex">
+            <div class="w-3/3 min-w-full px-1">
+                <div class="flex items-center">
+                    <div class="w-1/5 pt-4">
+                        
+                        <a href="/2014/05/2014-05-21_there-is-no-tdd-debate/">Previous article</a>
+                        
+                    </div>
+                    <div class="w-3/5">
+                        <h1 class="mt-8 text-center text-3xl text-blue-600">
+                            ETags With Laravel Filters
+                        </h1>
+                    </div>
+                    <div class="w-1/5 pt-4 text-right">
+                        
+                        <a href="/2014/06/2014-06-04_reminders-with-ubuntu/">Next article</a>
+                        
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="post-body h-full py-8 bg-white border-t">
+                        <p>ETags PHONE HOME?! No. So what are ETags? Wikipedia has this to say:</p>
+<p>{% blockquote %}
+The ETag or entity tag is part of <a href="http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">HTTP</a>, the protocol for the <a href="http://en.wikipedia.org/wiki/World_Wide_Web">World Wide Web</a>. It is one of several mechanisms that HTTP provides for <a href="http://en.wikipedia.org/wiki/Web_cache">web cache</a> validation, and which allows a client to make conditional requests. This allows caches to be more efficient, and saves bandwidth, as a web server does not need to send a full response if the content has not changed. ETags can also be used for <a href="http://en.wikipedia.org/wiki/Optimistic_concurrency_control">optimistic concurrency control</a> as a way to help prevent simultaneous updates of a resource from overwriting each other.
+{% endblockquote %}</p>
+<!-- more -->
+<p>Often my wife will call me up and ask me to read her the grocery list because she forgot it. So I waddle over to the refrigerator and start reading off the list which can take several minutes if it’s large. Once she has this, she is done. In this case, I am the server, she is the client. Now imagine if my wife called me up 2 minutes later and asked the same question? Would I go back to the refrigerator and spend another 5 minutes reading off a list? <strong>No, I’d tell my wife:</strong></p>
+<p><span style="text-align: center; font-size: 1.5em;">304 - Not Modified.</span></p>
+<p>The grocery list hasn’t changed in the last two minutes. There is no reason to read it off again. <em>But there is a problem.</em> I can’t just ignore the fact that my wife is calling me again by instantly hanging up on her just because the list hasn’t changed.</p>
+<ul>
+<li>Maybe she lost the list?</li>
+<li>Maybe she wants to verify the list hasn’t changed?</li>
+<li>Maybe the dog ate her list?</li>
+<li>Maybe she just wants to say hi?</li>
+</ul>
+<p>This is a list we are talking about. Things are written in order. Perhaps she could just tell me the last thing on her list and if it matches the last item on mine then we are good to go. Perhaps we could also compare the number of items in the list.</p>
+<p>Or we could use an ETag.</p>
+<p>Let’s switch context over to the world wide web. If I send some html, json or xml to a client then if they ask for the same page again within a “time-frame” I am just going to tell them to use the data they already have in front of them.</p>
+<p>In the above example we used “time” as a factor for our ETag. The grocery list isn’t going to change every hour. We might update it a few times throughout the week. The combination of current date + the resource (we will use url) becomes the entity we are tagging.</p>
+<p>When the server and client have to communicate, it is costing time (and time is money) to both parties involved.</p>
+<ol>
+<li>The server has to spend time conjuring up data for the client.</li>
+<li>The client has to spend time capturing the data sent from the server.</li>
+</ol>
+<p>Let’s look at how we can mitigate and reduce the amount of time for both of the parties involved.</p>
+<p>The server does not have to re-process the request. The client and server both save on bandwidth which costs money for both the client and server. Plenty of hosting companies charge for bandwidth and some ISPs too, especially on mobile devices. Let’s look at some code.</p>
+<pre><code>Route::group(['before' =&gt; 'cached.request', 'after' =&gt; 'cached.response'], function()
+{
+	Route::get('/', function()
+	{
+		sleep(5);
+		return Response::json(array('test' =&gt; 'some data that takes a while to return'));
+	});
+});
+
+Route::filter('cached.request', 'CachingFilter@before');
+Route::filter('cached.response', 'CachingFilter@after');
+</code></pre>
+<p>This code is sleeping for 5 seconds and then we could send a big chunk of data to the client. I’m just doing this sleep to show that on the next page refresh you will see results instantly because the server is responding with a 304. What does the CachingFilter look like? Let’s take a look.</p>
+<pre><code>class CachingFilter
+{
+	/**
+	 * Create the entity we will be searching etag for
+	 */
+	protected function entity($request)
+	{
+		return $request-&gt;url() . '-' . with(new DateTime)-&gt;format('d');
+	}
+
+	/**
+	 * Should be run before routes are executed
+	 * Will abort if etag match is found
+	 */
+	public function before($route, $request)
+	{
+		$entity = $this-&gt;entity($request);
+
+		$etag = new Etag($entity, $request-&gt;getEtags());
+
+		if ($etag-&gt;isValid())
+		{
+			App::abort(304);
+		}
+	}
+
+	/**
+	 * Should be run after a route is executed
+	 * Creates a new etag for this response content
+	 */
+	public function after($route, $request, $response)
+	{
+		$entity = $this-&gt;entity($request);
+
+		$etag = new Etag($entity, $request-&gt;getEtags());
+
+	 	$response-&gt;setEtag($etag-&gt;key());
+	}
+}
+</code></pre>
+<p>Finally we will want to see what this Etag class is doing. It has two methods. One fetches the key for us. The other method will tell us if the etag is still valid or not.</p>
+<pre><code>class Etag
+{
+	public function __construct($entity, $etags)
+	{
+		$this-&gt;entity = $entity;
+		$this-&gt;etags = $etags;
+	}
+	/**
+	 * Create an etag cached for given request and response.
+	 *
+	 * @return  void
+	 */
+	public function key()
+	{
+		return md5($this-&gt;entity);
+	}
+
+	/**
+	 * Does the browser have an Etag stored for this request?
+	 */
+	public function isValid()
+	{
+		$key = $this-&gt;key();
+
+		$etag = str_replace('&quot;', '', $this-&gt;etags);
+
+		return $etag &amp;&amp; $etag[0] == $key;
+	}
+}
+</code></pre>
+<p>It’s important to note here that this only targets 1 client at a time. This type of client-side caching is useful for when the same url (resource) provides different content for different users. Imagine if you went to <code>/users/me</code> and saw someone else’s page?</p>
+<p>However, in the case were you are fetching a specific set of entities then you might utilize database caching and Etags. The page <code>/pages/how-i-met-your-mother</code> is likely to be the same for all users of the system. Unfortunately this approach still requires the Laravel application to be booted so it will never be as fast as just serving a static html file.</p>
+
+                    </div>                        
+                </div>
+
+                <div class="text-right">
+                    <div>post by Kelvin on 05/23/2014</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="disqus_thread"></div>
+
+        <script>
+            var disqus_shortname = '';
+            var disqus_url = 'def246.com//2014/05/2014-05-23_etags-with-laravel-filters/';
+          
+            (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//go.disqus.com/embed.js';
+
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+
+    </div>
+</body>
+</html>

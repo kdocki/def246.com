@@ -1,0 +1,264 @@
+<html>
+    <head>
+        <title>Kelvin</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+
+<link rel="stylesheet" type="text/css" href="/assets/site.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather" rel="stylesheet">
+<link rel="stylesheet" href="/assets/highlight/styles/default.css">
+<script src="/assets/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script>
+  if (location.hostname != "def246.com") {
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+  ':35729/livereload.js?snipver=1"></' + 'script>')
+  }
+</script> 
+
+        <meta name="author" content="Kelvin">
+        <meta name="description" content="What?
+I made this a long time ago to experiment with css, sprite images and object oriented prototyping in JavaScript. It tracks your mouse movement and assigns a proper section of the sprite depending on mouse location.
+">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Nostalgia with CSS Sprites">
+        <meta property="og:url" content="http://def246.com/2012/03/2012-03-03_nostalgia-with-css-sprites/">
+        <meta property="og:site_name" content="def246">
+        <meta property="og:description" content="What?
+I made this a long time ago to experiment with css, sprite images and object oriented prototyping in JavaScript. It tracks your mouse movement and assigns a proper section of the sprite depending on mouse location.
+">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Nostalgia with CSS Sprites">
+        <meta name="twitter:description" content="What?
+I made this a long time ago to experiment with css, sprite images and object oriented prototyping in JavaScript. It tracks your mouse movement and assigns a proper section of the sprite depending on mouse location.
+">
+    </head>
+<body>
+
+    <div class="bg-gray-200">
+  <div class="container mx-auto px-4">
+      <nav class="flex flex-wrap items-center justify-between p-4">
+        <div class="lg:order-2 w-auto lg:w-1/5 sm:text-center"><a class="text-2xl text-gray-900 hover:text-gray-700" href="/">Kelvin</a></div>
+
+        <div class="navbar-menu lg:order-3 lg:block w-full lg:w-2/5 lg:text-right">
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/">Home</a>
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/posts">Blog</a>
+        </div>
+      </nav>
+    </div>
+</div>
+
+
+    <div class="container mx-auto">
+        <div class="flex">
+            <div class="w-3/3 min-w-full px-1">
+                <div class="flex items-center">
+                    <div class="w-1/5 pt-4">
+                        
+                        <a href="/2012/03/2012-03-02_henry-markram-simulating-the-brain/">Previous article</a>
+                        
+                    </div>
+                    <div class="w-3/5">
+                        <h1 class="mt-8 text-center text-3xl text-blue-600">
+                            Nostalgia with CSS Sprites
+                        </h1>
+                    </div>
+                    <div class="w-1/5 pt-4 text-right">
+                        
+                        <a href="/2012/03/2012-03-12_programming-contest-questions/">Next article</a>
+                        
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="post-body h-full py-8 bg-white border-t">
+                        <h3>What?</h3>
+<p>I made this a long time ago to experiment with css, sprite images and object oriented prototyping in JavaScript. It tracks your <em>mouse movement</em> and assigns a proper section of the sprite depending on mouse location.</p>
+<!-- more --> 
+<center><iframe src="/media/nostalgia-with-css-sprites/sprite.html" height="250px" scrolling="no" width="100%" style="border: none;"></iframe></center>
+<h3>Why?</h3>
+<p>I’m organizing my computer files (Spring cleaning) and I stumbled upon this thing I made back in 2008 (4 years ago) and it cracked me up. So I decided to share the laughter.</p>
+<h3>How?</h3>
+<p>If you like your whiskey straight from the bottle then I won’t bore you with lots of details and you can skip straight to the <a href="/media/nostalgia-with-css-sprites/sprite.zip">source code</a> or the <a href="/media/nostalgia-with-css-sprites/index.html">index.html</a>.</p>
+<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;./sprite.css&quot; /&gt;
+&lt;script src=&quot;jquery-1.4.2.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;animate-sprites.js&quot;&gt;&lt;/script&gt;
+
+&lt;div id=&quot;sprite-container&quot;&gt;
+&lt;div id=&quot;sprite1-border&quot; class=&quot;sprite-border&quot;&gt;&lt;div id=&quot;sprite1&quot; class=&quot;sprite&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div id=&quot;sprite2-border&quot; class=&quot;sprite-border&quot;&gt;&lt;div id=&quot;sprite2&quot; class=&quot;sprite&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div id=&quot;sprite3-border&quot; class=&quot;sprite-border&quot;&gt;&lt;div id=&quot;sprite3&quot; class=&quot;sprite&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    loadSprite('#sprite1');
+    loadSprite('#sprite2');
+    loadSprite('#sprite3');
+&lt;/script&gt;
+</code></pre>
+<p>In the first attempt I wrote, I set background positions using javascript instead of css. This was slow, the code was more complicated and it was restrictive because my sprite images had to follow a strict width and height pattern.</p>
+<p>So in the second version (what you see here), I simplified the javascript greatly by creating a column and row for each sprite in css. Not only did this work better and faster, it allowed me to statically set sprite locations and abstract locations from the javascript coding. Just another case where I should have <a href="http://en.wikipedia.org/wiki/KISS_principle">KISS</a>’ed. Below is a paste bin of the two major components of what you see here. First the <a href="/media/nostalgia-with-css-sprites/sprite.css">sprite.css</a></p>
+<pre><code>.sprite {
+        background-image: url(&quot;./sprite-small.png&quot;);
+        background-repeat : no-repeat ;
+        background-position: -750px top;
+        width : 150px ;
+        height : 112px ;
+}
+
+.sprite-container { position: relative; }
+.sprite-border {
+        border: 1px solid #4C3C1B;
+        padding: 5px;
+        background-color: #EFEECB;
+        width : 150px;
+        height : 112px;
+        position: absolute;
+}
+
+#sprite1-border { z-index: -1; top: 100px;      left: 30px; }
+#sprite2-border { z-index: -2; top: 30px; left: 150px;}
+#sprite3-border { z-index: -3; }
+
+
+.row0.col0 { background-position: left top; }
+.row0.col1 { background-position: -150px top; }
+.row0.col2 { background-position: -300px top; }
+.row0.col3 { background-position: -450px top; }
+.row0.col4 { background-position: -600px top; }
+.row0.col5 { background-position: -750px top; }
+.row0.col6 { background-position: -900px top; }
+.row0.col7 { background-position: -1050px top; }
+
+.row1.col0 { background-position: left -112px; }
+.row1.col1 { background-position: -150px -112px; }
+.row1.col2 { background-position: -300px -112px; }
+
+... omitted for brevity ...
+
+</code></pre>
+<p>And here is the <a href="/media/nostalgia-with-css-sprites/animate-sprites.js">animate-sprite.js</a> to go along with it.</p>
+<pre><code>var totalNumOfImages = 64;
+var sprite = new Array();
+var oldClass = new Array();
+var xCenter = new Array();
+var yCenter = new Array();
+
+function loadSprite(id, x, y)
+{
+	sprite.push(id);
+	oldClass.push(&quot;&quot;);
+
+	if (x == undefined) x = -1;    // -1 means we calculate center each pass
+	if (y == undefined) y = -1;    // in case the center of picture changes
+	// for example, a moving sprite or width changes
+
+	xCenter.push(x);
+	yCenter.push(y);
+
+	$( document ).mousemove(animateSprites);
+}
+
+function animateSprites(event)
+{
+	var x = event.pageX;
+	var y = event.pageY;
+
+	for ( var i in sprite )
+	{
+		var c = getSpriteClass(sprite[i], i, x, y);
+		setSpriteClass(sprite[i], i, c);
+	}
+}
+
+function setSpriteClass(s, i, c)
+{
+	if (oldClass[i] != &quot;&quot;) $(s).removeClass(oldClass[i]);
+	$(s).addClass(c);
+	oldClass[i] = c;
+}
+
+function getSpriteClass(s, e, x, y)
+{
+	var degrees = getSpriteDegree(s, e, x, y);
+	var degreeOffset = Math.abs(45 - degrees % 90);
+	var numPicsPerQuad = Math.sqrt(totalNumOfImages) * 2;
+
+	if (degreeOffset == 0) degreeOffset = 1;                                                                                                                                                                 // gets rid of a glitch at 45 degree angles
+	var num = Math.floor(numPicsPerQuad - numPicsPerQuad * degreeOffset / 45);
+
+	var row = Math.floor(num / (Math.sqrt(numPicsPerQuad)));
+	var col = num % Math.sqrt(numPicsPerQuad);
+
+	if (degrees &lt;= 90) col = col + Math.sqrt(numPicsPerQuad);
+	else if (degrees &gt; 180 &amp;&amp; degrees &lt;= 270) row = row + Math.sqrt(numPicsPerQuad);
+	else if (degrees &gt; 270 &amp;&amp; degrees &lt; 360)
+	{
+		row = row + Math.sqrt(numPicsPerQuad);
+		col = col + Math.sqrt(numPicsPerQuad);
+	}
+	return &quot;row&quot; + row + &quot; col&quot; + col;
+}
+
+function getSpriteDegree(s, e, x, y)
+{
+	var cx = xCenter[e];
+	var cy = yCenter[e];
+
+	if (cx == -1) cx = $(s).offset().left + $(s).width() / 2;
+	if (cy == -1) cy = $(s).offset().top + $(s).height() / 2;
+
+	var dx = x - cx;
+	var dy = y - cy;
+
+	// find the angle of mouse pointer relavant to our picture
+	var degrees = 0;
+	if (dx != 0) degrees = Math.abs(Math.floor(Math.atan(dy/dx) * 180/Math.PI));
+
+	if (x &gt;= cx)
+	{
+		if (y &gt; cy &amp;&amp; degrees != 0) degrees = 360 - degrees;
+	}
+	else
+	{
+		if (y &lt; cy) degrees = 180 - degrees;
+		if (y &gt;= cy)     degrees = 180 + degrees;
+	}
+
+	return degrees;
+}
+</code></pre>
+
+                    </div>                        
+                </div>
+
+                <div class="text-right">
+                    <div>post by Kelvin on 03/03/2012</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="disqus_thread"></div>
+
+        <script>
+            var disqus_shortname = '';
+            var disqus_url = 'def246.com//2012/03/2012-03-03_nostalgia-with-css-sprites/';
+          
+            (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//go.disqus.com/embed.js';
+
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+
+    </div>
+</body>
+</html>

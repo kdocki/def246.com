@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <title>Kelvin</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+
+<link rel="stylesheet" type="text/css" href="/assets/site.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather" rel="stylesheet">
+<link rel="stylesheet" href="/assets/highlight/styles/default.css">
+<script src="/assets/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script>
+  if (location.hostname != "def246.com") {
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+  ':35729/livereload.js?snipver=1"></' + 'script>')
+  }
+</script> 
+
+        <meta name="author" content="Kelvin">
+        <meta name="description" content="Lately, I was given the task to write some php classes with Laravel that make use of Zencoder api. The way Zencoder works is I create a new encoding job and during that request I tell Zencoder emails and url locations to send notifications when that job is finished.
+">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Access localhost:8000 Anywhere (ngrok)">
+        <meta property="og:url" content="http://def246.com/2014/08/2014-08-27_access-localhost-8000-from-anywhere/">
+        <meta property="og:site_name" content="def246">
+        <meta property="og:description" content="Lately, I was given the task to write some php classes with Laravel that make use of Zencoder api. The way Zencoder works is I create a new encoding job and during that request I tell Zencoder emails and url locations to send notifications when that job is finished.
+">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Access localhost:8000 Anywhere (ngrok)">
+        <meta name="twitter:description" content="Lately, I was given the task to write some php classes with Laravel that make use of Zencoder api. The way Zencoder works is I create a new encoding job and during that request I tell Zencoder emails and url locations to send notifications when that job is finished.
+">
+    </head>
+<body>
+
+    <div class="bg-gray-200">
+  <div class="container mx-auto px-4">
+      <nav class="flex flex-wrap items-center justify-between p-4">
+        <div class="lg:order-2 w-auto lg:w-1/5 sm:text-center"><a class="text-2xl text-gray-900 hover:text-gray-700" href="/">Kelvin</a></div>
+
+        <div class="navbar-menu lg:order-3 lg:block w-full lg:w-2/5 lg:text-right">
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/">Home</a>
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/posts">Blog</a>
+        </div>
+      </nav>
+    </div>
+</div>
+
+
+    <div class="container mx-auto">
+        <div class="flex">
+            <div class="w-3/3 min-w-full px-1">
+                <div class="flex items-center">
+                    <div class="w-1/5 pt-4">
+                        
+                        <a href="/2014/07/2014-07-23_laravel-blade-var-extension/">Previous article</a>
+                        
+                    </div>
+                    <div class="w-3/5">
+                        <h1 class="mt-8 text-center text-3xl text-blue-600">
+                            Access localhost:8000 Anywhere (ngrok)
+                        </h1>
+                    </div>
+                    <div class="w-1/5 pt-4 text-right">
+                        
+                        <a href="/2014/09/2014-09-09_searching-files-with-laravel/">Next article</a>
+                        
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="post-body h-full py-8 bg-white border-t">
+                        <p>Lately, I was given the task to write some php classes with Laravel that make use of Zencoder api. The way Zencoder works is I create a new encoding job and during that request I tell Zencoder emails and url locations to send notifications when that job is finished.</p>
+<!-- more -->
+<p>So if I make a Guzzle request to Zencoder</p>
+<pre><code>$data = [
+	'input' : $fileName,
+	'notifications': [
+		'foo@bar.com',						// email when finished
+		url('/api/notifications/zencoder'), // post finished job
+	],
+];
+
+$client = new GuzzleHttp\Client();
+
+$response = $client-&gt;get('https://app.zencoder.com/api/v2/jobs', [
+	'headers' =&gt; ['Zencoder-Api-Key' =&gt; $apiKey],
+	'body' =&gt; json_encode($data),
+]);
+</code></pre>
+<p>Once this job completes encoding the video, I should expect to get a notification sent to my email address and also Zencoder will send a POST with the job output data to my <code>$callBackUrl</code>. However, <code>http://localhost:8000/api/notifications/zencoder</code> is not a valid url to ping so Zencoder ends up throwing me a HTTP error - 422 Unaccessible Entity.</p>
+<p>Now I can use <a href="https://ngrok.com/">ngrok</a> to create a proxy site for my local server. When developing I don’t use apache or nginx, rather I just serve files using</p>
+<pre><code>php artisan serve
+</code></pre>
+<p>This gets me a site up I can access on <a href="http://localhost:8000">http://localhost:8000</a>. The next part is to just run</p>
+<pre><code>ngrok 8000
+</code></pre>
+<p>I’m ready to go now. This gives me a site like</p>
+<p><a href="http://773andwlq13.ngrok.com">http://773andwlq13.ngrok.com</a></p>
+<p>Now I can <code>dd(Input::all())</code> in the controller for the route <code>/api/notifications/zencoder</code> and see what sample data I should expect from Zencoder. Later I found this in the docs but it’s nice to be able to test the real deal.</p>
+<p>This also gives programmers the ability to show clients the real site without setting up a staging server. It’s super easy. ngrok is what I settled with but there are other applications that accomplish the same thing. Here is a list.</p>
+<ul>
+<li><a href="https://ngrok.com/">ngrok</a></li>
+<li><a href="https://pagekite.net/">PageKite</a></li>
+<li><a href="https://forwardhq.com/">Forward</a></li>
+<li><a href="http://proxylocal.com/">ProxyLocal</a></li>
+<li><a href="http://www.browserstack.com/">BrowserStack</a></li>
+</ul>
+
+                    </div>                        
+                </div>
+
+                <div class="text-right">
+                    <div>post by Kelvin on 08/27/2014</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="disqus_thread"></div>
+
+        <script>
+            var disqus_shortname = '';
+            var disqus_url = 'def246.com//2014/08/2014-08-27_access-localhost-8000-from-anywhere/';
+          
+            (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//go.disqus.com/embed.js';
+
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+
+    </div>
+</body>
+</html>

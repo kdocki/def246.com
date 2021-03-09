@@ -1,0 +1,189 @@
+<html>
+    <head>
+        <title>Kelvin</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+
+<link rel="stylesheet" type="text/css" href="/assets/site.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather" rel="stylesheet">
+<link rel="stylesheet" href="/assets/highlight/styles/default.css">
+<script src="/assets/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script>
+  if (location.hostname != "def246.com") {
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+  ':35729/livereload.js?snipver=1"></' + 'script>')
+  }
+</script> 
+
+        <meta name="author" content="Kelvin">
+        <meta name="description" content="So you’ve got a new project you want to build and you’re going to pick a front-end javascript framework. First make sure you absolutely need the single page application. Chances are you can do without it. However, let’s say you want to do a lot of javascript client-side intensive stuff, then how should you decide what framework to use? I’ve been in this same scenario myself multiple times, so I decided to blog about it. I have a love-hate relationship with all 3 of these frameworks because I have used all of them on work and personal projects. I only focus on client side frameworks here, not server side, e.g. meteor, sailsjs, express. I only included the frameworks I have the most experience with.
+">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Which Javascript framework to use? Angular vs. Ember vs. Marionette">
+        <meta property="og:url" content="http://def246.com/2014/04/2014-04-17_which-javascript-framework-to-use-angular-vs-ember-vs-marionette/">
+        <meta property="og:site_name" content="def246">
+        <meta property="og:description" content="So you’ve got a new project you want to build and you’re going to pick a front-end javascript framework. First make sure you absolutely need the single page application. Chances are you can do without it. However, let’s say you want to do a lot of javascript client-side intensive stuff, then how should you decide what framework to use? I’ve been in this same scenario myself multiple times, so I decided to blog about it. I have a love-hate relationship with all 3 of these frameworks because I have used all of them on work and personal projects. I only focus on client side frameworks here, not server side, e.g. meteor, sailsjs, express. I only included the frameworks I have the most experience with.
+">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Which Javascript framework to use? Angular vs. Ember vs. Marionette">
+        <meta name="twitter:description" content="So you’ve got a new project you want to build and you’re going to pick a front-end javascript framework. First make sure you absolutely need the single page application. Chances are you can do without it. However, let’s say you want to do a lot of javascript client-side intensive stuff, then how should you decide what framework to use? I’ve been in this same scenario myself multiple times, so I decided to blog about it. I have a love-hate relationship with all 3 of these frameworks because I have used all of them on work and personal projects. I only focus on client side frameworks here, not server side, e.g. meteor, sailsjs, express. I only included the frameworks I have the most experience with.
+">
+    </head>
+<body>
+
+    <div class="bg-gray-200">
+  <div class="container mx-auto px-4">
+      <nav class="flex flex-wrap items-center justify-between p-4">
+        <div class="lg:order-2 w-auto lg:w-1/5 sm:text-center"><a class="text-2xl text-gray-900 hover:text-gray-700" href="/">Kelvin</a></div>
+
+        <div class="navbar-menu lg:order-3 lg:block w-full lg:w-2/5 lg:text-right">
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/">Home</a>
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/posts">Blog</a>
+        </div>
+      </nav>
+    </div>
+</div>
+
+
+    <div class="container mx-auto">
+        <div class="flex">
+            <div class="w-3/3 min-w-full px-1">
+                <div class="flex items-center">
+                    <div class="w-1/5 pt-4">
+                        
+                        <a href="/2014/03/2014-03-20_serve-then-remove-temporary-file-using-laravel/">Previous article</a>
+                        
+                    </div>
+                    <div class="w-3/5">
+                        <h1 class="mt-8 text-center text-3xl text-blue-600">
+                            Which Javascript framework to use? Angular vs. Ember vs. Marionette
+                        </h1>
+                    </div>
+                    <div class="w-1/5 pt-4 text-right">
+                        
+                        <a href="/2014/05/2014-05-15_my-standing-desk/">Next article</a>
+                        
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="post-body h-full py-8 bg-white border-t">
+                        <p>So you’ve got a new project you want to build and you’re going to pick a front-end javascript framework. First make sure you absolutely need the single page application. Chances are you can do without it. However, let’s say you want to do a lot of javascript client-side intensive stuff, then how should you decide what framework to use? I’ve been in this same scenario myself multiple times, so I decided to blog about it. I have a love-hate relationship with all 3 of these frameworks because I have used all of them on work and personal projects. I only focus on client side frameworks here, not server side, e.g. meteor, sailsjs, express. I only included the frameworks I have the most experience with.</p>
+<!-- more -->
+<h3>Angular</h3>
+<hr>
+<div class="row"><div class="col-md-6">
+**Love**
+<p><strong>If I’ve already got a server side page built and I just want to fancy up the UX</strong> with some dynamic features, e.g. - adding a new text box when I push a button, this is super simple with ng bindings.</p>
+<p><strong>Two way data-binding is pretty awesome.</strong> If we couple this with <code>$resource</code> or <code>$http</code> then we have simple model-view layer with persistence with very little effort.</p>
+<p><strong>Dependency injection keeps the code nice and clean</strong> but it sucks that you end up having to attach a bunch of extra strings to your controllers just so you can minify code and not break things.</p>
+</div><div class="col-md-6">
+**Hate**
+<p><strong>Creating a custom directive for an existing jquery plugin.</strong> I can go download a jquery plugin like jquery.colorwheel.js and have this thing up and running in minutes. But not if I have to go write an angular directive for it - I already deal with too many 3rd party plugins as it is without having to write my own angular interfaces for them.</p>
+<p><strong>Routing in angular is a pain to me.</strong> I don’t like the ngRoute service and I have to go study the docs just for routes. Angular seems to work better for me when I let the server-side tackle routing.</p>
+<p><strong>Obtrusive javascript is somewhat of a code smell to me.</strong> Sure it is easy to use but it still couples the presentation layer (html page) with logic. If you think about it, <code>&lt;button ng-click=&quot;foobar&quot;&gt;</code> and <code>&lt;button onclick=&quot;foobar&quot;&gt;</code> are both still obtrusive.</p>
+</div></div>
+<h3>Ember</h3>
+<hr>
+<div class="row"><div class="col-md-6">
+**Love**
+<p><strong>How easy it is to get going.</strong> For me, Ember comes the closest to behaving like a server-side MVC framework. You have routes, controllers, views, models, etc.</p>
+<p><strong>Naming conventions are very nice.</strong> If you follow the standard naming conventions which are very similar to Rails, then it makes coding with Ember so much easier.</p>
+<p><strong>Handlebar templating is what I primarily use.</strong> However what if I wanted to switch this to a different templating language? I hear HTMLbars will solve a lot of problems with Handlebars.</p>
+<p><strong>Chrome dev tools integration is very very awesome.</strong> It helps me speed up troubleshooting and I have a clear picture of what is going on inside my application just be inspecting chrome tools. Angular has one of these tools as well, but I haven’t used it all that much.</p>
+<p>Tom Dale and Yehuda Katz are programming heroes of mine. We all have developers that we listen closely to what they have to say. These guys are very opinionated about their development styles</p>
+<p><strong>Testing in ember is not an after-thought.</strong> The guys have documentation and examples. I have played with karma, jasmine and phantomjs and a framework that promotes BDD or TDD is pretty awesome in my opinion. The guys at angular use testacular so they get + points for that.</p>
+<p><strong>Ember community in IRC (<a href="http://irc.freenode.net">irc.freenode.net</a> #emberjs) is very helpful.</strong> I have found that #emberjs has more activity than #angular and #documentcloud and these guys are pretty helpful.</p>
+<p><strong>Ember is very promising.</strong> To me this framework seems to be the most promising. It still has a lot of things to figure out and is still a bit unstable but with HTMLbars on the rise and the level of awareness this framework has gotten in the past year, I know Ember is just going to keep getting better and better.</p>
+</div><div class="col-md-6">
+**Hate**
+<p><strong>My biggest complaint is how difficult it is to bring in a jquery plugin.</strong> This probably needs some explanation. Let’s use jquery.chosen plugin as an example.</p>
+<p><a href="http://emberjs.jsbin.com/xiguxemu/3/edit">First, checkout this jsbin example I made using chosen plugin.</a></p>
+<p>Like many other jquery plugins, the chosen plugin manipulates the DOM which ultimately means that we can’t call <code>$('element').chosen()</code> until after</p>
+<ol>
+<li>the models have been fetched</li>
+<li>and the handlebar template rendered into DOM</li>
+</ol>
+<p>So at what stage do you call the chosen plugin in Ember?  In Marionette, this is trivial as we have this nifty little hook called <code>onRender</code> where we can setup a jquery plugin once a view has rendered.</p>
+<p>Scourging through documentation and stackoverflow pages and pestering people on IRC, I finally find there is a function called <code>didInsertElement</code> along with</p>
+<p><code>Ember.run.scheduleOnce('afterRender',this, this.onRender)</code></p>
+<p>which seem to work great - <strong>except if you don’t change routes this never executes!</strong> This is all very confusing to me.</p>
+<p>After some searching I find some options from <a href="http://www.justinball.com/2013/10/07/using-chosen-with-ember.js/">some random blog on the internet</a>. On top of this, because Ember junks up your DOM with &lt;script&gt; tags then it later pollutes the DOM so you have to modify the chosen.js source code to ignore that. Now I decide I want the ability to bring in custom tags so I need to switch to select2.js and I am in the same boat again. <em>Lots of frustration here just to bring in a simple jquery plugin.</em></p>
+<p>Lastly, I could just pray that some poor unforunately soul has had this same exact frustration has me and created a special handlebars helper or something (<a href="http://addepar.github.io/#/ember-widgets/select">which sure enough one exists</a>).</p>
+<p>Having a simple process like <code>onRender</code> that is called anytime a view and using an unobtrustive templating engine like HTMLbars will be a game changer for me. We have to remember that single page applications are very likely to have lots of 3rd party plugins in them.</p>
+<p>If you have a jquery plugin that messes with the DOM (which most do), then chances are you are going to bang your head against the wall at least once trying to get Ember to work with it.</p>
+<p><strong>Putting logic in handlebars views makes things difficult.</strong> This isn’t really Ember’s fault but it is pretty easy to create some crazy wicked nested views full of #if #else and eventually you find yourself tracing through handlebar templates and cursing it simultaneously.</p>
+<p><strong>Emberscript pre-compliation is a custom fork of coffeescript and can be buggy.</strong> Writing annotations just to save several lines of code and then running through several stages of pre-compliation is not my ideal workflow for writing javascript applications. I prefer a generator over annotations any day because:</p>
+<p><span class="lg"><em>I prefer 20 lines of simple, readable code over 5 lines of complex code.</em></span></p>
+</div></div>
+<h3>Marionette</h3>
+<hr>
+<div class="row"><div class="col-md-6">
+**Love**
+<p><strong>Composite style architecture can scale.</strong> You can write 100k line of code applications with Marionette. Modules which can be dynamically included/excluded, a lot like operating system. Derick Bailey is another one of my programming heroes and knows the importance of architecture.</p>
+<p><strong>Marionette stays out of my way.</strong> It is probably the easiest framework for me to bring in other 3rd party plugins because it doesn’t make me adhere to a scope like angular and I have complete control over when views are rendered.</p>
+<p><strong>Focused by design.</strong> What does this even mean? It means that I don’t have to shift through pages of documentation to understand what Marionette and Backbone can do. The docs are all on a single github page and can be read front-to-back in probably less than an hour.</p>
+<p>So what does Marionette do? I’ve made a list.</p>
+<ol>
+<li>Organize your views into either <code>Regions</code>, <code>Layouts</code>, <code>ItemViews</code>, <code>CompositeViews</code> or <code>CollectionViews</code>.</li>
+<li>Organize your application so you can bubble up events from <code>views -&gt; controllers -&gt; application</code>.</li>
+<li>Organize event handling with Backbone.wreqr for application-wide message bus</li>
+</ol>
+<p>Simple right? Marionette has no opinion about your model/persistence later and relies completely on Backbone for this. There are a lot of things in Marionette you will have to go find elsewhere, like how to handle promises, routing and persistence. You won’t find things like <em>two-way data-binding</em> or <em>computed properties</em> out of the box with Marionette.</p>
+<p>Fortunately, there are Backbone plugins out there for these types of features. <a href="https://github.com/kdocki/backbone.model.computed">Heck I even wrote one myself</a>.</p>
+<p><strong>Brian Mann’s videos show you how to make an enterprise worthy application.</strong> When I was first learning Marionette I was confused. I didn’t know how it should be used, and then I saw these videos and it improved not only my Marionette skills but my overall performance as a developer in Laravel and other frameworks.</p>
+</div><div class="col-md-6">
+**Hate**
+<p><strong>Composite style architecture is complex.</strong> There is a reason people like MVC frameworks. They know to find their models, they can view <code>app/models</code>. To find controllers, <code>app/controllers</code>. Marionette has no structure except for that you give it. Creating a new Marionette single page application can be a daunting task to start with just because you have to organize your code with intent. <em>You don’t just drop a file in models/users.js but instead  face the challenge of how to broadcast the users entity?</em></p>
+<p><strong>Routing as an afterthought is something <em>Derick Bailey</em> and <em>Brian Mann</em> evangelize.</strong> I can’t say I agree 100% because routing is an essential part of single page applications. The reason why this bothers me is that when you rely solely on events to do your routing then it takes a <span class="lg">lot more</span> time.</p>
+<p>For example, if you have route to #users and write a link <code>&lt;a href=&quot;#users&quot;&gt;Users&lt;/a&gt;</code> in your navigation then you are done. Simple right? But in Marionette the preffered thinking seems to be that we should</p>
+<ol>
+<li>listen to an event on <code>&lt;a class=&quot;js-clicked&quot;&gt;Users&lt;/a&gt;</code> DOM element inside of the users’ <code>Item</code>/<code>Collection</code>/<code>Composite</code> View</li>
+<li>bubble the event up using a trigger to parent controller.</li>
+<li>parent controller listens for triggers on child views.</li>
+<li>the controller would handle a trigger from child view in a function and take necessary action, which would to be call some event like <code>App.vent.trigger('!route:to:users')</code></li>
+</ol>
+<p>If none of that makes sense to you then you aren’t alone. Basically, it is a lot of work for something as simple as routing.</p>
+<p><strong>Testing in Marionette can be wearisome.</strong> Unlike Ember, which has the Chrome dev tools integration, in order to test I have to set breakpoints and follow execution and that can prove to be difficult since there are many events flying around everywhere. Often times I find myself just doing <code>console.log</code>. Also I have tried using karma/mocha with Marionette and because the <code>Marionette.Application</code> is a singleton it is hard to test in isolation.</p>
+</div></div>
+<h3>So which one should I use?</h3>
+<p>Depending on the application I am trying to build I would pick one of these three.</p>
+<p><strong>When to use Angular?</strong> If I’m just trying to add a simple UX feature that I want some two-way data binding then I might bring in angularjs. But I wouldn’t want to do a lot of routing and client-side templating with it. Another thing I wouldn’t want to do is create custom directive. This might work well for teams that are strictly dedicated to Angular, but our team definitely does not fit that bill.</p>
+<p><strong>When to use Ember?</strong> If I want to create a more MVC looking front-end client with lots of routing then Ember would be my choice. Ember is great to start prototyping with. It is really fast to get started with but as the application grows, if you are not careful, then it will become increasingly more difficult to work with. Also be prepared to read a lot of docs, blog posts, stack overflows and watch a lot of videos <strong>because Ember is the richest (feature-wise) of these 3 frameworks</strong> and will take a while for you to become comfortable with. An example of this is Ember model (DS data store). You can define your has many/belongs to relationships on the client side if you wanted to. I’ve not found a good reason to do this yet though. Also instead of following RESTful standards it does something called side-loading so <strong>be prepared to write your own Adapter for Ember</strong> or handle data in a custom way on the server-side. Honestly, I have not done much with Ember model as you can just use plain ol’ javascript objects with Ember too. You can even use <code>Backbone.Model</code> with it.</p>
+<p><strong>When to use Marionette?</strong> You might be curious to see how the composite design pattern will work on your application but I would <strong>only pick Marionette if you (and your team) are very comfortable with javascript.</strong> If you use Marionette you should be ready to <strong>use lots of additional plugins</strong> and watch Brian Mann’s videos on a good way to organize your marionette application. You can easily bring in lots of jquery plugins without having to worry about the DOM being messed and you will know you are in complete control of your DOM because there is not a whole lot of magic going on behind the scenes with Marionette since you are having to wire up the different types of views yourself.</p>
+<p>Above all else, no matter the framework you choose, <strong>test your code</strong>. A feature rich client side architecture will need tests just like a server side architecture. This is one area Marionette seems to lack guidance. I have seen many more tutorials for Ember and Angular on testing than Marionette. But it is still possible using jasmine or mocha to crank out a test suite in all 3 of these client side frameworks. Good luck, amigos.</p>
+
+                    </div>                        
+                </div>
+
+                <div class="text-right">
+                    <div>post by Kelvin on 04/16/2014</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="disqus_thread"></div>
+
+        <script>
+            var disqus_shortname = '';
+            var disqus_url = 'def246.com//2014/04/2014-04-17_which-javascript-framework-to-use-angular-vs-ember-vs-marionette/';
+          
+            (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//go.disqus.com/embed.js';
+
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+
+    </div>
+</body>
+</html>

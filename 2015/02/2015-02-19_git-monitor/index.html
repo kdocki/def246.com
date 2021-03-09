@@ -1,0 +1,249 @@
+<html>
+    <head>
+        <title>Kelvin</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+
+<link rel="stylesheet" type="text/css" href="/assets/site.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather" rel="stylesheet">
+<link rel="stylesheet" href="/assets/highlight/styles/default.css">
+<script src="/assets/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script>
+  if (location.hostname != "def246.com") {
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+  ':35729/livereload.js?snipver=1"></' + 'script>')
+  }
+</script> 
+
+        <meta name="author" content="Kelvin">
+        <meta name="description" content="When you want to monitor a github repo, you can setup travis-ci, hudson or bamboo continous integration (CI) server. A problem arrises though. What if you want to run scripts on a server that is behind a firewall? The CI server may not be able to access this private server behind your protected network.
+This is where gitmon is used. We can monitor the git repository for changes and then when things do change we can run a changed script. The changed script is placed within the repository itself so developers can work with it. This changed script can email people, run bash commands, whatever you want it to do.
+">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Git Monitor">
+        <meta property="og:url" content="http://def246.com/2015/02/2015-02-19_git-monitor/">
+        <meta property="og:site_name" content="def246">
+        <meta property="og:description" content="When you want to monitor a github repo, you can setup travis-ci, hudson or bamboo continous integration (CI) server. A problem arrises though. What if you want to run scripts on a server that is behind a firewall? The CI server may not be able to access this private server behind your protected network.
+This is where gitmon is used. We can monitor the git repository for changes and then when things do change we can run a changed script. The changed script is placed within the repository itself so developers can work with it. This changed script can email people, run bash commands, whatever you want it to do.
+">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Git Monitor">
+        <meta name="twitter:description" content="When you want to monitor a github repo, you can setup travis-ci, hudson or bamboo continous integration (CI) server. A problem arrises though. What if you want to run scripts on a server that is behind a firewall? The CI server may not be able to access this private server behind your protected network.
+This is where gitmon is used. We can monitor the git repository for changes and then when things do change we can run a changed script. The changed script is placed within the repository itself so developers can work with it. This changed script can email people, run bash commands, whatever you want it to do.
+">
+    </head>
+<body>
+
+    <div class="bg-gray-200">
+  <div class="container mx-auto px-4">
+      <nav class="flex flex-wrap items-center justify-between p-4">
+        <div class="lg:order-2 w-auto lg:w-1/5 sm:text-center"><a class="text-2xl text-gray-900 hover:text-gray-700" href="/">Kelvin</a></div>
+
+        <div class="navbar-menu lg:order-3 lg:block w-full lg:w-2/5 lg:text-right">
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/">Home</a>
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/posts">Blog</a>
+        </div>
+      </nav>
+    </div>
+</div>
+
+
+    <div class="container mx-auto">
+        <div class="flex">
+            <div class="w-3/3 min-w-full px-1">
+                <div class="flex items-center">
+                    <div class="w-1/5 pt-4">
+                        
+                        <a href="/2014/10/2014-10-30_documentation-in-php/">Previous article</a>
+                        
+                    </div>
+                    <div class="w-3/5">
+                        <h1 class="mt-8 text-center text-3xl text-blue-600">
+                            Git Monitor
+                        </h1>
+                    </div>
+                    <div class="w-1/5 pt-4 text-right">
+                        
+                        <a href="/2015/03/2015-03-31_how-to-get-laravel5-app-namespace/">Next article</a>
+                        
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="post-body h-full py-8 bg-white border-t">
+                        <p>When you want to monitor a github repo, you can setup <a href="https://travis-ci.org">travis-ci</a>, <a href="http://hudson-ci.org/">hudson</a> or <a href="https://www.atlassian.com/software/bamboo">bamboo</a> continous integration (CI) server. A problem arrises though. What if you want to run scripts on a server that is behind a firewall? The CI server may not be able to access this private server behind your protected network.</p>
+<p>This is where gitmon is used. We can monitor the git repository for changes and then when things <strong>do change</strong> we can run a <em>changed</em> script. The changed script is placed within the repository itself so developers can work with it. This changed script can email people, run bash commands, whatever you want it to do.</p>
+<!-- more --> 
+<p>You can see the <a href="https://github.com/kdocki/gitmon">gitmon script on github</a>. Pull requests are welcome.</p>
+<h3>Usage</h3>
+<p>You’ll need a file that has things gitmon should do whenever the repo is updated.</p>
+<p><code>vi path/to/git/repo/.gitmon/changed</code></p>
+<pre><code>#!/bin/bash
+
+composer install
+mail bob@gmail.com &quot;it updated&quot;
+</code></pre>
+<p>Next setup a crontab job</p>
+<p><code>crontab -e</code></p>
+<pre><code>*/2 * * * * gitmon path/to/git/repo
+</code></pre>
+<h3>Bash code</h3>
+<p>Here is the script in it’s entirety.</p>
+<pre><code>#!/bin/bash
+#
+# @author Kelvin@lbm.co
+#
+# first you will need to setup a file that tells
+# gitmon what to do anytime this git repository
+# is updated
+#
+#   your/path/to/git/repo/.gitmon/changed
+#
+# next, to run script
+#
+#   ./gitmon path/to/git/repo
+#
+# lastly you'll likely want to add this to crontab
+# to run gitmon every 2 minutes to check for updates
+#
+#   crontab -e
+#   */2 * * * * gitmon path/to/git/repo
+
+
+
+########################################################
+# variables that we need for this script to work
+########################################################
+SCRIPT_DIR=&quot;$( cd &quot;$( dirname &quot;${BASH_SOURCE[0]}&quot; )&quot; &amp;&amp; pwd )&quot;
+MONITOR_DIR=&quot;$1&quot;
+MONITOR_BRANCH=&quot;HEAD&quot;
+GITMON_DIR=&quot;.gitmon&quot;
+HISTORY_FILE=&quot;$GITMON_DIR/local.commit&quot;;
+LOCK_FILE=&quot;$GITMON_DIR/running.lock&quot;;
+ONCHANGED_FILE=&quot;$GITMON_DIR/changed&quot;;
+
+
+
+#######################################################
+# show usage if there aren't any arguments from user
+#######################################################
+if [ -z &quot;$MONITOR_DIR&quot; ]; then
+  echo &quot;usage:&quot;
+  echo &quot;$0 path/to/git/repository&quot;
+  exit;
+fi
+
+
+
+########################################################
+# ensure that this directory has .git repo in it
+########################################################
+if [ ! -d &quot;$MONITOR_DIR/.git&quot; ]; then
+  echo &quot;Could not find .git in: '$MONITOR_DIR'&quot;
+  exit
+fi
+
+
+
+#######################################################
+# no point in running if we don't have onchanged file
+#######################################################
+if [ ! -f &quot;$MONITOR_DIR/$ONCHANGED_FILE&quot; ]; then
+  echo &quot;You need to create on changed script: $MONITOR_DIR/$ONCHANGED_FILE&quot;
+  exit
+fi
+
+
+########################################################
+# only run this script when lock file doesn't exist
+########################################################
+cd $MONITOR_DIR
+
+if [ -f $LOCK_FILE ]; then exit; fi;
+touch $LOCK_FILE
+
+
+
+########################################################
+# find the last local and remote commit so we can
+# compare them and see if they are different
+########################################################
+HISTORY=($(git ls-remote --quiet))
+
+LOCAL_BRANCH=$(git symbolic-ref -q HEAD)
+LOCAL_BRANCH=${LOCAL_BRANCH##refs/heads/}
+LOCAL_BRANCH=${LOCAL_BRANCH:-HEAD}
+LOCAL_COMMIT=$(git log -n 1 $LOCAL_BRANCH --pretty=format:&quot;%H&quot;)
+
+REMOTE_BRANCH=$(git symbolic-ref -q HEAD)
+for ((i=0; i &lt; ${#HISTORY[*]}; i+=2)) do
+  if [[ &quot;${HISTORY[i+1]}&quot; == &quot;$REMOTE_BRANCH&quot; ]]; then
+    REMOTE_COMMIT=&quot;${HISTORY[i]}&quot;
+  fi
+done
+
+
+
+########################################################
+# if no remote commit is set then we need to bail
+########################################################
+if [ -z &quot;$REMOTE_COMMIT&quot; ]; then
+  echo &quot;Could not find remote branch commit for $REMOTE_BRANCH&quot;
+  rm $LOCK_FILE
+  cd $SCRIPT_DIR
+  exit
+fi
+
+
+
+########################################################
+# compares the LOCAL_COMMIT with REMOTE_COMMIT and if
+# things have changed then onChange function is called
+########################################################
+if [ &quot;$LOCAL_COMMIT&quot; != &quot;$REMOTE_COMMIT&quot; ]; then
+  . $ONCHANGED_FILE &quot;$LOCAL_BRANCH&quot; &quot;$REMOTE_BRANCH&quot; &quot;$LOCAL_COMMIT&quot; &quot;$REMOTE_COMMIT&quot;
+fi
+
+
+
+########################################################
+# remove the lock file now that we are done with script
+########################################################
+rm $LOCK_FILE
+cd $SCRIPT_DIR
+</code></pre>
+
+                    </div>                        
+                </div>
+
+                <div class="text-right">
+                    <div>post by Kelvin on 02/19/2015</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="disqus_thread"></div>
+
+        <script>
+            var disqus_shortname = '';
+            var disqus_url = 'def246.com//2015/02/2015-02-19_git-monitor/';
+          
+            (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//go.disqus.com/embed.js';
+
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+
+    </div>
+</body>
+</html>

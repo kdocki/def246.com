@@ -1,0 +1,106 @@
+﻿
+-- General -- 
+
+Ctrl + Shift + T 	open last closed file
+
+Ctrl K ,  Ctrl B  	opens/closes the file explorer
+
+Ctrl + Shift + P	command prompt
+
+Ctrl + `		python console
+
+
+
+-- Find/Replace --
+
+Ctrl + P		goto to anything
+
+Ctrl + R	 	goto symbol (i.e. classes). Ctrl + P, then type @
+
+Ctrl + ;	 	goto word in current file. Ctrl + P, then type #
+
+Ctrl + G	 	goto line in current file. Ctrl + P, then type :
+
+Ctrl + H 		replace
+
+Ctrl + Shift + F	find in files
+
+Ctrl + F	 	find
+
+
+
+-- Splits/Tabs --
+
+Alt + Shift + 1,2,…	splits the screen into multiple views for multiple files
+
+Alt + Shift + 5		grid (4 groups)
+
+Alt + 1,2,3,… 		switch between open files’ tabs. Waste time mouse clicking on a tab
+
+Ctrl + 1,2,3,…		focus on group
+
+Ctrl + Shift + 1,2,3,…	move file to group
+
+Ctrl + PgUp/PgDn 	cycles throught the open files
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- Bookmarks --
+
+Ctrl + F2	 	toggle bookmark
+
+F2	 		next bookmark
+
+Shift + F2	 	previous bookmark
+
+Ctrl + Shift + F2 	clear bookmarks
+
+
+
+-- Editing --
+
+Ctrl + Space 		auto completion
+
+Ctrl + L		select line (repeat select next lines)
+
+Ctrl + D		select word (repeat for multiple editing)
+
+Ctrl + mouse click 	multiplies your mark/caret
+
+Ctrl + Shift + D	duplicate line(s)
+
+Ctrl + J 		join lines
+
+Ctrl + KU	 	upper case
+
+Ctrl + KL	 	lower case
+
+Ctrl + /	 	comment
+
+Ctrl + Shift + /	block comment
+
+Ctrl + Shift + M	select content into brackets
+
+Ctrl + M	 	jump to matching brackets
+
+Alt + Shift + W 	wrap selection with a tag. enter tag’s name
+
+Ctrl + U	 	soft undo (movement undo)
+
+Ctrl + Y		redo or repeat
+
+Ctrl + Shift + V	paste and ident
+
+Ctrl + KK		delete from cursor to end of line
+
+Ctrl + K + BKSP		delete from cursor to start of line

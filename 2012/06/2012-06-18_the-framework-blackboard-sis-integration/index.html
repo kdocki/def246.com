@@ -1,0 +1,130 @@
+<html>
+    <head>
+        <title>Kelvin</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+
+<link rel="stylesheet" type="text/css" href="/assets/site.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather" rel="stylesheet">
+<link rel="stylesheet" href="/assets/highlight/styles/default.css">
+<script src="/assets/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script>
+  if (location.hostname != "def246.com") {
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+  ':35729/livereload.js?snipver=1"></' + 'script>')
+  }
+</script> 
+
+        <meta name="author" content="Kelvin">
+        <meta name="description" content="Blackboard has a new and elegant feature. This feature simplifies what can become a complex problem - synchronizing data from your student information system into Blackboard?
+Another feature, new to Blackboard 9.1.8, is the ability to group courses by terms. However, terms cannot automatically be associated with the snapshot client; hence, what got me interested in the Data SIS Integration using Snapshot Flat feed files.
+">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="The Framework Blackboard SIS Integration">
+        <meta property="og:url" content="http://def246.com/2012/06/2012-06-18_the-framework-blackboard-sis-integration/">
+        <meta property="og:site_name" content="def246">
+        <meta property="og:description" content="Blackboard has a new and elegant feature. This feature simplifies what can become a complex problem - synchronizing data from your student information system into Blackboard?
+Another feature, new to Blackboard 9.1.8, is the ability to group courses by terms. However, terms cannot automatically be associated with the snapshot client; hence, what got me interested in the Data SIS Integration using Snapshot Flat feed files.
+">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="The Framework Blackboard SIS Integration">
+        <meta name="twitter:description" content="Blackboard has a new and elegant feature. This feature simplifies what can become a complex problem - synchronizing data from your student information system into Blackboard?
+Another feature, new to Blackboard 9.1.8, is the ability to group courses by terms. However, terms cannot automatically be associated with the snapshot client; hence, what got me interested in the Data SIS Integration using Snapshot Flat feed files.
+">
+    </head>
+<body>
+
+    <div class="bg-gray-200">
+  <div class="container mx-auto px-4">
+      <nav class="flex flex-wrap items-center justify-between p-4">
+        <div class="lg:order-2 w-auto lg:w-1/5 sm:text-center"><a class="text-2xl text-gray-900 hover:text-gray-700" href="/">Kelvin</a></div>
+
+        <div class="navbar-menu lg:order-3 lg:block w-full lg:w-2/5 lg:text-right">
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/">Home</a>
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/posts">Blog</a>
+        </div>
+      </nav>
+    </div>
+</div>
+
+
+    <div class="container mx-auto">
+        <div class="flex">
+            <div class="w-3/3 min-w-full px-1">
+                <div class="flex items-center">
+                    <div class="w-1/5 pt-4">
+                        
+                        <a href="/2012/04/2012-04-12_presenting-at-arbug/">Previous article</a>
+                        
+                    </div>
+                    <div class="w-3/5">
+                        <h1 class="mt-8 text-center text-3xl text-blue-600">
+                            The Framework Blackboard SIS Integration
+                        </h1>
+                    </div>
+                    <div class="w-1/5 pt-4 text-right">
+                        
+                        <a href="/2012/06/2012-06-27_blackboard-migration-project/">Next article</a>
+                        
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="post-body h-full py-8 bg-white border-t">
+                        <p>Blackboard has a new and elegant feature. This feature simplifies what can become a complex problem - synchronizing data from your student information system into Blackboard?</p>
+<p>Another feature, new to Blackboard <strong>9.1.8</strong>, is the ability to group courses by terms. However, terms cannot automatically be associated with the <strong>snapshot client</strong>; hence, what got me interested in the Data SIS Integration using Snapshot Flat feed files.</p>
+<!-- more -->
+<p>Watch the video for my sexy voice. Read more for some of my discoveries.</p>
+<p>{% youtube 9v9_eslc4SU %}</p>
+<p>Immediately, I was impressed by the web framework, so I…</p>
+<ol>
+<li>Decided to try and automate it - which really only took minutes with curl</li>
+<li>Wrote a wrapper script around curl to auto-discover the feed types</li>
+<li>Wrote some examples on how to use this framework script.</li>
+<li>Created a video demonstrating how to setup SIS integration. The video was the longest part in this entire process.</li>
+</ol>
+<p>Below is an example of how easy it is to add some users from a csv  file into Blackboard. You can also see more examples in <a href="/media/the-framework-blackboard-sis-integration/the-framework.zip">this zip file</a> - look at the example script and feeds/ directory.</p>
+<pre><code># setup some env variables
+export SHARED_USERNAME=&quot;your-shared-username&quot;
+export SHARED_PASSWORD=&quot;your-shared-password&quot;
+export BB_URL=&quot;http://your-shared-url.com&quot;
+
+echo &quot;adds the 55 users in the feeds/users.csv to EXAMPLES dsk&quot;
+./framework refresh feeds/users.csv
+</code></pre>
+<p>If you found this script useful, then be a chum and help me <a href="http://www.lilsugar.com/How-Much-Diapers-Cost-9128186">buy a pack of diapers</a> for my little girl. Feedback is also welcome - comment or shoot me an email: Kelvin <code>at</code> dockins <code>dot</code> org.</p>
+
+                    </div>                        
+                </div>
+
+                <div class="text-right">
+                    <div>post by Kelvin on 06/18/2012</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="disqus_thread"></div>
+
+        <script>
+            var disqus_shortname = '';
+            var disqus_url = 'def246.com//2012/06/2012-06-18_the-framework-blackboard-sis-integration/';
+          
+            (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//go.disqus.com/embed.js';
+
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+
+    </div>
+</body>
+</html>

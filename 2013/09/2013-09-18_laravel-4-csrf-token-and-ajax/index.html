@@ -1,0 +1,153 @@
+<html>
+    <head>
+        <title>Kelvin</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+
+<link rel="stylesheet" type="text/css" href="/assets/site.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather" rel="stylesheet">
+<link rel="stylesheet" href="/assets/highlight/styles/default.css">
+<script src="/assets/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script>
+  if (location.hostname != "def246.com") {
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+  ':35729/livereload.js?snipver=1"></' + 'script>')
+  }
+</script> 
+
+        <meta name="author" content="Kelvin">
+        <meta name="description" content="If you’ve ever ventured into javascript land with your Laravel application and suddenly you don’t have a nice &amp;lt;form&amp;gt; to work with but instead are making ajax calls then you might have wondered how to do CSRF protection. Here’s how easy it is to do ajax csrf protection.
+$.ajaxSetup({
+    headers: {
+        &#39;X-CSRF-Token&#39;: $(&#39;meta[name=&amp;quot;csrf-token&amp;quot;]&#39;).attr(&#39;content&#39;)
+    }
+});
+
+">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Laravel 4 CSRF Token and AJAX (using jQuery)">
+        <meta property="og:url" content="http://def246.com/2013/09/2013-09-18_laravel-4-csrf-token-and-ajax/">
+        <meta property="og:site_name" content="def246">
+        <meta property="og:description" content="If you’ve ever ventured into javascript land with your Laravel application and suddenly you don’t have a nice &amp;lt;form&amp;gt; to work with but instead are making ajax calls then you might have wondered how to do CSRF protection. Here’s how easy it is to do ajax csrf protection.
+$.ajaxSetup({
+    headers: {
+        &#39;X-CSRF-Token&#39;: $(&#39;meta[name=&amp;quot;csrf-token&amp;quot;]&#39;).attr(&#39;content&#39;)
+    }
+});
+
+">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Laravel 4 CSRF Token and AJAX (using jQuery)">
+        <meta name="twitter:description" content="If you’ve ever ventured into javascript land with your Laravel application and suddenly you don’t have a nice &amp;lt;form&amp;gt; to work with but instead are making ajax calls then you might have wondered how to do CSRF protection. Here’s how easy it is to do ajax csrf protection.
+$.ajaxSetup({
+    headers: {
+        &#39;X-CSRF-Token&#39;: $(&#39;meta[name=&amp;quot;csrf-token&amp;quot;]&#39;).attr(&#39;content&#39;)
+    }
+});
+
+">
+    </head>
+<body>
+
+    <div class="bg-gray-200">
+  <div class="container mx-auto px-4">
+      <nav class="flex flex-wrap items-center justify-between p-4">
+        <div class="lg:order-2 w-auto lg:w-1/5 sm:text-center"><a class="text-2xl text-gray-900 hover:text-gray-700" href="/">Kelvin</a></div>
+
+        <div class="navbar-menu lg:order-3 lg:block w-full lg:w-2/5 lg:text-right">
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/">Home</a>
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/posts">Blog</a>
+        </div>
+      </nav>
+    </div>
+</div>
+
+
+    <div class="container mx-auto">
+        <div class="flex">
+            <div class="w-3/3 min-w-full px-1">
+                <div class="flex items-center">
+                    <div class="w-1/5 pt-4">
+                        
+                        <a href="/2013/08/2013-08-13_laravel-artisan-serve/">Previous article</a>
+                        
+                    </div>
+                    <div class="w-3/5">
+                        <h1 class="mt-8 text-center text-3xl text-blue-600">
+                            Laravel 4 CSRF Token and AJAX (using jQuery)
+                        </h1>
+                    </div>
+                    <div class="w-1/5 pt-4 text-right">
+                        
+                        <a href="/2013/09/2013-09-20_codesleeve-laravel4-asset-pipeline/">Next article</a>
+                        
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="post-body h-full py-8 bg-white border-t">
+                        <p>If you’ve ever ventured into javascript land with your <a href="http://laravel.com">Laravel</a> application and suddenly you don’t have a nice <code>&lt;form&gt;</code> to work with but instead are making ajax calls then you might have wondered how to do CSRF protection. Here’s how easy it is to do ajax csrf protection.</p>
+<pre><code>$.ajaxSetup({
+    headers: {
+        'X-CSRF-Token': $('meta[name=&quot;csrf-token&quot;]').attr('content')
+    }
+});
+</code></pre>
+<!-- more --> 
+<p>That will attach the header <code>X-CSRF-Token</code> to every ajax request you make using jQuery. Notice though that we are getting that csrf token value from a meta field.</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html class=&quot;no-js&quot; lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;
+&lt;head&gt;
+	&lt;title&gt;My Page&lt;/title&gt;
+	&lt;meta name=&quot;csrf-token&quot; content=&quot;&lt;?= csrf_token() ?&gt;&quot;&gt;
+&lt;body&gt;
+   ...
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>Next we need to modify our CSRF token filter in Laravel since out of the box it only looks for <code>Input::get('_token')</code></p>
+<pre><code>Route::filter('csrf', function()
+{
+   $token = Request::header('X-CSRF-Token') ?: Input::get('_token');
+
+   if (Session::token() !== $token) {
+      throw new Illuminate\Session\TokenMismatchException;
+   }
+});
+</code></pre>
+<p>We will still look for _token in the input so we can still use the traditional <code>&lt;form&gt;</code> to submit data in addition to ajax submissions. I haven’t seen any issues with this yet. Of course if I run into any, I’ll be sure to update this post. Have a nice day!</p>
+
+                    </div>                        
+                </div>
+
+                <div class="text-right">
+                    <div>post by Kelvin on 09/18/2013</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="disqus_thread"></div>
+
+        <script>
+            var disqus_shortname = '';
+            var disqus_url = 'def246.com//2013/09/2013-09-18_laravel-4-csrf-token-and-ajax/';
+          
+            (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//go.disqus.com/embed.js';
+
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+
+    </div>
+</body>
+</html>

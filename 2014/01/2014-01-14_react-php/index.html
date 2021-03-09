@@ -1,0 +1,158 @@
+<html>
+    <head>
+        <title>Kelvin</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+
+<link rel="stylesheet" type="text/css" href="/assets/site.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather" rel="stylesheet">
+<link rel="stylesheet" href="/assets/highlight/styles/default.css">
+<script src="/assets/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script>
+  if (location.hostname != "def246.com") {
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+  ':35729/livereload.js?snipver=1"></' + 'script>')
+  }
+</script> 
+
+        <meta name="author" content="Kelvin">
+        <meta name="description" content="Well, I attempted to create a guard/grunt prototype for php. I attempted and failed. Why did I fail? The technology just isn’t there yet. I am going to have to re-think the architecture if I go any further.
+I was using pcntl_signal to determine when an application shuts down, so that I could terminate any external processes that had been spawned by guard. One such process event handler was the livereload-protocol I implemented in php which via web sockets notifies any connected clients when files were changed on the server. Similar to how grunt watch works with livereload.
+The problem is that pcntl_signal doesn’t work in Windows. Thus, I stopped working on this.
+">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="React PHP (guard in php and laravel)">
+        <meta property="og:url" content="http://def246.com/2014/01/2014-01-14_react-php/">
+        <meta property="og:site_name" content="def246">
+        <meta property="og:description" content="Well, I attempted to create a guard/grunt prototype for php. I attempted and failed. Why did I fail? The technology just isn’t there yet. I am going to have to re-think the architecture if I go any further.
+I was using pcntl_signal to determine when an application shuts down, so that I could terminate any external processes that had been spawned by guard. One such process event handler was the livereload-protocol I implemented in php which via web sockets notifies any connected clients when files were changed on the server. Similar to how grunt watch works with livereload.
+The problem is that pcntl_signal doesn’t work in Windows. Thus, I stopped working on this.
+">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="React PHP (guard in php and laravel)">
+        <meta name="twitter:description" content="Well, I attempted to create a guard/grunt prototype for php. I attempted and failed. Why did I fail? The technology just isn’t there yet. I am going to have to re-think the architecture if I go any further.
+I was using pcntl_signal to determine when an application shuts down, so that I could terminate any external processes that had been spawned by guard. One such process event handler was the livereload-protocol I implemented in php which via web sockets notifies any connected clients when files were changed on the server. Similar to how grunt watch works with livereload.
+The problem is that pcntl_signal doesn’t work in Windows. Thus, I stopped working on this.
+">
+    </head>
+<body>
+
+    <div class="bg-gray-200">
+  <div class="container mx-auto px-4">
+      <nav class="flex flex-wrap items-center justify-between p-4">
+        <div class="lg:order-2 w-auto lg:w-1/5 sm:text-center"><a class="text-2xl text-gray-900 hover:text-gray-700" href="/">Kelvin</a></div>
+
+        <div class="navbar-menu lg:order-3 lg:block w-full lg:w-2/5 lg:text-right">
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/">Home</a>
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/posts">Blog</a>
+        </div>
+      </nav>
+    </div>
+</div>
+
+
+    <div class="container mx-auto">
+        <div class="flex">
+            <div class="w-3/3 min-w-full px-1">
+                <div class="flex items-center">
+                    <div class="w-1/5 pt-4">
+                        
+                        <a href="/2013/12/2013-12-12_csrf-token-protection-in-laravel/">Previous article</a>
+                        
+                    </div>
+                    <div class="w-3/5">
+                        <h1 class="mt-8 text-center text-3xl text-blue-600">
+                            React PHP (guard in php and laravel)
+                        </h1>
+                    </div>
+                    <div class="w-1/5 pt-4 text-right">
+                        
+                        <a href="/2014/01/2014-01-15_hexagonal-pattern-design-scenarios/">Next article</a>
+                        
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="post-body h-full py-8 bg-white border-t">
+                        <p>Well, I attempted to create a guard/grunt prototype for php. I attempted and failed. Why did I fail? The technology just isn’t there yet. I am going to have to re-think the architecture if I go any further.</p>
+<p>I was using <a href="http://www.php.net/manual/en/function.pcntl-signal.php">pcntl_signal</a> to determine when an application shuts down, so that I could terminate any external processes that had been spawned by guard. One such process event handler was the <a href="https://github.com/CodeSleeve/guard-live-reload">livereload-protocol I implemented in php</a> which via web sockets notifies any connected clients when files were changed on the server. Similar to how grunt watch works with livereload.</p>
+<p>The problem is that <code>pcntl_signal</code> doesn’t work in Windows. Thus, I stopped working on this.</p>
+<!-- more --> 
+<h4>Why not just use grunt?</h4>
+<p>Great question. There is no reason why you can’t use grunt. You’ll have to setup node, npm install grunt-cli and configure a Gruntfile. This isn’t that bad. I guess I’m crazy mad and wanted to toy around with asynchronous php.</p>
+<p>Also think about how interesting it could be to setup an event handler to watch files on a disk space and asynchronously add rows in your database anytime those files changed?</p>
+<pre><code>class CrazyEloquentGuardEvent implements EventInterface
+{
+        public function start($watcher)
+        {
+                // nothing to do here when guard firsts starts up
+        }
+ 
+        public function stop()
+        {
+                // nothing to do here when guard first stops
+        }
+ 
+        public function listen($event)
+        {
+                CrazyGuardLogModel::create([
+                   'resource' =&gt; $event-&gt;getResource(),
+                   'change_type' =&gt; $event-&gt;getTypeString(),
+                ]);
+        }
+}
+</code></pre>
+<h3>Reactive Programming</h3>
+<p>Programming to an event loop in php is wild. It is also extremely powerful. I love the asynchronous aspect of node.js but it has drawbacks too. One drawback is the complexity. Anyone who has worked in both express and Laravel would likely tell you that Laravel is easier to use - I certainly would.</p>
+<p>However, the benefits of an event loop frees us from waiting on things. Here is how I handled an event loop in React for the LiveReload server. I also used Ratchet for the WebSockets server which piggy backs off React. The only reason I am tampering with the React server here is so that I can have more control over what goes into the Event Loop.</p>
+<pre><code>public function start()
+{
+	$config = $this-&gt;config;
+	$loop = \React\EventLoop\Factory::create();
+	$app = new \Ratchet\App($config['host'], $config['port'], $config['host'], $loop);
+ 
+	foreach ($config['routes'] as $route)
+	{
+		call_user_func_array(array($app, 'route'), $route);
+	}
+ 
+	$loop-&gt;addTimer($config['timeout'], array($this, 'watchTempFile'));
+	$app-&gt;run();		
+}
+</code></pre>
+<p>If you’d really like to dig in, you can see the full extent of the code in the <a href="https://github.com/CodeSleeve/guard-live-reload/blob/master/src/Codesleeve/GuardLiveReload/LiveReloadServer.php#L31">codesleeve/guard-livereload</a> repository. I may change this eventually, but I think I’ll re-architect the entire thing if I do. Basically the react event loop cannot be an external process fired by codesleeve/guard, instead it guard needs to become itself an event loop and I will have to compartmentalize all the different events and configs together so that it is easy to drop in new event handlers. It’s do-able I believe but right now isn’t any where on my priority list of todos.</p>
+
+                    </div>                        
+                </div>
+
+                <div class="text-right">
+                    <div>post by Kelvin on 01/14/2014</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="disqus_thread"></div>
+
+        <script>
+            var disqus_shortname = '';
+            var disqus_url = 'def246.com//2014/01/2014-01-14_react-php/';
+          
+            (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//go.disqus.com/embed.js';
+
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+
+    </div>
+</body>
+</html>

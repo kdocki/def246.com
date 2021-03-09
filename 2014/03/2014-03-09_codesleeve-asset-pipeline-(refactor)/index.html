@@ -1,0 +1,167 @@
+<html>
+    <head>
+        <title>Kelvin</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+
+<link rel="stylesheet" type="text/css" href="/assets/site.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather" rel="stylesheet">
+<link rel="stylesheet" href="/assets/highlight/styles/default.css">
+<script src="/assets/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script>
+  if (location.hostname != "def246.com") {
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+  ':35729/livereload.js?snipver=1"></' + 'script>')
+  }
+</script> 
+
+        <meta name="author" content="Kelvin">
+        <meta name="description" content="After kicking the boot around for a while I finally decided to re-factor the asset pipeline. The functionality is all in all the same but the code is easier on the eyes. However, I did bring in a lot of new features.
+
+Config allows you to control caching interface
+Config allows you to control directives
+Config allows you to control which environments  are concatenated
+Config allows you to control mime types so you can combine javascripts and stylesheets in a single folder
+Use a sprockets parser and generator to create the Rails-style asset pipeline functionality
+Use relative paths in the manifest files
+Use Laravel event listener to alter the configuration of the pipeline after package boot/start up
+Use caching to speed up local development when using a lot of pre-processors (i.e. coffee, less, sass)
+Use assets:generate to create static files in public/assets directory.
+Completely customize the javascript_include_tag, stylesheet_link_tag composers
+Completely customize the AssetController class
+
+">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Codesleeve Asset Pipeline (refactor)">
+        <meta property="og:url" content="http://def246.com/2014/03/2014-03-09_codesleeve-asset-pipeline-(refactor)/">
+        <meta property="og:site_name" content="def246">
+        <meta property="og:description" content="After kicking the boot around for a while I finally decided to re-factor the asset pipeline. The functionality is all in all the same but the code is easier on the eyes. However, I did bring in a lot of new features.
+
+Config allows you to control caching interface
+Config allows you to control directives
+Config allows you to control which environments  are concatenated
+Config allows you to control mime types so you can combine javascripts and stylesheets in a single folder
+Use a sprockets parser and generator to create the Rails-style asset pipeline functionality
+Use relative paths in the manifest files
+Use Laravel event listener to alter the configuration of the pipeline after package boot/start up
+Use caching to speed up local development when using a lot of pre-processors (i.e. coffee, less, sass)
+Use assets:generate to create static files in public/assets directory.
+Completely customize the javascript_include_tag, stylesheet_link_tag composers
+Completely customize the AssetController class
+
+">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Codesleeve Asset Pipeline (refactor)">
+        <meta name="twitter:description" content="After kicking the boot around for a while I finally decided to re-factor the asset pipeline. The functionality is all in all the same but the code is easier on the eyes. However, I did bring in a lot of new features.
+
+Config allows you to control caching interface
+Config allows you to control directives
+Config allows you to control which environments  are concatenated
+Config allows you to control mime types so you can combine javascripts and stylesheets in a single folder
+Use a sprockets parser and generator to create the Rails-style asset pipeline functionality
+Use relative paths in the manifest files
+Use Laravel event listener to alter the configuration of the pipeline after package boot/start up
+Use caching to speed up local development when using a lot of pre-processors (i.e. coffee, less, sass)
+Use assets:generate to create static files in public/assets directory.
+Completely customize the javascript_include_tag, stylesheet_link_tag composers
+Completely customize the AssetController class
+
+">
+    </head>
+<body>
+
+    <div class="bg-gray-200">
+  <div class="container mx-auto px-4">
+      <nav class="flex flex-wrap items-center justify-between p-4">
+        <div class="lg:order-2 w-auto lg:w-1/5 sm:text-center"><a class="text-2xl text-gray-900 hover:text-gray-700" href="/">Kelvin</a></div>
+
+        <div class="navbar-menu lg:order-3 lg:block w-full lg:w-2/5 lg:text-right">
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/">Home</a>
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/posts">Blog</a>
+        </div>
+      </nav>
+    </div>
+</div>
+
+
+    <div class="container mx-auto">
+        <div class="flex">
+            <div class="w-3/3 min-w-full px-1">
+                <div class="flex items-center">
+                    <div class="w-1/5 pt-4">
+                        
+                        <a href="/2014/02/2014-02-20_hexagonal-pattern-design-presenters/">Previous article</a>
+                        
+                    </div>
+                    <div class="w-3/5">
+                        <h1 class="mt-8 text-center text-3xl text-blue-600">
+                            Codesleeve Asset Pipeline (refactor)
+                        </h1>
+                    </div>
+                    <div class="w-1/5 pt-4 text-right">
+                        
+                        <a href="/2014/03/2014-03-20_serve-then-remove-temporary-file-using-laravel/">Next article</a>
+                        
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="post-body h-full py-8 bg-white border-t">
+                        <p>After kicking the boot around for a while I finally decided to re-factor the <a href="https://github.com/CodeSleeve/asset-pipeline">asset pipeline</a>. The functionality is all in all the same but the code is easier on the eyes. However, I did bring in a lot of new features.</p>
+<ul>
+<li>Config allows you to control caching interface</li>
+<li>Config allows you to control directives</li>
+<li>Config allows you to control which environments  are concatenated</li>
+<li>Config allows you to control mime types so you can combine javascripts and stylesheets in a single folder</li>
+<li>Use a <a href="https://github.com/CodeSleeve/sprockets">sprockets parser and generator</a> to create the Rails-style asset pipeline functionality</li>
+<li>Use relative paths in the manifest files</li>
+<li>Use Laravel event listener to alter the configuration of the pipeline after package boot/start up</li>
+<li>Use caching to speed up local development when using a lot of pre-processors (i.e. coffee, less, sass)</li>
+<li>Use assets:generate to create static files in public/assets directory.</li>
+<li>Completely customize the javascript_include_tag, stylesheet_link_tag composers</li>
+<li>Completely customize the AssetController class</li>
+</ul>
+<!-- more -->
+<div class="row"><div class="col-xs-9">
+Regarding functionality, the Laravel asset pipeline can go toe to toe with the Rails pipeline.However, the last missing pieces are precompilers, minification and static file generation.
+<p><em>Currently</em>, I use some open source php packages to handle <strong>coffeescript</strong>, <strong>less</strong>, <strong>scss</strong>, <strong>javascript</strong> and <strong>css</strong> minification. Those packages can break things and aren’t up to date.</p>
+<p>As it stands right now the css minifier out of the box breaks when trying to minify Twitter Bootstrap 3 code because there is a @-moz-tag in the css. To get around this I  use bootstrap.min.css because pipeline skips minification on .min. files.</p>
+<p>New comers may not know this though and be confused or frustrated when all their styles break after trying to minify bootstrap css.</p>
+<p>That’ll do for now pig, that’ll do.</p>
+</div><div class="col-xs-3">
+	<img class="full-width" src="/media/codesleeve-asset-pipeline-refactor/wally-the-janitor.jpg" alt="that'll do pig">
+</div></div>
+                    </div>                        
+                </div>
+
+                <div class="text-right">
+                    <div>post by Kelvin on 03/09/2014</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="disqus_thread"></div>
+
+        <script>
+            var disqus_shortname = '';
+            var disqus_url = 'def246.com//2014/03/2014-03-09_codesleeve-asset-pipeline-(refactor)/';
+          
+            (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//go.disqus.com/embed.js';
+
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+
+    </div>
+</body>
+</html>

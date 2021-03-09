@@ -1,0 +1,146 @@
+<html>
+    <head>
+        <title>Kelvin</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+
+<link rel="stylesheet" type="text/css" href="/assets/site.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather" rel="stylesheet">
+<link rel="stylesheet" href="/assets/highlight/styles/default.css">
+<script src="/assets/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script>
+  if (location.hostname != "def246.com") {
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+  ':35729/livereload.js?snipver=1"></' + 'script>')
+  }
+</script> 
+
+        <meta name="author" content="Kelvin">
+        <meta name="description" content="After 2 years of using Laravel, I’d never been a huge fan of blade. When I first met Taylor Otwell at Genghis grill, I probably insulted him by saying:
+
+“I hate blade” - me to Taylor Otwell
+
+">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Laravel Blade @var extension">
+        <meta property="og:url" content="http://def246.com/2014/07/2014-07-23_laravel-blade-var-extension/">
+        <meta property="og:site_name" content="def246">
+        <meta property="og:description" content="After 2 years of using Laravel, I’d never been a huge fan of blade. When I first met Taylor Otwell at Genghis grill, I probably insulted him by saying:
+
+“I hate blade” - me to Taylor Otwell
+
+">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Laravel Blade @var extension">
+        <meta name="twitter:description" content="After 2 years of using Laravel, I’d never been a huge fan of blade. When I first met Taylor Otwell at Genghis grill, I probably insulted him by saying:
+
+“I hate blade” - me to Taylor Otwell
+
+">
+    </head>
+<body>
+
+    <div class="bg-gray-200">
+  <div class="container mx-auto px-4">
+      <nav class="flex flex-wrap items-center justify-between p-4">
+        <div class="lg:order-2 w-auto lg:w-1/5 sm:text-center"><a class="text-2xl text-gray-900 hover:text-gray-700" href="/">Kelvin</a></div>
+
+        <div class="navbar-menu lg:order-3 lg:block w-full lg:w-2/5 lg:text-right">
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/">Home</a>
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/posts">Blog</a>
+        </div>
+      </nav>
+    </div>
+</div>
+
+
+    <div class="container mx-auto">
+        <div class="flex">
+            <div class="w-3/3 min-w-full px-1">
+                <div class="flex items-center">
+                    <div class="w-1/5 pt-4">
+                        
+                        <a href="/2014/06/2014-06-25_cracking-fogcreek/">Previous article</a>
+                        
+                    </div>
+                    <div class="w-3/5">
+                        <h1 class="mt-8 text-center text-3xl text-blue-600">
+                            Laravel Blade @var extension
+                        </h1>
+                    </div>
+                    <div class="w-1/5 pt-4 text-right">
+                        
+                        <a href="/2014/08/2014-08-27_access-localhost-8000-from-anywhere/">Next article</a>
+                        
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="post-body h-full py-8 bg-white border-t">
+                        <p>After 2 years of using Laravel, I’d never been a huge fan of blade. When I first met Taylor Otwell at Genghis grill, I probably insulted him by saying:</p>
+<blockquote>
+<p>“I hate blade” - me to Taylor Otwell</p>
+</blockquote>
+<!-- more -->
+<p>However, with the new job I’ve had to dig into blade and blade has really grown on me. I’ve been working on extending Blade functionality to do other neat things and during all this, an idea came to me to treat blade <code>@blocks</code> like front matter. This isn’t something you’d normally want to do (and we don’t do it for work projects) but let’s do it anyway. Why? <strong>Because we can.</strong> I’m going to create a <code>@var</code> extension that allows me to register variables inside of my blade views instead of a controller.</p>
+<p>{% include_file media/laravel-blade-var-extension/snippet1.txt %}</p>
+<p>So first we have to register our new <code>@var</code> pattern by using Blade’s extend method.</p>
+<pre><code>Blade::extend(function($view, $compiler)
+{
+    $pattern = &quot;/(?&lt;!\w)(\s*)@var\(\s*'([A-Za-z1-9_]*)',\s*(.*)\)/&quot;;
+
+    $view = preg_replace($pattern, &quot;&lt;?php \$$2 = resolve($3) ?&gt;&quot;, $view);
+
+    return $view;
+});
+</code></pre>
+<p>What does this do? It basically just replaces those variables with lines like this</p>
+<pre><code>&lt;?php $user = resolve('User.paginate') ?&gt;
+&lt;?php $userList = resolve('User.lists', ['first_name', 'id']) ?&gt;
+</code></pre>
+<p>So what does this resolve function do? It handles resolving the string <code>class.method</code> for us using Laravel’s IoC container.</p>
+<pre><code>function resolve($name, $args = array())
+{
+	$parts = explode('.', $name);
+
+	$obj = App::make($parts[0]);
+
+	return call_user_func_array(array($obj, $parts[1]), $args);
+}
+</code></pre>
+<p>And there we have it. A simple way to inject variables in your Blade views. I am not using this at the moment so it’s only a proof of concept. One nice thing about this approach is that you can easily see all the registered variables inside of your view and know where they come from. But this approach doesn’t allow you the flexibility to re-use views with different variables - which is a primary reason why we use controllers - separation of concerns!</p>
+
+                    </div>                        
+                </div>
+
+                <div class="text-right">
+                    <div>post by Kelvin on 07/23/2014</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="disqus_thread"></div>
+
+        <script>
+            var disqus_shortname = '';
+            var disqus_url = 'def246.com//2014/07/2014-07-23_laravel-blade-var-extension/';
+          
+            (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//go.disqus.com/embed.js';
+
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+
+    </div>
+</body>
+</html>

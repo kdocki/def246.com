@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <title>Kelvin</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+
+<link rel="stylesheet" type="text/css" href="/assets/site.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather" rel="stylesheet">
+<link rel="stylesheet" href="/assets/highlight/styles/default.css">
+<script src="/assets/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script>
+  if (location.hostname != "def246.com") {
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+  ':35729/livereload.js?snipver=1"></' + 'script>')
+  }
+</script> 
+
+        <meta name="author" content="Kelvin">
+        <meta name="description" content="This year long project was to transition our faculty and staff from our old locally hosted Blackboard Vista/CE8 to a managed hosted Blackboard Learn 9.1 - in all respects two different learning management systems (LMS). Below are some items that I played a part in.
+">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Blackboard Migration Project (2011 - 2012)">
+        <meta property="og:url" content="http://def246.com/2012/06/2012-06-27_blackboard-migration-project/">
+        <meta property="og:site_name" content="def246">
+        <meta property="og:description" content="This year long project was to transition our faculty and staff from our old locally hosted Blackboard Vista/CE8 to a managed hosted Blackboard Learn 9.1 - in all respects two different learning management systems (LMS). Below are some items that I played a part in.
+">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Blackboard Migration Project (2011 - 2012)">
+        <meta name="twitter:description" content="This year long project was to transition our faculty and staff from our old locally hosted Blackboard Vista/CE8 to a managed hosted Blackboard Learn 9.1 - in all respects two different learning management systems (LMS). Below are some items that I played a part in.
+">
+    </head>
+<body>
+
+    <div class="bg-gray-200">
+  <div class="container mx-auto px-4">
+      <nav class="flex flex-wrap items-center justify-between p-4">
+        <div class="lg:order-2 w-auto lg:w-1/5 sm:text-center"><a class="text-2xl text-gray-900 hover:text-gray-700" href="/">Kelvin</a></div>
+
+        <div class="navbar-menu lg:order-3 lg:block w-full lg:w-2/5 lg:text-right">
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/">Home</a>
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/posts">Blog</a>
+        </div>
+      </nav>
+    </div>
+</div>
+
+
+    <div class="container mx-auto">
+        <div class="flex">
+            <div class="w-3/3 min-w-full px-1">
+                <div class="flex items-center">
+                    <div class="w-1/5 pt-4">
+                        
+                        <a href="/2012/06/2012-06-18_the-framework-blackboard-sis-integration/">Previous article</a>
+                        
+                    </div>
+                    <div class="w-3/5">
+                        <h1 class="mt-8 text-center text-3xl text-blue-600">
+                            Blackboard Migration Project (2011 - 2012)
+                        </h1>
+                    </div>
+                    <div class="w-1/5 pt-4 text-right">
+                        
+                        <a href="/2012/07/2012-07-10_blackboard-bundles-que-language-es-esta/">Next article</a>
+                        
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="post-body h-full py-8 bg-white border-t">
+                        <p>This year long project was to transition our faculty and staff from our old locally hosted Blackboard Vista/CE8 to a managed hosted Blackboard Learn 9.1 - in all respects two different learning management systems (<a href="http://en.wikipedia.org/wiki/Learning_management_system">LMS</a>). Below are some items that I played a part in.</p>
+<!-- more -->
+<h3>SIS (Student Information System) Integration with Snapshot</h3>
+<p>Blackboard can capture students, faculty, courses, roles and various other things from the student information system using the Snapshot tool. Our group had a three weeks to discuss the business rules and logic behind synchronization and work out the technical details on how this would be accomplished. Later I was trained on the snapshot override client which allows exceptions and one-off feed files to Blackboard.</p>
+<h3>Community and Content Engagement</h3>
+<p>I attended several Blackboard training sessions and one certificate online course about the Content and Community piece of Blackboard. This piece allows us to setup institutional roles and group users into that role. Once these roles are in place, we can target users and release information (via modules and tabs) only to those certain individuals within the role.</p>
+<h3>3rd Party Building Block Integration/Development</h3>
+<p>Building Blocks are Blackboard’s way of adding customization. You can think of them as “plug-ins.” There are various places you can get these Building Blocks - you can develop your own or download from vendors, such as those on <a href="http://www.blackboard.com/partnerships/extensions.aspx">Blackboard Extensions</a>. There is even an <a href="http://projects.oscelot.org/gf/">open source website called Oscelot</a> which developers release Building Blocks for free public download. However, a problem that often rises is that someone has to setup, configure and support these Building Blocks and then learn how it best utilized for other users. We used many B2’s including McGraw Hill, Wimba and Blackboard Collaborate, Section Merge Tool, ASTRO, BbStats, Impersonate, Blackboard Mobile and many more.</p>
+<div class="row"><div class="col-md-8">
+One example of how I used open source building blocks to better our users is B2WebCT, which was developed by [Stephen Vickers](http://www.spvsoftwareproducts.com/). We had one year of co-production on both Blackboard CE8 and 9.1. This meant two different websites for users. The problem was that students and teachers would become confused because they didn't know where their course was located (in CE8 or 9.1).
+<p>The B2WebCT Building Block fixed this problem by allowing us to place a module on the 9.1 webpage that single-signs-on the users to CE8. Thus, we were able to point every user to 9.1 and they could see a list of courses on <strong>both</strong> systems! <em>And everyone was pleased.</em></p>
+</div><div class="col-md-4">
+<a data-lightbox="blackboard-migration-project" href="/media/blackboard-migration-project/blackboard.png"><img class="full-width" src="/media/blackboard-migration-project/blackboard.png"></a>
+</div></div>
+<h3>System Administration Advanced Configuration</h3>
+<p>There were many things I did to help simplify the lives of our instructional designers, technical staff and faculty members. Here are a few I can remember…</p>
+<ul>
+<li>Course Templates (using snapshot tool, we can provide course templates based on rules)</li>
+<li>Tool Availability (which tools should we use?)</li>
+<li>Branding (helped with troublesome CSS and staged a “frozen pristine” development server for our <a href="http://jennovate.it/">graphics designer</a>)</li>
+<li>Managed things like orphaned content, specialized system roles and other various settings.</li>
+<li>Cut down on migrated course sizes with quotas and active reporting - including SQL database queries</li>
+<li>Setting up a course archival process (there was always talk about this, but I made it happen)</li>
+</ul>
+
+                    </div>                        
+                </div>
+
+                <div class="text-right">
+                    <div>post by Kelvin on 06/27/2012</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="disqus_thread"></div>
+
+        <script>
+            var disqus_shortname = '';
+            var disqus_url = 'def246.com//2012/06/2012-06-27_blackboard-migration-project/';
+          
+            (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//go.disqus.com/embed.js';
+
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,270 @@
+<html>
+    <head>
+        <title>Kelvin</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+
+<link rel="stylesheet" type="text/css" href="/assets/site.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather" rel="stylesheet">
+<link rel="stylesheet" href="/assets/highlight/styles/default.css">
+<script src="/assets/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script>
+  if (location.hostname != "def246.com") {
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+  ':35729/livereload.js?snipver=1"></' + 'script>')
+  }
+</script> 
+
+        <meta name="author" content="Kelvin">
+        <meta name="description" content="So in this article I’m going to explain how to test every route in a laravel application. I usually name all the routes in my application, so essentially, every route in my application has some sort of sanity test.
+">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Test Every Laravel Route?">
+        <meta property="og:url" content="http://def246.com/2016/03/2016-03-31_missing-laravel-tested-routes/">
+        <meta property="og:site_name" content="def246">
+        <meta property="og:description" content="So in this article I’m going to explain how to test every route in a laravel application. I usually name all the routes in my application, so essentially, every route in my application has some sort of sanity test.
+">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Test Every Laravel Route?">
+        <meta name="twitter:description" content="So in this article I’m going to explain how to test every route in a laravel application. I usually name all the routes in my application, so essentially, every route in my application has some sort of sanity test.
+">
+    </head>
+<body>
+
+    <div class="bg-gray-200">
+  <div class="container mx-auto px-4">
+      <nav class="flex flex-wrap items-center justify-between p-4">
+        <div class="lg:order-2 w-auto lg:w-1/5 sm:text-center"><a class="text-2xl text-gray-900 hover:text-gray-700" href="/">Kelvin</a></div>
+
+        <div class="navbar-menu lg:order-3 lg:block w-full lg:w-2/5 lg:text-right">
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/">Home</a>
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/posts">Blog</a>
+        </div>
+      </nav>
+    </div>
+</div>
+
+
+    <div class="container mx-auto">
+        <div class="flex">
+            <div class="w-3/3 min-w-full px-1">
+                <div class="flex items-center">
+                    <div class="w-1/5 pt-4">
+                        
+                        <a href="/2016/03/2016-03-09_homestead-bash-commands/">Previous article</a>
+                        
+                    </div>
+                    <div class="w-3/5">
+                        <h1 class="mt-8 text-center text-3xl text-blue-600">
+                            Test Every Laravel Route?
+                        </h1>
+                    </div>
+                    <div class="w-1/5 pt-4 text-right">
+                        
+                        <a href="/2016/04/2016-04-05_when-javascript-excited-me/">Next article</a>
+                        
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="post-body h-full py-8 bg-white border-t">
+                        <p>So in this article I’m going to explain how to test <em>every</em> route in a laravel application. I usually name all the routes in my application, so essentially, every route in my application has some sort of sanity test.</p>
+<!-- more --> 
+<p>Here is a 1 minute video of me writing all the tests for my application with this script.</p>
+<iframe width="100%" height="515" src="https://www.youtube.com/embed/VJO3ZbUf1UI" frameborder="0" allowfullscreen></iframe>
+<p>The TLDR; gist of this article is that I can run a command</p>
+<pre><code>$ missing-route-tests
+</code></pre>
+<p>And that command will generate some testing code for me based on routes that are missing. Something like this:</p>
+<pre><code>/**
+ * @route users.edit
+ */
+public function test_users_edit()
+{
+    $this-&gt;markTestIncomplete('This test is incomplete');
+    $response = $this-&gt;call('GET', '/users/{users}/edit');
+    $this-&gt;assertEquals(200, $response-&gt;status());
+}
+</code></pre>
+<p>This essentially means two things.</p>
+<ol>
+<li>I don’t have to keep up with all routes I have and have not tested.</li>
+<li>It also creates a boilerplate for me to get started testing.</li>
+</ol>
+<p>You can find the <code>missing-routes-test</code> script <a href="https://github.com/kdocki/missing-tested-routes">HERE</a>.</p>
+<h3>Laravel Testing Basics: Getting Started With A Single Test</h3>
+<p>Since most applications have users, let’s create a RESTful resource to manage our users in our application. So let’s add a resourceful route to our <code>routes.php</code> file.</p>
+<pre><code>Route::resource('users', 'UsersController');
+</code></pre>
+<p>Next we need a resource controller, so let’s run the command to create it for us.</p>
+<pre><code>$ php artisan make:controller UsersController --resource
+</code></pre>
+<p>Next we want to <a href="https://laravel.com/docs/5.2/testing">test a route in Laravel</a>, I can create it using <code>artisan</code></p>
+<pre><code>$ php artisan make:test UsersTest
+</code></pre>
+<p>That gets us some code generated out that looks something like this</p>
+<pre><code>class UsersTest extends TestCase
+{
+    /**
+     * A basic test example.
+     *
+     * @return void
+     */
+    public function testExample()
+    {
+        $this-&gt;assertTrue(true);
+    }
+}
+</code></pre>
+<p>At this point, I want to test a route. Therefore, I add a method and use Laravel’s awesome testing methods to call the /users url.</p>
+<pre><code>    /**
+     * Check out the /users index page
+     */
+    public function test_users_index()
+    {
+        $response = $this-&gt;call('GET', '/users');
+
+        $this-&gt;assertEquals(200, $response-&gt;status());
+    }
+</code></pre>
+<p>Now when we run phpunit we get that green that everyone likes.</p>
+<pre><code>Kelvin@videl:~/space/blog$ phpunit
+PHPUnit 4.8.24 by Sebastian Bergmann and contributors.
+
+..
+
+Time: 135 ms, Memory: 13.00Mb
+
+OK (2 tests, 3 assertions)
+</code></pre>
+<p>Granted, our test is <em>really</em> simple. It only checks for a response status of 200. If we navigate to this page it is blank because our <code>UsersController::index()</code> is empty.</p>
+<h3>Testing ALL The Things (Routes)</h3>
+<p>So are we done? No. We’ve only tested 1 route so far. Laravel ships with a nice artisan command to view all our routes.</p>
+<pre><code>$ php artisan route:list
+</code></pre>
+<p>For our basic users management application this spits out the following</p>
+<img src="/media/missing-laravel-tested-routes/route-list.png">
+<p>We could manually go through this list and try to test at our own pace. But this method is prone to human errors and it’d be better to programmatically scan for the routes we have not yet tested.</p>
+<p>Thus I run the following command to see which tests are missing from our users app.</p>
+<pre><code>$ missing-route-tests
+</code></pre>
+<p>This outputs the following</p>
+<pre><code>/**
+ * @route users.index
+ */
+public function test_users_index()
+{
+    $this-&gt;markTestIncomplete('This test is incomplete');
+    $response = $this-&gt;call('GET', '/users');
+    $this-&gt;assertEquals(200, $response-&gt;status());
+}
+
+
+/**
+ * @route users.create
+ */
+public function test_users_create()
+{
+    $this-&gt;markTestIncomplete('This test is incomplete');
+    $response = $this-&gt;call('GET', '/users/create');
+    $this-&gt;assertEquals(200, $response-&gt;status());
+}
+
+
+/**
+ * @route users.store
+ */
+public function test_users_store()
+{
+    $this-&gt;markTestIncomplete('This test is incomplete');
+    $data = [];
+    $response = $this-&gt;call('POST', '/users', $data);
+    $this-&gt;assertEquals(200, $response-&gt;status());
+}
+
+
+/**
+ * @route users.show
+ */
+public function test_users_show()
+{
+    $this-&gt;markTestIncomplete('This test is incomplete');
+    $response = $this-&gt;call('GET', '/users/{users}');
+    $this-&gt;assertEquals(200, $response-&gt;status());
+}
+
+
+/**
+ * @route users.edit
+ */
+public function test_users_edit()
+{
+    $this-&gt;markTestIncomplete('This test is incomplete');
+    $response = $this-&gt;call('GET', '/users/{users}/edit');
+    $this-&gt;assertEquals(200, $response-&gt;status());
+}
+
+
+/**
+ * @route users.update
+ */
+public function test_users_update()
+{
+    $this-&gt;markTestIncomplete('This test is incomplete');
+    $data = [];
+    $response = $this-&gt;call('PUT', '/users/{users}', $data);
+    $this-&gt;assertEquals(200, $response-&gt;status());
+}
+
+
+/**
+ * @route users.destroy
+ */
+public function test_users_destroy()
+{
+    $this-&gt;markTestIncomplete('This test is incomplete');
+    $data = [];
+    $response = $this-&gt;call('DELETE', '/users/{users}', $data);
+    $this-&gt;assertEquals(200, $response-&gt;status());
+}
+</code></pre>
+<p>Now when I run <code>phpunit</code> again, I at least have a rough idea of how many routes we have yet to test.</p>
+<h3>How it works?</h3>
+<p>Right now I’m using annotations to mark a named route as tested. I decided for this approach because it seems easy. Another approach that <em>might</em> work is to run phpunit and keep track of which routes were called during the entire process. After that was finished, we could compare our list of routes to the entire list using <code>Route::getRoutes()</code>. I opted for the annotation route just because I wanted something quick and easy.</p>
+<p>Again you can find the script <a href="https://github.com/kdocki/missing-tested-routes">HERE</a>.</p>
+<p>If you find yourself using this or have some sort of improvements or even a better way for testing all the routes in your application, please leave me a comment. Thanks!</p>
+
+                    </div>                        
+                </div>
+
+                <div class="text-right">
+                    <div>post by Kelvin on 03/31/2016</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="disqus_thread"></div>
+
+        <script>
+            var disqus_shortname = '';
+            var disqus_url = 'def246.com//2016/03/2016-03-31_missing-laravel-tested-routes/';
+          
+            (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//go.disqus.com/embed.js';
+
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+
+    </div>
+</body>
+</html>

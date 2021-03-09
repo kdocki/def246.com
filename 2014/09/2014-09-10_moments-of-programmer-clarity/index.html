@@ -1,0 +1,240 @@
+<html>
+    <head>
+        <title>Kelvin</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+
+<link rel="stylesheet" type="text/css" href="/assets/site.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather" rel="stylesheet">
+<link rel="stylesheet" href="/assets/highlight/styles/default.css">
+<script src="/assets/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script>
+  if (location.hostname != "def246.com") {
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+  ':35729/livereload.js?snipver=1"></' + 'script>')
+  }
+</script> 
+
+        <meta name="author" content="Kelvin">
+        <meta name="description" content="We all love moments of clarity. That moment when things just click. I’ve had a few of these in my life time and now I’d like to share one with you. What feels like a very very long time ago I watched Brian Mann’s backbone on rails series. I’m a bit of a tight ass so it was a big deal for me to spend money on these videos but I’m glad I did. During the hour long easy to follow explanation of how Mann organizes his application, it was a single picture that made things click. Ah… that prized moment of clarity. I’ll share the picture with you.
+">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Moments of Programmer Clarity">
+        <meta property="og:url" content="http://def246.com/2014/09/2014-09-10_moments-of-programmer-clarity/">
+        <meta property="og:site_name" content="def246">
+        <meta property="og:description" content="We all love moments of clarity. That moment when things just click. I’ve had a few of these in my life time and now I’d like to share one with you. What feels like a very very long time ago I watched Brian Mann’s backbone on rails series. I’m a bit of a tight ass so it was a big deal for me to spend money on these videos but I’m glad I did. During the hour long easy to follow explanation of how Mann organizes his application, it was a single picture that made things click. Ah… that prized moment of clarity. I’ll share the picture with you.
+">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Moments of Programmer Clarity">
+        <meta name="twitter:description" content="We all love moments of clarity. That moment when things just click. I’ve had a few of these in my life time and now I’d like to share one with you. What feels like a very very long time ago I watched Brian Mann’s backbone on rails series. I’m a bit of a tight ass so it was a big deal for me to spend money on these videos but I’m glad I did. During the hour long easy to follow explanation of how Mann organizes his application, it was a single picture that made things click. Ah… that prized moment of clarity. I’ll share the picture with you.
+">
+    </head>
+<body>
+
+    <div class="bg-gray-200">
+  <div class="container mx-auto px-4">
+      <nav class="flex flex-wrap items-center justify-between p-4">
+        <div class="lg:order-2 w-auto lg:w-1/5 sm:text-center"><a class="text-2xl text-gray-900 hover:text-gray-700" href="/">Kelvin</a></div>
+
+        <div class="navbar-menu lg:order-3 lg:block w-full lg:w-2/5 lg:text-right">
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/">Home</a>
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/posts">Blog</a>
+        </div>
+      </nav>
+    </div>
+</div>
+
+
+    <div class="container mx-auto">
+        <div class="flex">
+            <div class="w-3/3 min-w-full px-1">
+                <div class="flex items-center">
+                    <div class="w-1/5 pt-4">
+                        
+                        <a href="/2014/09/2014-09-09_searching-files-with-laravel/">Previous article</a>
+                        
+                    </div>
+                    <div class="w-3/5">
+                        <h1 class="mt-8 text-center text-3xl text-blue-600">
+                            Moments of Programmer Clarity
+                        </h1>
+                    </div>
+                    <div class="w-1/5 pt-4 text-right">
+                        
+                        <a href="/2014/10/2014-10-30_documentation-in-php/">Next article</a>
+                        
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="post-body h-full py-8 bg-white border-t">
+                        <p>We all love moments of clarity. That moment when things just click. I’ve had a few of these in my life time and now I’d like to share one with you. What feels like a very very long time ago I watched Brian Mann’s <a href="http://www.backbonerails.com/series/engineering_single_page_apps">backbone on rails</a> series. I’m a bit of a tight ass so it was a big deal for me to spend money on these videos but I’m glad I did. During the hour long easy to follow explanation of how Mann organizes his application, it was a single picture that made things click. Ah… that prized moment of clarity. I’ll share the picture with you.</p>
+<!-- more -->
+<img src="/media/moments-of-programmer-clarity/marionette-video.png" alt="A Momemnt of Clarity">
+<p>So a picture is worth a thousand words but without some context here you probably don’t understand the big deal about this picture. You probably look at it and brush it off like some outdated UML diagram or math equation. Allow me to explain how this picture changed my thinking. Before watching the Mann videos, I had been thinking in MVC. I used Rails and Laravel models, views, and controllers. Anything else was pure chaos. Oh, how I desired to confirm to convention over configuration. I would fight tooth and nail for convention over configuration. However, the problem I kept running into though was as my applications grew, so did my models, views and controllers.</p>
+<p>During my Java programming days I had usually thrown stuff in the <code>src/</code> directory with little thought. I whimsically named classes and they often had many responsibilities. The results were typically large bloated classes that I dreaded visiting. I think that is why, partially, when I got bit by the MVC bug, I fell hard. I was in love with MVC. It was the true path to organizing my application. It just made sense and gave my programming direction. This is where the database stuff goes, this is where the routes go, this is where the html goes and I just sprinkled the business logic in controllers and wherever it needed to go. So let’s look at our image again.</p>
+<img src="/media/moments-of-programmer-clarity/marionette-video.png" alt="A Moment of Clarity">
+<p>In this application we have three parts Users, Leads and Appointments. Using Rails we could scaffold out some CRUD (create-read-update-delete) for the models, views, and controllers but it is rarely that simple. Notice in this example, when you show a user you need to view Users and Leads and also list Appointments for that user. This is how real world applications work. Despite our best attempts to separate models, views and controllers into CRUD actions, things will over time end up all mixed and mangled together.</p>
+<h3>Here is the lesson learned from my moment of clarity.</h3>
+<h2>When you have a complex problem get help</h2>
+<p>It’s simple when you think about it. If your controller is taking on too much water (responsibility), the controller can ask for help from other class. <strong>Delegate</strong> the hard work. In this case, Brian goes on to say we should only ask for help from our parents. What is a parent? It is the successor who reigns over your family tree. In the case of this example image: Users and Application are parents to Users.Show and Application.List methods respectively. This means that <code>Users.Show</code> must not know about <code>Appointments.List</code>.Instead Users.Show communicates with the global message broker that his parent provides to him, <code>App.request('appointment.listings')</code>. <code>Users.Show</code> has no clue who will answer the <code>appointment.listings</code> request but <strong>someone</strong> will.</p>
+<p>Meanwhile in Cyberland, the Appointment component has already told it’s parent (App) that he will handle any requests for <code>appointment.listings</code> and thus later he receives an anonymous call from User component and responds to it. This is all in the context of Marionette, but the concept applies across all programming languages: <strong>when dealing with complex issues, ask for help.</strong> Let’s illustrate our principle using a Laravel controller</p>
+<pre><code>require_once('./lib/Stripe.php');
+
+class UserController extends Controller
+{
+	public function store()
+	{
+		$rules = [
+			'email' =&gt; 'required|email|unique:users:email',
+			'password' =&gt; 'required|min:8|confirmed',
+			'first_name' =&gt; 'required',
+			'last_name' =&gt; 'required',
+		];
+
+		$validator = Validator::make(Input::all(), $rules);
+
+		if ($validator-&gt;fails())
+		{
+			return Redirect::back()-&gt;withErrors($validator)-&gt;withInput();
+		}
+
+		Stripe::setApiKey(&quot;sk_test_BQokikJOvBiI2HlWgH4olfQ2&quot;);
+
+		Stripe_Plan::create(array(
+			&quot;amount&quot; =&gt; 2000,
+			&quot;interval&quot; =&gt; &quot;month&quot;,
+			&quot;name&quot; =&gt; &quot;Amazing Gold Plan&quot;,
+			&quot;currency&quot; =&gt; &quot;usd&quot;,
+			&quot;id&quot; =&gt; &quot;gold&quot;)
+		);
+
+		$customer = Stripe_Customer::create(array(
+			&quot;card&quot; =&gt; Input::get('stripeToken'),
+			&quot;plan&quot; =&gt; &quot;gold&quot;,
+			&quot;email&quot; =&gt; Input::get('email'))
+		);
+
+		$user = new User;
+
+		$user-&gt;email = Input::get('email');
+		$user-&gt;password = Input::get('password');
+		$user-&gt;first_name = Input::get('first_name');
+		$user-&gt;last_name = Input::get('last_name');
+		$user-&gt;stripe_id = $customer-&gt;id;
+		$user-&gt;save();
+
+		$interests = new UserInsterest;
+
+		$interests-&gt;user_id = $user-&gt;id;
+		$interests-&gt;football = Input::get('football_checked', false);
+		$interests-&gt;basketball = Input::get('basketball_checked', false);
+		$interests-&gt;baseball = Input::get('baseball_checked', false);
+		$interests-&gt;mma = Input::get('mma_checked', false);
+		$interests-&gt;soccer = Input::get('soccer_checked', false);
+		$interests-&gt;golf = Input::get('golf_checked', false);
+		$interests-&gt;tennis = Input::get('tennis_checked', false);
+
+		$interests-&gt;save();
+
+		$accounts = UserSocialAccount::where('email', $user-&gt;email)-&gt;get();
+
+		foreach ($accounts as $account)
+		{
+			$account-&gt;user_id = $user-&gt;id;
+			$account-&gt;save();
+		}
+
+		$data = [
+			'user' =&gt; $user,
+			'some_message' =&gt; 'You are awesome!',
+		];
+
+		Mail::send('emails.welcome', $data, function($message)use ($user)
+		{
+		  $message-&gt;from('please-reply@yoursite.com', 'Some Dude');
+		  $message-&gt;to($user-&gt;email, $user-&gt;first_name)-&gt;subject('Thanks for signing up!');
+		});
+
+		Session::flash('message', 'Welcome to the site!');
+		return Redirect::to('/');
+	}
+}
+</code></pre>
+<p>There is a ton to look at here. This controller is doing too much work on his own. The code all works as expected but it is hard to work with and troubleshoot. Thus when the boss asks you to add that extra cool feature - you know… the one where if a user picks certain interests then they should get different types of emails - where do we shove that logic? The code keeps piling up in one spot. So let’s re-factor this code. First I’m going to look for <code>return</code> statements. <strong>Next I’m going to make a statement</strong>: <em>returning a redirect, response and setting session messages is the primary responsibility of a controller</em>. The secondary responsibility is to reach out to his friend that best handles the job for this particular action (route). Thus our <code>UserController</code> transforms into this:</p>
+<pre><code>class UserController extends Controller
+{
+	public function store()
+	{
+		try
+		{
+			$user = Users::createNewUser(Input::all());
+		}
+		catch(ValidationException $e)
+		{
+			return Redirect::back()-&gt;withErrors($e-&gt;getValidator())-&gt;withInput();
+		}
+
+		Session::flash('message', &quot;Welcome to the site {$user-&gt;first_name}&quot;);
+
+		return Redirect::to('/');
+	}
+}
+</code></pre>
+<p>All we did was ask for help from another class called <code>Users</code>, specifically the <code>createNewUser</code> method. To handle validation we use exception handling but if you don’t like the way this looks then you could get rid of the <code>try ... catch</code> statement and replace it with an <code>if</code> statement. Because validation is something that is done so often in an application, I like to use a little Laravel magic and register an error handler for validation exceptions. I’ll register this error handler somewhere in the bootstrapping of Laravel (i.e. app/global/start.php).</p>
+<pre><code>App::error(function(ValidationException $e)
+{
+	return Redirect::back()-&gt;withErrors($e)-&gt;withInput();
+});
+</code></pre>
+<p>And viola! Now we can remove the <code>try ... catch</code> from our controllers.</p>
+<pre><code>class UserController extends Controller
+{
+	public function store()
+	{
+		$user = Users::createNewUser(Input::all());
+
+		Session::flash('message', &quot;Welcome to the site {$user-&gt;first_name}&quot;);
+
+		return Redirect::to('/');
+	}
+}
+</code></pre>
+<p>Of course I can always catch the exception in the controller if I need fine grained special handling but for the most part, when I get a validation errors, I typically just redirect the user back with error messages and have them fix their form input so this is a pretty sensible default for the entire <code>App</code>.</p>
+<p>To wrap things up the idea of seeking help from close friends is one of the basis of <a href="http://en.wikipedia.org/wiki/Law_of_Demeter">Demeter’s Law</a>. I had heard of the Law of Demeter in conversations, but never really gave it much thought when developing. Sometimes really good advise only makes its way into my brain after I fail to follow said advise and a few fails later I can have an epiphany.</p>
+<p><em><strong>When you are faced with complex problem, seek help from others that you trust</strong></em></p>
+
+                    </div>                        
+                </div>
+
+                <div class="text-right">
+                    <div>post by Kelvin on 09/10/2014</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="disqus_thread"></div>
+
+        <script>
+            var disqus_shortname = '';
+            var disqus_url = 'def246.com//2014/09/2014-09-10_moments-of-programmer-clarity/';
+          
+            (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//go.disqus.com/embed.js';
+
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+
+    </div>
+</body>
+</html>

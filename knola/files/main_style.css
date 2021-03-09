@@ -1,0 +1,62 @@
+@font-face { font-family: chalky; src: url(theme/EraserDust.eot?1404258684); }
+ @font-face { font-family: chalky; src: url(theme/EraserDust.ttf?1404258684); }
+ @font-face { font-family: eraser; src: url(theme/EraserRegular.eot?1404258684); }
+ @font-face { font-family: eraser; src: url(theme/EraserRegular.ttf?1404258684); }
+ @font-face { font-family: handwriting; src: url(theme/HandWriting.ttf?1404258684); }
+ @font-face { font-family: handwriting; src: url(theme/HandWriting.eot?1404258684); }
+ * { margin: 0; padding: 0; }
+ #page-wrap { padding-top: 130px; margin-left: 10px; width: 600px; }
+ #page-wrap table { background-color: white; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; }
+ td { vertical-align: top; min-width: 600px; padding: 0px 20px 0px 20px; border-right: dashed 1px #000; }
+ body { background: url(theme/blackboard-repeat.png?1404258684); background-attachment: fixed; background-repeat: repeat-x; overflow: auto; overflow-y: hidden; }
+ a img { border: none; }
+ .entry { position: relative; overflow: visible; min-width: 600px; max-width: 650px; }
+ .finished { border-top: 1px dashed blue; }
+ #social-interation { width: 440px; }
+ .social-container { text-align: right; }
+ .social-button { width: 100px; position: relative; float: left; }
+ .social-button.fb-like { }
+ .social-button.tw-button { top: 7px; left: 0px; }
+ .social-button.gp-button { position: relative; top: 4px; text-align: center; }
+ .social-button.ln-button { top: 6px; width: 120px; }
+ #other-links { position: absolute; top: 0px; left: 1140px; padding: 5px; }
+ #some-writing { }
+ #tweet-knola { position: absolute; top: 80px; left: 590px; z-index: 100; }
+ #twitter-hint { font-family: eraser !important; font-size: 17px; }
+ #twitter-hint img { width: 100px; }
+ #twitter-hint div.paragraph { position: relative; top: -42px; left: 42px; z-index: 100; }
+ #twitter-hint p { position: relative; top: -42px; left: 42px; z-index: 100; }
+ #header, #footer { position: fixed; top: 15px; left: 28px; color: white; width: 100%; font-size: 30px; }
+ #header { font-family: eraser !important; letter-spacing: 7px; }
+ #header .sub-title { font-size: 12px; }
+ #header #mouse-hint { position: absolute; font-size: 20px; right: 45px; width: 300px; height: 500px text-transform: none; font-family: handwriting; letter-spacing: -1px; color: #999999; text-align: center; }
+ #header #mouse-hint img { position: relative; right: -50px; width: 90px; height: 120px; }
+ #footer { top: 600px; left: 0px; height: 100px; background-color: #323232; padding: 10px 0px 10px 28px; visibility: hidden; }
+ #footer #tweeter-box { width: 500px; position: absolute; left: 570px; top: 15px; padding: 0px 20px 0px 20px; border-left: 1px white dashed; border-right: 1px white dashed; }
+ #footer #tweeter-box .twtr-timeline { height: 50px !important; }
+ #footer #tweeter-box .twtr-hd { padding: 2px !important; height: 13px !important; text-align: right; font-family: eraser !important; }
+ #footer #tweeter-box .twtr-ft { height: 20px !important; padding: 0px !important; }
+ #footer #tweeter-box .twtr-ft div { padding: 3px !important; }
+ #navigation-left, #navigation-right { font-family: chalky !important; position: fixed; width: 75px; height: 300px; font-weight: bold; top: 200px; z-index: 400; cursor: pointer; color: white; visibility: hidden; padding: 0px 10px 0px 10px; }
+ #navigation-left { left: 0px; -webkit-border-top-right-radius: 30px; -webkit-border-bottom-right-radius: 30px; -moz-border-radius-topright: 30px; -moz-border-radius-bottomright: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; }
+ #navigation-right { right: 0px; -webkit-border-top-left-radius: 30px; -webkit-border-bottom-left-radius: 30px; -moz-border-radius-topleft: 30px; -moz-border-radius-bottomleft: 30px; border-top-left-radius: 30px; border-bottom-left-radius: 30px; }
+ #navigation-left:hover, #navigation-right:hover { background-color: #333333; border: 1px dashed #F1F1F1; }
+ #navigation-left div.paragraph, #navigation-right div.paragraph { text-align: center; position: relative; font-size: 25px; top: 10%; left: 35%; width: 16px; }
+ #navigation-left p, #navigation-right p { text-align: center; position: relative; font-size: 25px; top: 10%; left: 35%; width: 16px; }
+ #navigation-right div.paragraph { right: -70px; }
+ #navigation-right p { right: -70px; }
+ p.page-percent { margin-top: 40px; font-family: 'Ubuntu' !important; font-size: 14px !important; word-wrap: normal !important; }
+ #menu { position: fixed; top: 85px; left: 20px; color: white; clear: both; float: left; margin: 0; font-family: chalky; letter-spacing: 2px; width: 1000px; font-size: 22px; }
+ #menu ul{ list-style-type: none; margin: 0; padding: 0; }
+ #menu ul li{ list-style-type: none; display: inline; margin: 0; padding: 0 10px 0 10px; }
+ #menu ul li a{ text-decoration: none; list-style-type: none; display: inline; color: white; margin: 0; padding: 0; }
+ #menu ul li a:hover{ color: black; }
+ .draggable { }
+ .moving { }
+ #wsite-content h2 { }
+ .wcustomhtml { overflow-y: visible !important; }
+
+div.paragraph ul, div.paragraph ol { padding-left: 2.3em !important; margin: 5px 0 !important; overflow:hidden; }
+div.paragraph li { padding-left: 5px !important; margin: 3px 0 0 !important; }
+div.paragraph ul, div.paragraph ul li { list-style: disc outside !important; }
+div.paragraph ol, div.paragraph ol li { list-style: decimal outside !important; }

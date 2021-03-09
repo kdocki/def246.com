@@ -1,0 +1,164 @@
+<html>
+    <head>
+        <title>Kelvin</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+
+<link rel="stylesheet" type="text/css" href="/assets/site.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather" rel="stylesheet">
+<link rel="stylesheet" href="/assets/highlight/styles/default.css">
+<script src="/assets/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script>
+  if (location.hostname != "def246.com") {
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+  ':35729/livereload.js?snipver=1"></' + 'script>')
+  }
+</script> 
+
+        <meta name="author" content="Kelvin">
+        <meta name="description" content="The other night we were watching the movie Armageddon with Bruce Willis and Liv Tyler. Near the end of the movie the crew picks straws to determine who stays behind. Thus, being the Buzzkillington that I am, I posed a question to everyone…
+If you could pick your turn, would you go first, last, or some where in between?
+Not everyone could agree. Some said first, others said it didn’t matter. The answer is that it really shouldn’t matter which order you pick your straw in - given that the straws are put in a uniformly distributed random order.
+">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Drawing Straws">
+        <meta property="og:url" content="http://def246.com/2012/12/2012-12-22_drawing-straws/">
+        <meta property="og:site_name" content="def246">
+        <meta property="og:description" content="The other night we were watching the movie Armageddon with Bruce Willis and Liv Tyler. Near the end of the movie the crew picks straws to determine who stays behind. Thus, being the Buzzkillington that I am, I posed a question to everyone…
+If you could pick your turn, would you go first, last, or some where in between?
+Not everyone could agree. Some said first, others said it didn’t matter. The answer is that it really shouldn’t matter which order you pick your straw in - given that the straws are put in a uniformly distributed random order.
+">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Drawing Straws">
+        <meta name="twitter:description" content="The other night we were watching the movie Armageddon with Bruce Willis and Liv Tyler. Near the end of the movie the crew picks straws to determine who stays behind. Thus, being the Buzzkillington that I am, I posed a question to everyone…
+If you could pick your turn, would you go first, last, or some where in between?
+Not everyone could agree. Some said first, others said it didn’t matter. The answer is that it really shouldn’t matter which order you pick your straw in - given that the straws are put in a uniformly distributed random order.
+">
+    </head>
+<body>
+
+    <div class="bg-gray-200">
+  <div class="container mx-auto px-4">
+      <nav class="flex flex-wrap items-center justify-between p-4">
+        <div class="lg:order-2 w-auto lg:w-1/5 sm:text-center"><a class="text-2xl text-gray-900 hover:text-gray-700" href="/">Kelvin</a></div>
+
+        <div class="navbar-menu lg:order-3 lg:block w-full lg:w-2/5 lg:text-right">
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/">Home</a>
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/posts">Blog</a>
+        </div>
+      </nav>
+    </div>
+</div>
+
+
+    <div class="container mx-auto">
+        <div class="flex">
+            <div class="w-3/3 min-w-full px-1">
+                <div class="flex items-center">
+                    <div class="w-1/5 pt-4">
+                        
+                        <a href="/2012/12/2012-12-09_binding-to-primitives-in-angularjs-ngrepeat/">Previous article</a>
+                        
+                    </div>
+                    <div class="w-3/5">
+                        <h1 class="mt-8 text-center text-3xl text-blue-600">
+                            Drawing Straws
+                        </h1>
+                    </div>
+                    <div class="w-1/5 pt-4 text-right">
+                        
+                        <a href="/2013/02/2013-02-07_ioc-container-in-laravel/">Next article</a>
+                        
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="post-body h-full py-8 bg-white border-t">
+                        <p>The other night we were watching the movie Armageddon with Bruce Willis and Liv Tyler. Near the end of the movie the crew picks straws to determine who stays behind. Thus, being the Buzzkillington that I am, I posed a question to everyone…</p>
+<p><strong>If you could pick your turn, would you go first, last, or some where in between?</strong></p>
+<p>Not everyone could agree. Some said first, others said it didn’t matter. The answer is that it really shouldn’t matter which order you pick your straw in - <em>given that the straws are put in a uniformly distributed random order</em>.</p>
+<!-- more -->
+<p>{% img full-width /media/drawing-straws/armageddon-straws.jpg %}</p>
+<p>This means you <strong>should</strong> receive no favor by picking first or last. This might seem like common sense, however, statistics can be tricky sometimes, (i.e. the <a href="http://en.wikipedia.org/wiki/Monty_Hall_problem">Monty Hall problem</a>) so I’m never too quick to brush statistical problems off with common sense. Thus I wrote a simulation to show myself that order doesn’t matter.</p>
+<pre><code>var myApp = angular.module('myApp',[]);
+
+function MyCtrl($scope) {
+  $scope.number_of_sticks = 4;
+  $scope.iterations = 1000000;
+
+  $scope.winners = [];
+  $scope.stats = [];
+  $scope.deviation= [];
+  $scope.average = 0;
+
+  $scope.getSticks = function(size)
+  {
+    var sticks = [];
+    var loser = Math.floor((Math.random()*size));
+    for(var i = 0; i &lt; size; i++) sticks[i] = 0;
+    sticks[loser] = 1;
+    return sticks;
+  };
+
+  $scope.play = function(size)
+  {
+    var sticks = $scope.getSticks(size);
+    for(var i = 0; i &lt; sticks.length; i++)
+      if(typeof $scope.winners[i] === 'undefined')
+        $scope.winners[i] = sticks[i];
+      else
+        $scope.winners[i] = $scope.winners[i] + sticks[i];
+  };
+
+  for(var i = 0; i &lt; $scope.iterations; i++)
+    $scope.play($scope.number_of_sticks);
+
+
+  for(var i = 0; i &lt; $scope.number_of_sticks; i++) {
+    $scope.stats[i] = $scope.winners[i] / $scope.iterations;
+      $scope.average += $scope.stats[i];
+    }
+
+    $scope.average = $scope.average / $scope.number_of_sticks;
+
+  for(var i = 0; i &lt; $scope.number_of_sticks; i++)
+      $scope.deviation[i] = Math.round(($scope.average - $scope.stats[i]) * 100);
+
+}
+</code></pre>
+<p>Below if you click Result you can run a straw picking game one million times over with four people and as expected… no participant has a clear advantage (meaning they loose 25% of the time).</p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/ADukg/1603/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+                    </div>                        
+                </div>
+
+                <div class="text-right">
+                    <div>post by Kelvin on 12/22/2012</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="disqus_thread"></div>
+
+        <script>
+            var disqus_shortname = '';
+            var disqus_url = 'def246.com//2012/12/2012-12-22_drawing-straws/';
+          
+            (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//go.disqus.com/embed.js';
+
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<html>
+    <head>
+        <title>Kelvin</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+
+<link rel="stylesheet" type="text/css" href="/assets/site.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather" rel="stylesheet">
+<link rel="stylesheet" href="/assets/highlight/styles/default.css">
+<script src="/assets/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script>
+  if (location.hostname != "def246.com") {
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+  ':35729/livereload.js?snipver=1"></' + 'script>')
+  }
+</script> 
+
+        <meta name="author" content="Kelvin">
+        <meta name="description" content="In the old days of WebCT, instructors were given a tab that allowed them to view their course as a student. In Blackboard 9.1 this functionality is missing and much missed!
+After a little investigating I found an open source Student View building block developed by cool Aussie cat named Wiley Fuller. The block exposes a course tool for the teacher to click which causes a demo student to be created and enrolled into the course and then switches the instructor to the freshly made demo student.
+">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Student View Building Block">
+        <meta property="og:url" content="http://def246.com/2012/09/2012-09-21_student-view-building-block/">
+        <meta property="og:site_name" content="def246">
+        <meta property="og:description" content="In the old days of WebCT, instructors were given a tab that allowed them to view their course as a student. In Blackboard 9.1 this functionality is missing and much missed!
+After a little investigating I found an open source Student View building block developed by cool Aussie cat named Wiley Fuller. The block exposes a course tool for the teacher to click which causes a demo student to be created and enrolled into the course and then switches the instructor to the freshly made demo student.
+">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Student View Building Block">
+        <meta name="twitter:description" content="In the old days of WebCT, instructors were given a tab that allowed them to view their course as a student. In Blackboard 9.1 this functionality is missing and much missed!
+After a little investigating I found an open source Student View building block developed by cool Aussie cat named Wiley Fuller. The block exposes a course tool for the teacher to click which causes a demo student to be created and enrolled into the course and then switches the instructor to the freshly made demo student.
+">
+    </head>
+<body>
+
+    <div class="bg-gray-200">
+  <div class="container mx-auto px-4">
+      <nav class="flex flex-wrap items-center justify-between p-4">
+        <div class="lg:order-2 w-auto lg:w-1/5 sm:text-center"><a class="text-2xl text-gray-900 hover:text-gray-700" href="/">Kelvin</a></div>
+
+        <div class="navbar-menu lg:order-3 lg:block w-full lg:w-2/5 lg:text-right">
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/">Home</a>
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/posts">Blog</a>
+        </div>
+      </nav>
+    </div>
+</div>
+
+
+    <div class="container mx-auto">
+        <div class="flex">
+            <div class="w-3/3 min-w-full px-1">
+                <div class="flex items-center">
+                    <div class="w-1/5 pt-4">
+                        
+                        <a href="/2012/09/2012-09-20_angularjs-parent-scopes/">Previous article</a>
+                        
+                    </div>
+                    <div class="w-3/5">
+                        <h1 class="mt-8 text-center text-3xl text-blue-600">
+                            Student View Building Block
+                        </h1>
+                    </div>
+                    <div class="w-1/5 pt-4 text-right">
+                        
+                        <a href="/2012/10/2012-10-03_sublime-text-2-cheat-sheet/">Next article</a>
+                        
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="post-body h-full py-8 bg-white border-t">
+                        <p>In the old days of WebCT, instructors were given a <a href="/media/student-view-building-block/studentview.png" data-lightbox="studentview">tab</a> that allowed them to view their course as a student. In Blackboard 9.1 this functionality is missing and much missed!</p>
+<p>After a little investigating I found an <strong>open source</strong> <a href="http://projects.oscelot.org/gf/project/studentview/">Student View building block</a> developed by cool Aussie cat named <a href="http://www.linkedin.com/pub/wiley-fuller/0/895/905">Wiley Fuller</a>. The block exposes a course tool for the teacher to click which causes a demo student to be created and enrolled into the course and then switches the instructor to the freshly made demo student.</p>
+<!-- more -->
+<p>However, I found a few things missing so I decided to chip into the open source community. Here they are:</p>
+<ol>
+<li>Demo students can be grouped into a data source key</li>
+<li>Demo student accounts can be prefixed with a custom tag set by system admin</li>
+<li>Demo student that is created can be named after the course pkid (default), teacher’s pkid or the teacher’s username.</li>
+</ol>
+<p>You can view my code changes with subversion. I left it up to Wiley to merge the <a href="http://projects.oscelot.org/gf/project/studentview/scmsvn/?action=browse&amp;path=%2Fbranches%2F">branch</a> back into the trunk (which eventually he did). Wiley also implemented velocity templates for the RenderingHook which allows the B2 to interject javascript code and add those nifty little Student/Teacher view links to the course menu.</p>
+<pre><code>svn checkout http://projects.oscelot.org/svn/studentview/trunk/
+</code></pre>
+<p>To get an idea of what visually changed…</p>
+<div class="row"><div class="col-md-6">
+Before
+<a data-lightbox="studentview"href="/media/student-view-building-block/before.png"><img class="full-width" src="/media/student-view-building-block/before.png"></a>
+</div><div class="col-md-6">
+After
+<a data-lightbox="studentview"href="/media/student-view-building-block/after.png"><img class="full-width" src="/media/student-view-building-block/after.png"></a>
+</div></div>
+<p>Here’s a summary of code changes</p>
+<pre><code>[ktd1@box1 ~]$ svn diff --summarize  http://projects.oscelot.org/svn/studentview/trunk/ http://projects.oscelot.org/svn/studentview/branches/dsk-userPrefix-userId
+M       src/java/StripesResources.properties
+D       src/java/au/edu/swinburne/bb/studentview/UserIdType.java
+M       src/java/au/edu/swinburne/bb/studentview/stripes/ConfigAction.java
+M       src/java/au/edu/swinburne/bb/studentview/stripes/ViewAsStudentAction.java
+M       web/WEB-INF/applicationContext.xml
+M       web/WEB-INF/jsp/config.jsp
+</code></pre>
+
+                    </div>                        
+                </div>
+
+                <div class="text-right">
+                    <div>post by Kelvin on 09/21/2012</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="disqus_thread"></div>
+
+        <script>
+            var disqus_shortname = '';
+            var disqus_url = 'def246.com//2012/09/2012-09-21_student-view-building-block/';
+          
+            (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//go.disqus.com/embed.js';
+
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,380 @@
+<html>
+    <head>
+        <title>Kelvin</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+
+<link rel="stylesheet" type="text/css" href="/assets/site.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather" rel="stylesheet">
+<link rel="stylesheet" href="/assets/highlight/styles/default.css">
+<script src="/assets/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script>
+  if (location.hostname != "def246.com") {
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+  ':35729/livereload.js?snipver=1"></' + 'script>')
+  }
+</script> 
+
+        <meta name="author" content="Kelvin">
+        <meta name="description" content="My work buddy and I were talking about tests. We wanted something to go through every route in our system and check for any obvious errors. That seemed like a pretty simple way to test an application.
+So I wrote a generator to create tests for me automatically at work. I wanted to test every route we have in the system. We have hundreds of routes on this particular project I’m working on today. On our last large project we had over a thousand routes. What can I say? We like our routes.
+">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Laravel Integration Testing for Large Apps">
+        <meta property="og:url" content="http://def246.com/2015/11/2015-11-18_laravel-integration-testing-for-large-app/">
+        <meta property="og:site_name" content="def246">
+        <meta property="og:description" content="My work buddy and I were talking about tests. We wanted something to go through every route in our system and check for any obvious errors. That seemed like a pretty simple way to test an application.
+So I wrote a generator to create tests for me automatically at work. I wanted to test every route we have in the system. We have hundreds of routes on this particular project I’m working on today. On our last large project we had over a thousand routes. What can I say? We like our routes.
+">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Laravel Integration Testing for Large Apps">
+        <meta name="twitter:description" content="My work buddy and I were talking about tests. We wanted something to go through every route in our system and check for any obvious errors. That seemed like a pretty simple way to test an application.
+So I wrote a generator to create tests for me automatically at work. I wanted to test every route we have in the system. We have hundreds of routes on this particular project I’m working on today. On our last large project we had over a thousand routes. What can I say? We like our routes.
+">
+    </head>
+<body>
+
+    <div class="bg-gray-200">
+  <div class="container mx-auto px-4">
+      <nav class="flex flex-wrap items-center justify-between p-4">
+        <div class="lg:order-2 w-auto lg:w-1/5 sm:text-center"><a class="text-2xl text-gray-900 hover:text-gray-700" href="/">Kelvin</a></div>
+
+        <div class="navbar-menu lg:order-3 lg:block w-full lg:w-2/5 lg:text-right">
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/">Home</a>
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/posts">Blog</a>
+        </div>
+      </nav>
+    </div>
+</div>
+
+
+    <div class="container mx-auto">
+        <div class="flex">
+            <div class="w-3/3 min-w-full px-1">
+                <div class="flex items-center">
+                    <div class="w-1/5 pt-4">
+                        
+                        <a href="/2015/05/2015-05-29_delete-a-file-after-download-laravel5/">Previous article</a>
+                        
+                    </div>
+                    <div class="w-3/5">
+                        <h1 class="mt-8 text-center text-3xl text-blue-600">
+                            Laravel Integration Testing for Large Apps
+                        </h1>
+                    </div>
+                    <div class="w-1/5 pt-4 text-right">
+                        
+                        <a href="/2015/11/2015-11-19_rollbar-is-awesome/">Next article</a>
+                        
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="post-body h-full py-8 bg-white border-t">
+                        <p>My work buddy and I were talking about tests. We wanted something to go through every route in our system and check for any obvious errors. That seemed like a pretty simple way to test an application.</p>
+<p>So I wrote a <a href="https://github.com/devisephp/cms/blob/master/src/Devise/Support/Console/DeviseTestRoutesCommand.php">generator to create tests for me automatically</a> at work. I wanted to test every route we have in the system. We have hundreds of routes on this particular project I’m working on today. On our last large project we had over a thousand routes. What can I say? We like our routes.</p>
+<!-- more --> 
+<p>The test to see if a route works is pretty simple and it looks something like this.</p>
+<pre><code>public function test_route()
+{
+	$response = $this-&gt;call('GET', '/some/url');
+
+	$this-&gt;assertEquals(200, $response-&gt;status());
+}
+</code></pre>
+<h3>How to run A LOT of tests in Laravel?</h3>
+<p>So after running the test code generator I was left with about 300 tests for this project. Some failed, some succeed, others flat out gave me fatal errors and crashed phpunit. This was because we had changed database columns and it totally broke some sections of our the site. After fixing a couple of errors, I ran into a bigger issue. <strong>Out of Memory</strong></p>
+<pre><code>Fatal error: Allowed memory size of 134217728 bytes exhausted (tried to allocate 41 bytes) in ../vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 323
+</code></pre>
+<p>Basically, out of the box Laravel <em>integration</em> testing is a memory explosion waiting to happen. Testing will work so long as you have a little application. Don’t be alarmed though, I get emails all the time about pills we can take to increase size. Jokes aside, if you want to test each one of your routes, eventually when you have enough routes, you will run into this same memory problem I ran into.</p>
+<p>There’s a quick fix to that problem. Just allow more memory, right?</p>
+<pre><code>ini_set('memory_limit', -1);
+</code></pre>
+<p>However, that just traded one problem for another. After running some really slow tests, after about 150 tests I start getting a continious stream of error exceptions.</p>
+<pre><code>Kelvin@dorothy:~/space/laravel-tests$ phpunit
+PHPUnit 4.8.18 by Sebastian Bergmann and contributors.
+
+..F..FF.F..FFFFFFFFFFFFFF
+
+.FFF.....FS......F..F..FF.FF.FSF.SF.FF  63 / 244 ( 25%)
+...FFFF.FFFF.F.F..F.....SF..F.FF.F.FF..FFFFF...SFFFF.F.SF.FF.F. 126 / 244 ( 51%)
+F.F.SFFFF.SFSF...FF.FSFFEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE 189 / 244 ( 77%)
+EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+
+Time: 1.08 minutes, Memory: 450.00Mb
+
+There were 94 errors:
+
+1) Programming_Session_Confirm_Stage_Update::test_route
+PDOException: SQLSTATE[08004] [1040] Too many connections
+
+
+2) Programming_Session_Course_Row::test_route
+PDOException: SQLSTATE[08004] [1040] Too many connections
+
+    ... yeah, this goes on for a while ...
+
+    ... then we start getting weird shit like this...
+
+94) Youth_Programs::test_route
+ErrorException: include(/Users/Kelvin/space/jccfs51/vendor/symfony/symfony/src/Symfony/Component/Finder/Exception/AccessDeniedException.php): failed to open stream: Too many open files
+
+
+    ... then some failures ...
+
+FAILURES!
+Tests: 244, Assertions: 139, Errors: 94, Failures: 78, Skipped: 10.
+</code></pre>
+<p>Well crap. What to do about this problem? My tests are erroring because the framework has created too many database connections. My guess is that Laravel stores it’s entire <code>$app</code> globally and there may be some places where mysql database connections are not closed. This is causing memory leakage and eventually a bunch of <em>PDOException: SQLSTATE[08004] [1040] Too many connections</em> errors.</p>
+<p>One way to get around this <em>too many connections</em> problem is to not run so many tests all at once. We can limit our runs to only a subset of tests using phpunit suites. Here is a <a href="https://gist.github.com/rizqidjamaluddin/61cd7f61ca36cf5c2d5a">gist of someone who has done it this way</a>.</p>
+<p>However, I decided to tackle the problem head on. The real problem is too many database connections. Thus we will manually close the connections ourself by overwriting the default <code>TestCase::tearDown</code> method as seen next.</p>
+<pre><code>class TestCase extends Illuminate\Foundation\Testing\TestCase
+{
+    /**
+     * The base URL to use while testing the application.
+     *
+     * @var string
+     */
+    protected $baseUrl = 'http://localhost';
+
+    /**
+     * Creates the application.
+     *
+     * @return \Illuminate\Foundation\Application
+     */
+    public function createApplication()
+    {
+        $app = require __DIR__.'/../bootstrap/app.php';
+
+        $app-&gt;make(Illuminate\Contracts\Console\Kernel::class)-&gt;bootstrap();
+
+        return $app;
+    }
+
+    /**
+     * Close out database connections, so they don't add up and eventually
+     * cause a bunch of PDOException: Too many connections errors for our
+     * tests, which otherwise would work normally if ran individually.
+     *
+     */
+     public function tearDown()
+     {
+        if ($this-&gt;app)
+        {
+            $connectionName = $this-&gt;app-&gt;make('config')-&gt;get('database.default');
+
+            $this-&gt;app-&gt;make('DB')-&gt;disconnect($connectionName);
+        }
+
+        parent::tearDown();
+     }
+}
+</code></pre>
+<p>Now when we run our tests, we don’t get a bunch of PDOException errors due to the <em>too many connections.</em> That is because we are closing them. Alright! Should we stop here? Well, we could. And if you’re not that familar with Laravel’s insides, then you might do well to stop here. However, I still have a few bones to pick with these tests.</p>
+<ol>
+<li>They are pretty dang slow.</li>
+<li>They use way to much memory.</li>
+</ol>
+<p>After some research I found that other people had ran into this memory issue before too. There is a nice <a href="https://github.com/laravel/framework/issues/1798">closed github ticket</a> which hasn’t really solved anything to date (even though the ticket dates over 2 years ago). Granted, we got around our memory problem by setting <em>memory_limit</em> to -1 but I want my tests to run faster and use less memory. It seemed to me that the obvious place to first tackle is the <code>TestCase::createApplication()</code> method.</p>
+<pre><code>public function createApplication()
+{
+    ini_set('memory_limit', -1); // yeah, I accept that Laravel likes to use lots of my memory... whatever, just do it.
+
+    $app = require __DIR__.'/../bootstrap/app.php';
+
+    $app-&gt;make(Illuminate\Contracts\Console\Kernel::class)-&gt;bootstrap();
+
+    return $app;
+}
+</code></pre>
+<p>Notice that everytime a new test is ran, Laravel is re-including and bootstrapping the application. However, we discovered earlier that the PHP garbage collection is not removing stuff under the hood of Laravel. There is a ton of stuff behind the curtain of Laravel. Some of which could remain, even after the test is completed. This means, the more tests you create, the more memory is used. I could get through about 20-30 tests before my php started to exploded due to being out of memory.</p>
+<h2>So how do we really fix this?</h2>
+<p>So in case you still don’t quite understand the issue. Let’s run a bench mark test. I’ll use the <code>ini_set('memory_limit', -1);</code> hack I mentioned at the beginning of this article. It uses over <strong>450Mb</strong> of memory.</p>
+<h3>One potential fix, re-use the same laravel application as much as possible</h3>
+<pre><code>class TestCase extends Illuminate\Foundation\Testing\TestCase
+{
+    /**
+     * The base URL to use while testing the application.
+     *
+     * @var string
+     */
+    protected $baseUrl = 'http://localhost';
+
+    /**
+     * [$application description]
+     * @var null
+     */
+    public static $application = null;
+
+    /**
+     * Creates the application.
+     *
+     * @return \Illuminate\Foundation\Application
+     */
+    public function createApplication()
+    {
+        if (!static::$application) $this-&gt;resetStaticApplication();
+
+        return static::$application;
+    }
+
+    /**
+     * Don't call parent::tearDown()
+     *
+     * @return null
+     */
+    public function tearDown()
+    {
+        // don't call parent::tearDown() or your application will be screwed up on next test
+    }
+
+    /**
+     * Resets the application. Reset whenever you do something that might
+     * affect the global $application
+     *
+     * @return null
+     */
+    public function resetStaticApplication()
+    {
+        static::$application = require __DIR__.'/../bootstrap/app.php';
+
+        static::$application-&gt;make(Illuminate\Contracts\Console\Kernel::class)-&gt;bootstrap();
+    }
+}
+</code></pre>
+<p>Now with my changes in place, let’s see how things run. Will we actually be able to complete without the framework blowing up and throwing error exceptions on over half our tests because it used up too many database connections?</p>
+<pre><code>Kelvin@dorothy:~/space/laravel-tests$ phpunit
+PHPUnit 4.8.18 by Sebastian Bergmann and contributors.
+
+..F..FF.F..FFFFFFFFFFFFFF
+
+.FFF.....FS....F.F..F..FFFFF.FSFFSF.FF  63 / 244 ( 25%)
+F..FFFFFFFFF.F.F..F.....SF..F.FF.F.FF..FFFFF.F.SFFFFFF.SF.FFFF. 126 / 244 ( 51%)
+F.F.SFFFFFSFSF...FF.FSFFFFFF.SFFFFFFS.FFFF.FSFF..F..FSFFFFFFF.F 189 / 244 ( 77%)
+F.FFFFF.F..F.F.FS.FF.FFFFF...F.F.FFF.FFFFFF..F...FF....
+
+Time: 27.96 seconds, Memory: 267.25Mb
+
+There were 145 failures:
+
+1) Account_Edit_Picture::test_route
+Failed asserting that 302 matches expected 200.
+
+
+
+        ... this goes on for a while...
+
+
+FAILURES!
+Tests: 244, Assertions: 228, Failures: 145, Skipped: 15.
+</code></pre>
+<p>YAY! We got a lot of failures and some skipped tests, but no weird ass errors. This looks promising. We will try this for a while and see how it turns out. We’ve ran over 600+ tests using a similar method to this on our Devise CMS tests. Hopefully, this will work well.</p>
+<p>Also, take a look at the memory and time now. It is down to <strong>27.96 seconds</strong> and <strong>267.25Mb.</strong> That’s a bit better.</p>
+<h3>Some Potential Problems with our approach to Integration Testing</h3>
+<p>There is some merit to the way Taylor setup the <code>TestCase</code>. So let’s try to understand why Taylor is resetting the application every time. If we understand that, then we’ll understand the dangers of the code I just showed you above to get around the memory problems.</p>
+<p>The application is reset because Taylor wants us to test in isolation. When we create a new application, we are creating a new IoC container. There are variables stored in this IoC container. If those variables are tampered with because of our test, then it could affect every other test. If you don’t reset those everytime, we run the risk of our application container not being isolated and thus causing certain tests to mess with each other. For example, take these two tests,</p>
+<pre><code>class TestMe extends TestCase
+{
+	public function test_me1()
+	{
+		URL::shouldReceive('route')-&gt;once()-&gt;andReturn('awesome');
+
+		print URL::route('something-here'); // awesome
+	}
+
+	/**
+	 * @expectedException InvalidArgumentException
+	 * @return [type]
+	 */
+	public function test_me2()
+	{
+		print URL::route('something-here');
+	}
+}
+</code></pre>
+<p>Above we don’t actually have a ‘something-here’ route defined. We are mocking it with Mockery on the URL facade. I personally don’t use Mockery on Laravel’s facades often because I don’t use facades that often. However, this will show you the problem.</p>
+<p>Above we are changing the URL facade to expect the <code>route</code> method. In our second <code>test_me2()</code> method we are just asserting that an exception is thrown because we don’t have a route defined for <em>something-here</em>.</p>
+<p>This test should run successfully on the <strong>old out of the box</strong> TestCase.</p>
+<pre><code>Kelvin@dorothy:~/space/laravel-test phpunit
+PHPUnit 4.8.18 by Sebastian Bergmann and contributors.
+
+..awesome.
+
+Time: 627 ms, Memory: 29.50Mb
+
+OK (2 tests, 1 assertion)
+</code></pre>
+<p>However, when we change to our modified <strong>TestCase</strong> we run into a different situation.</p>
+<p>Now our results show that mockery has been applied across both testing methods `test_me1’ and ‘testme_2’. See below.</p>
+<pre><code>Kelvin@dorothy:~/space/laravel-test$ phpunit
+PHPUnit 4.8.18 by Sebastian Bergmann and contributors.
+
+..awesomeFawesome
+
+Time: 425 ms, Memory: 26.75Mb
+
+There was 1 failure:
+
+1) TestMe::test_me2
+Failed asserting that exception of type &quot;InvalidArgumentException&quot; is thrown.
+
+/Users/Kelvin/.composer/vendor/phpunit/phpunit/src/TextUI/Command.php:186
+/Users/Kelvin/.composer/vendor/phpunit/phpunit/src/TextUI/Command.php:138
+
+FAILURES!
+Tests: 2, Assertions: 1, Failures: 1.
+</code></pre>
+<p>See how now we no longer get an exception in <code>test_me2</code> because the mock we applied in <code>test_me1</code> bled over. This is why testing in isolation is a good thing. How do we deal with this? Here are some simple steps.</p>
+<h3>A few takeaway tips</h3>
+<ol>
+<li>
+<p>Don’t bootstrap Laravel on unit tests. Only on integration tests. We use Mockery a lot on unit tests. Unit tests however only require a single class to be loaded. Not an entire framework. If you are using Mockery in unit tests, then you should even be extending <code>TestCase</code> and <code>createApplication()</code> Feel free to make different classes such as, <code>TestCase</code> and <code>UnitTestCase</code>.</p>
+</li>
+<li>
+<p>Don’t mock things on integration tests.</p>
+</li>
+<li>
+<p>Don’t try to <em>unit test</em> your models. If you really want to see your models working, write some integration tests on classes which heavily use the models. If you use a <code>Repository</code> then often you can just make calls to your repository and ensure that the models are indeed working.</p>
+</li>
+<li>
+<p>Use a real database and database transactions to rollback. This will save a lot of time compared to seeding your database over and over.</p>
+</li>
+<li>
+<p>Use different phpunit testing suites for different types of tests.</p>
+</li>
+</ol>
+
+                    </div>                        
+                </div>
+
+                <div class="text-right">
+                    <div>post by Kelvin on 11/18/2015</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="disqus_thread"></div>
+
+        <script>
+            var disqus_shortname = '';
+            var disqus_url = 'def246.com//2015/11/2015-11-18_laravel-integration-testing-for-large-app/';
+          
+            (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//go.disqus.com/embed.js';
+
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+
+    </div>
+</body>
+</html>

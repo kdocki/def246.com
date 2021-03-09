@@ -1,0 +1,156 @@
+<html>
+    <head>
+        <title>Kelvin</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+
+<link rel="stylesheet" type="text/css" href="/assets/site.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather" rel="stylesheet">
+<link rel="stylesheet" href="/assets/highlight/styles/default.css">
+<script src="/assets/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script>
+  if (location.hostname != "def246.com") {
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+  ':35729/livereload.js?snipver=1"></' + 'script>')
+  }
+</script> 
+
+        <meta name="author" content="Kelvin">
+        <meta name="description" content="One thing that annoys me about homestead is that I have to switch to the Homestead directory in order to use vagrant.
+cd $HOMESTEAD_DIR;
+vagrant up
+
+Instead I made a little helper that takes out a step. Now I can just run
+homestead up
+
+">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Homestead bash helper">
+        <meta property="og:url" content="http://def246.com/2016/03/2016-03-09_homestead-bash-commands/">
+        <meta property="og:site_name" content="def246">
+        <meta property="og:description" content="One thing that annoys me about homestead is that I have to switch to the Homestead directory in order to use vagrant.
+cd $HOMESTEAD_DIR;
+vagrant up
+
+Instead I made a little helper that takes out a step. Now I can just run
+homestead up
+
+">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Homestead bash helper">
+        <meta name="twitter:description" content="One thing that annoys me about homestead is that I have to switch to the Homestead directory in order to use vagrant.
+cd $HOMESTEAD_DIR;
+vagrant up
+
+Instead I made a little helper that takes out a step. Now I can just run
+homestead up
+
+">
+    </head>
+<body>
+
+    <div class="bg-gray-200">
+  <div class="container mx-auto px-4">
+      <nav class="flex flex-wrap items-center justify-between p-4">
+        <div class="lg:order-2 w-auto lg:w-1/5 sm:text-center"><a class="text-2xl text-gray-900 hover:text-gray-700" href="/">Kelvin</a></div>
+
+        <div class="navbar-menu lg:order-3 lg:block w-full lg:w-2/5 lg:text-right">
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/">Home</a>
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/posts">Blog</a>
+        </div>
+      </nav>
+    </div>
+</div>
+
+
+    <div class="container mx-auto">
+        <div class="flex">
+            <div class="w-3/3 min-w-full px-1">
+                <div class="flex items-center">
+                    <div class="w-1/5 pt-4">
+                        
+                        <a href="/2015/11/2015-11-19_rollbar-is-awesome/">Previous article</a>
+                        
+                    </div>
+                    <div class="w-3/5">
+                        <h1 class="mt-8 text-center text-3xl text-blue-600">
+                            Homestead bash helper
+                        </h1>
+                    </div>
+                    <div class="w-1/5 pt-4 text-right">
+                        
+                        <a href="/2016/03/2016-03-31_missing-laravel-tested-routes/">Next article</a>
+                        
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="post-body h-full py-8 bg-white border-t">
+                        <p>One thing that annoys me about homestead is that I have to switch to the Homestead directory in order to use vagrant.</p>
+<pre><code>cd $HOMESTEAD_DIR;
+vagrant up
+</code></pre>
+<p>Instead I made a little helper that takes out a step. Now I can just run</p>
+<pre><code>homestead up
+</code></pre>
+<!-- more -->
+<p>Below is the script. I placed mine in <code>~/.bin/homestead</code></p>
+<pre><code>#!/bin/bash
+
+ARGS=&quot;$@&quot;
+COMMAND=&quot;$1&quot;
+HOMESTEAD_DIR=&quot;$HOME/.homestead/Homestead&quot;
+
+cd $HOMESTEAD_DIR
+
+case $COMMAND in
+
+  edit)
+    vi $HOME/.homestead/Homestead.yaml
+  ;;
+
+  down)
+    vagrant halt
+  ;;
+
+  *)
+    vagrant $ARGS
+  ;;
+
+esac
+</code></pre>
+
+                    </div>                        
+                </div>
+
+                <div class="text-right">
+                    <div>post by Kelvin on 03/09/2016</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="disqus_thread"></div>
+
+        <script>
+            var disqus_shortname = '';
+            var disqus_url = 'def246.com//2016/03/2016-03-09_homestead-bash-commands/';
+          
+            (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//go.disqus.com/embed.js';
+
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+
+    </div>
+</body>
+</html>

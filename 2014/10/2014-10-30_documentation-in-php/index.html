@@ -1,0 +1,244 @@
+<html>
+    <head>
+        <title>Kelvin</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+
+<link rel="stylesheet" type="text/css" href="/assets/site.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather" rel="stylesheet">
+<link rel="stylesheet" href="/assets/highlight/styles/default.css">
+<script src="/assets/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script>
+  if (location.hostname != "def246.com") {
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+  ':35729/livereload.js?snipver=1"></' + 'script>')
+  }
+</script> 
+
+        <meta name="author" content="Kelvin">
+        <meta name="description" content="Today I fiddled around generating docs for a company package. There are a lot of doc generators out there, here are a few and their examples:
+
+Sami [example]
+Apigen [example]
+PHP Documentor [example]
+PHP DOX [example]
+PHP Rocco [example]
+Pinocchio [example]
+Doxygen [example]
+and a few others
+
+I played around with some of these. I like the approach of annotated source code but sometimes it is more useful to have api documentation. Annotated source code is cool because you can follow along line by line and really uncover the guts of a library. When I’m looking for public methods I don’t want to have to sift through annotated source code.
+">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Documentation with PHP">
+        <meta property="og:url" content="http://def246.com/2014/10/2014-10-30_documentation-in-php/">
+        <meta property="og:site_name" content="def246">
+        <meta property="og:description" content="Today I fiddled around generating docs for a company package. There are a lot of doc generators out there, here are a few and their examples:
+
+Sami [example]
+Apigen [example]
+PHP Documentor [example]
+PHP DOX [example]
+PHP Rocco [example]
+Pinocchio [example]
+Doxygen [example]
+and a few others
+
+I played around with some of these. I like the approach of annotated source code but sometimes it is more useful to have api documentation. Annotated source code is cool because you can follow along line by line and really uncover the guts of a library. When I’m looking for public methods I don’t want to have to sift through annotated source code.
+">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Documentation with PHP">
+        <meta name="twitter:description" content="Today I fiddled around generating docs for a company package. There are a lot of doc generators out there, here are a few and their examples:
+
+Sami [example]
+Apigen [example]
+PHP Documentor [example]
+PHP DOX [example]
+PHP Rocco [example]
+Pinocchio [example]
+Doxygen [example]
+and a few others
+
+I played around with some of these. I like the approach of annotated source code but sometimes it is more useful to have api documentation. Annotated source code is cool because you can follow along line by line and really uncover the guts of a library. When I’m looking for public methods I don’t want to have to sift through annotated source code.
+">
+    </head>
+<body>
+
+    <div class="bg-gray-200">
+  <div class="container mx-auto px-4">
+      <nav class="flex flex-wrap items-center justify-between p-4">
+        <div class="lg:order-2 w-auto lg:w-1/5 sm:text-center"><a class="text-2xl text-gray-900 hover:text-gray-700" href="/">Kelvin</a></div>
+
+        <div class="navbar-menu lg:order-3 lg:block w-full lg:w-2/5 lg:text-right">
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/">Home</a>
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/posts">Blog</a>
+        </div>
+      </nav>
+    </div>
+</div>
+
+
+    <div class="container mx-auto">
+        <div class="flex">
+            <div class="w-3/3 min-w-full px-1">
+                <div class="flex items-center">
+                    <div class="w-1/5 pt-4">
+                        
+                        <a href="/2014/09/2014-09-10_moments-of-programmer-clarity/">Previous article</a>
+                        
+                    </div>
+                    <div class="w-3/5">
+                        <h1 class="mt-8 text-center text-3xl text-blue-600">
+                            Documentation with PHP
+                        </h1>
+                    </div>
+                    <div class="w-1/5 pt-4 text-right">
+                        
+                        <a href="/2015/02/2015-02-19_git-monitor/">Next article</a>
+                        
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="post-body h-full py-8 bg-white border-t">
+                        <p>Today I fiddled around generating docs for a company package. There are a lot of doc generators out there, here are a few and their examples:</p>
+<ul>
+<li><a href="https://packagist.org/packages/sami/sami">Sami</a> [<a href="http://laravel.com/api/4.2/">example</a>]</li>
+<li><a href="http://apigen.org">Apigen</a> [<a href="http://www.doctrine-project.org/api/orm/2.4">example</a>]</li>
+<li><a href="http://www.phpdoc.org">PHP Documentor</a> [<a href="http://demo.phpdoc.org/Clean">example</a>]</li>
+<li><a href="http://phpdox.de">PHP DOX</a> [<a href="http://phpdox.de/demo/phpDox/index.xhtml">example</a>]</li>
+<li><a href="http://phrocco.info">PHP Rocco</a> [<a href="http://phrocco.info/docs/Phrocco.html">example</a>]</li>
+<li><a href="https://geekli.st/ncuesta/repos/pinocchio">Pinocchio</a> [<a href="http://ncuesta.github.io/pinocchio/docs/index.html">example</a>]</li>
+<li><a href="http://www.stack.nl/~dimitri/doxygen">Doxygen</a> [<a href="http://doc.cgal.org/4.2/CGAL.CGAL/html/index.html">example</a>]</li>
+<li><a href="https://packagist.org/search/?q=phpdoc">and a few others</a></li>
+</ul>
+<p>I played around with some of these. I like the approach of <a href="http://marionettejs.com/annotated-src/backbone.marionette">annotated source code</a> but sometimes it is more useful to have <a href="http://marionettejs.com/docs/current">api documentation</a>. Annotated source code is cool because you can follow along line by line and really uncover the <em>guts</em> of a library. When I’m looking for public methods I don’t want to have to sift through annotated source code.</p>
+<!-- more -->
+<h2>Using composer to install doc generators</h2>
+<pre><code>&quot;require-dev&quot;: {
+    &quot;mockery/mockery&quot;: &quot;dev-master&quot;,
+    &quot;phpunit/phpunit&quot;: &quot;*&quot;,
+    &quot;sami/sami&quot;: &quot;*&quot;,
+    &quot;rossriley/phrocco&quot;: &quot;dev-master&quot;,
+    &quot;apigen/apigen&quot;: &quot;*&quot;
+    &quot;phpdocumentor/phpdocumentor&quot;: &quot;2.*&quot;,
+    &quot;phpdocumentor/template-zend&quot;: &quot;*&quot;
+},
+</code></pre>
+<p>When you attempt to <code>composer update</code> you may have issues with phpdocumentor, if so, read next section.</p>
+<h2>PHP Documentor</h2>
+<p>After running composer update it told me I had to install ext-xml so after running <code>apt-get install php5-xml</code> I attempted another composer update and about 2 minutes into fetching stuff I was presented with this garbage:</p>
+<pre><code>- Installing zetacomponents/base (1.9)
+Downloading: connection...
+Could not fetch https://api.github.com/repos/zetacomponents/Base/zipball/f20df24e8de3e48b6b69b2503f917e457281e687, enter your GitHub credentials to go over the API rate limit
+The credentials will be swapped for an OAuth token stored in /home/Kelvin/.composer/auth.json, your password will not be stored
+To revoke access to this token you can visit https://github.com/settings/applications
+Username:
+</code></pre>
+<p>Because I didn’t want to give composer my username and password to create an Oauth token, I exited out and told composer to prefer source to get around this issue. Php documentor warns too that there are a lot of dependencies to download so it is likely that I’m just downloading too much. I decided to go a different approach and download the 30 megabyte phar file from <a href="http://www.phpdoc.org/phpDocumentor.phar">http://www.phpdoc.org/phpDocumentor.phar</a>.</p>
+<p>After downloading the phar I ran it and it gave the this error:</p>
+<pre><code>PHP Fatal error:  Class 'phpDocumentor\Application' not found in phar:///home/Kelvin/.bin/phar/phpDocumentor.phar/src/phpDocumentor/Bootstrap.php on line 63
+</code></pre>
+<p>So after scouting around some, I found a link on phpDocumentors website that said, “if you have any issues consult: <a href="http://silex.sensiolabs.org/doc/phar.html#pitfalls">http://silex.sensiolabs.org/doc/phar.html#pitfalls</a>”. After looking at this website the first line states:</p>
+<pre><code>Using the Silex phar file is deprecated. You should use Composer instead to install Silex and its dependencies or download one of the archives.
+</code></pre>
+<p>Well… shit, I guess I’m back to the original plan: using composer to install phpDocumentor. So again I attempt <code>composer update</code> and put in my credentials and lo and behold it installs. Now let’s see if this bad boy was worth all the trouble.</p>
+<pre><code>vendor/bin/phpdoc -d src/ -t public/phpdocs
+</code></pre>
+<p>The outcome was pretty nice looking. The page is responsive and contained classes. It even had a reports and charts containing things like errors. When you forget place a doc block over a method it produces an error in phpDocumentor, which is pretty cool.</p>
+<h2>Apigen</h2>
+<pre><code>$ php vendor/bin/apigen generate --source src/ --destination public/apigen
+ApiGen 2.8.0
+------------
+Scanning /src
+[===============================================================&gt;] 100.00%  14MB
+Found 207 classes, 0 constants, 0 functions and other 5 used PHP internal classes
+Documentation for 207 classes, 0 constants, 0 functions and other 5 used PHP internal classes will be generated
+Using template config file /vendor/apigen/apigen/templates/default/config.neon
+Generating to directory public/apigen
+[&gt;                                                               ]   0.77%  19MB
+The class SoftDeletingTrait is in use but has not been found in the defined sources.
+</code></pre>
+<p>Uh oh… it doesn’t know what SoftDeletingTrait is because that is Laravel specific class that is being used in one of my classes. So how to get this thing to work? I started by trying a config file. The SoftDeletingTrait class is in the vendor/ folder so maybe I could exclude that folder but apigen would be smart enough to scan that folder for missing links.</p>
+<p>php vendor/bin/apigen generate --source “src,vendor” --destination public/apigen --skip-doc-path=“vendor”</p>
+<pre><code>ApiGen 2.8.0
+------------
+Scanning
+ /home/Kelvin/workspace/lbm/package-devise/src
+ /home/Kelvin/workspace/lbm/package-devise/vendor
+[=======&gt;                                                        ]  13.05% 116MB
+Used 91% of the current memory limit, please increase the limit to generate the whole documentation.
+</code></pre>
+<p>Crap. Well… I’m off to edit <code>/etc/php5/cli/php.ini</code> and I up the memory limit from 128MB to 1GB. That should be enough right?</p>
+<pre><code>memory_limit = 1024M
+</code></pre>
+<p>After running for some a few minutes I still ended up getting the same error.</p>
+<pre><code>The class SoftDeletingTrait is in use but has not been found in the defined sources.
+</code></pre>
+<p>So this has all been in vain. Perhaps there is some way to tell apigen to forget about these external classes? The documentation is not very helpful but I do see an <code>--internal</code> flag. That doesn’t help though. After googling some I don’t find any helpful material save <a href="https://github.com/apigen/apigen/issues/158">one github request</a> that looks related but has been ignored and closed. So I give up on this one - it has far exceeded the 5-10 rule anyway. So Apigen is out.</p>
+<h2>Sami</h2>
+<p>This is the same documentor that Taylor uses for Laravel api so it was high on my list of documentors to checkout. I started by creating a configuration file (in my project root) called <code>sami.php</code>:</p>
+<p>{% code %}
+use Sami\Sami;
+use Symfony\Component\Finder\Finder;</p>
+<p>$iterator = Finder::create()
+-&gt;files()
+-&gt;name(’*.php’)
+-&gt;in(<strong>DIR</strong> . ‘/src’);</p>
+<p>return new Sami($iterator, array(
+‘title’                =&gt; ‘Devise’,
+‘build_dir’            =&gt; <strong>DIR</strong>. ‘/public/docs’,
+‘cache_dir’            =&gt; <strong>DIR</strong>. ‘/.sami-cache’,
+‘default_opened_level’ =&gt; 2,
+));
+{% endcode %}</p>
+<p>Apparently you can also do themes with Sami. The quickstart docs aren’t clear on themeing but I could create a directory called <code>mytheme</code> and put a manifest.xml in it and then place <code>'template' =&gt; 'mytheme'</code> into the array containing title, build_dir, cache_dir, and default_opened_level. I didn’t need to go into themeing just yet as I’m just testing things out so I just left the theme alone (as default). To run get some documentation I then ran:</p>
+<pre><code>vendor/bin/sami.php update sami.php
+</code></pre>
+<p>This produced some really nice looking documentation. A downside to sami is that because it is all contained with an iframe, it is difficult to share links. If you right click on a frame page and open in new tab you can use that link to send to someone, <em>but</em> you loose your cool sidebar (because I’ll say it again… it is an html frame). I didn’t even know we did frames anymore. I haven’t produced one since about two decades ago.</p>
+<h2>PHP Rocco</h2>
+<p>I’ve used used docco (node) in the past but in this specific case, annotated source really didn’t provide much value. I wanted to see how easy it was to generate though so I spent the 5 minutes and got it working easily. If we needed annotated source this would be a no-brainer.</p>
+<pre><code>phrocco -i src/ -o public/annotated
+</code></pre>
+<h2>Using composer to generate your docs</h2>
+<p>We ended up using but it’s kind of a pain in the ass to remember to type all this stuff. It would be nice if we could just type: <code>make docs</code>. How about the next best thing: <code>composer docs</code>. We can create this script alias using composer:</p>
+<pre><code>&quot;scripts&quot;: {
+  &quot;docs&quot; : &quot;vendor/bin/sami.php update sami.php&quot;
+},
+</code></pre>
+<p>Now we’ve got our <code>composer docs</code> and all is well. Not to toot my own horn, but this is a pretty cool setup. <strong>Toot toot.</strong></p>
+
+                    </div>                        
+                </div>
+
+                <div class="text-right">
+                    <div>post by Kelvin on 10/30/2014</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="disqus_thread"></div>
+
+        <script>
+            var disqus_shortname = '';
+            var disqus_url = 'def246.com//2014/10/2014-10-30_documentation-in-php/';
+          
+            (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//go.disqus.com/embed.js';
+
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+
+    </div>
+</body>
+</html>

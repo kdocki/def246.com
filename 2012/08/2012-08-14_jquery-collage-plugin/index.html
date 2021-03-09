@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <title>Kelvin</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+
+<link rel="stylesheet" type="text/css" href="/assets/site.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather" rel="stylesheet">
+<link rel="stylesheet" href="/assets/highlight/styles/default.css">
+<script src="/assets/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script>
+  if (location.hostname != "def246.com") {
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+  ':35729/livereload.js?snipver=1"></' + 'script>')
+  }
+</script> 
+
+        <meta name="author" content="Kelvin">
+        <meta name="description" content="I’d like to share with you a jQuery plugin I wrote that allows me to turn a canvas into a collage of randomly sorted images.
+The problem I ran into was the different aspect ratios.
+I don’t know if a collage is possible using a pure css solution, but if you have any suggestions I welcome them! If you just start float’ing images together you get a lot of ugly whitespace. Obviously if you knew the image dimensions before hand then you could write some css to handle all the images.
+The algorithm treats the entire canvas like a matrix of rows and columns and fill up the first column. When  I reach the bottom row of the canvas I start the next column. If I remember the positioning of the last column of images I know approximately where to put my next column of images. If you want to see the source code just start with this page.
+">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="jQuery Collage Plugin">
+        <meta property="og:url" content="http://def246.com/2012/08/2012-08-14_jquery-collage-plugin/">
+        <meta property="og:site_name" content="def246">
+        <meta property="og:description" content="I’d like to share with you a jQuery plugin I wrote that allows me to turn a canvas into a collage of randomly sorted images.
+The problem I ran into was the different aspect ratios.
+I don’t know if a collage is possible using a pure css solution, but if you have any suggestions I welcome them! If you just start float’ing images together you get a lot of ugly whitespace. Obviously if you knew the image dimensions before hand then you could write some css to handle all the images.
+The algorithm treats the entire canvas like a matrix of rows and columns and fill up the first column. When  I reach the bottom row of the canvas I start the next column. If I remember the positioning of the last column of images I know approximately where to put my next column of images. If you want to see the source code just start with this page.
+">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="jQuery Collage Plugin">
+        <meta name="twitter:description" content="I’d like to share with you a jQuery plugin I wrote that allows me to turn a canvas into a collage of randomly sorted images.
+The problem I ran into was the different aspect ratios.
+I don’t know if a collage is possible using a pure css solution, but if you have any suggestions I welcome them! If you just start float’ing images together you get a lot of ugly whitespace. Obviously if you knew the image dimensions before hand then you could write some css to handle all the images.
+The algorithm treats the entire canvas like a matrix of rows and columns and fill up the first column. When  I reach the bottom row of the canvas I start the next column. If I remember the positioning of the last column of images I know approximately where to put my next column of images. If you want to see the source code just start with this page.
+">
+    </head>
+<body>
+
+    <div class="bg-gray-200">
+  <div class="container mx-auto px-4">
+      <nav class="flex flex-wrap items-center justify-between p-4">
+        <div class="lg:order-2 w-auto lg:w-1/5 sm:text-center"><a class="text-2xl text-gray-900 hover:text-gray-700" href="/">Kelvin</a></div>
+
+        <div class="navbar-menu lg:order-3 lg:block w-full lg:w-2/5 lg:text-right">
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/">Home</a>
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/posts">Blog</a>
+        </div>
+      </nav>
+    </div>
+</div>
+
+
+    <div class="container mx-auto">
+        <div class="flex">
+            <div class="w-3/3 min-w-full px-1">
+                <div class="flex items-center">
+                    <div class="w-1/5 pt-4">
+                        
+                        <a href="/2012/08/2012-08-08_pitch-anything-in-15-seconds/">Previous article</a>
+                        
+                    </div>
+                    <div class="w-3/5">
+                        <h1 class="mt-8 text-center text-3xl text-blue-600">
+                            jQuery Collage Plugin
+                        </h1>
+                    </div>
+                    <div class="w-1/5 pt-4 text-right">
+                        
+                        <a href="/2012/09/2012-09-09_sublime-text-2-is-sublime/">Next article</a>
+                        
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="post-body h-full py-8 bg-white border-t">
+                        <p>I’d like to share with you a jQuery plugin I wrote that allows me to turn a canvas into a collage of randomly sorted images.</p>
+<p>The problem I ran into was the different aspect ratios.</p>
+<p>I don’t know if a collage is possible using a pure css solution, but if you have any suggestions I welcome them! If you just start float’ing images together you get a lot of ugly whitespace. Obviously if you knew the image dimensions before hand then you could write some css to handle all the images.</p>
+<p>The algorithm treats the entire canvas like a matrix of rows and columns and fill up the first column. When  I reach the bottom row of the canvas I start the next column. If I remember the positioning of the last column of images I know approximately where to put my next column of images. If you want to see the source code just <a href="/media/jquery-collage-plugin/collage.html">start with this page</a>.</p>
+<!-- more -->
+<iframe src="/media/jquery-collage-plugin/collage.html" width="100%" height="500" scrolling="no" style="border: none;"></iframe>
+<p>I didn’t spend a lot of time documenting this plugin because I just wanted something quick and dirty to display random images on my site in a sort of ‘collage-like’ manner. Unfortunately, sometimes it still shows some white space between the images as the algorithm isn’t perfect… I blame jQuery (not really, it’s my fault entirely). Here is a code snippet on how I get this thing to running.</p>
+<pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
+  jQuery(window).load(function() {
+    jQuery('#refresh-canvas').click(function() { jQuery('.canvas').collage(); });
+    jQuery('.canvas').collage({ numberOfImages: jQuery('.canvas').find(&quot;img&quot;).length });
+  });
+&lt;/script&gt;
+</code></pre>
+<p>Of course, you will need to include these javascript files as well in order for the code snippet above to work.</p>
+<p>** UPDATE ** I made a <a href="https://github.com/kdocki/jquery-collage">github repo for this code</a> since that’s the mature thing to do.</p>
+<p>Enjoy!</p>
+
+                    </div>                        
+                </div>
+
+                <div class="text-right">
+                    <div>post by Kelvin on 08/14/2012</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="disqus_thread"></div>
+
+        <script>
+            var disqus_shortname = '';
+            var disqus_url = 'def246.com//2012/08/2012-08-14_jquery-collage-plugin/';
+          
+            (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//go.disqus.com/embed.js';
+
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+
+    </div>
+</body>
+</html>

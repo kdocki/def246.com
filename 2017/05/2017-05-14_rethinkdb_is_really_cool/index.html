@@ -1,0 +1,282 @@
+<html>
+    <head>
+        <title>Kelvin</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+
+<link rel="stylesheet" type="text/css" href="/assets/site.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather" rel="stylesheet">
+<link rel="stylesheet" href="/assets/highlight/styles/default.css">
+<script src="/assets/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script>
+  if (location.hostname != "def246.com") {
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+  ':35729/livereload.js?snipver=1"></' + 'script>')
+  }
+</script> 
+
+        <meta name="author" content="Kelvin">
+        <meta name="description" content="I started playing around with a variety of databases lately (future posts to come) because I wanted to scrape a bunch of json data, dump those into a database and start sorting and filtering results. The json data is finanical information and has hundreds of data points (some in nested layers) and I wasn’t quite sure what information I even want to search for. There are gigabytes of raw json text being shoved into this database, and as I do exploratory data anaylsis, I wanted a nice place to store and query/filter/order/map the data without the overhead of creating lots of schemas.
+So some of you might ask. Why not use the json data type on Mysql/PGSQL? Sure. Sure, that works. It’s gets tedious to query those things nested in a json column. Not to mention I want to do indexing to speed up my query searches. I’m scraping this data from varying sources, and I’m not even certain which data is relevant or useful yet. So nosql seemed like a good fit here. I think from a performance standpoint, I’d probably be fine with SQL tables as I’m dealing with 100’s of GB of data. But that isn’t the point. I’m trying to quickly get data imported and start exploring it without any overhead of defining schemas where I’m unsure of data layout.
+In this project, I’m keeping track of changes over time. So, a time serious database design is useful. I checked out Influx, but decided against it. Currently, I’m adding a column for the snapshot time.
+
+Every story has an ending, and RethinkDB’s tale ends sadly. RethinkDB has ceased development. The simplicity of this tool is what drew me to it. As previously dicussed, horizontal scaling and sharding is a breeze. The admin panel is really slick. You can run commands straight from the admin website. This would be a really nice tool, a middleground between SQL and no-SQL. Something I could add to the Batman utility belt. Alas, without future development, the project is likely to burn out like a red-dwarf, surely but slowly.
+Here are my ratings for RethinkDB. These are just arbitrary, not based on any sort of benchmarks or anything, so don’t take them too seriously.
+- Getting Started: 9/10
+- Adoption: 3/10
+- Documentation: 7/10
+- Scaling: 9/10
+- Security: 6/10
+- Similarity to SQL: 7/10
+- Production Ready: Probably not due to development shutdown
+
+In the future I’m going to review some of the following tools.
+Python for big data
+- h5py
+- mpi4py
+- dask - https://towardsdatascience.com/how-to-handle-large-datasets-in-python-with-pandas-and-dask-34f43a897d55
+- blaze
+- PyStore https://medium.com/@aroussi/fast-data-store-for-pandas-time-series-data-using-pystore-89d9caeef4e2
+- Pandas as big data https://www.dataquest.io/blog/pandas-big-data/
+https://github.com/wiktorski/opentsdb_pandas
+https://towardsdatascience.com/the-best-format-to-save-pandas-data-414dca023e0d
+	Plain-text CSV — a good old friend of a data scientist
+	Pickle — a Python’s way to serialize things
+	MessagePack — it’s like JSON but fast and small
+	HDF5 —a file format designed to store and organize large amounts of data
+	Feather — a fast, lightweight, and easy-to-use binary file format for storing data frames
+	Parquet — an Apache Hadoop’s columnar storage format
+
+
+Timescale Looks interesting
+https://docs.timescale.com/latest/tutorials/tutorial-hello-timescale
+
+Other sqlless databases
+- Couchbase
+- ElasticSearch
+- HBase
+- Cassandra
+- MongoDB
+- DynamoDB
+- neo4j
+- Google Cloud Datastore
+- Aerospike
+">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="The Quest For The Holy Database">
+        <meta property="og:url" content="http://def246.com/2017/05/2017-05-14_rethinkdb_is_really_cool/">
+        <meta property="og:site_name" content="def246">
+        <meta property="og:description" content="I started playing around with a variety of databases lately (future posts to come) because I wanted to scrape a bunch of json data, dump those into a database and start sorting and filtering results. The json data is finanical information and has hundreds of data points (some in nested layers) and I wasn’t quite sure what information I even want to search for. There are gigabytes of raw json text being shoved into this database, and as I do exploratory data anaylsis, I wanted a nice place to store and query/filter/order/map the data without the overhead of creating lots of schemas.
+So some of you might ask. Why not use the json data type on Mysql/PGSQL? Sure. Sure, that works. It’s gets tedious to query those things nested in a json column. Not to mention I want to do indexing to speed up my query searches. I’m scraping this data from varying sources, and I’m not even certain which data is relevant or useful yet. So nosql seemed like a good fit here. I think from a performance standpoint, I’d probably be fine with SQL tables as I’m dealing with 100’s of GB of data. But that isn’t the point. I’m trying to quickly get data imported and start exploring it without any overhead of defining schemas where I’m unsure of data layout.
+In this project, I’m keeping track of changes over time. So, a time serious database design is useful. I checked out Influx, but decided against it. Currently, I’m adding a column for the snapshot time.
+
+Every story has an ending, and RethinkDB’s tale ends sadly. RethinkDB has ceased development. The simplicity of this tool is what drew me to it. As previously dicussed, horizontal scaling and sharding is a breeze. The admin panel is really slick. You can run commands straight from the admin website. This would be a really nice tool, a middleground between SQL and no-SQL. Something I could add to the Batman utility belt. Alas, without future development, the project is likely to burn out like a red-dwarf, surely but slowly.
+Here are my ratings for RethinkDB. These are just arbitrary, not based on any sort of benchmarks or anything, so don’t take them too seriously.
+- Getting Started: 9/10
+- Adoption: 3/10
+- Documentation: 7/10
+- Scaling: 9/10
+- Security: 6/10
+- Similarity to SQL: 7/10
+- Production Ready: Probably not due to development shutdown
+
+In the future I’m going to review some of the following tools.
+Python for big data
+- h5py
+- mpi4py
+- dask - https://towardsdatascience.com/how-to-handle-large-datasets-in-python-with-pandas-and-dask-34f43a897d55
+- blaze
+- PyStore https://medium.com/@aroussi/fast-data-store-for-pandas-time-series-data-using-pystore-89d9caeef4e2
+- Pandas as big data https://www.dataquest.io/blog/pandas-big-data/
+https://github.com/wiktorski/opentsdb_pandas
+https://towardsdatascience.com/the-best-format-to-save-pandas-data-414dca023e0d
+	Plain-text CSV — a good old friend of a data scientist
+	Pickle — a Python’s way to serialize things
+	MessagePack — it’s like JSON but fast and small
+	HDF5 —a file format designed to store and organize large amounts of data
+	Feather — a fast, lightweight, and easy-to-use binary file format for storing data frames
+	Parquet — an Apache Hadoop’s columnar storage format
+
+
+Timescale Looks interesting
+https://docs.timescale.com/latest/tutorials/tutorial-hello-timescale
+
+Other sqlless databases
+- Couchbase
+- ElasticSearch
+- HBase
+- Cassandra
+- MongoDB
+- DynamoDB
+- neo4j
+- Google Cloud Datastore
+- Aerospike
+">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="The Quest For The Holy Database">
+        <meta name="twitter:description" content="I started playing around with a variety of databases lately (future posts to come) because I wanted to scrape a bunch of json data, dump those into a database and start sorting and filtering results. The json data is finanical information and has hundreds of data points (some in nested layers) and I wasn’t quite sure what information I even want to search for. There are gigabytes of raw json text being shoved into this database, and as I do exploratory data anaylsis, I wanted a nice place to store and query/filter/order/map the data without the overhead of creating lots of schemas.
+So some of you might ask. Why not use the json data type on Mysql/PGSQL? Sure. Sure, that works. It’s gets tedious to query those things nested in a json column. Not to mention I want to do indexing to speed up my query searches. I’m scraping this data from varying sources, and I’m not even certain which data is relevant or useful yet. So nosql seemed like a good fit here. I think from a performance standpoint, I’d probably be fine with SQL tables as I’m dealing with 100’s of GB of data. But that isn’t the point. I’m trying to quickly get data imported and start exploring it without any overhead of defining schemas where I’m unsure of data layout.
+In this project, I’m keeping track of changes over time. So, a time serious database design is useful. I checked out Influx, but decided against it. Currently, I’m adding a column for the snapshot time.
+
+Every story has an ending, and RethinkDB’s tale ends sadly. RethinkDB has ceased development. The simplicity of this tool is what drew me to it. As previously dicussed, horizontal scaling and sharding is a breeze. The admin panel is really slick. You can run commands straight from the admin website. This would be a really nice tool, a middleground between SQL and no-SQL. Something I could add to the Batman utility belt. Alas, without future development, the project is likely to burn out like a red-dwarf, surely but slowly.
+Here are my ratings for RethinkDB. These are just arbitrary, not based on any sort of benchmarks or anything, so don’t take them too seriously.
+- Getting Started: 9/10
+- Adoption: 3/10
+- Documentation: 7/10
+- Scaling: 9/10
+- Security: 6/10
+- Similarity to SQL: 7/10
+- Production Ready: Probably not due to development shutdown
+
+In the future I’m going to review some of the following tools.
+Python for big data
+- h5py
+- mpi4py
+- dask - https://towardsdatascience.com/how-to-handle-large-datasets-in-python-with-pandas-and-dask-34f43a897d55
+- blaze
+- PyStore https://medium.com/@aroussi/fast-data-store-for-pandas-time-series-data-using-pystore-89d9caeef4e2
+- Pandas as big data https://www.dataquest.io/blog/pandas-big-data/
+https://github.com/wiktorski/opentsdb_pandas
+https://towardsdatascience.com/the-best-format-to-save-pandas-data-414dca023e0d
+	Plain-text CSV — a good old friend of a data scientist
+	Pickle — a Python’s way to serialize things
+	MessagePack — it’s like JSON but fast and small
+	HDF5 —a file format designed to store and organize large amounts of data
+	Feather — a fast, lightweight, and easy-to-use binary file format for storing data frames
+	Parquet — an Apache Hadoop’s columnar storage format
+
+
+Timescale Looks interesting
+https://docs.timescale.com/latest/tutorials/tutorial-hello-timescale
+
+Other sqlless databases
+- Couchbase
+- ElasticSearch
+- HBase
+- Cassandra
+- MongoDB
+- DynamoDB
+- neo4j
+- Google Cloud Datastore
+- Aerospike
+">
+    </head>
+<body>
+
+    <div class="bg-gray-200">
+  <div class="container mx-auto px-4">
+      <nav class="flex flex-wrap items-center justify-between p-4">
+        <div class="lg:order-2 w-auto lg:w-1/5 sm:text-center"><a class="text-2xl text-gray-900 hover:text-gray-700" href="/">Kelvin</a></div>
+
+        <div class="navbar-menu lg:order-3 lg:block w-full lg:w-2/5 lg:text-right">
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/">Home</a>
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/posts">Blog</a>
+        </div>
+      </nav>
+    </div>
+</div>
+
+
+    <div class="container mx-auto">
+        <div class="flex">
+            <div class="w-3/3 min-w-full px-1">
+                <div class="flex items-center">
+                    <div class="w-1/5 pt-4">
+                        
+                        <a href="/2016/04/2016-04-11_basic-form-request-validations-in-laravel/">Previous article</a>
+                        
+                    </div>
+                    <div class="w-3/5">
+                        <h1 class="mt-8 text-center text-3xl text-blue-600">
+                            The Quest For The Holy Database
+                        </h1>
+                    </div>
+                    <div class="w-1/5 pt-4 text-right">
+                        
+                        <a href="/2019/03/2019-03-21_easy_csv_in_php/">Next article</a>
+                        
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="post-body h-full py-8 bg-white border-t">
+                        <p>I started playing around with a variety of databases lately (future posts to come) because I wanted to scrape a bunch of json data, dump those into a database and start sorting and filtering results. The json data is finanical information and has hundreds of data points (some in nested layers) and I wasn’t quite sure what information I even want to search for. There are gigabytes of raw json text being shoved into this database, and as I do exploratory data anaylsis, I wanted a nice place to store and query/filter/order/map the data without the overhead of creating lots of schemas.</p>
+<p>So some of you might ask. Why not use the <code>json</code> data type on Mysql/PGSQL? Sure. Sure, that works. It’s gets tedious to query those things nested in a json column. Not to mention I want to do indexing to speed up my query searches. I’m scraping this data from varying sources, and I’m not even certain which data is relevant or useful yet. So nosql seemed like a good fit here. I think from a performance standpoint, I’d probably be fine with SQL tables as I’m dealing with 100’s of GB of data. But that isn’t the point. I’m trying to quickly get data imported and start exploring it without any overhead of defining schemas where I’m unsure of data layout.</p>
+<p>In this project, I’m keeping track of changes over time. So, a time serious database design is useful. I checked out Influx, but decided against it. Currently, I’m adding a column for the snapshot time.</p>
+<!-- read more -->
+<p>Every story has an ending, and RethinkDB’s tale ends sadly. RethinkDB has ceased development. The simplicity of this tool is what drew me to it. As previously dicussed, horizontal scaling and sharding is a breeze. The admin panel is really slick. You can run commands straight from the admin website. This would be a really nice tool, a middleground between SQL and no-SQL. Something I could add to the Batman utility belt. Alas, without future development, the project is likely to burn out like a red-dwarf, surely but slowly.</p>
+<p>Here are my ratings for RethinkDB. These are just arbitrary, not based on any sort of benchmarks or anything, so don’t take them too seriously.</p>
+<pre><code>- Getting Started: 9/10
+- Adoption: 3/10
+- Documentation: 7/10
+- Scaling: 9/10
+- Security: 6/10
+- Similarity to SQL: 7/10
+- Production Ready: Probably not due to development shutdown
+</code></pre>
+<p>In the future I’m going to review some of the following tools.</p>
+<p>Python for big data
+- h5py
+- mpi4py
+- dask - <a href="https://towardsdatascience.com/how-to-handle-large-datasets-in-python-with-pandas-and-dask-34f43a897d55">https://towardsdatascience.com/how-to-handle-large-datasets-in-python-with-pandas-and-dask-34f43a897d55</a>
+- blaze
+- PyStore <a href="https://medium.com/@aroussi/fast-data-store-for-pandas-time-series-data-using-pystore-89d9caeef4e2">https://medium.com/@aroussi/fast-data-store-for-pandas-time-series-data-using-pystore-89d9caeef4e2</a>
+- Pandas as big data <a href="https://www.dataquest.io/blog/pandas-big-data/">https://www.dataquest.io/blog/pandas-big-data/</a></p>
+<pre><code>https://github.com/wiktorski/opentsdb_pandas
+https://towardsdatascience.com/the-best-format-to-save-pandas-data-414dca023e0d
+	Plain-text CSV — a good old friend of a data scientist
+	Pickle — a Python’s way to serialize things
+	MessagePack — it’s like JSON but fast and small
+	HDF5 —a file format designed to store and organize large amounts of data
+	Feather — a fast, lightweight, and easy-to-use binary file format for storing data frames
+	Parquet — an Apache Hadoop’s columnar storage format
+</code></pre>
+<ul>
+<li>Timescale Looks interesting
+<a href="https://docs.timescale.com/latest/tutorials/tutorial-hello-timescale">https://docs.timescale.com/latest/tutorials/tutorial-hello-timescale</a></li>
+</ul>
+<p>Other sqlless databases
+- Couchbase
+- ElasticSearch
+- HBase
+- Cassandra
+- MongoDB
+- DynamoDB
+- neo4j
+- Google Cloud Datastore
+- Aerospike</p>
+
+                    </div>                        
+                </div>
+
+                <div class="text-right">
+                    <div>post by Kelvin on 05/13/2017</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="disqus_thread"></div>
+
+        <script>
+            var disqus_shortname = '';
+            var disqus_url = 'def246.com//2017/05/2017-05-14_rethinkdb_is_really_cool/';
+          
+            (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//go.disqus.com/embed.js';
+
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+
+    </div>
+</body>
+</html>

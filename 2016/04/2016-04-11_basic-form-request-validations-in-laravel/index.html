@@ -1,0 +1,379 @@
+<html>
+    <head>
+        <title>Kelvin</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+
+<link rel="stylesheet" type="text/css" href="/assets/site.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather" rel="stylesheet">
+<link rel="stylesheet" href="/assets/highlight/styles/default.css">
+<script src="/assets/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script>
+  if (location.hostname != "def246.com") {
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+  ':35729/livereload.js?snipver=1"></' + 'script>')
+  }
+</script> 
+
+        <meta name="author" content="Kelvin">
+        <meta name="description" content="Laravel allows us to validate requests before they even make it to our controllers. It does this using named form requests
+Thus you might write a controller action like so:
+public function storeBlog(BlogRequest $request)
+{
+    // request has already been validated
+}
+
+">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Basic Form Request Validations With Laravel">
+        <meta property="og:url" content="http://def246.com/2016/04/2016-04-11_basic-form-request-validations-in-laravel/">
+        <meta property="og:site_name" content="def246">
+        <meta property="og:description" content="Laravel allows us to validate requests before they even make it to our controllers. It does this using named form requests
+Thus you might write a controller action like so:
+public function storeBlog(BlogRequest $request)
+{
+    // request has already been validated
+}
+
+">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Basic Form Request Validations With Laravel">
+        <meta name="twitter:description" content="Laravel allows us to validate requests before they even make it to our controllers. It does this using named form requests
+Thus you might write a controller action like so:
+public function storeBlog(BlogRequest $request)
+{
+    // request has already been validated
+}
+
+">
+    </head>
+<body>
+
+    <div class="bg-gray-200">
+  <div class="container mx-auto px-4">
+      <nav class="flex flex-wrap items-center justify-between p-4">
+        <div class="lg:order-2 w-auto lg:w-1/5 sm:text-center"><a class="text-2xl text-gray-900 hover:text-gray-700" href="/">Kelvin</a></div>
+
+        <div class="navbar-menu lg:order-3 lg:block w-full lg:w-2/5 lg:text-right">
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/">Home</a>
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/posts">Blog</a>
+        </div>
+      </nav>
+    </div>
+</div>
+
+
+    <div class="container mx-auto">
+        <div class="flex">
+            <div class="w-3/3 min-w-full px-1">
+                <div class="flex items-center">
+                    <div class="w-1/5 pt-4">
+                        
+                        <a href="/2016/04/2016-04-05_when-javascript-excited-me/">Previous article</a>
+                        
+                    </div>
+                    <div class="w-3/5">
+                        <h1 class="mt-8 text-center text-3xl text-blue-600">
+                            Basic Form Request Validations With Laravel
+                        </h1>
+                    </div>
+                    <div class="w-1/5 pt-4 text-right">
+                        
+                        <a href="/2017/05/2017-05-14_rethinkdb_is_really_cool/">Next article</a>
+                        
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="post-body h-full py-8 bg-white border-t">
+                        <p>Laravel allows us to validate requests before they even make it to our controllers. It does this using <a href="https://laravel.com/docs/5.2/validation#form-request-validation">named form requests</a></p>
+<p>Thus you might write a controller action like so:</p>
+<pre><code>public function storeBlog(BlogRequest $request)
+{
+    // request has already been validated
+}
+</code></pre>
+<!-- more -->
+<p>So what does BlogRequest look like?</p>
+<pre><code>class BlogRequest extends BasicRequest
+{
+    public function storeBlogRules()
+    {
+        return [
+            'title' =&gt; 'required',
+            'description' =&gt; 'required',
+            'owner_email' =&gt; 'required|unique:blogs,owner_email'
+        ];
+    }
+}
+</code></pre>
+<p>You can see what BasicRequest looks like below. If you’re doing a lot of crud applications you might benefit from having your own validations built into the request.</p>
+<h3>Problems with this approach</h3>
+<p>I’ve found 2 problems with this approach.</p>
+<h4>#1 Validation rules are stored in a Request object.</h4>
+<p>What happens if you want to re-use validation rules? A lot of people would store their validation rules on the <code>Blog</code> model to solve this problem. It just depends on how much you want to re-use your rules. Honestly, rules sometimes differ slightly enough to add another 100 lines of code in your <code>Blog</code> model, it may make sense to put them somewhere else. THe problem here is that you have to create a <strong>new BlogRequest</strong> just to get the validation rules. If you are running inside of a console Command, initiating a new <strong>BlogRequest</strong> object isn’t really that sensible.</p>
+<h4>#2 Sometimes rules need parameters</h4>
+<p>For example, sometimes we need to check for existance or uniqueness of columns on a table. Let’s go back to our Blog example example, and now we want to update a blog…</p>
+<pre><code>    public function updateBlogRules( ... )
+    {
+        // HOW TO GET $blog-&gt;id IN HERE?
+
+        return [
+            'title' =&gt; 'required',
+            'content' =&gt; 'required'
+            'owner_email' =&gt; &quot;unique:blogs,owner_email,id,{$blog-&gt;id}&quot;
+        ];
+    }
+</code></pre>
+<p>If we inspect <code>$this</code> inside of the <strong>BlogRequest</strong> object we notice that it has the route and request information all available to us. Thus we could make use of that and parse out route parameters to get the blog id. Something like…</p>
+<pre><code>$params = $this-&gt;route()-&gt;parameters()
+</code></pre>
+<p>But honestly, at this point, I feel the BasicRequest and BlogRequest has become too <em>magical.</em> It is almost easier just to keep validation inside the controller and skip all this extra request stuff.</p>
+<pre><code>// inside BlogsController.php
+public function storeBlog(Request $request)
+{
+    $this-&gt;validate($request, [
+        'title' =&gt; 'required',
+        ...
+    ]);
+
+    // is this really that much worse?
+}
+</code></pre>
+<p>Sure, there is a place for Request validation, but I think having named request validation for every request in your application is going to cause more headaches and time than it will save.</p>
+<h3>Here is the Basic Request that BlogRequest extends (if you want to see it)</h3>
+<p>I saved this for last because it’s just a giant piece of code that you will either ignore or copy and paste.</p>
+<pre><code>&lt;?php
+
+namespace App\Http\Requests;
+
+use Illuminate\Foundation\Http\FormRequest;
+
+abstract class BasicRequest extends FormRequest
+{
+    /**
+     * Determine if the user is authorized to make this request.
+     *
+     * @return bool
+     */
+    public function authorize()
+    {
+        $method = 'authorize' . $this-&gt;findMethodName();
+
+        // we use policies for authorization so 
+        // we can just ignore this for the most part
+        if (!method_exists($this, $method))
+        {
+            return true;
+        }
+
+        return $this-&gt;$method($this-&gt;route()-&gt;parameters());
+    }
+
+    /**
+     * Get the validation rules that apply to the request.
+     *
+     * @return array
+     */
+    public function rules()
+    {
+        $method = lcfirst($this-&gt;findMethodName()) . 'Rules';
+
+        // we aren't strict on rules for get requests
+        if (strtolower($this-&gt;method()) == 'get' &amp;&amp; !method_exists($this, $method))
+        {
+            return [];
+        }
+
+        return $this-&gt;$method($this-&gt;route()-&gt;parameters());
+    }
+
+    /**
+     * Find the method name for the current route
+     * 
+     * @return string
+     */
+    protected function findMethodName()
+    {
+        list($class, $method) = explode('@', $this-&gt;route()-&gt;getActionName());
+ 
+        return $method;
+    }
+
+    /**
+     * Default authorize
+     * 
+     * @return bool
+     */
+    public function authorizeIndex()
+    {
+        return true;
+    }
+
+    /**
+     * Default authorize
+     * 
+     * @return bool
+     */
+    public function authorizeCreate()
+    {
+        return true;
+    }
+
+    /**
+     * Default authorize
+     * 
+     * @return bool
+     */
+    public function authorizeShow()
+    {
+        return true;
+    }
+
+    /**
+     * Default authorize
+     * 
+     * @return bool
+     */
+    public function authorizeEdit()
+    {
+        return true;
+    }
+
+    /**
+     * Default authorize
+     * 
+     * @return bool
+     */
+    public function authorizeStore()
+    {
+        return true;
+    }
+
+    /**
+     * Default authorize
+     * 
+     * @return bool
+     */
+    public function authorizeUpdate()
+    {
+        return true;
+    }
+
+    /**
+     * Default authorize
+     * 
+     * @return bool
+     */
+    public function authorizeDestroy()
+    {
+        return true;
+    }
+
+    /**
+     * Default rules
+     * 
+     * @return array
+     */
+    public function indexRules($params)
+    {
+        return [];
+    }
+
+    /**
+     * Default rules
+     * 
+     * @return array
+     */
+    public function createRules($params)
+    {
+        return [];
+    }
+
+    /**
+     * Default rules
+     * 
+     * @return array
+     */
+    public function showRules($params)
+    {
+        return [];
+    }
+
+    /**
+     * Default rules
+     * 
+     * @return array
+     */
+    public function editRules($params)
+    {
+        return [];
+    }
+
+    /**
+     * Default rules
+     * 
+     * @return array
+     */
+    public function storeRules($params)
+    {
+        return [];
+    }
+
+    /**
+     * Default rules
+     * 
+     * @return array
+     */
+    public function updateRules($params)
+    {
+        return [];
+    }
+
+    /**
+     * Default rules
+     * 
+     * @return array
+     */
+    public function destroyRules($params)
+    {
+        return [];
+    }
+
+}
+</code></pre>
+
+                    </div>                        
+                </div>
+
+                <div class="text-right">
+                    <div>post by Kelvin on 04/11/2016</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="disqus_thread"></div>
+
+        <script>
+            var disqus_shortname = '';
+            var disqus_url = 'def246.com//2016/04/2016-04-11_basic-form-request-validations-in-laravel/';
+          
+            (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//go.disqus.com/embed.js';
+
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+
+    </div>
+</body>
+</html>

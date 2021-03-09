@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <title>Kelvin</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+
+<link rel="stylesheet" type="text/css" href="/assets/site.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather" rel="stylesheet">
+<link rel="stylesheet" href="/assets/highlight/styles/default.css">
+<script src="/assets/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script>
+  if (location.hostname != "def246.com") {
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+  ':35729/livereload.js?snipver=1"></' + 'script>')
+  }
+</script> 
+
+        <meta name="author" content="Kelvin">
+        <meta name="description" content="Blackboard has a tag library which allows you to put familar Blackboard looking html objects into your Building block. One element in the tag library is an inventoryList, which gives you a nice looking list of items. An inventory list in Blackboard might render something like this:
+">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Blackboard taglib issue with itemIdAccessor">
+        <meta property="og:url" content="http://def246.com/2011/11/2011-11-26_blackboard-taglib-issue-with-itemidaccessor/">
+        <meta property="og:site_name" content="def246">
+        <meta property="og:description" content="Blackboard has a tag library which allows you to put familar Blackboard looking html objects into your Building block. One element in the tag library is an inventoryList, which gives you a nice looking list of items. An inventory list in Blackboard might render something like this:
+">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Blackboard taglib issue with itemIdAccessor">
+        <meta name="twitter:description" content="Blackboard has a tag library which allows you to put familar Blackboard looking html objects into your Building block. One element in the tag library is an inventoryList, which gives you a nice looking list of items. An inventory list in Blackboard might render something like this:
+">
+    </head>
+<body>
+
+    <div class="bg-gray-200">
+  <div class="container mx-auto px-4">
+      <nav class="flex flex-wrap items-center justify-between p-4">
+        <div class="lg:order-2 w-auto lg:w-1/5 sm:text-center"><a class="text-2xl text-gray-900 hover:text-gray-700" href="/">Kelvin</a></div>
+
+        <div class="navbar-menu lg:order-3 lg:block w-full lg:w-2/5 lg:text-right">
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/">Home</a>
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/posts">Blog</a>
+        </div>
+      </nav>
+    </div>
+</div>
+
+
+    <div class="container mx-auto">
+        <div class="flex">
+            <div class="w-3/3 min-w-full px-1">
+                <div class="flex items-center">
+                    <div class="w-1/5 pt-4">
+                        
+                        <a href="/2011/11/2011-11-03_java-activeobjects-with-a-squeeze-of-blackboard/">Previous article</a>
+                        
+                    </div>
+                    <div class="w-3/5">
+                        <h1 class="mt-8 text-center text-3xl text-blue-600">
+                            Blackboard taglib issue with itemIdAccessor
+                        </h1>
+                    </div>
+                    <div class="w-1/5 pt-4 text-right">
+                        
+                        <a href="/2012/01/2012-01-04_blackboard-course-evaluations-building-block/">Next article</a>
+                        
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="post-body h-full py-8 bg-white border-t">
+                        <p>Blackboard has a tag library which allows you to put familar Blackboard looking html objects into your Building block. One element in the tag library is an inventoryList, which gives you a nice looking list of items. An inventory list in Blackboard might render something like this:</p>
+<!-- more -->
+<img class="w-full" src="/media/blackboard-taglib-issue-with-itemidaccessor/questions.jpg">
+<p>The code to generate this list can be seen below. One special functionality of this list is to be able to re-order your list. This is done by sending an ajax call to your <code>reorderingUrl</code> anytime an item is moved. However, I noticed that my objects were not given the correct Id. Makes it difficult to reorder an item when your passing out incorrect Ids.</p>
+<p>Notice the <code>itemIdAccessor=&quot;getId()&quot;</code> means that <code>item.getId()</code> should be called to get the Id for the item. After some digging I found that <code>getId()</code> must return a <code>String</code> (it was an <code>Integer</code> in my case) to work correctly. This bugs me though since most Ids are typically not <code>Strings</code>. Oh well.</p>
+<pre><code>&lt;bbNG:inventoryList collection=&quot;${questions}&quot;
+        objectVar=&quot;item&quot; className=&quot;org.oscelot.b2evals.models.Question&quot;
+        description=&quot;Questions&quot; reorderable=&quot;false&quot;
+        reorderType=&quot;Question ID&quot;
+        reorderingUrl=&quot;${helper.url}/questions/${template.ID}/reorder&quot;
+        itemIdAccessor=&quot;getId&quot; itemNameAccessor=&quot;getId&quot; showAll=&quot;true&quot;&gt;
+
+        &lt;bbNG:listElement isRowHeader=&quot;true&quot; label=&quot;Question Text&quot; name=&quot;question_text&quot;&gt;
+                ${item.text}
+                &lt;bbNG:listContextMenu&gt;
+                        &lt;bbNG:contextMenuItem title=&quot;Edit Question&quot; url=&quot;${helper.url}/questions/${item.ID}&quot; /&gt;
+                        &lt;bbNG:contextMenuItem title=&quot;Remove Question&quot; url=&quot;javascript:bbHelper.deleteQuestion('${helper.url}/questions/${template.ID}/delete/${item.ID}');&quot; /&gt;
+                &lt;/bbNG:listContextMenu&gt;
+        &lt;/bbNG:listElement&gt;
+
+        &lt;bbNG:listElement isRowHeader=&quot;false&quot; label=&quot;Question Type&quot; name=&quot;question_type&quot;&gt;
+                &lt;c:choose&gt;
+                        &lt;c:when test=&quot;${item.type==1}&quot;&gt;
+                                Rating
+                        &lt;/c:when&gt;
+                        &lt;c:when test=&quot;${item.type==2}&quot;&gt;
+                                Comment
+                        &lt;/c:when&gt;
+                        &lt;c:when test=&quot;${item.type==3}&quot;&gt;
+                                Rating and Comment
+                        &lt;/c:when&gt;
+                        &lt;c:otherwise&gt;
+                                Unknown Type?!
+                        &lt;/c:otherwise&gt;
+                &lt;/c:choose&gt;
+        &lt;/bbNG:listElement&gt;
+&lt;/bbNG:inventoryList&gt;
+</code></pre>
+
+                    </div>                        
+                </div>
+
+                <div class="text-right">
+                    <div>post by Kelvin on 11/26/2011</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="disqus_thread"></div>
+
+        <script>
+            var disqus_shortname = '';
+            var disqus_url = 'def246.com//2011/11/2011-11-26_blackboard-taglib-issue-with-itemidaccessor/';
+          
+            (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//go.disqus.com/embed.js';
+
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+
+    </div>
+</body>
+</html>

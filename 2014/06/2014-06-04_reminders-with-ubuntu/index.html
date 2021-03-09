@@ -1,0 +1,146 @@
+<html>
+    <head>
+        <title>Kelvin</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+
+<link rel="stylesheet" type="text/css" href="/assets/site.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather" rel="stylesheet">
+<link rel="stylesheet" href="/assets/highlight/styles/default.css">
+<script src="/assets/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script>
+  if (location.hostname != "def246.com") {
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+  ':35729/livereload.js?snipver=1"></' + 'script>')
+  }
+</script> 
+
+        <meta name="author" content="Kelvin">
+        <meta name="description" content="There are some things I do daily and being a human I often forget them. I could just set up reminders on my phone but I wanted to do it on my computer. After some research I found a few articles that really helped me out. Here is my setup on Ubuntu.
+">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Reminders with Ubuntu">
+        <meta property="og:url" content="http://def246.com/2014/06/2014-06-04_reminders-with-ubuntu/">
+        <meta property="og:site_name" content="def246">
+        <meta property="og:description" content="There are some things I do daily and being a human I often forget them. I could just set up reminders on my phone but I wanted to do it on my computer. After some research I found a few articles that really helped me out. Here is my setup on Ubuntu.
+">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Reminders with Ubuntu">
+        <meta name="twitter:description" content="There are some things I do daily and being a human I often forget them. I could just set up reminders on my phone but I wanted to do it on my computer. After some research I found a few articles that really helped me out. Here is my setup on Ubuntu.
+">
+    </head>
+<body>
+
+    <div class="bg-gray-200">
+  <div class="container mx-auto px-4">
+      <nav class="flex flex-wrap items-center justify-between p-4">
+        <div class="lg:order-2 w-auto lg:w-1/5 sm:text-center"><a class="text-2xl text-gray-900 hover:text-gray-700" href="/">Kelvin</a></div>
+
+        <div class="navbar-menu lg:order-3 lg:block w-full lg:w-2/5 lg:text-right">
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/">Home</a>
+          <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/posts">Blog</a>
+        </div>
+      </nav>
+    </div>
+</div>
+
+
+    <div class="container mx-auto">
+        <div class="flex">
+            <div class="w-3/3 min-w-full px-1">
+                <div class="flex items-center">
+                    <div class="w-1/5 pt-4">
+                        
+                        <a href="/2014/05/2014-05-23_etags-with-laravel-filters/">Previous article</a>
+                        
+                    </div>
+                    <div class="w-3/5">
+                        <h1 class="mt-8 text-center text-3xl text-blue-600">
+                            Reminders with Ubuntu
+                        </h1>
+                    </div>
+                    <div class="w-1/5 pt-4 text-right">
+                        
+                        <a href="/2014/06/2014-06-16_switching-my-blog/">Next article</a>
+                        
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="post-body h-full py-8 bg-white border-t">
+                        <p>There are some things I do daily and being a human I often forget them. I could just set up reminders on my phone but I wanted to do it on my computer. After some research I found a few articles that really helped me out. Here is my setup on Ubuntu.</p>
+<!-- more -->
+<h5><a href="http://www.maketecheasier.com/add-receive-reminders-on-desktop-in-ubuntu/">Install Indicator Remindor.</a></h5>
+<pre><code>sudo add-apt-repository ppa:bhdouglass/indicator-remindor
+sudo apt-get update
+sudo apt-get install indicator-remindor
+
+</code></pre>
+<p>This thing lets me setup my reminders easy-peasy. It even has an alarm to play mp3s when the notification pops up. I don’t use that though since I don’t want to take a chance of waking up my daughter from a nap or something. However, if I’m in the kitchen getting a glass of water and notification passes by quietly then am I just out of luck? No.</p>
+<h5><a href="http://www.makeuseof.com/tag/review-notifications-ubuntu-desktop-linux/">Install Recent Notifications</a></h5>
+<pre><code>sudo add-apt-repository ppa:jconti/recent-notifications
+sudo apt-get update
+sudo apt-get install indicator-notifications
+</code></pre>
+<p>Lastly, if you use Google calendar like me you probably want to be notified about your upcoming events. Ubuntu doesn’t have out of the box support for this so you have to do some setup.</p>
+<h5><a href="http://xmodulo.com/2013/12/integrate-google-calendar-linux-desktop.html">Install Google Calendar Cli</a></h5>
+<pre><code>sudo apt-get install git python-pip python-gdata python-dateutil python-gflags python-vobject python-parsedatetime1
+sudo pip install google-api-python-client
+sudo pip install apiclient urllib3
+git clone https://github.com/insanum/gcalcli.git
+cd gcalcli
+sudo python setup.py install
+</code></pre>
+<p>A few notes about this. I ended up using the <em>–upgrade</em> flag when doing a pip install for google-api-python-client and urllib3. Next when I ran</p>
+<pre><code>gcalcli agenda
+</code></pre>
+<p>I got this <code>ERROR: Missing module - cannot import name __version__</code></p>
+<p>After searching some I found that this is an issue in the apiclient library and can be fixed by opening <code>/usr/local/lib/python2.7/dist-packages/apiclient/model.py</code> and commenting out the line</p>
+<pre><code>#from apiclient import __version__
+</code></pre>
+<p>Hopefully everything goes smoothly for you after this and then you should have your browser open when you run <code>gcalcli agenda</code>. You’ll need to approve the gcalcli application for your google account. After this you should be able to see your events by running <code>gcalcli agenda</code> once again.</p>
+<p>However, we aren’t done yet.</p>
+<p>You may not always be logged into google or your oauth session may expire. So you’ll need to enable the calendar API and register an application for gcalcli at <a href="https://cloud.google.com/console">https://cloud.google.com/console</a> so that you can be sure to access your agenda’s later down the road.</p>
+<p>To do this plugin in the client id and secret from the app you created into the file <code>~/.gcalclirc</code></p>
+<p>Lastly, how do you get notified about your calendar events? It’s easy. Just setup a cronjob to run the remind command from gcalcli.</p>
+<pre><code>crontab -l
+# run reminders every 10 minutes which will send-inotify
+# when an event actually exists that you need to be reminded about
+*/10 * * * * /usr/local/bin/gcalcli remind
+</code></pre>
+<p>Now all that is left is to go remind yourself to do some tasks via Google or in your indicator task bar. Having your events in Google calendar though let’s you propagate out on other devices like your phone so it’s a pretty sweet setup to have Google Calendar integration with Ubuntu notifications. Good luck, and may the odds be never in your favor?</p>
+
+                    </div>                        
+                </div>
+
+                <div class="text-right">
+                    <div>post by Kelvin on 06/04/2014</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="disqus_thread"></div>
+
+        <script>
+            var disqus_shortname = '';
+            var disqus_url = 'def246.com//2014/06/2014-06-04_reminders-with-ubuntu/';
+          
+            (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//go.disqus.com/embed.js';
+
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	
+	<title>jQuery.parallax</title>
+	
+	<script>document.documentElement.className = 'js';</script>
+
+	<link rel="stylesheet" href="css/jquery.parallax.css" />
+
+    <script src="../jquery/jquery-1.9.1.min.js"></script>
+    <style type="text/css" media="screen, projection">
+        .parallax-viewport {      width: 100%;      max-width: 60em; height: 20em;      background-color: #aebcc9;
+        }
+	</style>
+
+</head>
+
+<body>
+
+  
+    <div class="parallax-viewport" id="parallax">
+        
+        <!-- parallax layers -->
+        <div class="parallax-layer" style="width:860px; height:273px;">
+            <img src="images/parallax/0_sun.png" alt="" style="position:absolute; left:300px; top:-12px;"/>
+        </div>
+        <div class="parallax-layer" style="width:920px; height:274px;">
+            <img src="images/parallax/1_mountains.png" alt="" />
+        </div>
+        <div class="parallax-layer" style="width:1100px; height:284px;">
+            <img src="images/parallax/2_hill.png" alt="" style="position:absolute; top:40px; left:0;" />
+        </div>
+        <div class="parallax-layer" style="width:1360px; height:320px;">
+            <img src="images/parallax/3_wood.png" alt="" style="position:absolute; top:96px; left:0;"/>
+        </div>
+
+    </div>
+
+    <div>
+        <pre>
+        Hello Kairi Maire...
+
+        Born on a blue moon
+        The night was young
+        They suctioned marconuim from your lungs
+        You stared into my eyes as they pricked and poked
+        But dont worry about those folks
+        </pre>
+    </div>
+
+  <script src="js/jquery.parallax.js"></script>
+  <script>
+  jQuery(document).ready(function(){
+    jQuery('#parallax .parallax-layer')
+    .parallax({
+     // mouseport: jQuery('#parallax')
+    });
+  });
+  </script>
+</body>
+</html>
