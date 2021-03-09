@@ -98,14 +98,20 @@ a:hover {
 	max-height: 200px;
 }
 
+div.masonry {
+	padding-top: 50px;
+	background: #2b6cb0;
+}
+
 div.masonry .item {
-    opacity: 0.9;
+    opacity: 0.95;
     transition: .2s all;
-    padding: 0px 0px;
+    padding: 10px;
 }
 
 div.masonry .item:hover {
     opacity: 1;
+    width: 100%	;
 }
 
 div.masonry .item .background-picture {

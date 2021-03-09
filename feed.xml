@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>def246.com</id>
-    <title>Kelvin</title>
+    <title>def246</title>
     <updated>2013-07-14T05:00:00.000Z</updated>
     <generator>Turtles</generator>
     <author>
-        <name>Kelvin</name>
+        <name>K.D.</name>
         <email>contact-me  ~AT~  k246d.33mail.com</email>
         <uri>def246.com</uri>
     </author>
@@ -29,7 +29,7 @@
 <p>No matter the ramifications of Facebook, Twitter and Youtube - ramifications which are still unknown, we will continue to enjoy these technologies always awaiting the next new tech-fad.</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2011/02/2011-02-08_asl-3-little-pigs/</uri>
         </author>
@@ -49,7 +49,7 @@
 <p><em>In fact, I’ve been using Google so long I can’t remember how to search without it.</em></p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2011/02/2011-02-08_how-the-mighty-have-fallen/</uri>
         </author>
@@ -73,7 +73,7 @@
 <p>This hasn’t changed much. I’m still a selfish person and thus I crave free website hosting. I desire an easy way to update the website. Put simply: <strong>I can still be lazy and have a website</strong>. This is how I came about Weebly, and man, do I love it! Weebly allows me as a web developer to slap up a website in minutes and for <strong>free!</strong> It goes above and beyond any CMS I have ever used (and I have used too many to count) with the drag and drop “widget style” interface. Don’t get me wrong, there are still many improvements to be made on Weebly, but on many levels, <strong>Weebly is doing it right!</strong></p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2011/02/2011-02-08_weebly-doing-it-right/</uri>
         </author>
@@ -99,7 +99,7 @@
 <p>This process has saved our office countless hours. While it is not perfect, it works - and is an improvement. It saves other offices time as well. For example, Disability Resources Center captions existing videos and to have one central location for search for videos saves them a lot of time. The instructors enjoy the new process as well because it allows them to be flexible with shorter turn around - usually within the hour the video is ready for playback on Blackboard.</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2011/04/2011-04-07_ualr-video-player/</uri>
         </author>
@@ -139,7 +139,7 @@ function array_key_merge($array1, $array2)
 </code></pre>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2011/04/2011-04-28_replace-array-keys-in-php/</uri>
         </author>
@@ -172,7 +172,7 @@ function array_key_merge($array1, $array2)
 <p>Which brings me to my next beef. The APIs change quite frequently and depreciate rapidly (for example, see the Google Spreadsheet API). And Facebook is notorious for changing it’s API constantly. What’s FBML again? Now, granted I am a web developer and not a business hat, I have really been looking at this from the developer perspective and, I can tell you from this view… Google+ has no where to go but up. It’s still not ready to compete with Facebook, but it’s getting closer every day.</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2011/09/2011-09-21_google-vs-facebook/</uri>
         </author>
@@ -193,7 +193,7 @@ function array_key_merge($array1, $array2)
 <p>CourseSites is also used for collaborating with other Blackboard users; currently I am a member of the ASR user group and several cohorts. These aren’t really used to teach a structured course but rather to learn through a community-like process. I may setup a course (if I can think of a good idea) to illustrate some Blackboard tools and advantages to distance learning.</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2011/10/2011-10-21_blackboard-coursesites-introduction/</uri>
         </author>
@@ -357,7 +357,7 @@ public String update(HttpServletRequest request, @PathVariable(&quot;id&quot;) I
 <p>I’m sure in ten years, something new will be along to lay rest to REST (sorry I couldn’t resist) but for now, the general consensus seems to be that web applications should be very simple to develop and maintain, i.e. wham, bam, thank you mam.</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2011/11/2011-11-03_java-activeobjects-with-a-squeeze-of-blackboard/</uri>
         </author>
@@ -409,7 +409,7 @@ public String update(HttpServletRequest request, @PathVariable(&quot;id&quot;) I
 </code></pre>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2011/11/2011-11-26_blackboard-taglib-issue-with-itemidaccessor/</uri>
         </author>
@@ -428,7 +428,7 @@ public String update(HttpServletRequest request, @PathVariable(&quot;id&quot;) I
 <p><strong>Researching</strong> the API actually took <strong>longer</strong> than the actual coding. I felt before writing this web application, I should know some Blackboard best practices first. The open source community was quite helpful and can be found on <a href="http://projects.oscelot.org">projects.oscelot.org</a>. I did notice that Hibernate did not want to integrate due to classpath issues in tomcat and ActiveObjects did not work well with Oracle. The B2 should be database agnostic and is designed to work with both <em>SQL Server</em> and <em>Oracle</em> based Blackboard installs. The Spring framework was used for routing controller actions. There is still a lot of room for improvement but it’s a good start I believe.</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2012/01/2012-01-04_blackboard-course-evaluations-building-block/</uri>
         </author>
@@ -455,7 +455,7 @@ However, what about universities that just want to store some files? Not everyon
 <p>Granted you don’t get the benefit of the Blackboard CMS, but you could leverage other tools that support WebDAV, e.g <a href="http://www.element-it.com/asp-net-explorer-browser/online-share/web-file-manager.aspx">HTTP Commander</a>. This all boils down to a useful combination of tools to enhance education. The teacher spends less time on focused on technology (with questions like, how do I share my files?) and more time teaching.</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2012/01/2012-01-27_blackboard-drive-plays-nice-with-other-webdav-servers/</uri>
         </author>
@@ -476,7 +476,7 @@ However, what about universities that just want to store some files? Not everyon
 <p><small>UPDATE: updating the Boxee software fixed a lot of issues that I was experiencing on this video! Kitty and I have been using this for several months now and still really enjoy it.</small></p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2012/01/2012-01-28_unboxing-the-boxee-box/</uri>
         </author>
@@ -526,7 +526,7 @@ However, what about universities that just want to store some files? Not everyon
 </code></pre>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2012/02/2012-02-06_creating-pdfs-in-java-with-itext/</uri>
         </author>
@@ -644,7 +644,7 @@ Sleepy DB. My RESTful Database implementation. This is my version of a RESTful d
 <p>I hope you enjoyed my paper. I didn’t use big words to try and confuse anyone. I like simple. The biggest word I used I believe was hetrogenous data sources - which I meant different types of data sources - in case you missed that. And in case you missed it… the big picture idea is: simplify for everyone, generic enough for everyone. But if you missed the big picture then maybe you should read this paper again.</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2012/02/2012-02-16_restful-data-sources/</uri>
         </author>
@@ -671,7 +671,7 @@ Sleepy DB. My RESTful Database implementation. This is my version of a RESTful d
 </div></div>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2012/03/2012-03-02_henry-markram-simulating-the-brain/</uri>
         </author>
@@ -842,7 +842,7 @@ function getSpriteDegree(s, e, x, y)
 </code></pre>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2012/03/2012-03-03_nostalgia-with-css-sprites/</uri>
         </author>
@@ -1029,7 +1029,7 @@ function main()
 <p>That wraps it up. It was fun being a contest judge. As I said earlier, my questions were usually among the first answered. Not having your question answered at all just means it was too complex anyway and what’s the point of that? The goal is to see how well people can program - not to attempt to baffle and frustrate a team for five hours.</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2012/03/2012-03-12_programming-contest-questions/</uri>
         </author>
@@ -1057,7 +1057,7 @@ IFS=$OLDIFS
 </code></pre>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2012/03/2012-03-26_how-to-read-a-csv-file-in-bash/</uri>
         </author>
@@ -1090,7 +1090,7 @@ I started by looking at the Google Plus builder and I noticed this &lt;g:plusone
 <p><strong>Lesson to be learned:</strong> don’t use jQuery on your Weebly website and expect everything to work.</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2012/04/2012-04-03_google-weebly/</uri>
         </author>
@@ -1117,7 +1117,7 @@ I started by looking at the Google Plus builder and I noticed this &lt;g:plusone
 <p>All in all, it was fun to present. Glad I did it. I think if I present next year, I’ll pick a different topic on something instructional designers/teachers are actually interested in.</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2012/04/2012-04-12_presenting-at-arbug/</uri>
         </author>
@@ -1151,10 +1151,10 @@ export BB_URL=&quot;http://your-shared-url.com&quot;
 echo &quot;adds the 55 users in the feeds/users.csv to EXAMPLES dsk&quot;
 ./framework refresh feeds/users.csv
 </code></pre>
-<p>If you found this script useful, then be a chum and help me <a href="http://www.lilsugar.com/How-Much-Diapers-Cost-9128186">buy a pack of diapers</a> for my little girl. Feedback is also welcome - comment or shoot me an email: Kelvin <code>at</code> dockins <code>dot</code> org.</p>
+<p>If you found this script useful, then be a chum and help me <a href="http://www.lilsugar.com/How-Much-Diapers-Cost-9128186">buy a pack of diapers</a> for my little girl. Feedback is also welcome - comment or shoot me an email: K.D. <code>at</code> dockins <code>dot</code> org.</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2012/06/2012-06-18_the-framework-blackboard-sis-integration/</uri>
         </author>
@@ -1192,7 +1192,7 @@ One example of how I used open source building blocks to better our users is B2W
 </ul>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2012/06/2012-06-27_blackboard-migration-project/</uri>
         </author>
@@ -1247,7 +1247,7 @@ page.system.formdemo.label.demoDatepicker=demoDatepicker:
 </code></pre>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2012/07/2012-07-10_blackboard-bundles-que-language-es-esta/</uri>
         </author>
@@ -1296,7 +1296,7 @@ And speaking of figureheads, I got this big huge shiny award to take home and pu
 <p>By the end of the week we were exhausted of New Orleans and ready to go home and rest.</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2012/07/2012-07-23_blackboard-catalyst-award-innovative-development/</uri>
         </author>
@@ -1319,7 +1319,7 @@ I found that getting up in front of people is not really that scary, especially 
 <p>Kudos to Blackboard for yet another step in the right direction!</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2012/07/2012-07-30_presenting-at-devcon-2012/</uri>
         </author>
@@ -1350,7 +1350,7 @@ But life isn’t all about technology and this article is an excellent reminder 
 </ul>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2012/08/2012-08-08_pitch-anything-in-15-seconds/</uri>
         </author>
@@ -1384,7 +1384,7 @@ The algorithm treats the entire canvas like a matrix of rows and columns and fil
 <p>Enjoy!</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2012/08/2012-08-14_jquery-collage-plugin/</uri>
         </author>
@@ -1418,7 +1418,7 @@ I’ve been using it for a couple of weeks now to do some php programming and I 
 <p>There are tons of packages you can find by pressing <strong>Ctrl+Shift+P</strong> and search for <em>Install Package</em></p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2012/09/2012-09-09_sublime-text-2-is-sublime/</uri>
         </author>
@@ -1435,7 +1435,7 @@ I’ve been using it for a couple of weeks now to do some php programming and I 
 <iframe src="http://embed.plnkr.co/zFp9G2" frameborder="0" width="100%" height="300px" allowfullscreen="allowfullscreen"></iframe>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2012/09/2012-09-20_angularjs-parent-scopes/</uri>
         </author>
@@ -1479,7 +1479,7 @@ M       web/WEB-INF/jsp/config.jsp
 </code></pre>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2012/09/2012-09-21_student-view-building-block/</uri>
         </author>
@@ -1586,7 +1586,7 @@ Ctrl + Shift + F2     clear bookmarks
 </code></pre>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2012/10/2012-10-03_sublime-text-2-cheat-sheet/</uri>
         </author>
@@ -1605,7 +1605,7 @@ Ctrl + Shift + F2     clear bookmarks
 	{% img full-width /media/418-im-a-teapot-rfc-2324/hpcloud418.png %}
 </a>]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2012/11/2012-11-23_418-im-a-teapot-rfc-2324/</uri>
         </author>
@@ -1625,7 +1625,7 @@ At the time of this writing the bug is still present in version 1.0.5 (stable) a
 <p>and here is my workaround: <a href="http://plnkr.co/edit/zPHj9XHQW2D1scM2ZBhj">http://plnkr.co/edit/zPHj9XHQW2D1scM2ZBhj</a></p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2012/12/2012-12-09_binding-to-primitives-in-angularjs-ngrepeat/</uri>
         </author>
@@ -1694,7 +1694,7 @@ function MyCtrl($scope) {
 <p>Below if you click Result you can run a straw picking game one million times over with four people and as expected… no participant has a clear advantage (meaning they loose 25% of the time).</p>
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/ADukg/1603/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2012/12/2012-12-22_drawing-straws/</uri>
         </author>
@@ -1734,7 +1734,7 @@ print $foo1-&gt;bar-&gt;neato . ' ' .
 </code></pre>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2013/02/2013-02-07_ioc-container-in-laravel/</uri>
         </author>
@@ -1756,7 +1756,7 @@ print $foo1-&gt;bar-&gt;neato . ' ' .
 <p>If the obscurity above doesn’t stick out like a sore thumb then don’t say I didn’t warn you (didn’t you see the Nerd alert?). What on earth is this <code>lol()</code>function? It wasn’t defined for me but I did find some <a href="http://stackoverflow.com/questions/2894550/blank-space-on-google-home-page">bored people on stackoverflow</a> talking about it. I also did not find a <code>lmao()</code> or <code>roflmao()</code> but it’s apparent the guys at Google have a sense of humor… <code>lol()</code>. Reminds me of my older days of writing crazy named functions like <code>call_me(s, e, x, y)</code>.</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2013/04/2013-04-02_google-lol/</uri>
         </author>
@@ -1775,7 +1775,7 @@ print $foo1-&gt;bar-&gt;neato . ' ' .
 <p><strong>UPDATE (08/2013)</strong> Unfortunately we have split up, break ups happen. I learned a lot during this experience though.</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2013/06/2013-06-06_simple-service-little-rock-startup-winners/</uri>
         </author>
@@ -1812,7 +1812,7 @@ print $foo1-&gt;bar-&gt;neato . ' ' .
 </code></pre>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2013/07/2013-07-10_select2-jquery/</uri>
         </author>
@@ -1830,7 +1830,7 @@ print $foo1-&gt;bar-&gt;neato . ' ' .
 <p>The one thing that stinks though about Deployd is that it is almost like a restful MVC but without the V. If you could render a view (like underscore template or handlebars) - it would be awesome at prototyping. But instead you end up creating the resources in Deployd and then consuming the JSON via your favorite javascript engine, e.g. Marionette or AngularJS, both libraries which take time to setup, at which point you are no longer prototyping.</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2013/07/2013-07-19_deployd-mincer/</uri>
         </author>
@@ -1851,7 +1851,7 @@ print $foo1-&gt;bar-&gt;neato . ' ' .
 After talking to <a href="http://www.linkedin.com/pub/brian-mann/68/636/954">Brian Mann</a> about it, he suggested I use a Marionette.Region to do modals which is how I do modals now. I might do another post on this later.</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2013/07/2013-07-24_twitter-bootstrap-modals-in-backbone-marionette/</uri>
         </author>
@@ -1869,7 +1869,7 @@ After talking to <a href="http://www.linkedin.com/pub/brian-mann/68/636/954">Bri
 <p>** UPDATE (11/24/2013): ** Read the book. It was short and sweet.</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2013/08/2013-08-12_laravel-book-by-taylor-otwell/</uri>
         </author>
@@ -1902,7 +1902,7 @@ php artisan serve
 <p>So what if I went a different route? What if Laravel had a compser packagist package available to do watches? For example, if I forked/modified something like <a href="https://github.com/dbergey/Reloadr">https://github.com/dbergey/Reloadr</a>. No grunt, no problem. For now though, I will continue using grunt while I play with this idea some later in the future.</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2013/08/2013-08-13_laravel-artisan-serve/</uri>
         </author>
@@ -1952,7 +1952,7 @@ $.ajaxSetup({
 <p>We will still look for _token in the input so we can still use the traditional <code>&lt;form&gt;</code> to submit data in addition to ajax submissions. I haven’t seen any issues with this yet. Of course if I run into any, I’ll be sure to update this post. Have a nice day!</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2013/09/2013-09-18_laravel-4-csrf-token-and-ajax/</uri>
         </author>
@@ -1990,7 +1990,7 @@ $.ajaxSetup({
 <p>{% youtube IPgUUYb7SqU %}</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2013/09/2013-09-20_codesleeve-laravel4-asset-pipeline/</uri>
         </author>
@@ -2026,7 +2026,7 @@ Let’s take a look at some popular sites which have millions of users. These ar
 <p>If I still haven’t convinced you… try reading <a href="http://www.leemunroe.com/confirm-passwords-signup/">some</a> other <a href="http://ux.stackexchange.com/questions/20953/why-should-we-ask-the-password-twice-during-registration">places</a>.</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2013/10/2013-10-30_confirming-passwords-bad-ux-design/</uri>
         </author>
@@ -2049,7 +2049,7 @@ I thought, surely someone else has done this before? So my search in Google land
 <p>Check out on my github repo here: <a href="https://github.com/kdocki/backbone.model.computed">https://github.com/kdocki/backbone.model.computed</a></p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2013/11/2013-11-17_computed-properties-on-backbone-model/</uri>
         </author>
@@ -2122,7 +2122,7 @@ function createApplication()
 <p>Testing in isolation is important because it leaves us with our sanity. It is nice to be able to <code>reset</code> the state of the application anytime, i.e. in Ember you do App.reset(); Marionette should do this out of the box, maybe Derick can make it happen? It’d be a nice feature to have!</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2013/11/2013-11-26_testing-marionette-application-modules/</uri>
         </author>
@@ -2173,7 +2173,7 @@ YOU HAVE BEEN TERMINATED
 </code></pre>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2013/11/2013-11-30_arnold-c-programming-language/</uri>
         </author>
@@ -2261,7 +2261,7 @@ YOU HAVE BEEN TERMINATED
 <p>That about sums it up. The last thing I’d like to say is that the <code>triggerMethod</code> function is pretty neat. There is a lot that can be learned by just skimming through the <a href="http://marionettejs.com/docs/backbone.marionette.html">Marionette annotated source</a>.</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2013/11/2013-11-30_marionette-controller-listenall/</uri>
         </author>
@@ -2311,7 +2311,7 @@ Reduce complexity in my routes. Don’t worry about which routes are protected o
 </code></pre>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2013/12/2013-12-12_csrf-token-protection-in-laravel/</uri>
         </author>
@@ -2374,7 +2374,7 @@ The problem is that pcntl_signal doesn’t work in Windows. Thus, I stopped work
 <p>If you’d really like to dig in, you can see the full extent of the code in the <a href="https://github.com/CodeSleeve/guard-live-reload/blob/master/src/Codesleeve/GuardLiveReload/LiveReloadServer.php#L31">codesleeve/guard-livereload</a> repository. I may change this eventually, but I think I’ll re-architect the entire thing if I do. Basically the react event loop cannot be an external process fired by codesleeve/guard, instead it guard needs to become itself an event loop and I will have to compartmentalize all the different events and configs together so that it is easy to drop in new event handlers. It’s do-able I believe but right now isn’t any where on my priority list of todos.</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2014/01/2014-01-14_react-php/</uri>
         </author>
@@ -2499,7 +2499,7 @@ The problem is that pcntl_signal doesn’t work in Windows. Thus, I stopped work
 <p>Hopefully I didn’t scare you off with this post. There are still two more posts to go! In the next post I will be talking about how to keep Laravel views simple and clean using macros.</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2014/01/2014-01-15_hexagonal-pattern-design-scenarios/</uri>
         </author>
@@ -2659,7 +2659,7 @@ HTML::macro('not_found', function($items, $message = 'None found!')
 <p>If you didn’t get anything else out of this besides the fact that you can use macros to keep your views clean then I think I can pat myself on the back. Now go, change the world my friend! My next blog will be talking about using presenters to keep views clean in the hexagonal pattern.</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2014/01/2014-01-16_hexagonal-pattern-design-macros/</uri>
         </author>
@@ -2733,7 +2733,7 @@ I am going to use robclancy presenter just because I have more experience with i
 <p>I hope you see by using scenarios, presenters and macros you can keep your Laravel application very clean. Many developers jump straight to the Repository pattern and abuse the views or even worse try to shove presenter logic into a repository or model which is not responsible for keeping up with that view logic.</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2014/02/2014-02-20_hexagonal-pattern-design-presenters/</uri>
         </author>
@@ -2783,7 +2783,7 @@ Regarding functionality, the Laravel asset pipeline can go toe to toe with the R
 	<img class="full-width" src="/media/codesleeve-asset-pipeline-refactor/wally-the-janitor.jpg" alt="that'll do pig">
 </div></div>]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2014/03/2014-03-09_codesleeve-asset-pipeline-(refactor)/</uri>
         </author>
@@ -2864,7 +2864,7 @@ class ResponseHelper extends Illuminate\Support\Facades\Response
 <p>Finally, another idea is to register your <code>App::finished</code> closures in another class or as event listeners. I’ll leave that up to you to implement.</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2014/03/2014-03-20_serve-then-remove-temporary-file-using-laravel/</uri>
         </author>
@@ -2962,7 +2962,7 @@ class ResponseHelper extends Illuminate\Support\Facades\Response
 <p>Above all else, no matter the framework you choose, <strong>test your code</strong>. A feature rich client side architecture will need tests just like a server side architecture. This is one area Marionette seems to lack guidance. I have seen many more tutorials for Ember and Angular on testing than Marionette. But it is still possible using jasmine or mocha to crank out a test suite in all 3 of these client side frameworks. Good luck, amigos.</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2014/04/2014-04-17_which-javascript-framework-to-use-angular-vs-ember-vs-marionette/</uri>
         </author>
@@ -3048,7 +3048,7 @@ I feel more productive when standing, and I like to have client meetings while I
 <p>The <a href="https://www.kickstarter.com/projects/2036834894/the-most-affordable-automatic-sit-to-stand-desk">STANDdesk</a> looks pretty nice and is half the cost. I have a buddy who ordered one, I’ll check his out and update here accordingly.</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2014/05/2014-05-15_my-standing-desk/</uri>
         </author>
@@ -3157,7 +3157,7 @@ being re-usable modules, components, packages, frameworks, etc. An terrible time
 <p>All this said, <span class="lg">adding Uncle Bob to the conversation will make the debate better.</span></p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2014/05/2014-05-21_there-is-no-tdd-debate/</uri>
         </author>
@@ -3285,7 +3285,7 @@ Route::filter('cached.response', 'CachingFilter@after');
 <p>However, in the case were you are fetching a specific set of entities then you might utilize database caching and Etags. The page <code>/pages/how-i-met-your-mother</code> is likely to be the same for all users of the system. Unfortunately this approach still requires the Laravel application to be booted so it will never be as fast as just serving a static html file.</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2014/05/2014-05-23_etags-with-laravel-filters/</uri>
         </author>
@@ -3340,7 +3340,7 @@ sudo python setup.py install
 <p>Now all that is left is to go remind yourself to do some tasks via Google or in your indicator task bar. Having your events in Google calendar though let’s you propagate out on other devices like your phone so it’s a pretty sweet setup to have Google Calendar integration with Ubuntu notifications. Good luck, and may the odds be never in your favor?</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2014/06/2014-06-04_reminders-with-ubuntu/</uri>
         </author>
@@ -3378,7 +3378,7 @@ $foo-&gt;hookedOnAFeeling('High on believing');
 <p>It took me about 30 minutes to really dig into hexo and figure out it’s internals. If I ever want to switch in the future to another technology, I just need to publish my static html content and then start from there. And I’m pretty content with that. It’s not like weebly where if that site crashes, I’m stuck without my blog and portfolio website for ever.</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2014/06/2014-06-16_switching-my-blog/</uri>
         </author>
@@ -3512,7 +3512,7 @@ $foo-&gt;hookedOnAFeeling('High on believing');
 <p>And that is it. Oh and if you are wondering what the answer is: <code>asparagus</code> There is probably another 20 ways to solve this problem but this is the way I chose. Did you actually make it here? Wow… I figured I would have bored most people off by this line.</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2014/06/2014-06-25_cracking-fogcreek/</uri>
         </author>
@@ -3561,7 +3561,7 @@ $foo-&gt;hookedOnAFeeling('High on believing');
 <p>And there we have it. A simple way to inject variables in your Blade views. I am not using this at the moment so it’s only a proof of concept. One nice thing about this approach is that you can easily see all the registered variables inside of your view and know where they come from. But this approach doesn’t allow you the flexibility to re-use views with different variables - which is a primary reason why we use controllers - separation of concerns!</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2014/07/2014-07-23_laravel-blade-var-extension/</uri>
         </author>
@@ -3611,7 +3611,7 @@ $response = $client-&gt;get('https://app.zencoder.com/api/v2/jobs', [
 </ul>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2014/08/2014-08-27_access-localhost-8000-from-anywhere/</uri>
         </author>
@@ -3645,7 +3645,7 @@ foreach ($finder as $file)
 <p>Bye, bye <a href="http://php.net/manual/en/class.recursivedirectoryiterator.php">RecursiveDirectoryIterator</a>, may we never meet again! If I ever meet Fabien I’m likely to get a restraining order slapped on me after I give him a big hug and kiss.</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2014/09/2014-09-09_searching-files-with-laravel/</uri>
         </author>
@@ -3794,7 +3794,7 @@ class UserController extends Controller
 <p><em><strong>When you are faced with complex problem, seek help from others that you trust</strong></em></p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2014/09/2014-09-10_moments-of-programmer-clarity/</uri>
         </author>
@@ -3847,13 +3847,13 @@ I played around with some of these. I like the approach of annotated source code
 <pre><code>- Installing zetacomponents/base (1.9)
 Downloading: connection...
 Could not fetch https://api.github.com/repos/zetacomponents/Base/zipball/f20df24e8de3e48b6b69b2503f917e457281e687, enter your GitHub credentials to go over the API rate limit
-The credentials will be swapped for an OAuth token stored in /home/Kelvin/.composer/auth.json, your password will not be stored
+The credentials will be swapped for an OAuth token stored in /home/K.D./.composer/auth.json, your password will not be stored
 To revoke access to this token you can visit https://github.com/settings/applications
 Username:
 </code></pre>
 <p>Because I didn’t want to give composer my username and password to create an Oauth token, I exited out and told composer to prefer source to get around this issue. Php documentor warns too that there are a lot of dependencies to download so it is likely that I’m just downloading too much. I decided to go a different approach and download the 30 megabyte phar file from <a href="http://www.phpdoc.org/phpDocumentor.phar">http://www.phpdoc.org/phpDocumentor.phar</a>.</p>
 <p>After downloading the phar I ran it and it gave the this error:</p>
-<pre><code>PHP Fatal error:  Class 'phpDocumentor\Application' not found in phar:///home/Kelvin/.bin/phar/phpDocumentor.phar/src/phpDocumentor/Bootstrap.php on line 63
+<pre><code>PHP Fatal error:  Class 'phpDocumentor\Application' not found in phar:///home/K.D./.bin/phar/phpDocumentor.phar/src/phpDocumentor/Bootstrap.php on line 63
 </code></pre>
 <p>So after scouting around some, I found a link on phpDocumentors website that said, “if you have any issues consult: <a href="http://silex.sensiolabs.org/doc/phar.html#pitfalls">http://silex.sensiolabs.org/doc/phar.html#pitfalls</a>”. After looking at this website the first line states:</p>
 <pre><code>Using the Silex phar file is deprecated. You should use Composer instead to install Silex and its dependencies or download one of the archives.
@@ -3880,8 +3880,8 @@ The class SoftDeletingTrait is in use but has not been found in the defined sour
 <pre><code>ApiGen 2.8.0
 ------------
 Scanning
- /home/Kelvin/workspace/lbm/package-devise/src
- /home/Kelvin/workspace/lbm/package-devise/vendor
+ /home/K.D./workspace/lbm/package-devise/src
+ /home/K.D./workspace/lbm/package-devise/vendor
 [=======&gt;                                                        ]  13.05% 116MB
 Used 91% of the current memory limit, please increase the limit to generate the whole documentation.
 </code></pre>
@@ -3925,7 +3925,7 @@ use Symfony\Component\Finder\Finder;</p>
 <p>Now we’ve got our <code>composer docs</code> and all is well. Not to toot my own horn, but this is a pretty cool setup. <strong>Toot toot.</strong></p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2014/10/2014-10-30_documentation-in-php/</uri>
         </author>
@@ -3958,7 +3958,7 @@ mail bob@gmail.com &quot;it updated&quot;
 <p>Here is the script in it’s entirety.</p>
 <pre><code>#!/bin/bash
 #
-# @author Kelvin@lbm.co
+# @author kelvinlbm.co
 #
 # first you will need to setup a file that tells
 # gitmon what to do anytime this git repository
@@ -4081,7 +4081,7 @@ cd $SCRIPT_DIR
 </code></pre>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2015/02/2015-02-19_git-monitor/</uri>
         </author>
@@ -4163,7 +4163,7 @@ $detect-&gt;getAppNamespace();	// 'Horsefly'
 <p>This begs the question. Why would you need to ever get the app namespace? I mean… the developer <em>set</em> that. So he/she should already know the namespace, right? If you are working in package development or multiple <em>cms</em> applications, a need might arise for it though. One of our developers at work had a need for this. Glad Taylor has got our back. Everytime I look behind the curtains of Laravel source, I find nothing but clean expressive &amp; understable code.</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2015/03/2015-03-31_how-to-get-laravel5-app-namespace/</uri>
         </author>
@@ -4260,7 +4260,7 @@ class RemoveDownloadedFileMiddleware implements TerminableMiddleware {
 <p>That should about cover it. Now after the user downloads the file, it will disapear forever. We could do other things besides <code>unlink</code> the file in the middleware though. We might cache it. In fact, we could skip this entire process and make a cache remover that removes files older than 30 days anytime a new file is downloaded. There’s always more than one way to skin a chicken.</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2015/05/2015-05-29_delete-a-file-after-download-laravel5/</uri>
         </author>
@@ -4293,7 +4293,7 @@ So I wrote a generator to create tests for me automatically at work. I wanted to
 <pre><code>ini_set('memory_limit', -1);
 </code></pre>
 <p>However, that just traded one problem for another. After running some really slow tests, after about 150 tests I start getting a continious stream of error exceptions.</p>
-<pre><code>Kelvin@dorothy:~/space/laravel-tests$ phpunit
+<pre><code>kelvindorothy:~/space/laravel-tests$ phpunit
 PHPUnit 4.8.18 by Sebastian Bergmann and contributors.
 
 ..F..FF.F..FFFFFFFFFFFFFF
@@ -4319,7 +4319,7 @@ PDOException: SQLSTATE[08004] [1040] Too many connections
     ... then we start getting weird shit like this...
 
 94) Youth_Programs::test_route
-ErrorException: include(/Users/Kelvin/space/jccfs51/vendor/symfony/symfony/src/Symfony/Component/Finder/Exception/AccessDeniedException.php): failed to open stream: Too many open files
+ErrorException: include(/Users/K.D./space/jccfs51/vendor/symfony/symfony/src/Symfony/Component/Finder/Exception/AccessDeniedException.php): failed to open stream: Too many open files
 
 
     ... then some failures ...
@@ -4445,7 +4445,7 @@ Tests: 244, Assertions: 139, Errors: 94, Failures: 78, Skipped: 10.
 }
 </code></pre>
 <p>Now with my changes in place, let’s see how things run. Will we actually be able to complete without the framework blowing up and throwing error exceptions on over half our tests because it used up too many database connections?</p>
-<pre><code>Kelvin@dorothy:~/space/laravel-tests$ phpunit
+<pre><code>kelvindorothy:~/space/laravel-tests$ phpunit
 PHPUnit 4.8.18 by Sebastian Bergmann and contributors.
 
 ..F..FF.F..FFFFFFFFFFFFFF
@@ -4497,7 +4497,7 @@ Tests: 244, Assertions: 228, Failures: 145, Skipped: 15.
 <p>Above we don’t actually have a ‘something-here’ route defined. We are mocking it with Mockery on the URL facade. I personally don’t use Mockery on Laravel’s facades often because I don’t use facades that often. However, this will show you the problem.</p>
 <p>Above we are changing the URL facade to expect the <code>route</code> method. In our second <code>test_me2()</code> method we are just asserting that an exception is thrown because we don’t have a route defined for <em>something-here</em>.</p>
 <p>This test should run successfully on the <strong>old out of the box</strong> TestCase.</p>
-<pre><code>Kelvin@dorothy:~/space/laravel-test phpunit
+<pre><code>kelvindorothy:~/space/laravel-test phpunit
 PHPUnit 4.8.18 by Sebastian Bergmann and contributors.
 
 ..awesome.
@@ -4508,7 +4508,7 @@ OK (2 tests, 1 assertion)
 </code></pre>
 <p>However, when we change to our modified <strong>TestCase</strong> we run into a different situation.</p>
 <p>Now our results show that mockery has been applied across both testing methods `test_me1’ and ‘testme_2’. See below.</p>
-<pre><code>Kelvin@dorothy:~/space/laravel-test$ phpunit
+<pre><code>kelvindorothy:~/space/laravel-test$ phpunit
 PHPUnit 4.8.18 by Sebastian Bergmann and contributors.
 
 ..awesomeFawesome
@@ -4520,8 +4520,8 @@ There was 1 failure:
 1) TestMe::test_me2
 Failed asserting that exception of type &quot;InvalidArgumentException&quot; is thrown.
 
-/Users/Kelvin/.composer/vendor/phpunit/phpunit/src/TextUI/Command.php:186
-/Users/Kelvin/.composer/vendor/phpunit/phpunit/src/TextUI/Command.php:138
+/Users/K.D./.composer/vendor/phpunit/phpunit/src/TextUI/Command.php:186
+/Users/K.D./.composer/vendor/phpunit/phpunit/src/TextUI/Command.php:138
 
 FAILURES!
 Tests: 2, Assertions: 1, Failures: 1.
@@ -4547,7 +4547,7 @@ Tests: 2, Assertions: 1, Failures: 1.
 </ol>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2015/11/2015-11-18_laravel-integration-testing-for-large-app/</uri>
         </author>
@@ -4619,7 +4619,7 @@ throw new Exception('test 2');
 <p>This tool will keep track of all the errors your visitors are seeing. It doesn’t replace writing tests for the application necessarily but it does give an extra layer of comfort knowing when your application is erroring. Some times you can find and fix errors before a client has time to email you that screenshot and upload it to JIRA or Trello. Then you just say, <em>yeah, I fixed that like 5 minutes ago dawg…</em>* and walk off with a gangsta smile on your face.</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2015/11/2015-11-19_rollbar-is-awesome/</uri>
         </author>
@@ -4672,7 +4672,7 @@ esac
 </code></pre>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2016/03/2016-03-09_homestead-bash-commands/</uri>
         </author>
@@ -4744,7 +4744,7 @@ public function test_users_edit()
     }
 </code></pre>
 <p>Now when we run phpunit we get that green that everyone likes.</p>
-<pre><code>Kelvin@videl:~/space/blog$ phpunit
+<pre><code>kelvinvidel:~/space/blog$ phpunit
 PHPUnit 4.8.24 by Sebastian Bergmann and contributors.
 
 ..
@@ -4851,7 +4851,7 @@ public function test_users_destroy()
 <p>If you find yourself using this or have some sort of improvements or even a better way for testing all the routes in your application, please leave me a comment. Thanks!</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2016/03/2016-03-31_missing-laravel-tested-routes/</uri>
         </author>
@@ -5180,7 +5180,7 @@ When it comes to javascript, there are simply too many ways to skin the cat.
 <p>Shortly after writing this I found this article about <a href="http://www.planningforaliens.com/blog/2016/04/11/why-js-development-is-crazy/">Why Javascript Development Is Crazy</a>. It’s good, check it out.</p>
 <div class="mt sp100"></div>]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2016/04/2016-04-05_when-javascript-excited-me/</uri>
         </author>
@@ -5456,7 +5456,7 @@ abstract class BasicRequest extends FormRequest
 </code></pre>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2016/04/2016-04-11_basic-form-request-validations-in-laravel/</uri>
         </author>
@@ -5559,7 +5559,7 @@ https://towardsdatascience.com/the-best-format-to-save-pandas-data-414dca023e0d
 - Aerospike</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2017/05/2017-05-14_rethinkdb_is_really_cool/</uri>
         </author>
@@ -5599,7 +5599,7 @@ Here is a snippet I made that reads in a csv and returns an array of results.
 </code></pre>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2019/03/2019-03-21_easy_csv_in_php/</uri>
         </author>
@@ -5650,7 +5650,7 @@ class PostCommentsController extends Controller {
 <p>What are your thoughts?</p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2020/05/2020-05-07_i_dont_like_has_many_relationships/</uri>
         </author>
@@ -5706,7 +5706,7 @@ c = 2
 <p><strong>** (facebOOk trollz grammer no good)</strong></p>
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2020/05/2020-05-14_facebook_math_sucks/</uri>
         </author>
@@ -5723,13 +5723,13 @@ c = 2
 <img class="mx-auto max-w-md" src="/media/vscode-emmet/vscode-emmet.gif">
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2020/07/2020-07-09 emmet in visual studio code makes me sad/</uri>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Emmet in Visual Studio Code makes me sad]]></title>
+        <title type="html"><![CDATA[Who Says Pawns Cannot Mate Kings?]]></title>
         <id>/2020/07/2021-01-21 who says pawns cannot mate/</id>
         <link href="/2020/07/2021-01-21 who says pawns cannot mate/"/>
         <updated>2020-07-08T05:00:00.000Z</updated>
@@ -5740,7 +5740,7 @@ c = 2
 <img class="mx-auto max-w-md" src="/media/chess/chess fun 2021-01-21_20-29.png">
 ]]></content>
         <author>
-            <name>Kelvin</name>
+            <name>K.D.</name>
             <email>contact-me  ~AT~  k246d.33mail.com</email>
             <uri>/2020/07/2021-01-21 who says pawns cannot mate/</uri>
         </author>

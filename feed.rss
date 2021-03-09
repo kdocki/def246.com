@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Kelvin</title>
+        <title>def246</title>
         <link>def246.com</link>
         <description>undefined</description>
         <lastBuildDate>Sun, 14 Jul 2013 05:00:00 GMT</lastBuildDate>
@@ -9,7 +9,7 @@
         <generator>Turtles</generator>
         <language>en</language>
         <image>
-            <title>Kelvin</title>
+            <title>def246</title>
             <url>def246.comfavicon.png</url>
             <link>def246.com</link>
         </image>
@@ -29,7 +29,7 @@
 <iframe style="width: 100%; min-height: 480px;" src="https://www.youtube.com/embed/2YWwxLRD5nU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 <p>No matter the ramifications of Facebook, Twitter and Youtube - ramifications which are still unknown, we will continue to enjoy these technologies always awaiting the next new tech-fad.</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[How The Mighty Have Fallen!]]></title>
@@ -45,7 +45,7 @@
 <p>Furthermore, my memory is cloudy with various vage snapshots of random search engines I used before Google. Dogpile and Metacity for instance.</p>
 <p><em>In fact, I’ve been using Google so long I can’t remember how to search without it.</em></p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[Weebly - Doing it Right!]]></title>
@@ -65,7 +65,7 @@
 <h3>3) Selfish</h3>
 <p>This hasn’t changed much. I’m still a selfish person and thus I crave free website hosting. I desire an easy way to update the website. Put simply: <strong>I can still be lazy and have a website</strong>. This is how I came about Weebly, and man, do I love it! Weebly allows me as a web developer to slap up a website in minutes and for <strong>free!</strong> It goes above and beyond any CMS I have ever used (and I have used too many to count) with the drag and drop “widget style” interface. Don’t get me wrong, there are still many improvements to be made on Weebly, but on many levels, <strong>Weebly is doing it right!</strong></p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[UALR Video Player]]></title>
@@ -87,7 +87,7 @@
 <p>{% youtube rYdKbDXt7Vc %}</p>
 <p>This process has saved our office countless hours. While it is not perfect, it works - and is an improvement. It saves other offices time as well. For example, Disability Resources Center captions existing videos and to have one central location for search for videos saves them a lot of time. The instructors enjoy the new process as well because it allows them to be flexible with shorter turn around - usually within the hour the video is ready for playback on Blackboard.</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
             <enclosure url="/projects/images/image_01.jpg"/>
         </item>
         <item>
@@ -124,7 +124,7 @@ function array_key_merge($array1, $array2)
 }
 </code></pre>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[Google vs Facebook]]></title>
@@ -153,7 +153,7 @@ function array_key_merge($array1, $array2)
 <p>My biggest beef with Google Apps is that if there is a bug with the products, it’s difficult to get in touch with a “real person.” Also, why have they not opened the developer api for Google+ yet? I may have to put some of my Google experience to use and develop a Google+ application - which will hopefully rival <a href="https://developers.facebook.com/docs/graph-api">Facebook’s Graph API</a> which happens to be pretty sleek.</p>
 <p>Which brings me to my next beef. The APIs change quite frequently and depreciate rapidly (for example, see the Google Spreadsheet API). And Facebook is notorious for changing it’s API constantly. What’s FBML again? Now, granted I am a web developer and not a business hat, I have really been looking at this from the developer perspective and, I can tell you from this view… Google+ has no where to go but up. It’s still not ready to compete with Facebook, but it’s getting closer every day.</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
             <enclosure url="/media/google-vs-facebook/monopoly.png"/>
         </item>
         <item>
@@ -171,7 +171,7 @@ function array_key_merge($array1, $array2)
 <p>Don’t forgot Blackboard collaborate. A powerful tool which is essentially a live virtual classroom. I prefer Collaborate over Webex, Livemeeting, Dimdim and Adobe Connect; while Collaborate isn’t flawless, it is very slick and being heavily developed on at this time.</p>
 <p>CourseSites is also used for collaborating with other Blackboard users; currently I am a member of the ASR user group and several cohorts. These aren’t really used to teach a structured course but rather to learn through a community-like process. I may setup a course (if I can think of a good idea) to illustrate some Blackboard tools and advantages to distance learning.</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
             <enclosure url="/media/blackboard-coursesites-introduction/collaborate.jpg"/>
         </item>
         <item>
@@ -332,7 +332,7 @@ public String update(HttpServletRequest request, @PathVariable(&quot;id&quot;) I
 <p>f I come onto any projects that need a standalone website I would like to combine the Grails or Play! framework and use ActiveObjects for the Model part of the MVC framework - resulting in sheer Java bad-ass-ery. I know Java is a huge language and web frameworks only covers a small part of it’s ability; however, I really like the idea of Java becoming a competitor for simple turnkey web apps, the same ones that can be made in a short time using the conventions of CakePHP, Zend, Django and Rails. Developing in Play! and ActiveObjects is just plain easier. I don’t imagine that JEE, ContextFactories and extensive xml configurations are just going to magically disappear (you know job security and all that), but this is the age of designing RESTful web services and shunning away the complexities of CORBA and even SOAP.</p>
 <p>I’m sure in ten years, something new will be along to lay rest to REST (sorry I couldn’t resist) but for now, the general consensus seems to be that web applications should be very simple to develop and maintain, i.e. wham, bam, thank you mam.</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[Blackboard taglib issue with itemIdAccessor]]></title>
@@ -380,7 +380,7 @@ public String update(HttpServletRequest request, @PathVariable(&quot;id&quot;) I
 &lt;/bbNG:inventoryList&gt;
 </code></pre>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
             <enclosure url="/media/blackboard-taglib-issue-with-itemidaccessor/questions.jpg"/>
         </item>
         <item>
@@ -396,7 +396,7 @@ public String update(HttpServletRequest request, @PathVariable(&quot;id&quot;) I
 <p>{% youtube pN1uI2lFqvI %}</p>
 <p><strong>Researching</strong> the API actually took <strong>longer</strong> than the actual coding. I felt before writing this web application, I should know some Blackboard best practices first. The open source community was quite helpful and can be found on <a href="http://projects.oscelot.org">projects.oscelot.org</a>. I did notice that Hibernate did not want to integrate due to classpath issues in tomcat and ActiveObjects did not work well with Oracle. The B2 should be database agnostic and is designed to work with both <em>SQL Server</em> and <em>Oracle</em> based Blackboard installs. The Spring framework was used for routing controller actions. There is still a lot of room for improvement but it’s a good start I believe.</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
             <enclosure url="/projects/images/image_08.jpg"/>
         </item>
         <item>
@@ -420,7 +420,7 @@ However, what about universities that just want to store some files? Not everyon
 </div></div>
 <p>Granted you don’t get the benefit of the Blackboard CMS, but you could leverage other tools that support WebDAV, e.g <a href="http://www.element-it.com/asp-net-explorer-browser/online-share/web-file-manager.aspx">HTTP Commander</a>. This all boils down to a useful combination of tools to enhance education. The teacher spends less time on focused on technology (with questions like, how do I share my files?) and more time teaching.</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
             <enclosure url="/media/blackboard-drive-plays-nice-with-other-webdav-servers/usbdrive.jpg"/>
         </item>
         <item>
@@ -438,7 +438,7 @@ However, what about universities that just want to store some files? Not everyon
 <p>It also just so happens that Kitty, my lovely wife, was in the market for a new computer, thus I formated the old media center computer instead of buying a brand new PC ($400+). Given all these conditions, in a mixed up kind of way I ended up saving money with a Boxee box - yes, I can be a real a tight-ass sometimes.</p>
 <p><small>UPDATE: updating the Boxee software fixed a lot of issues that I was experiencing on this video! Kitty and I have been using this for several months now and still really enjoy it.</small></p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[Creating PDFs in Java with iText]]></title>
@@ -484,7 +484,7 @@ However, what about universities that just want to store some files? Not everyon
 }
 </code></pre>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[Restful Data Sources]]></title>
@@ -598,7 +598,7 @@ Sleepy DB. My RESTful Database implementation. This is my version of a RESTful d
 <p>Sleepy DB is built in Zend and has no databases. It simply uses my API system as a database for it’s models. All data models are built using the Restful API system (Zend_Restful_Model_Api) built and runs over HTTPS via the cloud. Data can be stored and protected and served to other users. It is very much like Dropbox, except that Dropbox does not provide documentation on every file. It seems that Dropbox would likely be a good Model from which a BEd could inherit from. Zend_Restful_Model_Dropbox. A developer could extend this class and provide only the configuration needed to use Dropbox as a model. (On second thought, who knows?)</p>
 <p>I hope you enjoyed my paper. I didn’t use big words to try and confuse anyone. I like simple. The biggest word I used I believe was hetrogenous data sources - which I meant different types of data sources - in case you missed that. And in case you missed it… the big picture idea is: simplify for everyone, generic enough for everyone. But if you missed the big picture then maybe you should read this paper again.</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
             <enclosure url="/media/restful-data-sources/sqltricks.gif"/>
         </item>
         <item>
@@ -622,7 +622,7 @@ Sleepy DB. My RESTful Database implementation. This is my version of a RESTful d
 {%youtube h06lgyES6Oc %}
 </div></div>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[Nostalgia with CSS Sprites]]></title>
@@ -789,7 +789,7 @@ function getSpriteDegree(s, e, x, y)
 }
 </code></pre>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
             <enclosure url="/projects/images/image_09.jpg"/>
         </item>
         <item>
@@ -973,7 +973,7 @@ function main()
 </code></pre>
 <p>That wraps it up. It was fun being a contest judge. As I said earlier, my questions were usually among the first answered. Not having your question answered at all just means it was too complex anyway and what’s the point of that? The goal is to see how well people can program - not to attempt to baffle and frustrate a team for five hours.</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
             <enclosure url="/projects/images/image_00.jpg"/>
         </item>
         <item>
@@ -998,7 +998,7 @@ done &lt; $INPUT
 IFS=$OLDIFS
 </code></pre>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[Google+ Weebly]]></title>
@@ -1027,7 +1027,7 @@ I started by looking at the Google Plus builder and I noticed this &lt;g:plusone
 <p>Also as a minor annoyance, it seems that Prototype and jQuery do not play well together. My post Nostaliga with CSS that included jQuery broke the Prototype.js script for Weebly. Why? Because they hate each other! That … and somewhere jQuery uses a global $ selector to call <code>$(...)._each()</code> function which instigates Prototype; however, Prototype has no such <code>_each</code> function which causes the library to error. I ended up spending a few minutes re-writing the sprite script to Prototype.js. <em>I know… I know… whatever… lol.</em></p>
 <p><strong>Lesson to be learned:</strong> don’t use jQuery on your Weebly website and expect everything to work.</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
             <enclosure url="/media/google-weebly/weebly-settings.jpg"/>
         </item>
         <item>
@@ -1051,7 +1051,7 @@ I started by looking at the Google Plus builder and I noticed this &lt;g:plusone
 </ol>
 <p>All in all, it was fun to present. Glad I did it. I think if I present next year, I’ll pick a different topic on something instructional designers/teachers are actually interested in.</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
             <enclosure url="/projects/images/image_03.jpg"/>
         </item>
         <item>
@@ -1083,9 +1083,9 @@ export BB_URL=&quot;http://your-shared-url.com&quot;
 echo &quot;adds the 55 users in the feeds/users.csv to EXAMPLES dsk&quot;
 ./framework refresh feeds/users.csv
 </code></pre>
-<p>If you found this script useful, then be a chum and help me <a href="http://www.lilsugar.com/How-Much-Diapers-Cost-9128186">buy a pack of diapers</a> for my little girl. Feedback is also welcome - comment or shoot me an email: Kelvin <code>at</code> dockins <code>dot</code> org.</p>
+<p>If you found this script useful, then be a chum and help me <a href="http://www.lilsugar.com/How-Much-Diapers-Cost-9128186">buy a pack of diapers</a> for my little girl. Feedback is also welcome - comment or shoot me an email: K.D. <code>at</code> dockins <code>dot</code> org.</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
             <enclosure url="/projects/images/image_07.jpg"/>
         </item>
         <item>
@@ -1120,7 +1120,7 @@ One example of how I used open source building blocks to better our users is B2W
 <li>Setting up a course archival process (there was always talk about this, but I made it happen)</li>
 </ul>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
             <enclosure url="/media/blackboard-migration-project/blackboard.png"/>
         </item>
         <item>
@@ -1172,7 +1172,7 @@ page.system.formdemo.label.demoDatepicker=demoDatepicker:
 ...
 </code></pre>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
             <enclosure url="/media/blackboard-bundles-que-language-es-esta/start-kit.jpg"/>
         </item>
         <item>
@@ -1218,7 +1218,7 @@ And speaking of figureheads, I got this big huge shiny award to take home and pu
 </ul>
 <p>By the end of the week we were exhausted of New Orleans and ready to go home and rest.</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
             <enclosure url="/media/blackboard-catalyst-award-innovative-development/award.jpg"/>
         </item>
         <item>
@@ -1238,7 +1238,7 @@ I found that getting up in front of people is not really that scary, especially 
 <p>My block will most assuredly be sun-set unless we find some show stopper in the new survey/course evaluation tool that Blackboard is offering out of the box. When I was asked how I felt about this, I replied, <strong>&quot;We knew a year ago the Blackboard Course Evaluations was coming at some point, but this (B2) gave us a solution while we waited which saved us thousands of dollars. I’m glad the wait is almost over.&quot;</strong></p>
 <p>Kudos to Blackboard for yet another step in the right direction!</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
             <enclosure url="/media/blackboard-catalyst-award-innovative-development/catalyst-awards.png"/>
         </item>
         <item>
@@ -1266,7 +1266,7 @@ But life isn’t all about technology and this article is an excellent reminder 
 <li>Reinforce with stories, statistics and examples</li>
 </ul>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
             <enclosure url="/media/pitch-anything-in-15-seconds/universe.jpeg"/>
         </item>
         <item>
@@ -1297,7 +1297,7 @@ The algorithm treats the entire canvas like a matrix of rows and columns and fil
 <p>** UPDATE ** I made a <a href="https://github.com/kdocki/jquery-collage">github repo for this code</a> since that’s the mature thing to do.</p>
 <p>Enjoy!</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
             <enclosure url="/projects/images/image_14.jpg"/>
         </item>
         <item>
@@ -1328,7 +1328,7 @@ I’ve been using it for a couple of weeks now to do some php programming and I 
 </ol>
 <p>There are tons of packages you can find by pressing <strong>Ctrl+Shift+P</strong> and search for <em>Install Package</em></p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[Angularjs parent scopes]]></title>
@@ -1341,7 +1341,7 @@ I’ve been using it for a couple of weeks now to do some php programming and I 
 <!-- more -->
 <iframe src="http://embed.plnkr.co/zFp9G2" frameborder="0" width="100%" height="300px" allowfullscreen="allowfullscreen"></iframe>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[Student View Building Block]]></title>
@@ -1381,7 +1381,7 @@ M       web/WEB-INF/applicationContext.xml
 M       web/WEB-INF/jsp/config.jsp
 </code></pre>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
             <enclosure url="/media/student-view-building-block/after.png"/>
         </item>
         <item>
@@ -1485,7 +1485,7 @@ Shift + F2            previous bookmark
 Ctrl + Shift + F2     clear bookmarks
 </code></pre>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[418 I'm a teapot (RFC 2324)]]></title>
@@ -1500,7 +1500,7 @@ Ctrl + Shift + F2     clear bookmarks
 <a href="http://knowyourmeme.com/memes/htp-error-418-im-a-teapot">
 	{% img full-width /media/418-im-a-teapot-rfc-2324/hpcloud418.png %}
 </a>]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[Binding to primitives in Angularjs ng-repeat]]></title>
@@ -1516,7 +1516,7 @@ At the time of this writing the bug is still present in version 1.0.5 (stable) a
 <p>Here is the bug in action: <a href="http://plnkr.co/edit/DSC4X3XaY7jWGu97meRk?p=preview">http://plnkr.co/edit/DSC4X3XaY7jWGu97meRk?p=preview</a></p>
 <p>and here is my workaround: <a href="http://plnkr.co/edit/zPHj9XHQW2D1scM2ZBhj">http://plnkr.co/edit/zPHj9XHQW2D1scM2ZBhj</a></p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[Drawing Straws]]></title>
@@ -1581,7 +1581,7 @@ function MyCtrl($scope) {
 </code></pre>
 <p>Below if you click Result you can run a straw picking game one million times over with four people and as expected… no participant has a clear advantage (meaning they loose 25% of the time).</p>
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/ADukg/1603/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
             <enclosure url="/media/drawing-straws/armageddon-straws.jpg"/>
         </item>
         <item>
@@ -1618,7 +1618,7 @@ print $foo1-&gt;bar-&gt;neato . ' ' .
       $foo2-&gt;bar-&gt;neato;
 </code></pre>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
             <enclosure url="/projects/images/image_11.jpg"/>
         </item>
         <item>
@@ -1637,7 +1637,7 @@ print $foo1-&gt;bar-&gt;neato . ' ' .
 </code></pre>
 <p>If the obscurity above doesn’t stick out like a sore thumb then don’t say I didn’t warn you (didn’t you see the Nerd alert?). What on earth is this <code>lol()</code>function? It wasn’t defined for me but I did find some <a href="http://stackoverflow.com/questions/2894550/blank-space-on-google-home-page">bored people on stackoverflow</a> talking about it. I also did not find a <code>lmao()</code> or <code>roflmao()</code> but it’s apparent the guys at Google have a sense of humor… <code>lol()</code>. Reminds me of my older days of writing crazy named functions like <code>call_me(s, e, x, y)</code>.</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[Simple Service - Little Rock Startup Winners]]></title>
@@ -1652,7 +1652,7 @@ print $foo1-&gt;bar-&gt;neato . ' ' .
 <p>Even after a couple of months, the team we created during that hectic weekend still meets weekly to talk about the product. We’ve been doing market analysis and research with nonprofits and schools and trying to design all with public service in mind. I’m also enjoying the free year of Gold memberships from <a href="http://teamtreehouse.com">Treehouse</a>.</p>
 <p><strong>UPDATE (08/2013)</strong> Unfortunately we have split up, break ups happen. I learned a lot during this experience though.</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
             <enclosure url="/projects/images/image_06.jpg"/>
         </item>
         <item>
@@ -1686,7 +1686,7 @@ print $foo1-&gt;bar-&gt;neato . ' ' .
 });
 </code></pre>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[Deployd Mincer]]></title>
@@ -1700,7 +1700,7 @@ print $foo1-&gt;bar-&gt;neato . ' ' .
 <p>Check out <a href="https://github.com/kdocki/dpd-mincer">dpd-mincer on github</a></p>
 <p>The one thing that stinks though about Deployd is that it is almost like a restful MVC but without the V. If you could render a view (like underscore template or handlebars) - it would be awesome at prototyping. But instead you end up creating the resources in Deployd and then consuming the JSON via your favorite javascript engine, e.g. Marionette or AngularJS, both libraries which take time to setup, at which point you are no longer prototyping.</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[Twitter Bootstrap Modals in Backbone.Marionette]]></title>
@@ -1717,7 +1717,7 @@ print $foo1-&gt;bar-&gt;neato . ' ' .
 <p>** Update **
 After talking to <a href="http://www.linkedin.com/pub/brian-mann/68/636/954">Brian Mann</a> about it, he suggested I use a Marionette.Region to do modals which is how I do modals now. I might do another post on this later.</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[Laravel 4 Book by Taylor Otwell]]></title>
@@ -1731,7 +1731,7 @@ After talking to <a href="http://www.linkedin.com/pub/brian-mann/68/636/954">Bri
 <p>The book price is $30 minimum. I’ve heard some people say that his book is too expensive. They say, <em>“It’s only 64 pages long! That’s 50 cents a page!”</em> Granted, there is truth to that, but then I look on leanpub and I see a book called Codebright for the same price. Codebright repeats a lot of what could be learned for free at <a href="http://laravel.com/docs">http://laravel.com/docs</a>. Don’t mis-understand me though, I’m not out to attack Dayle Rees, as he is a prominent and helpful member of the Laravel community. I’m just pointing out that Taylor’s book price is the same as Dayle’s - which then in my opinion doesn’t make the book seem so pricey.</p>
 <p>** UPDATE (11/24/2013): ** Read the book. It was short and sweet.</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[Laravel 4 Artisan Serve]]></title>
@@ -1760,7 +1760,7 @@ php artisan serve
 <p>But alias, maybe this is just re-inventing the wheel? I mean, currently, use <strong>grunt watch</strong> for stuff like <em>livereload</em>. This way I get rid of the F5 (or ctrl+R) for page refresh. This workflow works nicely on my multiple monitor setup. The reason this urks me though is that this requires that I have the Chrome browser LiveReload plugin, along with npm, grunt, several grunt libs, a package.json and list of dependencies. This isn’t really a big deal I suppose, but if we follow the Einstein minimalism principle rule, this whole process could be simpler therefore it is not truly elegant.</p>
 <p>So what if I went a different route? What if Laravel had a compser packagist package available to do watches? For example, if I forked/modified something like <a href="https://github.com/dbergey/Reloadr">https://github.com/dbergey/Reloadr</a>. No grunt, no problem. For now though, I will continue using grunt while I play with this idea some later in the future.</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[Laravel 4 CSRF Token and AJAX (using jQuery)]]></title>
@@ -1806,7 +1806,7 @@ $.ajaxSetup({
 </code></pre>
 <p>We will still look for _token in the input so we can still use the traditional <code>&lt;form&gt;</code> to submit data in addition to ajax submissions. I haven’t seen any issues with this yet. Of course if I run into any, I’ll be sure to update this post. Have a nice day!</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[Codesleeve Laravel 4 Asset Pipeline (inspired by rails/sprockets)]]></title>
@@ -1840,7 +1840,7 @@ $.ajaxSetup({
 <h3>Creating a Handlerbars package</h3>
 <p>{% youtube IPgUUYb7SqU %}</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[Confirming passwords bad UX design?]]></title>
@@ -1872,7 +1872,7 @@ Let’s take a look at some popular sites which have millions of users. These ar
 <p>I’m also a big fan of designing for the masses. We shouldn’t annoy 80% of the population by making them type their password twice, just because 20% of the population can’t type it right. Those 20% deserve to go reset it a few times, they need typing practice anyway. ^_^</p>
 <p>If I still haven’t convinced you… try reading <a href="http://www.leemunroe.com/confirm-passwords-signup/">some</a> other <a href="http://ux.stackexchange.com/questions/20953/why-should-we-ask-the-password-twice-during-registration">places</a>.</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[Computed properties on Backbone.Model]]></title>
@@ -1891,7 +1891,7 @@ I thought, surely someone else has done this before? So my search in Google land
 <p>Marionette Views have dynamically called functions for triggers, i.e. when <code>some:event</code> is triggered the function <code>onSomeEvent</code> is called if it exists. Following that same mentality, I applied it to get and set camel case functions. It seems many frameworks do camel case functions and snake case database column names. So that’s exactly the convention I followed. I hijack the <code>Backbone.Model</code> class and add functionality, which I will admit is more obtrusive than the <code>Backbone.ComputedFields</code> implementation, but I liked the intrusion enough to do it this way anyway.</p>
 <p>Check out on my github repo here: <a href="https://github.com/kdocki/backbone.model.computed">https://github.com/kdocki/backbone.model.computed</a></p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
             <enclosure url="/projects/images/image_21.jpg"/>
         </item>
         <item>
@@ -1961,7 +1961,7 @@ function createApplication()
 </code></pre>
 <p>Testing in isolation is important because it leaves us with our sanity. It is nice to be able to <code>reset</code> the state of the application anytime, i.e. in Ember you do App.reset(); Marionette should do this out of the box, maybe Derick can make it happen? It’d be a nice feature to have!</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
             <enclosure url="/projects/images/image_20.jpg"/>
         </item>
         <item>
@@ -2009,7 +2009,7 @@ What does this program do? I have no idea and I wrote it.
 YOU HAVE BEEN TERMINATED
 </code></pre>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[Marionette.Controller.listenAll]]></title>
@@ -2093,7 +2093,7 @@ YOU HAVE BEEN TERMINATED
 </code></pre>
 <p>That about sums it up. The last thing I’d like to say is that the <code>triggerMethod</code> function is pretty neat. There is a lot that can be learned by just skimming through the <a href="http://marionettejs.com/docs/backbone.marionette.html">Marionette annotated source</a>.</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
             <enclosure url="/projects/images/image_22.jpg"/>
         </item>
         <item>
@@ -2140,7 +2140,7 @@ Reduce complexity in my routes. Don’t worry about which routes are protected o
 });
 </code></pre>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[React PHP (guard in php and laravel)]]></title>
@@ -2199,7 +2199,7 @@ The problem is that pcntl_signal doesn’t work in Windows. Thus, I stopped work
 </code></pre>
 <p>If you’d really like to dig in, you can see the full extent of the code in the <a href="https://github.com/CodeSleeve/guard-live-reload/blob/master/src/Codesleeve/GuardLiveReload/LiveReloadServer.php#L31">codesleeve/guard-livereload</a> repository. I may change this eventually, but I think I’ll re-architect the entire thing if I do. Basically the react event loop cannot be an external process fired by codesleeve/guard, instead it guard needs to become itself an event loop and I will have to compartmentalize all the different events and configs together so that it is easy to drop in new event handlers. It’s do-able I believe but right now isn’t any where on my priority list of todos.</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[Scenarios in Laravel (Hexagonal Pattern Design Part 1)]]></title>
@@ -2320,7 +2320,7 @@ The problem is that pcntl_signal doesn’t work in Windows. Thus, I stopped work
 <aside class="important">Honestly this pattern can be extreme overkill. Notice how we have to keep switching back and forth between the scenario and controllers just to figure out what is going on. They are loosely coupled but still coupled. Sure we have a logic-less controller but hopefully you can see how this is still complicated in some ways.</aside>
 <p>Hopefully I didn’t scare you off with this post. There are still two more posts to go! In the next post I will be talking about how to keep Laravel views simple and clean using macros.</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[Macros in Laravel (Hexagonal Pattern Design Part 2)]]></title>
@@ -2476,7 +2476,7 @@ HTML::macro('not_found', function($items, $message = 'None found!')
 </code></pre>
 <p>If you didn’t get anything else out of this besides the fact that you can use macros to keep your views clean then I think I can pat myself on the back. Now go, change the world my friend! My next blog will be talking about using presenters to keep views clean in the hexagonal pattern.</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[Presenters in Laravel (Hexagonal Pattern Design Part 3)]]></title>
@@ -2546,7 +2546,7 @@ I am going to use robclancy presenter just because I have more experience with i
 </code></pre>
 <p>I hope you see by using scenarios, presenters and macros you can keep your Laravel application very clean. Many developers jump straight to the Repository pattern and abuse the views or even worse try to shove presenter logic into a repository or model which is not responsible for keeping up with that view logic.</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[Codesleeve Asset Pipeline (refactor)]]></title>
@@ -2592,7 +2592,7 @@ Regarding functionality, the Laravel asset pipeline can go toe to toe with the R
 </div><div class="col-xs-3">
 	<img class="full-width" src="/media/codesleeve-asset-pipeline-refactor/wally-the-janitor.jpg" alt="that'll do pig">
 </div></div>]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[Serve then remove temporary file using Laravel]]></title>
@@ -2669,7 +2669,7 @@ class ResponseHelper extends Illuminate\Support\Facades\Response
 </code></pre>
 <p>Finally, another idea is to register your <code>App::finished</code> closures in another class or as event listeners. I’ll leave that up to you to implement.</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[Which Javascript framework to use? Angular vs. Ember vs. Marionette]]></title>
@@ -2763,7 +2763,7 @@ class ResponseHelper extends Illuminate\Support\Facades\Response
 <p><strong>When to use Marionette?</strong> You might be curious to see how the composite design pattern will work on your application but I would <strong>only pick Marionette if you (and your team) are very comfortable with javascript.</strong> If you use Marionette you should be ready to <strong>use lots of additional plugins</strong> and watch Brian Mann’s videos on a good way to organize your marionette application. You can easily bring in lots of jquery plugins without having to worry about the DOM being messed and you will know you are in complete control of your DOM because there is not a whole lot of magic going on behind the scenes with Marionette since you are having to wire up the different types of views yourself.</p>
 <p>Above all else, no matter the framework you choose, <strong>test your code</strong>. A feature rich client side architecture will need tests just like a server side architecture. This is one area Marionette seems to lack guidance. I have seen many more tutorials for Ember and Angular on testing than Marionette. But it is still possible using jasmine or mocha to crank out a test suite in all 3 of these client side frameworks. Good luck, amigos.</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[My Standing Desk]]></title>
@@ -2845,7 +2845,7 @@ I feel more productive when standing, and I like to have client meetings while I
 <p><strong>UPDATE (MAY 16th 2014)</strong></p>
 <p>The <a href="https://www.kickstarter.com/projects/2036834894/the-most-affordable-automatic-sit-to-stand-desk">STANDdesk</a> looks pretty nice and is half the cost. I have a buddy who ordered one, I’ll check his out and update here accordingly.</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[There is NO TDD debate]]></title>
@@ -2950,7 +2950,7 @@ being re-usable modules, components, packages, frameworks, etc. An terrible time
 <p>So <strong>when it makes sense</strong>, write some tests, write some code, make sure tests pass. Rinse, wash, repeat daily. In the right context, there is nothing dead about the process of TDD. Don’t get me wrong, I enjoy watching Martin, Kent and David express themselves. Ever notice that Kent squints really hard when he is thinking? ++Geek awesomeness!</p>
 <p>All this said, <span class="lg">adding Uncle Bob to the conversation will make the debate better.</span></p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[ETags With Laravel Filters]]></title>
@@ -3074,7 +3074,7 @@ Route::filter('cached.response', 'CachingFilter@after');
 <p>It’s important to note here that this only targets 1 client at a time. This type of client-side caching is useful for when the same url (resource) provides different content for different users. Imagine if you went to <code>/users/me</code> and saw someone else’s page?</p>
 <p>However, in the case were you are fetching a specific set of entities then you might utilize database caching and Etags. The page <code>/pages/how-i-met-your-mother</code> is likely to be the same for all users of the system. Unfortunately this approach still requires the Laravel application to be booted so it will never be as fast as just serving a static html file.</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[Reminders with Ubuntu]]></title>
@@ -3125,7 +3125,7 @@ sudo python setup.py install
 </code></pre>
 <p>Now all that is left is to go remind yourself to do some tasks via Google or in your indicator task bar. Having your events in Google calendar though let’s you propagate out on other devices like your phone so it’s a pretty sweet setup to have Google Calendar integration with Ubuntu notifications. Good luck, and may the odds be never in your favor?</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[Switching To Hexo]]></title>
@@ -3159,7 +3159,7 @@ $foo-&gt;hookedOnAFeeling('High on believing');
 <h3>Hexo rocks!</h3>
 <p>It took me about 30 minutes to really dig into hexo and figure out it’s internals. If I ever want to switch in the future to another technology, I just need to publish my static html content and then start from there. And I’m pretty content with that. It’s not like weebly where if that site crashes, I’m stuck without my blog and portfolio website for ever.</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[Cracking Fogcreek]]></title>
@@ -3289,7 +3289,7 @@ $foo-&gt;hookedOnAFeeling('High on believing');
 </code></pre>
 <p>And that is it. Oh and if you are wondering what the answer is: <code>asparagus</code> There is probably another 20 ways to solve this problem but this is the way I chose. Did you actually make it here? Wow… I figured I would have bored most people off by this line.</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[Laravel Blade @var extension]]></title>
@@ -3334,7 +3334,7 @@ $foo-&gt;hookedOnAFeeling('High on believing');
 </code></pre>
 <p>And there we have it. A simple way to inject variables in your Blade views. I am not using this at the moment so it’s only a proof of concept. One nice thing about this approach is that you can easily see all the registered variables inside of your view and know where they come from. But this approach doesn’t allow you the flexibility to re-use views with different variables - which is a primary reason why we use controllers - separation of concerns!</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[Access localhost:8000 Anywhere (ngrok)]]></title>
@@ -3380,7 +3380,7 @@ $response = $client-&gt;get('https://app.zencoder.com/api/v2/jobs', [
 <li><a href="http://www.browserstack.com/">BrowserStack</a></li>
 </ul>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[Searching Files With Laravel]]></title>
@@ -3410,7 +3410,7 @@ foreach ($finder as $file)
 </code></pre>
 <p>Bye, bye <a href="http://php.net/manual/en/class.recursivedirectoryiterator.php">RecursiveDirectoryIterator</a>, may we never meet again! If I ever meet Fabien I’m likely to get a restraining order slapped on me after I give him a big hug and kiss.</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[Moments of Programmer Clarity]]></title>
@@ -3555,7 +3555,7 @@ class UserController extends Controller
 <p>To wrap things up the idea of seeking help from close friends is one of the basis of <a href="http://en.wikipedia.org/wiki/Law_of_Demeter">Demeter’s Law</a>. I had heard of the Law of Demeter in conversations, but never really gave it much thought when developing. Sometimes really good advise only makes its way into my brain after I fail to follow said advise and a few fails later I can have an epiphany.</p>
 <p><em><strong>When you are faced with complex problem, seek help from others that you trust</strong></em></p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
             <enclosure url="/media/moments-of-programmer-clarity/marionette-video.png"/>
         </item>
         <item>
@@ -3606,13 +3606,13 @@ I played around with some of these. I like the approach of annotated source code
 <pre><code>- Installing zetacomponents/base (1.9)
 Downloading: connection...
 Could not fetch https://api.github.com/repos/zetacomponents/Base/zipball/f20df24e8de3e48b6b69b2503f917e457281e687, enter your GitHub credentials to go over the API rate limit
-The credentials will be swapped for an OAuth token stored in /home/Kelvin/.composer/auth.json, your password will not be stored
+The credentials will be swapped for an OAuth token stored in /home/K.D./.composer/auth.json, your password will not be stored
 To revoke access to this token you can visit https://github.com/settings/applications
 Username:
 </code></pre>
 <p>Because I didn’t want to give composer my username and password to create an Oauth token, I exited out and told composer to prefer source to get around this issue. Php documentor warns too that there are a lot of dependencies to download so it is likely that I’m just downloading too much. I decided to go a different approach and download the 30 megabyte phar file from <a href="http://www.phpdoc.org/phpDocumentor.phar">http://www.phpdoc.org/phpDocumentor.phar</a>.</p>
 <p>After downloading the phar I ran it and it gave the this error:</p>
-<pre><code>PHP Fatal error:  Class 'phpDocumentor\Application' not found in phar:///home/Kelvin/.bin/phar/phpDocumentor.phar/src/phpDocumentor/Bootstrap.php on line 63
+<pre><code>PHP Fatal error:  Class 'phpDocumentor\Application' not found in phar:///home/K.D./.bin/phar/phpDocumentor.phar/src/phpDocumentor/Bootstrap.php on line 63
 </code></pre>
 <p>So after scouting around some, I found a link on phpDocumentors website that said, “if you have any issues consult: <a href="http://silex.sensiolabs.org/doc/phar.html#pitfalls">http://silex.sensiolabs.org/doc/phar.html#pitfalls</a>”. After looking at this website the first line states:</p>
 <pre><code>Using the Silex phar file is deprecated. You should use Composer instead to install Silex and its dependencies or download one of the archives.
@@ -3639,8 +3639,8 @@ The class SoftDeletingTrait is in use but has not been found in the defined sour
 <pre><code>ApiGen 2.8.0
 ------------
 Scanning
- /home/Kelvin/workspace/lbm/package-devise/src
- /home/Kelvin/workspace/lbm/package-devise/vendor
+ /home/K.D./workspace/lbm/package-devise/src
+ /home/K.D./workspace/lbm/package-devise/vendor
 [=======&gt;                                                        ]  13.05% 116MB
 Used 91% of the current memory limit, please increase the limit to generate the whole documentation.
 </code></pre>
@@ -3683,7 +3683,7 @@ use Symfony\Component\Finder\Finder;</p>
 </code></pre>
 <p>Now we’ve got our <code>composer docs</code> and all is well. Not to toot my own horn, but this is a pretty cool setup. <strong>Toot toot.</strong></p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[Git Monitor]]></title>
@@ -3713,7 +3713,7 @@ mail bob@gmail.com &quot;it updated&quot;
 <p>Here is the script in it’s entirety.</p>
 <pre><code>#!/bin/bash
 #
-# @author Kelvin@lbm.co
+# @author kelvinlbm.co
 #
 # first you will need to setup a file that tells
 # gitmon what to do anytime this git repository
@@ -3835,7 +3835,7 @@ rm $LOCK_FILE
 cd $SCRIPT_DIR
 </code></pre>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[Get the Laravel 5 App Namespace]]></title>
@@ -3913,7 +3913,7 @@ $detect-&gt;getAppNamespace();	// 'Horsefly'
 </code></pre>
 <p>This begs the question. Why would you need to ever get the app namespace? I mean… the developer <em>set</em> that. So he/she should already know the namespace, right? If you are working in package development or multiple <em>cms</em> applications, a need might arise for it though. One of our developers at work had a need for this. Glad Taylor has got our back. Everytime I look behind the curtains of Laravel source, I find nothing but clean expressive &amp; understable code.</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[Delete a file after download in Laravel 5]]></title>
@@ -4006,7 +4006,7 @@ class RemoveDownloadedFileMiddleware implements TerminableMiddleware {
 </code></pre>
 <p>That should about cover it. Now after the user downloads the file, it will disapear forever. We could do other things besides <code>unlink</code> the file in the middleware though. We might cache it. In fact, we could skip this entire process and make a cache remover that removes files older than 30 days anytime a new file is downloaded. There’s always more than one way to skin a chicken.</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[Laravel Integration Testing for Large Apps]]></title>
@@ -4036,7 +4036,7 @@ So I wrote a generator to create tests for me automatically at work. I wanted to
 <pre><code>ini_set('memory_limit', -1);
 </code></pre>
 <p>However, that just traded one problem for another. After running some really slow tests, after about 150 tests I start getting a continious stream of error exceptions.</p>
-<pre><code>Kelvin@dorothy:~/space/laravel-tests$ phpunit
+<pre><code>kelvindorothy:~/space/laravel-tests$ phpunit
 PHPUnit 4.8.18 by Sebastian Bergmann and contributors.
 
 ..F..FF.F..FFFFFFFFFFFFFF
@@ -4062,7 +4062,7 @@ PDOException: SQLSTATE[08004] [1040] Too many connections
     ... then we start getting weird shit like this...
 
 94) Youth_Programs::test_route
-ErrorException: include(/Users/Kelvin/space/jccfs51/vendor/symfony/symfony/src/Symfony/Component/Finder/Exception/AccessDeniedException.php): failed to open stream: Too many open files
+ErrorException: include(/Users/K.D./space/jccfs51/vendor/symfony/symfony/src/Symfony/Component/Finder/Exception/AccessDeniedException.php): failed to open stream: Too many open files
 
 
     ... then some failures ...
@@ -4188,7 +4188,7 @@ Tests: 244, Assertions: 139, Errors: 94, Failures: 78, Skipped: 10.
 }
 </code></pre>
 <p>Now with my changes in place, let’s see how things run. Will we actually be able to complete without the framework blowing up and throwing error exceptions on over half our tests because it used up too many database connections?</p>
-<pre><code>Kelvin@dorothy:~/space/laravel-tests$ phpunit
+<pre><code>kelvindorothy:~/space/laravel-tests$ phpunit
 PHPUnit 4.8.18 by Sebastian Bergmann and contributors.
 
 ..F..FF.F..FFFFFFFFFFFFFF
@@ -4240,7 +4240,7 @@ Tests: 244, Assertions: 228, Failures: 145, Skipped: 15.
 <p>Above we don’t actually have a ‘something-here’ route defined. We are mocking it with Mockery on the URL facade. I personally don’t use Mockery on Laravel’s facades often because I don’t use facades that often. However, this will show you the problem.</p>
 <p>Above we are changing the URL facade to expect the <code>route</code> method. In our second <code>test_me2()</code> method we are just asserting that an exception is thrown because we don’t have a route defined for <em>something-here</em>.</p>
 <p>This test should run successfully on the <strong>old out of the box</strong> TestCase.</p>
-<pre><code>Kelvin@dorothy:~/space/laravel-test phpunit
+<pre><code>kelvindorothy:~/space/laravel-test phpunit
 PHPUnit 4.8.18 by Sebastian Bergmann and contributors.
 
 ..awesome.
@@ -4251,7 +4251,7 @@ OK (2 tests, 1 assertion)
 </code></pre>
 <p>However, when we change to our modified <strong>TestCase</strong> we run into a different situation.</p>
 <p>Now our results show that mockery has been applied across both testing methods `test_me1’ and ‘testme_2’. See below.</p>
-<pre><code>Kelvin@dorothy:~/space/laravel-test$ phpunit
+<pre><code>kelvindorothy:~/space/laravel-test$ phpunit
 PHPUnit 4.8.18 by Sebastian Bergmann and contributors.
 
 ..awesomeFawesome
@@ -4263,8 +4263,8 @@ There was 1 failure:
 1) TestMe::test_me2
 Failed asserting that exception of type &quot;InvalidArgumentException&quot; is thrown.
 
-/Users/Kelvin/.composer/vendor/phpunit/phpunit/src/TextUI/Command.php:186
-/Users/Kelvin/.composer/vendor/phpunit/phpunit/src/TextUI/Command.php:138
+/Users/K.D./.composer/vendor/phpunit/phpunit/src/TextUI/Command.php:186
+/Users/K.D./.composer/vendor/phpunit/phpunit/src/TextUI/Command.php:138
 
 FAILURES!
 Tests: 2, Assertions: 1, Failures: 1.
@@ -4289,7 +4289,7 @@ Tests: 2, Assertions: 1, Failures: 1.
 </li>
 </ol>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[Rollbar is Awesome]]></title>
@@ -4357,7 +4357,7 @@ throw new Exception('test 2');
 </code></pre>
 <p>This tool will keep track of all the errors your visitors are seeing. It doesn’t replace writing tests for the application necessarily but it does give an extra layer of comfort knowing when your application is erroring. Some times you can find and fix errors before a client has time to email you that screenshot and upload it to JIRA or Trello. Then you just say, <em>yeah, I fixed that like 5 minutes ago dawg…</em>* and walk off with a gangsta smile on your face.</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
             <enclosure url="/media/rollbar-is-awesome/rollbar.jpg"/>
         </item>
         <item>
@@ -4407,7 +4407,7 @@ case $COMMAND in
 esac
 </code></pre>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
             <enclosure url="/media/homestead-bash-commands/homestead.jpg"/>
         </item>
         <item>
@@ -4477,7 +4477,7 @@ public function test_users_edit()
     }
 </code></pre>
 <p>Now when we run phpunit we get that green that everyone likes.</p>
-<pre><code>Kelvin@videl:~/space/blog$ phpunit
+<pre><code>kelvinvidel:~/space/blog$ phpunit
 PHPUnit 4.8.24 by Sebastian Bergmann and contributors.
 
 ..
@@ -4583,7 +4583,7 @@ public function test_users_destroy()
 <p>Again you can find the script <a href="https://github.com/kdocki/missing-tested-routes">HERE</a>.</p>
 <p>If you find yourself using this or have some sort of improvements or even a better way for testing all the routes in your application, please leave me a comment. Thanks!</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[When Javascript Excited Me]]></title>
@@ -4908,7 +4908,7 @@ When it comes to javascript, there are simply too many ways to skin the cat.
 <h4>UPDATE 4/11/2016</h4>
 <p>Shortly after writing this I found this article about <a href="http://www.planningforaliens.com/blog/2016/04/11/why-js-development-is-crazy/">Why Javascript Development Is Crazy</a>. It’s good, check it out.</p>
 <div class="mt sp100"></div>]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
             <enclosure url="/media/when-javascript-excited-me/excited.gif"/>
         </item>
         <item>
@@ -5181,7 +5181,7 @@ abstract class BasicRequest extends FormRequest
 }
 </code></pre>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[The Quest For The Holy Database]]></title>
@@ -5280,7 +5280,7 @@ https://towardsdatascience.com/the-best-format-to-save-pandas-data-414dca023e0d
 - Google Cloud Datastore
 - Aerospike</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[How To Easily Read Csvs In PHP]]></title>
@@ -5316,7 +5316,7 @@ Here is a snippet I made that reads in a csv and returns an array of results.
     }
 </code></pre>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[Beware Has Many Relationships]]></title>
@@ -5363,7 +5363,7 @@ class PostCommentsController extends Controller {
 <p>Should we abandon all hasMany relationships? No. Only when they don’t scale. Take for example, where we model real-world invoices and give each invoice many line items. This should work well because we are only going to find a few dozen line items on a single invoice at worst case.</p>
 <p>What are your thoughts?</p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[You Got That Facebook Math Problem Right!]]></title>
@@ -5415,7 +5415,7 @@ c = 2
 <p>So for all these reasons above, I’ve come to the conclusion that any answer is acceptable. What do you think?</p>
 <p><strong>** (facebOOk trollz grammer no good)</strong></p>
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
             <title><![CDATA[Emmet in Visual Studio Code makes me sad]]></title>
@@ -5428,10 +5428,10 @@ c = 2
             <content:encoded><![CDATA[<p>Emmet in VS Code is a great tool to speed up writing html but it always gets confused when I do stuff like <code>w-3/4</code></p>
 <img class="mx-auto max-w-md" src="/media/vscode-emmet/vscode-emmet.gif">
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
         <item>
-            <title><![CDATA[Emmet in Visual Studio Code makes me sad]]></title>
+            <title><![CDATA[Who Says Pawns Cannot Mate Kings?]]></title>
             <link>/2020/07/2021-01-21 who says pawns cannot mate/</link>
             <guid>/2020/07/2021-01-21 who says pawns cannot mate/</guid>
             <pubDate>Wed, 08 Jul 2020 05:00:00 GMT</pubDate>
@@ -5441,7 +5441,7 @@ c = 2
             <content:encoded><![CDATA[<p>This was a fun quick game I played tonight. I thought this was a neat mate. If that c2 pawn had just 1 more turn then I would have had been forced to draw by repetition.</p>
 <img class="mx-auto max-w-md" src="/media/chess/chess fun 2021-01-21_20-29.png">
 ]]></content:encoded>
-            <author>contact-me  ~AT~  k246d.33mail.com (Kelvin)</author>
+            <author>contact-me  ~AT~  k246d.33mail.com (K.D.)</author>
         </item>
     </channel>
 </rss>

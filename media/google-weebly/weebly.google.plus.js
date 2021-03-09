@@ -1,6 +1,6 @@
 /*
  * filename: 	weebly.google.plus.js
- * author: 		Kelvin 
+ * author: 		K.D. 
  * website: 	def246.com
  * description:
  * 				Dynamically searches through your Weebly blog and adds a Google +1 button 

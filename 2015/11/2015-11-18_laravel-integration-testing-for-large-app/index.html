@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Kelvin</title>
+        <title>def246</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
@@ -21,7 +21,7 @@
   }
 </script> 
 
-        <meta name="author" content="Kelvin">
+        <meta name="author" content="K.D.">
         <meta name="description" content="My work buddy and I were talking about tests. We wanted something to go through every route in our system and check for any obvious errors. That seemed like a pretty simple way to test an application.
 So I wrote a generator to create tests for me automatically at work. I wanted to test every route we have in the system. We have hundreds of routes on this particular project I’m working on today. On our last large project we had over a thousand routes. What can I say? We like our routes.
 ">
@@ -43,7 +43,7 @@ So I wrote a generator to create tests for me automatically at work. I wanted to
     <div class="bg-gray-200">
   <div class="container mx-auto px-4">
       <nav class="flex flex-wrap items-center justify-between p-4">
-        <div class="lg:order-2 w-auto lg:w-1/5 sm:text-center"><a class="text-2xl text-gray-900 hover:text-gray-700" href="/">Kelvin</a></div>
+        <div class="lg:order-2 w-auto lg:w-1/5 sm:text-center"><a class="text-2xl text-gray-900 hover:text-gray-700" href="/">def246</a></div>
 
         <div class="navbar-menu lg:order-3 lg:block w-full lg:w-2/5 lg:text-right">
           <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/">Home</a>
@@ -97,7 +97,7 @@ So I wrote a generator to create tests for me automatically at work. I wanted to
 <pre><code>ini_set('memory_limit', -1);
 </code></pre>
 <p>However, that just traded one problem for another. After running some really slow tests, after about 150 tests I start getting a continious stream of error exceptions.</p>
-<pre><code>Kelvin@dorothy:~/space/laravel-tests$ phpunit
+<pre><code>kelvindorothy:~/space/laravel-tests$ phpunit
 PHPUnit 4.8.18 by Sebastian Bergmann and contributors.
 
 ..F..FF.F..FFFFFFFFFFFFFF
@@ -123,7 +123,7 @@ PDOException: SQLSTATE[08004] [1040] Too many connections
     ... then we start getting weird shit like this...
 
 94) Youth_Programs::test_route
-ErrorException: include(/Users/Kelvin/space/jccfs51/vendor/symfony/symfony/src/Symfony/Component/Finder/Exception/AccessDeniedException.php): failed to open stream: Too many open files
+ErrorException: include(/Users/K.D./space/jccfs51/vendor/symfony/symfony/src/Symfony/Component/Finder/Exception/AccessDeniedException.php): failed to open stream: Too many open files
 
 
     ... then some failures ...
@@ -249,7 +249,7 @@ Tests: 244, Assertions: 139, Errors: 94, Failures: 78, Skipped: 10.
 }
 </code></pre>
 <p>Now with my changes in place, let’s see how things run. Will we actually be able to complete without the framework blowing up and throwing error exceptions on over half our tests because it used up too many database connections?</p>
-<pre><code>Kelvin@dorothy:~/space/laravel-tests$ phpunit
+<pre><code>kelvindorothy:~/space/laravel-tests$ phpunit
 PHPUnit 4.8.18 by Sebastian Bergmann and contributors.
 
 ..F..FF.F..FFFFFFFFFFFFFF
@@ -301,7 +301,7 @@ Tests: 244, Assertions: 228, Failures: 145, Skipped: 15.
 <p>Above we don’t actually have a ‘something-here’ route defined. We are mocking it with Mockery on the URL facade. I personally don’t use Mockery on Laravel’s facades often because I don’t use facades that often. However, this will show you the problem.</p>
 <p>Above we are changing the URL facade to expect the <code>route</code> method. In our second <code>test_me2()</code> method we are just asserting that an exception is thrown because we don’t have a route defined for <em>something-here</em>.</p>
 <p>This test should run successfully on the <strong>old out of the box</strong> TestCase.</p>
-<pre><code>Kelvin@dorothy:~/space/laravel-test phpunit
+<pre><code>kelvindorothy:~/space/laravel-test phpunit
 PHPUnit 4.8.18 by Sebastian Bergmann and contributors.
 
 ..awesome.
@@ -312,7 +312,7 @@ OK (2 tests, 1 assertion)
 </code></pre>
 <p>However, when we change to our modified <strong>TestCase</strong> we run into a different situation.</p>
 <p>Now our results show that mockery has been applied across both testing methods `test_me1’ and ‘testme_2’. See below.</p>
-<pre><code>Kelvin@dorothy:~/space/laravel-test$ phpunit
+<pre><code>kelvindorothy:~/space/laravel-test$ phpunit
 PHPUnit 4.8.18 by Sebastian Bergmann and contributors.
 
 ..awesomeFawesome
@@ -324,8 +324,8 @@ There was 1 failure:
 1) TestMe::test_me2
 Failed asserting that exception of type &quot;InvalidArgumentException&quot; is thrown.
 
-/Users/Kelvin/.composer/vendor/phpunit/phpunit/src/TextUI/Command.php:186
-/Users/Kelvin/.composer/vendor/phpunit/phpunit/src/TextUI/Command.php:138
+/Users/K.D./.composer/vendor/phpunit/phpunit/src/TextUI/Command.php:186
+/Users/K.D./.composer/vendor/phpunit/phpunit/src/TextUI/Command.php:138
 
 FAILURES!
 Tests: 2, Assertions: 1, Failures: 1.
@@ -354,7 +354,7 @@ Tests: 2, Assertions: 1, Failures: 1.
                 </div>
 
                 <div class="text-right">
-                    <div>post by Kelvin on 11/18/2015</div>
+                    <div>post by K.D. on 11/18/2015</div>
                 </div>
             </div>
         </div>

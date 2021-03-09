@@ -1,11 +1,11 @@
 {
     "version": "https://jsonfeed.org/version/1",
-    "title": "Kelvin",
+    "title": "def246",
     "home_page_url": "def246.com",
     "feed_url": "def246.com/json",
     "icon": "def246.comfavicon.png",
     "author": {
-        "name": "Kelvin",
+        "name": "K.D.",
         "url": "def246.com"
     },
     "items": [
@@ -17,7 +17,7 @@
             "summary": "Below is a story (youtube) I made up in ASL which is similar to the 3 little pigs. However, since the invasion of technology into our daily lives, not just children but everyone has been affected by the explosion of social networking and instant gratification of timely communication. Text messages and Facebook devour our minds and time but we all still love it. It truly is Sophie’s choice for the previous, current and next generations.\n",
             "date_modified": "2011-02-08T06:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2011/02/2011-02-08_asl-3-little-pigs/"
             }
         },
@@ -29,7 +29,7 @@
             "summary": "I took a ride on the way back machine to find something that is interesting to me. Even since Google first started their search engine in the 90’s they have kept the same consistent layout.\n",
             "date_modified": "2011-02-08T06:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2011/02/2011-02-08_how-the-mighty-have-fallen/"
             }
         },
@@ -41,7 +41,7 @@
             "summary": "I have created many websites and blogs. Many of which have diminished and faded away due to my lack of motivation, time and interest. In the end, my laziness has the last laugh and boredom dominates the website and eventually the dust settles in. So… why go to all that extra effort to setup another website if it is just going to flop? Perhaps this site will be different?\n",
             "date_modified": "2011-02-08T06:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2011/02/2011-02-08_weebly-doing-it-right/"
             }
         },
@@ -54,7 +54,7 @@
             "image": "/projects/images/image_01.jpg",
             "date_modified": "2011-04-07T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2011/04/2011-04-07_ualr-video-player/"
             }
         },
@@ -66,7 +66,7 @@
             "summary": "If you want to replace the keys in an array there is no native php function that does this currently. So I wrote one. It takes the keys from the first array and replaces it with a new key. See code snippet below.\n",
             "date_modified": "2011-04-28T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2011/04/2011-04-28_replace-array-keys-in-php/"
             }
         },
@@ -79,7 +79,7 @@
             "image": "/media/google-vs-facebook/monopoly.png",
             "date_modified": "2011-09-21T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2011/09/2011-09-21_google-vs-facebook/"
             }
         },
@@ -92,7 +92,7 @@
             "image": "/media/blackboard-coursesites-introduction/collaborate.jpg",
             "date_modified": "2011-10-21T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2011/10/2011-10-21_blackboard-coursesites-introduction/"
             }
         },
@@ -104,7 +104,7 @@
             "summary": "ActiveRecord is to Ruby on Rails as Active Objects is to Java. Ideally it would be called AwesomeObjects. At last, persisting data for your Java web application is not all xml, POJOS, EJBs and did I mention xml? I don’t hate xml but I find configuring your application extremely inefficient after working with other frameworks that utilize convention over configuration.\nWhy do I have to specifiy a log4j properties file, hibernate persistance.xml configuration. And there’s soooo many options of how to develop: JPA, Wicket, OJB, Spring, Struts, Torque, Cayenne, Jaxor, TJDO, JDBM, pBeans, JPOX, Simple ORM, Ibatis, XORM, Speedo, Smyle, PAT, LiDO, JDO, IntelliBO, KodoJDO, Hamlets, Faces, RIFE, Shale, Sling, Stripes, Vaadin, Poopdeck (okay, I just made that one up). Point is that It can be a real headache to develop a Java web app.\nFurthermore, why do I have to create my POJOs and SQL for my database? Why can’t a framework just create my data objects, along with nice RESTful CRUD operations for each. Why, crow, why?! So at least for the moment, finding ActiveObjects is lemonade to quench my thirst for answers.\n",
             "date_modified": "2011-11-03T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2011/11/2011-11-03_java-activeobjects-with-a-squeeze-of-blackboard/"
             }
         },
@@ -117,7 +117,7 @@
             "image": "/media/blackboard-taglib-issue-with-itemidaccessor/questions.jpg",
             "date_modified": "2011-11-26T06:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2011/11/2011-11-26_blackboard-taglib-issue-with-itemidaccessor/"
             }
         },
@@ -130,7 +130,7 @@
             "image": "/projects/images/image_08.jpg",
             "date_modified": "2012-01-04T06:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2012/01/2012-01-04_blackboard-course-evaluations-building-block/"
             }
         },
@@ -143,7 +143,7 @@
             "image": "/media/blackboard-drive-plays-nice-with-other-webdav-servers/usbdrive.jpg",
             "date_modified": "2012-01-27T06:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2012/01/2012-01-27_blackboard-drive-plays-nice-with-other-webdav-servers/"
             }
         },
@@ -155,7 +155,7 @@
             "summary": "In this ten minute cut video, I unwrap a new toy. The Boxee set me back about $200, not to mention Best Buy had a $99 sale only a week later (that’s life). At first $200 may seem expensive but hear me out.\n",
             "date_modified": "2012-01-28T06:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2012/01/2012-01-28_unboxing-the-boxee-box/"
             }
         },
@@ -167,7 +167,7 @@
             "summary": "So you hear your boss or client say, I want my reports in “Excel and/or PDF,” and you think, “crap, now I gotta go find a library for my language.” And the requester isn’t often thinking about how much $$$ when they mention they want pdfs. So I had this same experience at UALR and I didn’t know the first thing about constructing pdf files. Thankfully, I found a free (with open source projects) Pdf library for Java called iText and within a day was able to construct a decent looking pdf file.\n",
             "date_modified": "2012-02-06T06:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2012/02/2012-02-06_creating-pdfs-in-java-with-itext/"
             }
         },
@@ -180,7 +180,7 @@
             "image": "/media/restful-data-sources/sqltricks.gif",
             "date_modified": "2012-02-16T06:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2012/02/2012-02-16_restful-data-sources/"
             }
         },
@@ -192,7 +192,7 @@
             "summary": "I happened to stumble upon this 45 minute video lecture given by Henry Markham (in 3 parts). In this lecture, he talks about creating virtual biological models of the brain - project Blue Brain.\n",
             "date_modified": "2012-03-02T06:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2012/03/2012-03-02_henry-markram-simulating-the-brain/"
             }
         },
@@ -205,7 +205,7 @@
             "image": "/projects/images/image_09.jpg",
             "date_modified": "2012-03-03T06:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2012/03/2012-03-03_nostalgia-with-css-sprites/"
             }
         },
@@ -218,7 +218,7 @@
             "image": "/projects/images/image_00.jpg",
             "date_modified": "2012-03-12T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2012/03/2012-03-12_programming-contest-questions/"
             }
         },
@@ -230,7 +230,7 @@
             "summary": "Csv files are very underrated. Below is a pretty straightforward way to read in a csv file in bash. Regardless of it’s simplicity, I thought I’d share it. I may need to remind myself later how to do this.\n",
             "date_modified": "2012-03-26T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2012/03/2012-03-26_how-to-read-a-csv-file-in-bash/"
             }
         },
@@ -243,7 +243,7 @@
             "image": "/media/google-weebly/weebly-settings.jpg",
             "date_modified": "2012-04-03T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2012/04/2012-04-03_google-weebly/"
             }
         },
@@ -256,20 +256,20 @@
             "image": "/projects/images/image_03.jpg",
             "date_modified": "2012-04-12T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2012/04/2012-04-12_presenting-at-arbug/"
             }
         },
         {
             "id": "/2012/06/2012-06-18_the-framework-blackboard-sis-integration/",
-            "content_html": "<p>Blackboard has a new and elegant feature. This feature simplifies what can become a complex problem - synchronizing data from your student information system into Blackboard?</p>\n<p>Another feature, new to Blackboard <strong>9.1.8</strong>, is the ability to group courses by terms. However, terms cannot automatically be associated with the <strong>snapshot client</strong>; hence, what got me interested in the Data SIS Integration using Snapshot Flat feed files.</p>\n<!-- more -->\n<p>Watch the video for my sexy voice. Read more for some of my discoveries.</p>\n<p>{% youtube 9v9_eslc4SU %}</p>\n<p>Immediately, I was impressed by the web framework, so I…</p>\n<ol>\n<li>Decided to try and automate it - which really only took minutes with curl</li>\n<li>Wrote a wrapper script around curl to auto-discover the feed types</li>\n<li>Wrote some examples on how to use this framework script.</li>\n<li>Created a video demonstrating how to setup SIS integration. The video was the longest part in this entire process.</li>\n</ol>\n<p>Below is an example of how easy it is to add some users from a csv  file into Blackboard. You can also see more examples in <a href=\"/media/the-framework-blackboard-sis-integration/the-framework.zip\">this zip file</a> - look at the example script and feeds/ directory.</p>\n<pre><code># setup some env variables\nexport SHARED_USERNAME=&quot;your-shared-username&quot;\nexport SHARED_PASSWORD=&quot;your-shared-password&quot;\nexport BB_URL=&quot;http://your-shared-url.com&quot;\n\necho &quot;adds the 55 users in the feeds/users.csv to EXAMPLES dsk&quot;\n./framework refresh feeds/users.csv\n</code></pre>\n<p>If you found this script useful, then be a chum and help me <a href=\"http://www.lilsugar.com/How-Much-Diapers-Cost-9128186\">buy a pack of diapers</a> for my little girl. Feedback is also welcome - comment or shoot me an email: Kelvin <code>at</code> dockins <code>dot</code> org.</p>\n",
+            "content_html": "<p>Blackboard has a new and elegant feature. This feature simplifies what can become a complex problem - synchronizing data from your student information system into Blackboard?</p>\n<p>Another feature, new to Blackboard <strong>9.1.8</strong>, is the ability to group courses by terms. However, terms cannot automatically be associated with the <strong>snapshot client</strong>; hence, what got me interested in the Data SIS Integration using Snapshot Flat feed files.</p>\n<!-- more -->\n<p>Watch the video for my sexy voice. Read more for some of my discoveries.</p>\n<p>{% youtube 9v9_eslc4SU %}</p>\n<p>Immediately, I was impressed by the web framework, so I…</p>\n<ol>\n<li>Decided to try and automate it - which really only took minutes with curl</li>\n<li>Wrote a wrapper script around curl to auto-discover the feed types</li>\n<li>Wrote some examples on how to use this framework script.</li>\n<li>Created a video demonstrating how to setup SIS integration. The video was the longest part in this entire process.</li>\n</ol>\n<p>Below is an example of how easy it is to add some users from a csv  file into Blackboard. You can also see more examples in <a href=\"/media/the-framework-blackboard-sis-integration/the-framework.zip\">this zip file</a> - look at the example script and feeds/ directory.</p>\n<pre><code># setup some env variables\nexport SHARED_USERNAME=&quot;your-shared-username&quot;\nexport SHARED_PASSWORD=&quot;your-shared-password&quot;\nexport BB_URL=&quot;http://your-shared-url.com&quot;\n\necho &quot;adds the 55 users in the feeds/users.csv to EXAMPLES dsk&quot;\n./framework refresh feeds/users.csv\n</code></pre>\n<p>If you found this script useful, then be a chum and help me <a href=\"http://www.lilsugar.com/How-Much-Diapers-Cost-9128186\">buy a pack of diapers</a> for my little girl. Feedback is also welcome - comment or shoot me an email: K.D. <code>at</code> dockins <code>dot</code> org.</p>\n",
             "url": "/2012/06/2012-06-18_the-framework-blackboard-sis-integration/",
             "title": "The Framework Blackboard SIS Integration",
             "summary": "Blackboard has a new and elegant feature. This feature simplifies what can become a complex problem - synchronizing data from your student information system into Blackboard?\nAnother feature, new to Blackboard 9.1.8, is the ability to group courses by terms. However, terms cannot automatically be associated with the snapshot client; hence, what got me interested in the Data SIS Integration using Snapshot Flat feed files.\n",
             "image": "/projects/images/image_07.jpg",
             "date_modified": "2012-06-18T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2012/06/2012-06-18_the-framework-blackboard-sis-integration/"
             }
         },
@@ -282,7 +282,7 @@
             "image": "/media/blackboard-migration-project/blackboard.png",
             "date_modified": "2012-06-27T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2012/06/2012-06-27_blackboard-migration-project/"
             }
         },
@@ -295,7 +295,7 @@
             "image": "/media/blackboard-bundles-que-language-es-esta/start-kit.jpg",
             "date_modified": "2012-07-10T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2012/07/2012-07-10_blackboard-bundles-que-language-es-esta/"
             }
         },
@@ -308,7 +308,7 @@
             "image": "/media/blackboard-catalyst-award-innovative-development/award.jpg",
             "date_modified": "2012-07-23T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2012/07/2012-07-23_blackboard-catalyst-award-innovative-development/"
             }
         },
@@ -321,7 +321,7 @@
             "image": "/media/blackboard-catalyst-award-innovative-development/catalyst-awards.png",
             "date_modified": "2012-07-30T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2012/07/2012-07-30_presenting-at-devcon-2012/"
             }
         },
@@ -334,7 +334,7 @@
             "image": "/media/pitch-anything-in-15-seconds/universe.jpeg",
             "date_modified": "2012-08-08T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2012/08/2012-08-08_pitch-anything-in-15-seconds/"
             }
         },
@@ -347,7 +347,7 @@
             "image": "/projects/images/image_14.jpg",
             "date_modified": "2012-08-14T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2012/08/2012-08-14_jquery-collage-plugin/"
             }
         },
@@ -359,7 +359,7 @@
             "summary": "I really enjoy working with Sublime Text 2. I encourage you to try it out! Watch the video to see a demonstration of some functionality Sublime gives you.\nI’ve been using it for a couple of weeks now to do some php programming and I still love it. I feel like an ultimate bad-ass every time I do multi-line edits.\n",
             "date_modified": "2012-09-09T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2012/09/2012-09-09_sublime-text-2-is-sublime/"
             }
         },
@@ -371,7 +371,7 @@
             "summary": "How does one access the parent of the $scope in a controller? Easy… use $scope.$parent. You can even get parents of parents. Neat, right?\n",
             "date_modified": "2012-09-20T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2012/09/2012-09-20_angularjs-parent-scopes/"
             }
         },
@@ -384,7 +384,7 @@
             "image": "/media/student-view-building-block/after.png",
             "date_modified": "2012-09-21T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2012/09/2012-09-21_student-view-building-block/"
             }
         },
@@ -396,7 +396,7 @@
             "summary": "Feel free to print this off.\n",
             "date_modified": "2012-10-03T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2012/10/2012-10-03_sublime-text-2-cheat-sheet/"
             }
         },
@@ -408,7 +408,7 @@
             "summary": "Not had a lot of time to write lately with my 11 week old daughter, wife and work keeping me more than busy. But while I was working I was looking up RFC 2324 (http protocol) status codes and ran across this 418 I’m a teapot code.\n",
             "date_modified": "2012-11-23T06:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2012/11/2012-11-23_418-im-a-teapot-rfc-2324/"
             }
         },
@@ -420,7 +420,7 @@
             "summary": "I recently stumbled upon a bug in angular. https://github.com/angular/angular.js/pull/1661\nAt the time of this writing the bug is still present in version 1.0.5 (stable) and 1.1.13 (unstable). Maybe it’s not a good idea to bind to a primitive type in an array but let’s say you had just a simple javascript array of strings and you want to repeat those in unordered list. Seems simple right? Now say you want to update the array model - let’s call it list.\n",
             "date_modified": "2012-12-09T06:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2012/12/2012-12-09_binding-to-primitives-in-angularjs-ngrepeat/"
             }
         },
@@ -433,7 +433,7 @@
             "image": "/media/drawing-straws/armageddon-straws.jpg",
             "date_modified": "2012-12-22T06:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2012/12/2012-12-22_drawing-straws/"
             }
         },
@@ -446,7 +446,7 @@
             "image": "/projects/images/image_11.jpg",
             "date_modified": "2013-02-07T06:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2013/02/2013-02-07_ioc-container-in-laravel/"
             }
         },
@@ -458,7 +458,7 @@
             "summary": "I’ve been busy web programming and changing diapers. But I figured I should write about something just so weebly doesn’t think my website died. So I decided to take 5 minutes to write.\n** Nerd alert - below statement contains nerdenium known to cause severe headaches**\n",
             "date_modified": "2013-04-02T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2013/04/2013-04-02_google-lol/"
             }
         },
@@ -471,7 +471,7 @@
             "image": "/projects/images/image_06.jpg",
             "date_modified": "2013-06-06T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2013/06/2013-06-06_simple-service-little-rock-startup-winners/"
             }
         },
@@ -483,7 +483,7 @@
             "summary": "I wanted something to do tags for a project I’m working on, so I put together something quick with Select2 which (imo) is much more feature-rich than it’s sister plugin Chosen. I’ve not tried out tag-it so I can’t really comment on how well it works.\n",
             "date_modified": "2013-07-10T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2013/07/2013-07-10_select2-jquery/"
             }
         },
@@ -495,7 +495,7 @@
             "summary": "So I created a simplistic asset pipeline (sprockets style) interface for Deployd framework. The node package basically piggy backs off of the awesome mincer.js nodejs package. I was investigating Deployd as a way to do quick to life prototypes in nodejs. Unfortunately, it looks like Deployd might be dead or no longer maintained - so it is very unlikely that I will be doing any more with dpd-mincer. However, it was fun to see how difficult it is to work with deployd, and it actually was simple enough after a few console.log() to figure out what was inside some dpd objects.\n",
             "date_modified": "2013-07-19T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2013/07/2013-07-19_deployd-mincer/"
             }
         },
@@ -507,7 +507,7 @@
             "summary": "I was reading a blog post by Derek Bailey where he talks about managing twitter bootstrap modals in Marionette. That gave me an idea to write a javascript mixin that I could reuse for my twitter bootstrap modals that just simply lets me open and close modals properly. It helps eliminate a little bit of boiler plate code to handle modals.\n",
             "date_modified": "2013-07-24T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2013/07/2013-07-24_twitter-bootstrap-modals-in-backbone-marionette/"
             }
         },
@@ -519,7 +519,7 @@
             "summary": "So a few months ago, I remember having lunch with Taylor at Genghis Grill and he was talking about maybe doing a video series to make money. Travis and I both suggested he write a book on Laravel. Heck, I even promised that I’d buy, so here we are a few months later and he has his book out. I’ve purchased the book, but haven’t gotten to read it yet.\n",
             "date_modified": "2013-08-12T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2013/08/2013-08-12_laravel-book-by-taylor-otwell/"
             }
         },
@@ -531,7 +531,7 @@
             "summary": "I recently came about this nifty little command I can use to start a laravel application.\nphp artisan serve\n\n",
             "date_modified": "2013-08-13T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2013/08/2013-08-13_laravel-artisan-serve/"
             }
         },
@@ -543,7 +543,7 @@
             "summary": "If you’ve ever ventured into javascript land with your Laravel application and suddenly you don’t have a nice &lt;form&gt; to work with but instead are making ajax calls then you might have wondered how to do CSRF protection. Here’s how easy it is to do ajax csrf protection.\n$.ajaxSetup({\n    headers: {\n        'X-CSRF-Token': $('meta[name=&quot;csrf-token&quot;]').attr('content')\n    }\n});\n\n",
             "date_modified": "2013-09-18T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2013/09/2013-09-18_laravel-4-csrf-token-and-ajax/"
             }
         },
@@ -555,7 +555,7 @@
             "summary": "Laravel 4 is certainly out of beta now and still continues to be one of the best php frameworks. One thing sorely missing is an asset pipeline. A few attempts have been made to remedy this but none have fit the bill. Here were a few should be’s on my mind when developing this…\n",
             "date_modified": "2013-09-20T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2013/09/2013-09-20_codesleeve-laravel4-asset-pipeline/"
             }
         },
@@ -567,7 +567,7 @@
             "summary": "Let me first say, I don’t think password confirmations are bad UX design. But I ask you, are they really necessary? I don’t think so.\nLet’s take a look at some popular sites which have millions of users. These are industry leaders.\nLet me first say, I don’t think password confirmations are bad UX design. But I ask you, are they really necessary? I don’t think so.\nLet’s take a look at some popular sites which have millions of users. These are industry leaders.\n",
             "date_modified": "2013-10-30T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2013/10/2013-10-30_confirming-passwords-bad-ux-design/"
             }
         },
@@ -580,7 +580,7 @@
             "image": "/projects/images/image_21.jpg",
             "date_modified": "2013-11-17T06:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2013/11/2013-11-17_computed-properties-on-backbone-model/"
             }
         },
@@ -593,7 +593,7 @@
             "image": "/projects/images/image_20.jpg",
             "date_modified": "2013-11-26T06:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2013/11/2013-11-26_testing-marionette-application-modules/"
             }
         },
@@ -605,7 +605,7 @@
             "summary": "There is a new programming language in town. I expect  great things from https://github.com/lhartikk/ArnoldC\nWhat does this program do? I have no idea and I wrote it.\n",
             "date_modified": "2013-11-30T06:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2013/11/2013-11-30_arnold-c-programming-language/"
             }
         },
@@ -618,7 +618,7 @@
             "image": "/projects/images/image_22.jpg",
             "date_modified": "2013-11-30T06:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2013/11/2013-11-30_marionette-controller-listenall/"
             }
         },
@@ -630,7 +630,7 @@
             "summary": "A while back I wrote about handling CSRF tokens with ajax calls to Laravel. I have re-vamped my philosophy since then. All routes should have protection, not just a few. This ensures that I\n\nNever accidentally leave a route unprotected\nReduce complexity in my routes. Don’t worry about which routes are protected or unprotected.\n\n",
             "date_modified": "2013-12-12T06:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2013/12/2013-12-12_csrf-token-protection-in-laravel/"
             }
         },
@@ -642,7 +642,7 @@
             "summary": "Well, I attempted to create a guard/grunt prototype for php. I attempted and failed. Why did I fail? The technology just isn’t there yet. I am going to have to re-think the architecture if I go any further.\nI was using pcntl_signal to determine when an application shuts down, so that I could terminate any external processes that had been spawned by guard. One such process event handler was the livereload-protocol I implemented in php which via web sockets notifies any connected clients when files were changed on the server. Similar to how grunt watch works with livereload.\nThe problem is that pcntl_signal doesn’t work in Windows. Thus, I stopped working on this.\n",
             "date_modified": "2014-01-14T06:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2014/01/2014-01-14_react-php/"
             }
         },
@@ -654,7 +654,7 @@
             "summary": "Laravel is traditionally an MVC framework but MVC just doesn’t seem to scale for larger projects. Typically what ends up happening is logic is crammed into each section: models, views and controllers as the application grows which becomes next to impossible to test. Taylor Otwell’s book mentions the repository pattern but even that doesn’t really solve this scalability problem. After a colleague showed me a blog post about the Hexagonal Pattern in rails, I decided to try the design in Laravel - the results were nice.\n",
             "date_modified": "2014-01-15T06:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2014/01/2014-01-15_hexagonal-pattern-design-scenarios/"
             }
         },
@@ -666,7 +666,7 @@
             "summary": "Here I am going to walk through an example of how to use macros and additional views to get rid of logic in our Laravel views.\n",
             "date_modified": "2014-01-16T06:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2014/01/2014-01-16_hexagonal-pattern-design-macros/"
             }
         },
@@ -678,7 +678,7 @@
             "summary": "This is the last part in three of the hexagonal pattern series. You can download a simple example [here](https://github.com/kdocki/laravel-presenter-example].\nPresenters allow you to tack on additional fields and logic to an existing Laravel model. There are several libraries out there that assist in creating presenters, namely,\n\nShawnMcCool/laravel-auto-presenter\nrobclancy/presenter\n\nI am going to use robclancy presenter just because I have more experience with it.  After we include it in our composer.json and include the two ServiceProviders and we are set to use it.\n",
             "date_modified": "2014-02-20T06:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2014/02/2014-02-20_hexagonal-pattern-design-presenters/"
             }
         },
@@ -690,7 +690,7 @@
             "summary": "After kicking the boot around for a while I finally decided to re-factor the asset pipeline. The functionality is all in all the same but the code is easier on the eyes. However, I did bring in a lot of new features.\n\nConfig allows you to control caching interface\nConfig allows you to control directives\nConfig allows you to control which environments  are concatenated\nConfig allows you to control mime types so you can combine javascripts and stylesheets in a single folder\nUse a sprockets parser and generator to create the Rails-style asset pipeline functionality\nUse relative paths in the manifest files\nUse Laravel event listener to alter the configuration of the pipeline after package boot/start up\nUse caching to speed up local development when using a lot of pre-processors (i.e. coffee, less, sass)\nUse assets:generate to create static files in public/assets directory.\nCompletely customize the javascript_include_tag, stylesheet_link_tag composers\nCompletely customize the AssetController class\n\n",
             "date_modified": "2014-03-09T06:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2014/03/2014-03-09_codesleeve-asset-pipeline-(refactor)/"
             }
         },
@@ -702,7 +702,7 @@
             "summary": "Let’s say you are running a report for the user. You generate some temporary file to give to the user and now you have this zombie pdf file sitting out there in your /tmp directory. How do you clean it up? Why not do it directly after you serve to the user? Here are a couple of options. The first option just cleans up the file after the application has served the response.\nRoute::get('get-file', function()\n{\n    $filename = storage_path() . '/testing.txt';\n \n    App::finish(function($request, $response) use ($filename)\n    {\n        unlink($filename);\n    });\n \n    return Response::download($filename);\n});\n\n",
             "date_modified": "2014-03-20T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2014/03/2014-03-20_serve-then-remove-temporary-file-using-laravel/"
             }
         },
@@ -714,7 +714,7 @@
             "summary": "So you’ve got a new project you want to build and you’re going to pick a front-end javascript framework. First make sure you absolutely need the single page application. Chances are you can do without it. However, let’s say you want to do a lot of javascript client-side intensive stuff, then how should you decide what framework to use? I’ve been in this same scenario myself multiple times, so I decided to blog about it. I have a love-hate relationship with all 3 of these frameworks because I have used all of them on work and personal projects. I only focus on client side frameworks here, not server side, e.g. meteor, sailsjs, express. I only included the frameworks I have the most experience with.\n",
             "date_modified": "2014-04-16T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2014/04/2014-04-17_which-javascript-framework-to-use-angular-vs-ember-vs-marionette/"
             }
         },
@@ -726,7 +726,7 @@
             "summary": "I began writing this article months ago when I started researching standing desks. I started writing an article and realized, I should probably buy a desk first before I write this blog post. Thus, all that was saved in my draft was this line:\n{% blockquote %}\nI sit. A lot. So much in fact that it is killing me. I want to stand more. I want to move more.\n{% endblockquote %}\nFrom the desperation found in the quote above, one thing was clear - I desired change. I won’t go into details but my health was the primary reason I was seeking out standing desks.\n",
             "date_modified": "2014-05-15T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2014/05/2014-05-15_my-standing-desk/"
             }
         },
@@ -738,7 +738,7 @@
             "summary": "I’ve been watching the TDD debates with Martin Fowler, Kent Beck and David Hansson. There is some good material in there. It’s pretty cool watching these three. All three are developer heroes of mine. Unfortunately, there isn’t much of a debate.\nMartin Fowler plays time cop and mediator but doesn’t speak that much which is a shame because I know he is a bad ass - and he’s got that cool accent. Kent seems to go with David’s flow. Kent even has an article on Facebook called Rest In Peace TDD.\n",
             "date_modified": "2014-05-21T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2014/05/2014-05-21_there-is-no-tdd-debate/"
             }
         },
@@ -750,7 +750,7 @@
             "summary": "ETags PHONE HOME?! No. So what are ETags? Wikipedia has this to say:\n{% blockquote %}\nThe ETag or entity tag is part of HTTP, the protocol for the World Wide Web. It is one of several mechanisms that HTTP provides for web cache validation, and which allows a client to make conditional requests. This allows caches to be more efficient, and saves bandwidth, as a web server does not need to send a full response if the content has not changed. ETags can also be used for optimistic concurrency control as a way to help prevent simultaneous updates of a resource from overwriting each other.\n{% endblockquote %}\n",
             "date_modified": "2014-05-23T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2014/05/2014-05-23_etags-with-laravel-filters/"
             }
         },
@@ -762,7 +762,7 @@
             "summary": "There are some things I do daily and being a human I often forget them. I could just set up reminders on my phone but I wanted to do it on my computer. After some research I found a few articles that really helped me out. Here is my setup on Ubuntu.\n",
             "date_modified": "2014-06-04T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2014/06/2014-06-04_reminders-with-ubuntu/"
             }
         },
@@ -774,7 +774,7 @@
             "summary": "I’ve made the switch over to hexo for my page. I’ve used weebly for years now and I loved it for it’s ability to quickly crank out awesome content using a drag and drop builder. However, I’m a web developer and I find myself often fighting weebly.\nFor example, on weebly I had my portfolio website written with Ember js but one day it stopped working when weebly changed how it includes javascripts (like jquery) into the source - this ended up breaking the site. I decided then that enough is enough. Time to make the switch. For a while now, I’ve been interested in front-matter Markdown-based blog systems like [Jekyll](http://jekyllrbb.com], Hexo, Sculpin, Ghost and a few others.\n",
             "date_modified": "2014-06-16T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2014/06/2014-06-16_switching-my-blog/"
             }
         },
@@ -786,7 +786,7 @@
             "summary": "You ever apply for a job and they make you do a little programming question? These are fun sarcasm because they usually have some math involved and it provides me a small and unimportant challenge - similar to a video game.\n",
             "date_modified": "2014-06-25T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2014/06/2014-06-25_cracking-fogcreek/"
             }
         },
@@ -798,7 +798,7 @@
             "summary": "After 2 years of using Laravel, I’d never been a huge fan of blade. When I first met Taylor Otwell at Genghis grill, I probably insulted him by saying:\n\n“I hate blade” - me to Taylor Otwell\n\n",
             "date_modified": "2014-07-23T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2014/07/2014-07-23_laravel-blade-var-extension/"
             }
         },
@@ -810,7 +810,7 @@
             "summary": "Lately, I was given the task to write some php classes with Laravel that make use of Zencoder api. The way Zencoder works is I create a new encoding job and during that request I tell Zencoder emails and url locations to send notifications when that job is finished.\n",
             "date_modified": "2014-08-27T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2014/08/2014-08-27_access-localhost-8000-from-anywhere/"
             }
         },
@@ -822,7 +822,7 @@
             "summary": "How easy is it to search for files with laravel? Using Symfony’s Finder class it is really, really easy!\nSay I wanted to recursively search a directory for all the files with fish in the name, over 100KB in size and had some text: ‘awesome’ inside of the file. That would be a tough one with just native php but never to fear, Fabien Potencier is here. Oh and I forgot to mention, I only want files that have been modified since yesterday. Oh and can you sort those by name for me? Thanks.\n",
             "date_modified": "2014-09-09T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2014/09/2014-09-09_searching-files-with-laravel/"
             }
         },
@@ -835,31 +835,31 @@
             "image": "/media/moments-of-programmer-clarity/marionette-video.png",
             "date_modified": "2014-09-10T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2014/09/2014-09-10_moments-of-programmer-clarity/"
             }
         },
         {
             "id": "/2014/10/2014-10-30_documentation-in-php/",
-            "content_html": "<p>Today I fiddled around generating docs for a company package. There are a lot of doc generators out there, here are a few and their examples:</p>\n<ul>\n<li><a href=\"https://packagist.org/packages/sami/sami\">Sami</a> [<a href=\"http://laravel.com/api/4.2/\">example</a>]</li>\n<li><a href=\"http://apigen.org\">Apigen</a> [<a href=\"http://www.doctrine-project.org/api/orm/2.4\">example</a>]</li>\n<li><a href=\"http://www.phpdoc.org\">PHP Documentor</a> [<a href=\"http://demo.phpdoc.org/Clean\">example</a>]</li>\n<li><a href=\"http://phpdox.de\">PHP DOX</a> [<a href=\"http://phpdox.de/demo/phpDox/index.xhtml\">example</a>]</li>\n<li><a href=\"http://phrocco.info\">PHP Rocco</a> [<a href=\"http://phrocco.info/docs/Phrocco.html\">example</a>]</li>\n<li><a href=\"https://geekli.st/ncuesta/repos/pinocchio\">Pinocchio</a> [<a href=\"http://ncuesta.github.io/pinocchio/docs/index.html\">example</a>]</li>\n<li><a href=\"http://www.stack.nl/~dimitri/doxygen\">Doxygen</a> [<a href=\"http://doc.cgal.org/4.2/CGAL.CGAL/html/index.html\">example</a>]</li>\n<li><a href=\"https://packagist.org/search/?q=phpdoc\">and a few others</a></li>\n</ul>\n<p>I played around with some of these. I like the approach of <a href=\"http://marionettejs.com/annotated-src/backbone.marionette\">annotated source code</a> but sometimes it is more useful to have <a href=\"http://marionettejs.com/docs/current\">api documentation</a>. Annotated source code is cool because you can follow along line by line and really uncover the <em>guts</em> of a library. When I’m looking for public methods I don’t want to have to sift through annotated source code.</p>\n<!-- more -->\n<h2>Using composer to install doc generators</h2>\n<pre><code>&quot;require-dev&quot;: {\n    &quot;mockery/mockery&quot;: &quot;dev-master&quot;,\n    &quot;phpunit/phpunit&quot;: &quot;*&quot;,\n    &quot;sami/sami&quot;: &quot;*&quot;,\n    &quot;rossriley/phrocco&quot;: &quot;dev-master&quot;,\n    &quot;apigen/apigen&quot;: &quot;*&quot;\n    &quot;phpdocumentor/phpdocumentor&quot;: &quot;2.*&quot;,\n    &quot;phpdocumentor/template-zend&quot;: &quot;*&quot;\n},\n</code></pre>\n<p>When you attempt to <code>composer update</code> you may have issues with phpdocumentor, if so, read next section.</p>\n<h2>PHP Documentor</h2>\n<p>After running composer update it told me I had to install ext-xml so after running <code>apt-get install php5-xml</code> I attempted another composer update and about 2 minutes into fetching stuff I was presented with this garbage:</p>\n<pre><code>- Installing zetacomponents/base (1.9)\nDownloading: connection...\nCould not fetch https://api.github.com/repos/zetacomponents/Base/zipball/f20df24e8de3e48b6b69b2503f917e457281e687, enter your GitHub credentials to go over the API rate limit\nThe credentials will be swapped for an OAuth token stored in /home/Kelvin/.composer/auth.json, your password will not be stored\nTo revoke access to this token you can visit https://github.com/settings/applications\nUsername:\n</code></pre>\n<p>Because I didn’t want to give composer my username and password to create an Oauth token, I exited out and told composer to prefer source to get around this issue. Php documentor warns too that there are a lot of dependencies to download so it is likely that I’m just downloading too much. I decided to go a different approach and download the 30 megabyte phar file from <a href=\"http://www.phpdoc.org/phpDocumentor.phar\">http://www.phpdoc.org/phpDocumentor.phar</a>.</p>\n<p>After downloading the phar I ran it and it gave the this error:</p>\n<pre><code>PHP Fatal error:  Class 'phpDocumentor\\Application' not found in phar:///home/Kelvin/.bin/phar/phpDocumentor.phar/src/phpDocumentor/Bootstrap.php on line 63\n</code></pre>\n<p>So after scouting around some, I found a link on phpDocumentors website that said, “if you have any issues consult: <a href=\"http://silex.sensiolabs.org/doc/phar.html#pitfalls\">http://silex.sensiolabs.org/doc/phar.html#pitfalls</a>”. After looking at this website the first line states:</p>\n<pre><code>Using the Silex phar file is deprecated. You should use Composer instead to install Silex and its dependencies or download one of the archives.\n</code></pre>\n<p>Well… shit, I guess I’m back to the original plan: using composer to install phpDocumentor. So again I attempt <code>composer update</code> and put in my credentials and lo and behold it installs. Now let’s see if this bad boy was worth all the trouble.</p>\n<pre><code>vendor/bin/phpdoc -d src/ -t public/phpdocs\n</code></pre>\n<p>The outcome was pretty nice looking. The page is responsive and contained classes. It even had a reports and charts containing things like errors. When you forget place a doc block over a method it produces an error in phpDocumentor, which is pretty cool.</p>\n<h2>Apigen</h2>\n<pre><code>$ php vendor/bin/apigen generate --source src/ --destination public/apigen\nApiGen 2.8.0\n------------\nScanning /src\n[===============================================================&gt;] 100.00%  14MB\nFound 207 classes, 0 constants, 0 functions and other 5 used PHP internal classes\nDocumentation for 207 classes, 0 constants, 0 functions and other 5 used PHP internal classes will be generated\nUsing template config file /vendor/apigen/apigen/templates/default/config.neon\nGenerating to directory public/apigen\n[&gt;                                                               ]   0.77%  19MB\nThe class SoftDeletingTrait is in use but has not been found in the defined sources.\n</code></pre>\n<p>Uh oh… it doesn’t know what SoftDeletingTrait is because that is Laravel specific class that is being used in one of my classes. So how to get this thing to work? I started by trying a config file. The SoftDeletingTrait class is in the vendor/ folder so maybe I could exclude that folder but apigen would be smart enough to scan that folder for missing links.</p>\n<p>php vendor/bin/apigen generate --source “src,vendor” --destination public/apigen --skip-doc-path=“vendor”</p>\n<pre><code>ApiGen 2.8.0\n------------\nScanning\n /home/Kelvin/workspace/lbm/package-devise/src\n /home/Kelvin/workspace/lbm/package-devise/vendor\n[=======&gt;                                                        ]  13.05% 116MB\nUsed 91% of the current memory limit, please increase the limit to generate the whole documentation.\n</code></pre>\n<p>Crap. Well… I’m off to edit <code>/etc/php5/cli/php.ini</code> and I up the memory limit from 128MB to 1GB. That should be enough right?</p>\n<pre><code>memory_limit = 1024M\n</code></pre>\n<p>After running for some a few minutes I still ended up getting the same error.</p>\n<pre><code>The class SoftDeletingTrait is in use but has not been found in the defined sources.\n</code></pre>\n<p>So this has all been in vain. Perhaps there is some way to tell apigen to forget about these external classes? The documentation is not very helpful but I do see an <code>--internal</code> flag. That doesn’t help though. After googling some I don’t find any helpful material save <a href=\"https://github.com/apigen/apigen/issues/158\">one github request</a> that looks related but has been ignored and closed. So I give up on this one - it has far exceeded the 5-10 rule anyway. So Apigen is out.</p>\n<h2>Sami</h2>\n<p>This is the same documentor that Taylor uses for Laravel api so it was high on my list of documentors to checkout. I started by creating a configuration file (in my project root) called <code>sami.php</code>:</p>\n<p>{% code %}\nuse Sami\\Sami;\nuse Symfony\\Component\\Finder\\Finder;</p>\n<p>$iterator = Finder::create()\n-&gt;files()\n-&gt;name(’*.php’)\n-&gt;in(<strong>DIR</strong> . ‘/src’);</p>\n<p>return new Sami($iterator, array(\n‘title’                =&gt; ‘Devise’,\n‘build_dir’            =&gt; <strong>DIR</strong>. ‘/public/docs’,\n‘cache_dir’            =&gt; <strong>DIR</strong>. ‘/.sami-cache’,\n‘default_opened_level’ =&gt; 2,\n));\n{% endcode %}</p>\n<p>Apparently you can also do themes with Sami. The quickstart docs aren’t clear on themeing but I could create a directory called <code>mytheme</code> and put a manifest.xml in it and then place <code>'template' =&gt; 'mytheme'</code> into the array containing title, build_dir, cache_dir, and default_opened_level. I didn’t need to go into themeing just yet as I’m just testing things out so I just left the theme alone (as default). To run get some documentation I then ran:</p>\n<pre><code>vendor/bin/sami.php update sami.php\n</code></pre>\n<p>This produced some really nice looking documentation. A downside to sami is that because it is all contained with an iframe, it is difficult to share links. If you right click on a frame page and open in new tab you can use that link to send to someone, <em>but</em> you loose your cool sidebar (because I’ll say it again… it is an html frame). I didn’t even know we did frames anymore. I haven’t produced one since about two decades ago.</p>\n<h2>PHP Rocco</h2>\n<p>I’ve used used docco (node) in the past but in this specific case, annotated source really didn’t provide much value. I wanted to see how easy it was to generate though so I spent the 5 minutes and got it working easily. If we needed annotated source this would be a no-brainer.</p>\n<pre><code>phrocco -i src/ -o public/annotated\n</code></pre>\n<h2>Using composer to generate your docs</h2>\n<p>We ended up using but it’s kind of a pain in the ass to remember to type all this stuff. It would be nice if we could just type: <code>make docs</code>. How about the next best thing: <code>composer docs</code>. We can create this script alias using composer:</p>\n<pre><code>&quot;scripts&quot;: {\n  &quot;docs&quot; : &quot;vendor/bin/sami.php update sami.php&quot;\n},\n</code></pre>\n<p>Now we’ve got our <code>composer docs</code> and all is well. Not to toot my own horn, but this is a pretty cool setup. <strong>Toot toot.</strong></p>\n",
+            "content_html": "<p>Today I fiddled around generating docs for a company package. There are a lot of doc generators out there, here are a few and their examples:</p>\n<ul>\n<li><a href=\"https://packagist.org/packages/sami/sami\">Sami</a> [<a href=\"http://laravel.com/api/4.2/\">example</a>]</li>\n<li><a href=\"http://apigen.org\">Apigen</a> [<a href=\"http://www.doctrine-project.org/api/orm/2.4\">example</a>]</li>\n<li><a href=\"http://www.phpdoc.org\">PHP Documentor</a> [<a href=\"http://demo.phpdoc.org/Clean\">example</a>]</li>\n<li><a href=\"http://phpdox.de\">PHP DOX</a> [<a href=\"http://phpdox.de/demo/phpDox/index.xhtml\">example</a>]</li>\n<li><a href=\"http://phrocco.info\">PHP Rocco</a> [<a href=\"http://phrocco.info/docs/Phrocco.html\">example</a>]</li>\n<li><a href=\"https://geekli.st/ncuesta/repos/pinocchio\">Pinocchio</a> [<a href=\"http://ncuesta.github.io/pinocchio/docs/index.html\">example</a>]</li>\n<li><a href=\"http://www.stack.nl/~dimitri/doxygen\">Doxygen</a> [<a href=\"http://doc.cgal.org/4.2/CGAL.CGAL/html/index.html\">example</a>]</li>\n<li><a href=\"https://packagist.org/search/?q=phpdoc\">and a few others</a></li>\n</ul>\n<p>I played around with some of these. I like the approach of <a href=\"http://marionettejs.com/annotated-src/backbone.marionette\">annotated source code</a> but sometimes it is more useful to have <a href=\"http://marionettejs.com/docs/current\">api documentation</a>. Annotated source code is cool because you can follow along line by line and really uncover the <em>guts</em> of a library. When I’m looking for public methods I don’t want to have to sift through annotated source code.</p>\n<!-- more -->\n<h2>Using composer to install doc generators</h2>\n<pre><code>&quot;require-dev&quot;: {\n    &quot;mockery/mockery&quot;: &quot;dev-master&quot;,\n    &quot;phpunit/phpunit&quot;: &quot;*&quot;,\n    &quot;sami/sami&quot;: &quot;*&quot;,\n    &quot;rossriley/phrocco&quot;: &quot;dev-master&quot;,\n    &quot;apigen/apigen&quot;: &quot;*&quot;\n    &quot;phpdocumentor/phpdocumentor&quot;: &quot;2.*&quot;,\n    &quot;phpdocumentor/template-zend&quot;: &quot;*&quot;\n},\n</code></pre>\n<p>When you attempt to <code>composer update</code> you may have issues with phpdocumentor, if so, read next section.</p>\n<h2>PHP Documentor</h2>\n<p>After running composer update it told me I had to install ext-xml so after running <code>apt-get install php5-xml</code> I attempted another composer update and about 2 minutes into fetching stuff I was presented with this garbage:</p>\n<pre><code>- Installing zetacomponents/base (1.9)\nDownloading: connection...\nCould not fetch https://api.github.com/repos/zetacomponents/Base/zipball/f20df24e8de3e48b6b69b2503f917e457281e687, enter your GitHub credentials to go over the API rate limit\nThe credentials will be swapped for an OAuth token stored in /home/K.D./.composer/auth.json, your password will not be stored\nTo revoke access to this token you can visit https://github.com/settings/applications\nUsername:\n</code></pre>\n<p>Because I didn’t want to give composer my username and password to create an Oauth token, I exited out and told composer to prefer source to get around this issue. Php documentor warns too that there are a lot of dependencies to download so it is likely that I’m just downloading too much. I decided to go a different approach and download the 30 megabyte phar file from <a href=\"http://www.phpdoc.org/phpDocumentor.phar\">http://www.phpdoc.org/phpDocumentor.phar</a>.</p>\n<p>After downloading the phar I ran it and it gave the this error:</p>\n<pre><code>PHP Fatal error:  Class 'phpDocumentor\\Application' not found in phar:///home/K.D./.bin/phar/phpDocumentor.phar/src/phpDocumentor/Bootstrap.php on line 63\n</code></pre>\n<p>So after scouting around some, I found a link on phpDocumentors website that said, “if you have any issues consult: <a href=\"http://silex.sensiolabs.org/doc/phar.html#pitfalls\">http://silex.sensiolabs.org/doc/phar.html#pitfalls</a>”. After looking at this website the first line states:</p>\n<pre><code>Using the Silex phar file is deprecated. You should use Composer instead to install Silex and its dependencies or download one of the archives.\n</code></pre>\n<p>Well… shit, I guess I’m back to the original plan: using composer to install phpDocumentor. So again I attempt <code>composer update</code> and put in my credentials and lo and behold it installs. Now let’s see if this bad boy was worth all the trouble.</p>\n<pre><code>vendor/bin/phpdoc -d src/ -t public/phpdocs\n</code></pre>\n<p>The outcome was pretty nice looking. The page is responsive and contained classes. It even had a reports and charts containing things like errors. When you forget place a doc block over a method it produces an error in phpDocumentor, which is pretty cool.</p>\n<h2>Apigen</h2>\n<pre><code>$ php vendor/bin/apigen generate --source src/ --destination public/apigen\nApiGen 2.8.0\n------------\nScanning /src\n[===============================================================&gt;] 100.00%  14MB\nFound 207 classes, 0 constants, 0 functions and other 5 used PHP internal classes\nDocumentation for 207 classes, 0 constants, 0 functions and other 5 used PHP internal classes will be generated\nUsing template config file /vendor/apigen/apigen/templates/default/config.neon\nGenerating to directory public/apigen\n[&gt;                                                               ]   0.77%  19MB\nThe class SoftDeletingTrait is in use but has not been found in the defined sources.\n</code></pre>\n<p>Uh oh… it doesn’t know what SoftDeletingTrait is because that is Laravel specific class that is being used in one of my classes. So how to get this thing to work? I started by trying a config file. The SoftDeletingTrait class is in the vendor/ folder so maybe I could exclude that folder but apigen would be smart enough to scan that folder for missing links.</p>\n<p>php vendor/bin/apigen generate --source “src,vendor” --destination public/apigen --skip-doc-path=“vendor”</p>\n<pre><code>ApiGen 2.8.0\n------------\nScanning\n /home/K.D./workspace/lbm/package-devise/src\n /home/K.D./workspace/lbm/package-devise/vendor\n[=======&gt;                                                        ]  13.05% 116MB\nUsed 91% of the current memory limit, please increase the limit to generate the whole documentation.\n</code></pre>\n<p>Crap. Well… I’m off to edit <code>/etc/php5/cli/php.ini</code> and I up the memory limit from 128MB to 1GB. That should be enough right?</p>\n<pre><code>memory_limit = 1024M\n</code></pre>\n<p>After running for some a few minutes I still ended up getting the same error.</p>\n<pre><code>The class SoftDeletingTrait is in use but has not been found in the defined sources.\n</code></pre>\n<p>So this has all been in vain. Perhaps there is some way to tell apigen to forget about these external classes? The documentation is not very helpful but I do see an <code>--internal</code> flag. That doesn’t help though. After googling some I don’t find any helpful material save <a href=\"https://github.com/apigen/apigen/issues/158\">one github request</a> that looks related but has been ignored and closed. So I give up on this one - it has far exceeded the 5-10 rule anyway. So Apigen is out.</p>\n<h2>Sami</h2>\n<p>This is the same documentor that Taylor uses for Laravel api so it was high on my list of documentors to checkout. I started by creating a configuration file (in my project root) called <code>sami.php</code>:</p>\n<p>{% code %}\nuse Sami\\Sami;\nuse Symfony\\Component\\Finder\\Finder;</p>\n<p>$iterator = Finder::create()\n-&gt;files()\n-&gt;name(’*.php’)\n-&gt;in(<strong>DIR</strong> . ‘/src’);</p>\n<p>return new Sami($iterator, array(\n‘title’                =&gt; ‘Devise’,\n‘build_dir’            =&gt; <strong>DIR</strong>. ‘/public/docs’,\n‘cache_dir’            =&gt; <strong>DIR</strong>. ‘/.sami-cache’,\n‘default_opened_level’ =&gt; 2,\n));\n{% endcode %}</p>\n<p>Apparently you can also do themes with Sami. The quickstart docs aren’t clear on themeing but I could create a directory called <code>mytheme</code> and put a manifest.xml in it and then place <code>'template' =&gt; 'mytheme'</code> into the array containing title, build_dir, cache_dir, and default_opened_level. I didn’t need to go into themeing just yet as I’m just testing things out so I just left the theme alone (as default). To run get some documentation I then ran:</p>\n<pre><code>vendor/bin/sami.php update sami.php\n</code></pre>\n<p>This produced some really nice looking documentation. A downside to sami is that because it is all contained with an iframe, it is difficult to share links. If you right click on a frame page and open in new tab you can use that link to send to someone, <em>but</em> you loose your cool sidebar (because I’ll say it again… it is an html frame). I didn’t even know we did frames anymore. I haven’t produced one since about two decades ago.</p>\n<h2>PHP Rocco</h2>\n<p>I’ve used used docco (node) in the past but in this specific case, annotated source really didn’t provide much value. I wanted to see how easy it was to generate though so I spent the 5 minutes and got it working easily. If we needed annotated source this would be a no-brainer.</p>\n<pre><code>phrocco -i src/ -o public/annotated\n</code></pre>\n<h2>Using composer to generate your docs</h2>\n<p>We ended up using but it’s kind of a pain in the ass to remember to type all this stuff. It would be nice if we could just type: <code>make docs</code>. How about the next best thing: <code>composer docs</code>. We can create this script alias using composer:</p>\n<pre><code>&quot;scripts&quot;: {\n  &quot;docs&quot; : &quot;vendor/bin/sami.php update sami.php&quot;\n},\n</code></pre>\n<p>Now we’ve got our <code>composer docs</code> and all is well. Not to toot my own horn, but this is a pretty cool setup. <strong>Toot toot.</strong></p>\n",
             "url": "/2014/10/2014-10-30_documentation-in-php/",
             "title": "Documentation with PHP",
             "summary": "Today I fiddled around generating docs for a company package. There are a lot of doc generators out there, here are a few and their examples:\n\nSami [example]\nApigen [example]\nPHP Documentor [example]\nPHP DOX [example]\nPHP Rocco [example]\nPinocchio [example]\nDoxygen [example]\nand a few others\n\nI played around with some of these. I like the approach of annotated source code but sometimes it is more useful to have api documentation. Annotated source code is cool because you can follow along line by line and really uncover the guts of a library. When I’m looking for public methods I don’t want to have to sift through annotated source code.\n",
             "date_modified": "2014-10-30T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2014/10/2014-10-30_documentation-in-php/"
             }
         },
         {
             "id": "/2015/02/2015-02-19_git-monitor/",
-            "content_html": "<p>When you want to monitor a github repo, you can setup <a href=\"https://travis-ci.org\">travis-ci</a>, <a href=\"http://hudson-ci.org/\">hudson</a> or <a href=\"https://www.atlassian.com/software/bamboo\">bamboo</a> continous integration (CI) server. A problem arrises though. What if you want to run scripts on a server that is behind a firewall? The CI server may not be able to access this private server behind your protected network.</p>\n<p>This is where gitmon is used. We can monitor the git repository for changes and then when things <strong>do change</strong> we can run a <em>changed</em> script. The changed script is placed within the repository itself so developers can work with it. This changed script can email people, run bash commands, whatever you want it to do.</p>\n<!-- more --> \n<p>You can see the <a href=\"https://github.com/kdocki/gitmon\">gitmon script on github</a>. Pull requests are welcome.</p>\n<h3>Usage</h3>\n<p>You’ll need a file that has things gitmon should do whenever the repo is updated.</p>\n<p><code>vi path/to/git/repo/.gitmon/changed</code></p>\n<pre><code>#!/bin/bash\n\ncomposer install\nmail bob@gmail.com &quot;it updated&quot;\n</code></pre>\n<p>Next setup a crontab job</p>\n<p><code>crontab -e</code></p>\n<pre><code>*/2 * * * * gitmon path/to/git/repo\n</code></pre>\n<h3>Bash code</h3>\n<p>Here is the script in it’s entirety.</p>\n<pre><code>#!/bin/bash\n#\n# @author Kelvin@lbm.co\n#\n# first you will need to setup a file that tells\n# gitmon what to do anytime this git repository\n# is updated\n#\n#   your/path/to/git/repo/.gitmon/changed\n#\n# next, to run script\n#\n#   ./gitmon path/to/git/repo\n#\n# lastly you'll likely want to add this to crontab\n# to run gitmon every 2 minutes to check for updates\n#\n#   crontab -e\n#   */2 * * * * gitmon path/to/git/repo\n\n\n\n########################################################\n# variables that we need for this script to work\n########################################################\nSCRIPT_DIR=&quot;$( cd &quot;$( dirname &quot;${BASH_SOURCE[0]}&quot; )&quot; &amp;&amp; pwd )&quot;\nMONITOR_DIR=&quot;$1&quot;\nMONITOR_BRANCH=&quot;HEAD&quot;\nGITMON_DIR=&quot;.gitmon&quot;\nHISTORY_FILE=&quot;$GITMON_DIR/local.commit&quot;;\nLOCK_FILE=&quot;$GITMON_DIR/running.lock&quot;;\nONCHANGED_FILE=&quot;$GITMON_DIR/changed&quot;;\n\n\n\n#######################################################\n# show usage if there aren't any arguments from user\n#######################################################\nif [ -z &quot;$MONITOR_DIR&quot; ]; then\n  echo &quot;usage:&quot;\n  echo &quot;$0 path/to/git/repository&quot;\n  exit;\nfi\n\n\n\n########################################################\n# ensure that this directory has .git repo in it\n########################################################\nif [ ! -d &quot;$MONITOR_DIR/.git&quot; ]; then\n  echo &quot;Could not find .git in: '$MONITOR_DIR'&quot;\n  exit\nfi\n\n\n\n#######################################################\n# no point in running if we don't have onchanged file\n#######################################################\nif [ ! -f &quot;$MONITOR_DIR/$ONCHANGED_FILE&quot; ]; then\n  echo &quot;You need to create on changed script: $MONITOR_DIR/$ONCHANGED_FILE&quot;\n  exit\nfi\n\n\n########################################################\n# only run this script when lock file doesn't exist\n########################################################\ncd $MONITOR_DIR\n\nif [ -f $LOCK_FILE ]; then exit; fi;\ntouch $LOCK_FILE\n\n\n\n########################################################\n# find the last local and remote commit so we can\n# compare them and see if they are different\n########################################################\nHISTORY=($(git ls-remote --quiet))\n\nLOCAL_BRANCH=$(git symbolic-ref -q HEAD)\nLOCAL_BRANCH=${LOCAL_BRANCH##refs/heads/}\nLOCAL_BRANCH=${LOCAL_BRANCH:-HEAD}\nLOCAL_COMMIT=$(git log -n 1 $LOCAL_BRANCH --pretty=format:&quot;%H&quot;)\n\nREMOTE_BRANCH=$(git symbolic-ref -q HEAD)\nfor ((i=0; i &lt; ${#HISTORY[*]}; i+=2)) do\n  if [[ &quot;${HISTORY[i+1]}&quot; == &quot;$REMOTE_BRANCH&quot; ]]; then\n    REMOTE_COMMIT=&quot;${HISTORY[i]}&quot;\n  fi\ndone\n\n\n\n########################################################\n# if no remote commit is set then we need to bail\n########################################################\nif [ -z &quot;$REMOTE_COMMIT&quot; ]; then\n  echo &quot;Could not find remote branch commit for $REMOTE_BRANCH&quot;\n  rm $LOCK_FILE\n  cd $SCRIPT_DIR\n  exit\nfi\n\n\n\n########################################################\n# compares the LOCAL_COMMIT with REMOTE_COMMIT and if\n# things have changed then onChange function is called\n########################################################\nif [ &quot;$LOCAL_COMMIT&quot; != &quot;$REMOTE_COMMIT&quot; ]; then\n  . $ONCHANGED_FILE &quot;$LOCAL_BRANCH&quot; &quot;$REMOTE_BRANCH&quot; &quot;$LOCAL_COMMIT&quot; &quot;$REMOTE_COMMIT&quot;\nfi\n\n\n\n########################################################\n# remove the lock file now that we are done with script\n########################################################\nrm $LOCK_FILE\ncd $SCRIPT_DIR\n</code></pre>\n",
+            "content_html": "<p>When you want to monitor a github repo, you can setup <a href=\"https://travis-ci.org\">travis-ci</a>, <a href=\"http://hudson-ci.org/\">hudson</a> or <a href=\"https://www.atlassian.com/software/bamboo\">bamboo</a> continous integration (CI) server. A problem arrises though. What if you want to run scripts on a server that is behind a firewall? The CI server may not be able to access this private server behind your protected network.</p>\n<p>This is where gitmon is used. We can monitor the git repository for changes and then when things <strong>do change</strong> we can run a <em>changed</em> script. The changed script is placed within the repository itself so developers can work with it. This changed script can email people, run bash commands, whatever you want it to do.</p>\n<!-- more --> \n<p>You can see the <a href=\"https://github.com/kdocki/gitmon\">gitmon script on github</a>. Pull requests are welcome.</p>\n<h3>Usage</h3>\n<p>You’ll need a file that has things gitmon should do whenever the repo is updated.</p>\n<p><code>vi path/to/git/repo/.gitmon/changed</code></p>\n<pre><code>#!/bin/bash\n\ncomposer install\nmail bob@gmail.com &quot;it updated&quot;\n</code></pre>\n<p>Next setup a crontab job</p>\n<p><code>crontab -e</code></p>\n<pre><code>*/2 * * * * gitmon path/to/git/repo\n</code></pre>\n<h3>Bash code</h3>\n<p>Here is the script in it’s entirety.</p>\n<pre><code>#!/bin/bash\n#\n# @author kelvinlbm.co\n#\n# first you will need to setup a file that tells\n# gitmon what to do anytime this git repository\n# is updated\n#\n#   your/path/to/git/repo/.gitmon/changed\n#\n# next, to run script\n#\n#   ./gitmon path/to/git/repo\n#\n# lastly you'll likely want to add this to crontab\n# to run gitmon every 2 minutes to check for updates\n#\n#   crontab -e\n#   */2 * * * * gitmon path/to/git/repo\n\n\n\n########################################################\n# variables that we need for this script to work\n########################################################\nSCRIPT_DIR=&quot;$( cd &quot;$( dirname &quot;${BASH_SOURCE[0]}&quot; )&quot; &amp;&amp; pwd )&quot;\nMONITOR_DIR=&quot;$1&quot;\nMONITOR_BRANCH=&quot;HEAD&quot;\nGITMON_DIR=&quot;.gitmon&quot;\nHISTORY_FILE=&quot;$GITMON_DIR/local.commit&quot;;\nLOCK_FILE=&quot;$GITMON_DIR/running.lock&quot;;\nONCHANGED_FILE=&quot;$GITMON_DIR/changed&quot;;\n\n\n\n#######################################################\n# show usage if there aren't any arguments from user\n#######################################################\nif [ -z &quot;$MONITOR_DIR&quot; ]; then\n  echo &quot;usage:&quot;\n  echo &quot;$0 path/to/git/repository&quot;\n  exit;\nfi\n\n\n\n########################################################\n# ensure that this directory has .git repo in it\n########################################################\nif [ ! -d &quot;$MONITOR_DIR/.git&quot; ]; then\n  echo &quot;Could not find .git in: '$MONITOR_DIR'&quot;\n  exit\nfi\n\n\n\n#######################################################\n# no point in running if we don't have onchanged file\n#######################################################\nif [ ! -f &quot;$MONITOR_DIR/$ONCHANGED_FILE&quot; ]; then\n  echo &quot;You need to create on changed script: $MONITOR_DIR/$ONCHANGED_FILE&quot;\n  exit\nfi\n\n\n########################################################\n# only run this script when lock file doesn't exist\n########################################################\ncd $MONITOR_DIR\n\nif [ -f $LOCK_FILE ]; then exit; fi;\ntouch $LOCK_FILE\n\n\n\n########################################################\n# find the last local and remote commit so we can\n# compare them and see if they are different\n########################################################\nHISTORY=($(git ls-remote --quiet))\n\nLOCAL_BRANCH=$(git symbolic-ref -q HEAD)\nLOCAL_BRANCH=${LOCAL_BRANCH##refs/heads/}\nLOCAL_BRANCH=${LOCAL_BRANCH:-HEAD}\nLOCAL_COMMIT=$(git log -n 1 $LOCAL_BRANCH --pretty=format:&quot;%H&quot;)\n\nREMOTE_BRANCH=$(git symbolic-ref -q HEAD)\nfor ((i=0; i &lt; ${#HISTORY[*]}; i+=2)) do\n  if [[ &quot;${HISTORY[i+1]}&quot; == &quot;$REMOTE_BRANCH&quot; ]]; then\n    REMOTE_COMMIT=&quot;${HISTORY[i]}&quot;\n  fi\ndone\n\n\n\n########################################################\n# if no remote commit is set then we need to bail\n########################################################\nif [ -z &quot;$REMOTE_COMMIT&quot; ]; then\n  echo &quot;Could not find remote branch commit for $REMOTE_BRANCH&quot;\n  rm $LOCK_FILE\n  cd $SCRIPT_DIR\n  exit\nfi\n\n\n\n########################################################\n# compares the LOCAL_COMMIT with REMOTE_COMMIT and if\n# things have changed then onChange function is called\n########################################################\nif [ &quot;$LOCAL_COMMIT&quot; != &quot;$REMOTE_COMMIT&quot; ]; then\n  . $ONCHANGED_FILE &quot;$LOCAL_BRANCH&quot; &quot;$REMOTE_BRANCH&quot; &quot;$LOCAL_COMMIT&quot; &quot;$REMOTE_COMMIT&quot;\nfi\n\n\n\n########################################################\n# remove the lock file now that we are done with script\n########################################################\nrm $LOCK_FILE\ncd $SCRIPT_DIR\n</code></pre>\n",
             "url": "/2015/02/2015-02-19_git-monitor/",
             "title": "Git Monitor",
             "summary": "When you want to monitor a github repo, you can setup travis-ci, hudson or bamboo continous integration (CI) server. A problem arrises though. What if you want to run scripts on a server that is behind a firewall? The CI server may not be able to access this private server behind your protected network.\nThis is where gitmon is used. We can monitor the git repository for changes and then when things do change we can run a changed script. The changed script is placed within the repository itself so developers can work with it. This changed script can email people, run bash commands, whatever you want it to do.\n",
             "date_modified": "2015-02-19T06:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2015/02/2015-02-19_git-monitor/"
             }
         },
@@ -871,7 +871,7 @@
             "summary": "Laravel 5 gives us a nifty little command to change our application’s namespace. Out of the box the default namespace is App. To change it, we simply run:\nphp artisan app:name Horsefly\n\nHowever, once you register your app namespace, how do you get it later? Laravel doesn’t save it in config(‘app.name’) or anything like that.\n",
             "date_modified": "2015-03-31T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2015/03/2015-03-31_how-to-get-laravel5-app-namespace/"
             }
         },
@@ -883,19 +883,19 @@
             "summary": "A while back I wrote about downloading a file in Laravel and then removing the file. This prevents us from having to clean up the storage directory full of files with a cronjob. I recently had this issue come back up at work and now we are on Laravel 5. Let’s revisit this issue.\n",
             "date_modified": "2015-05-29T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2015/05/2015-05-29_delete-a-file-after-download-laravel5/"
             }
         },
         {
             "id": "/2015/11/2015-11-18_laravel-integration-testing-for-large-app/",
-            "content_html": "<p>My work buddy and I were talking about tests. We wanted something to go through every route in our system and check for any obvious errors. That seemed like a pretty simple way to test an application.</p>\n<p>So I wrote a <a href=\"https://github.com/devisephp/cms/blob/master/src/Devise/Support/Console/DeviseTestRoutesCommand.php\">generator to create tests for me automatically</a> at work. I wanted to test every route we have in the system. We have hundreds of routes on this particular project I’m working on today. On our last large project we had over a thousand routes. What can I say? We like our routes.</p>\n<!-- more --> \n<p>The test to see if a route works is pretty simple and it looks something like this.</p>\n<pre><code>public function test_route()\n{\n\t$response = $this-&gt;call('GET', '/some/url');\n\n\t$this-&gt;assertEquals(200, $response-&gt;status());\n}\n</code></pre>\n<h3>How to run A LOT of tests in Laravel?</h3>\n<p>So after running the test code generator I was left with about 300 tests for this project. Some failed, some succeed, others flat out gave me fatal errors and crashed phpunit. This was because we had changed database columns and it totally broke some sections of our the site. After fixing a couple of errors, I ran into a bigger issue. <strong>Out of Memory</strong></p>\n<pre><code>Fatal error: Allowed memory size of 134217728 bytes exhausted (tried to allocate 41 bytes) in ../vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 323\n</code></pre>\n<p>Basically, out of the box Laravel <em>integration</em> testing is a memory explosion waiting to happen. Testing will work so long as you have a little application. Don’t be alarmed though, I get emails all the time about pills we can take to increase size. Jokes aside, if you want to test each one of your routes, eventually when you have enough routes, you will run into this same memory problem I ran into.</p>\n<p>There’s a quick fix to that problem. Just allow more memory, right?</p>\n<pre><code>ini_set('memory_limit', -1);\n</code></pre>\n<p>However, that just traded one problem for another. After running some really slow tests, after about 150 tests I start getting a continious stream of error exceptions.</p>\n<pre><code>Kelvin@dorothy:~/space/laravel-tests$ phpunit\nPHPUnit 4.8.18 by Sebastian Bergmann and contributors.\n\n..F..FF.F..FFFFFFFFFFFFFF\n\n.FFF.....FS......F..F..FF.FF.FSF.SF.FF  63 / 244 ( 25%)\n...FFFF.FFFF.F.F..F.....SF..F.FF.F.FF..FFFFF...SFFFF.F.SF.FF.F. 126 / 244 ( 51%)\nF.F.SFFFF.SFSF...FF.FSFFEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE 189 / 244 ( 77%)\nEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE\n\nTime: 1.08 minutes, Memory: 450.00Mb\n\nThere were 94 errors:\n\n1) Programming_Session_Confirm_Stage_Update::test_route\nPDOException: SQLSTATE[08004] [1040] Too many connections\n\n\n2) Programming_Session_Course_Row::test_route\nPDOException: SQLSTATE[08004] [1040] Too many connections\n\n    ... yeah, this goes on for a while ...\n\n    ... then we start getting weird shit like this...\n\n94) Youth_Programs::test_route\nErrorException: include(/Users/Kelvin/space/jccfs51/vendor/symfony/symfony/src/Symfony/Component/Finder/Exception/AccessDeniedException.php): failed to open stream: Too many open files\n\n\n    ... then some failures ...\n\nFAILURES!\nTests: 244, Assertions: 139, Errors: 94, Failures: 78, Skipped: 10.\n</code></pre>\n<p>Well crap. What to do about this problem? My tests are erroring because the framework has created too many database connections. My guess is that Laravel stores it’s entire <code>$app</code> globally and there may be some places where mysql database connections are not closed. This is causing memory leakage and eventually a bunch of <em>PDOException: SQLSTATE[08004] [1040] Too many connections</em> errors.</p>\n<p>One way to get around this <em>too many connections</em> problem is to not run so many tests all at once. We can limit our runs to only a subset of tests using phpunit suites. Here is a <a href=\"https://gist.github.com/rizqidjamaluddin/61cd7f61ca36cf5c2d5a\">gist of someone who has done it this way</a>.</p>\n<p>However, I decided to tackle the problem head on. The real problem is too many database connections. Thus we will manually close the connections ourself by overwriting the default <code>TestCase::tearDown</code> method as seen next.</p>\n<pre><code>class TestCase extends Illuminate\\Foundation\\Testing\\TestCase\n{\n    /**\n     * The base URL to use while testing the application.\n     *\n     * @var string\n     */\n    protected $baseUrl = 'http://localhost';\n\n    /**\n     * Creates the application.\n     *\n     * @return \\Illuminate\\Foundation\\Application\n     */\n    public function createApplication()\n    {\n        $app = require __DIR__.'/../bootstrap/app.php';\n\n        $app-&gt;make(Illuminate\\Contracts\\Console\\Kernel::class)-&gt;bootstrap();\n\n        return $app;\n    }\n\n    /**\n     * Close out database connections, so they don't add up and eventually\n     * cause a bunch of PDOException: Too many connections errors for our\n     * tests, which otherwise would work normally if ran individually.\n     *\n     */\n     public function tearDown()\n     {\n        if ($this-&gt;app)\n        {\n            $connectionName = $this-&gt;app-&gt;make('config')-&gt;get('database.default');\n\n            $this-&gt;app-&gt;make('DB')-&gt;disconnect($connectionName);\n        }\n\n        parent::tearDown();\n     }\n}\n</code></pre>\n<p>Now when we run our tests, we don’t get a bunch of PDOException errors due to the <em>too many connections.</em> That is because we are closing them. Alright! Should we stop here? Well, we could. And if you’re not that familar with Laravel’s insides, then you might do well to stop here. However, I still have a few bones to pick with these tests.</p>\n<ol>\n<li>They are pretty dang slow.</li>\n<li>They use way to much memory.</li>\n</ol>\n<p>After some research I found that other people had ran into this memory issue before too. There is a nice <a href=\"https://github.com/laravel/framework/issues/1798\">closed github ticket</a> which hasn’t really solved anything to date (even though the ticket dates over 2 years ago). Granted, we got around our memory problem by setting <em>memory_limit</em> to -1 but I want my tests to run faster and use less memory. It seemed to me that the obvious place to first tackle is the <code>TestCase::createApplication()</code> method.</p>\n<pre><code>public function createApplication()\n{\n    ini_set('memory_limit', -1); // yeah, I accept that Laravel likes to use lots of my memory... whatever, just do it.\n\n    $app = require __DIR__.'/../bootstrap/app.php';\n\n    $app-&gt;make(Illuminate\\Contracts\\Console\\Kernel::class)-&gt;bootstrap();\n\n    return $app;\n}\n</code></pre>\n<p>Notice that everytime a new test is ran, Laravel is re-including and bootstrapping the application. However, we discovered earlier that the PHP garbage collection is not removing stuff under the hood of Laravel. There is a ton of stuff behind the curtain of Laravel. Some of which could remain, even after the test is completed. This means, the more tests you create, the more memory is used. I could get through about 20-30 tests before my php started to exploded due to being out of memory.</p>\n<h2>So how do we really fix this?</h2>\n<p>So in case you still don’t quite understand the issue. Let’s run a bench mark test. I’ll use the <code>ini_set('memory_limit', -1);</code> hack I mentioned at the beginning of this article. It uses over <strong>450Mb</strong> of memory.</p>\n<h3>One potential fix, re-use the same laravel application as much as possible</h3>\n<pre><code>class TestCase extends Illuminate\\Foundation\\Testing\\TestCase\n{\n    /**\n     * The base URL to use while testing the application.\n     *\n     * @var string\n     */\n    protected $baseUrl = 'http://localhost';\n\n    /**\n     * [$application description]\n     * @var null\n     */\n    public static $application = null;\n\n    /**\n     * Creates the application.\n     *\n     * @return \\Illuminate\\Foundation\\Application\n     */\n    public function createApplication()\n    {\n        if (!static::$application) $this-&gt;resetStaticApplication();\n\n        return static::$application;\n    }\n\n    /**\n     * Don't call parent::tearDown()\n     *\n     * @return null\n     */\n    public function tearDown()\n    {\n        // don't call parent::tearDown() or your application will be screwed up on next test\n    }\n\n    /**\n     * Resets the application. Reset whenever you do something that might\n     * affect the global $application\n     *\n     * @return null\n     */\n    public function resetStaticApplication()\n    {\n        static::$application = require __DIR__.'/../bootstrap/app.php';\n\n        static::$application-&gt;make(Illuminate\\Contracts\\Console\\Kernel::class)-&gt;bootstrap();\n    }\n}\n</code></pre>\n<p>Now with my changes in place, let’s see how things run. Will we actually be able to complete without the framework blowing up and throwing error exceptions on over half our tests because it used up too many database connections?</p>\n<pre><code>Kelvin@dorothy:~/space/laravel-tests$ phpunit\nPHPUnit 4.8.18 by Sebastian Bergmann and contributors.\n\n..F..FF.F..FFFFFFFFFFFFFF\n\n.FFF.....FS....F.F..F..FFFFF.FSFFSF.FF  63 / 244 ( 25%)\nF..FFFFFFFFF.F.F..F.....SF..F.FF.F.FF..FFFFF.F.SFFFFFF.SF.FFFF. 126 / 244 ( 51%)\nF.F.SFFFFFSFSF...FF.FSFFFFFF.SFFFFFFS.FFFF.FSFF..F..FSFFFFFFF.F 189 / 244 ( 77%)\nF.FFFFF.F..F.F.FS.FF.FFFFF...F.F.FFF.FFFFFF..F...FF....\n\nTime: 27.96 seconds, Memory: 267.25Mb\n\nThere were 145 failures:\n\n1) Account_Edit_Picture::test_route\nFailed asserting that 302 matches expected 200.\n\n\n\n        ... this goes on for a while...\n\n\nFAILURES!\nTests: 244, Assertions: 228, Failures: 145, Skipped: 15.\n</code></pre>\n<p>YAY! We got a lot of failures and some skipped tests, but no weird ass errors. This looks promising. We will try this for a while and see how it turns out. We’ve ran over 600+ tests using a similar method to this on our Devise CMS tests. Hopefully, this will work well.</p>\n<p>Also, take a look at the memory and time now. It is down to <strong>27.96 seconds</strong> and <strong>267.25Mb.</strong> That’s a bit better.</p>\n<h3>Some Potential Problems with our approach to Integration Testing</h3>\n<p>There is some merit to the way Taylor setup the <code>TestCase</code>. So let’s try to understand why Taylor is resetting the application every time. If we understand that, then we’ll understand the dangers of the code I just showed you above to get around the memory problems.</p>\n<p>The application is reset because Taylor wants us to test in isolation. When we create a new application, we are creating a new IoC container. There are variables stored in this IoC container. If those variables are tampered with because of our test, then it could affect every other test. If you don’t reset those everytime, we run the risk of our application container not being isolated and thus causing certain tests to mess with each other. For example, take these two tests,</p>\n<pre><code>class TestMe extends TestCase\n{\n\tpublic function test_me1()\n\t{\n\t\tURL::shouldReceive('route')-&gt;once()-&gt;andReturn('awesome');\n\n\t\tprint URL::route('something-here'); // awesome\n\t}\n\n\t/**\n\t * @expectedException InvalidArgumentException\n\t * @return [type]\n\t */\n\tpublic function test_me2()\n\t{\n\t\tprint URL::route('something-here');\n\t}\n}\n</code></pre>\n<p>Above we don’t actually have a ‘something-here’ route defined. We are mocking it with Mockery on the URL facade. I personally don’t use Mockery on Laravel’s facades often because I don’t use facades that often. However, this will show you the problem.</p>\n<p>Above we are changing the URL facade to expect the <code>route</code> method. In our second <code>test_me2()</code> method we are just asserting that an exception is thrown because we don’t have a route defined for <em>something-here</em>.</p>\n<p>This test should run successfully on the <strong>old out of the box</strong> TestCase.</p>\n<pre><code>Kelvin@dorothy:~/space/laravel-test phpunit\nPHPUnit 4.8.18 by Sebastian Bergmann and contributors.\n\n..awesome.\n\nTime: 627 ms, Memory: 29.50Mb\n\nOK (2 tests, 1 assertion)\n</code></pre>\n<p>However, when we change to our modified <strong>TestCase</strong> we run into a different situation.</p>\n<p>Now our results show that mockery has been applied across both testing methods `test_me1’ and ‘testme_2’. See below.</p>\n<pre><code>Kelvin@dorothy:~/space/laravel-test$ phpunit\nPHPUnit 4.8.18 by Sebastian Bergmann and contributors.\n\n..awesomeFawesome\n\nTime: 425 ms, Memory: 26.75Mb\n\nThere was 1 failure:\n\n1) TestMe::test_me2\nFailed asserting that exception of type &quot;InvalidArgumentException&quot; is thrown.\n\n/Users/Kelvin/.composer/vendor/phpunit/phpunit/src/TextUI/Command.php:186\n/Users/Kelvin/.composer/vendor/phpunit/phpunit/src/TextUI/Command.php:138\n\nFAILURES!\nTests: 2, Assertions: 1, Failures: 1.\n</code></pre>\n<p>See how now we no longer get an exception in <code>test_me2</code> because the mock we applied in <code>test_me1</code> bled over. This is why testing in isolation is a good thing. How do we deal with this? Here are some simple steps.</p>\n<h3>A few takeaway tips</h3>\n<ol>\n<li>\n<p>Don’t bootstrap Laravel on unit tests. Only on integration tests. We use Mockery a lot on unit tests. Unit tests however only require a single class to be loaded. Not an entire framework. If you are using Mockery in unit tests, then you should even be extending <code>TestCase</code> and <code>createApplication()</code> Feel free to make different classes such as, <code>TestCase</code> and <code>UnitTestCase</code>.</p>\n</li>\n<li>\n<p>Don’t mock things on integration tests.</p>\n</li>\n<li>\n<p>Don’t try to <em>unit test</em> your models. If you really want to see your models working, write some integration tests on classes which heavily use the models. If you use a <code>Repository</code> then often you can just make calls to your repository and ensure that the models are indeed working.</p>\n</li>\n<li>\n<p>Use a real database and database transactions to rollback. This will save a lot of time compared to seeding your database over and over.</p>\n</li>\n<li>\n<p>Use different phpunit testing suites for different types of tests.</p>\n</li>\n</ol>\n",
+            "content_html": "<p>My work buddy and I were talking about tests. We wanted something to go through every route in our system and check for any obvious errors. That seemed like a pretty simple way to test an application.</p>\n<p>So I wrote a <a href=\"https://github.com/devisephp/cms/blob/master/src/Devise/Support/Console/DeviseTestRoutesCommand.php\">generator to create tests for me automatically</a> at work. I wanted to test every route we have in the system. We have hundreds of routes on this particular project I’m working on today. On our last large project we had over a thousand routes. What can I say? We like our routes.</p>\n<!-- more --> \n<p>The test to see if a route works is pretty simple and it looks something like this.</p>\n<pre><code>public function test_route()\n{\n\t$response = $this-&gt;call('GET', '/some/url');\n\n\t$this-&gt;assertEquals(200, $response-&gt;status());\n}\n</code></pre>\n<h3>How to run A LOT of tests in Laravel?</h3>\n<p>So after running the test code generator I was left with about 300 tests for this project. Some failed, some succeed, others flat out gave me fatal errors and crashed phpunit. This was because we had changed database columns and it totally broke some sections of our the site. After fixing a couple of errors, I ran into a bigger issue. <strong>Out of Memory</strong></p>\n<pre><code>Fatal error: Allowed memory size of 134217728 bytes exhausted (tried to allocate 41 bytes) in ../vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 323\n</code></pre>\n<p>Basically, out of the box Laravel <em>integration</em> testing is a memory explosion waiting to happen. Testing will work so long as you have a little application. Don’t be alarmed though, I get emails all the time about pills we can take to increase size. Jokes aside, if you want to test each one of your routes, eventually when you have enough routes, you will run into this same memory problem I ran into.</p>\n<p>There’s a quick fix to that problem. Just allow more memory, right?</p>\n<pre><code>ini_set('memory_limit', -1);\n</code></pre>\n<p>However, that just traded one problem for another. After running some really slow tests, after about 150 tests I start getting a continious stream of error exceptions.</p>\n<pre><code>kelvindorothy:~/space/laravel-tests$ phpunit\nPHPUnit 4.8.18 by Sebastian Bergmann and contributors.\n\n..F..FF.F..FFFFFFFFFFFFFF\n\n.FFF.....FS......F..F..FF.FF.FSF.SF.FF  63 / 244 ( 25%)\n...FFFF.FFFF.F.F..F.....SF..F.FF.F.FF..FFFFF...SFFFF.F.SF.FF.F. 126 / 244 ( 51%)\nF.F.SFFFF.SFSF...FF.FSFFEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE 189 / 244 ( 77%)\nEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE\n\nTime: 1.08 minutes, Memory: 450.00Mb\n\nThere were 94 errors:\n\n1) Programming_Session_Confirm_Stage_Update::test_route\nPDOException: SQLSTATE[08004] [1040] Too many connections\n\n\n2) Programming_Session_Course_Row::test_route\nPDOException: SQLSTATE[08004] [1040] Too many connections\n\n    ... yeah, this goes on for a while ...\n\n    ... then we start getting weird shit like this...\n\n94) Youth_Programs::test_route\nErrorException: include(/Users/K.D./space/jccfs51/vendor/symfony/symfony/src/Symfony/Component/Finder/Exception/AccessDeniedException.php): failed to open stream: Too many open files\n\n\n    ... then some failures ...\n\nFAILURES!\nTests: 244, Assertions: 139, Errors: 94, Failures: 78, Skipped: 10.\n</code></pre>\n<p>Well crap. What to do about this problem? My tests are erroring because the framework has created too many database connections. My guess is that Laravel stores it’s entire <code>$app</code> globally and there may be some places where mysql database connections are not closed. This is causing memory leakage and eventually a bunch of <em>PDOException: SQLSTATE[08004] [1040] Too many connections</em> errors.</p>\n<p>One way to get around this <em>too many connections</em> problem is to not run so many tests all at once. We can limit our runs to only a subset of tests using phpunit suites. Here is a <a href=\"https://gist.github.com/rizqidjamaluddin/61cd7f61ca36cf5c2d5a\">gist of someone who has done it this way</a>.</p>\n<p>However, I decided to tackle the problem head on. The real problem is too many database connections. Thus we will manually close the connections ourself by overwriting the default <code>TestCase::tearDown</code> method as seen next.</p>\n<pre><code>class TestCase extends Illuminate\\Foundation\\Testing\\TestCase\n{\n    /**\n     * The base URL to use while testing the application.\n     *\n     * @var string\n     */\n    protected $baseUrl = 'http://localhost';\n\n    /**\n     * Creates the application.\n     *\n     * @return \\Illuminate\\Foundation\\Application\n     */\n    public function createApplication()\n    {\n        $app = require __DIR__.'/../bootstrap/app.php';\n\n        $app-&gt;make(Illuminate\\Contracts\\Console\\Kernel::class)-&gt;bootstrap();\n\n        return $app;\n    }\n\n    /**\n     * Close out database connections, so they don't add up and eventually\n     * cause a bunch of PDOException: Too many connections errors for our\n     * tests, which otherwise would work normally if ran individually.\n     *\n     */\n     public function tearDown()\n     {\n        if ($this-&gt;app)\n        {\n            $connectionName = $this-&gt;app-&gt;make('config')-&gt;get('database.default');\n\n            $this-&gt;app-&gt;make('DB')-&gt;disconnect($connectionName);\n        }\n\n        parent::tearDown();\n     }\n}\n</code></pre>\n<p>Now when we run our tests, we don’t get a bunch of PDOException errors due to the <em>too many connections.</em> That is because we are closing them. Alright! Should we stop here? Well, we could. And if you’re not that familar with Laravel’s insides, then you might do well to stop here. However, I still have a few bones to pick with these tests.</p>\n<ol>\n<li>They are pretty dang slow.</li>\n<li>They use way to much memory.</li>\n</ol>\n<p>After some research I found that other people had ran into this memory issue before too. There is a nice <a href=\"https://github.com/laravel/framework/issues/1798\">closed github ticket</a> which hasn’t really solved anything to date (even though the ticket dates over 2 years ago). Granted, we got around our memory problem by setting <em>memory_limit</em> to -1 but I want my tests to run faster and use less memory. It seemed to me that the obvious place to first tackle is the <code>TestCase::createApplication()</code> method.</p>\n<pre><code>public function createApplication()\n{\n    ini_set('memory_limit', -1); // yeah, I accept that Laravel likes to use lots of my memory... whatever, just do it.\n\n    $app = require __DIR__.'/../bootstrap/app.php';\n\n    $app-&gt;make(Illuminate\\Contracts\\Console\\Kernel::class)-&gt;bootstrap();\n\n    return $app;\n}\n</code></pre>\n<p>Notice that everytime a new test is ran, Laravel is re-including and bootstrapping the application. However, we discovered earlier that the PHP garbage collection is not removing stuff under the hood of Laravel. There is a ton of stuff behind the curtain of Laravel. Some of which could remain, even after the test is completed. This means, the more tests you create, the more memory is used. I could get through about 20-30 tests before my php started to exploded due to being out of memory.</p>\n<h2>So how do we really fix this?</h2>\n<p>So in case you still don’t quite understand the issue. Let’s run a bench mark test. I’ll use the <code>ini_set('memory_limit', -1);</code> hack I mentioned at the beginning of this article. It uses over <strong>450Mb</strong> of memory.</p>\n<h3>One potential fix, re-use the same laravel application as much as possible</h3>\n<pre><code>class TestCase extends Illuminate\\Foundation\\Testing\\TestCase\n{\n    /**\n     * The base URL to use while testing the application.\n     *\n     * @var string\n     */\n    protected $baseUrl = 'http://localhost';\n\n    /**\n     * [$application description]\n     * @var null\n     */\n    public static $application = null;\n\n    /**\n     * Creates the application.\n     *\n     * @return \\Illuminate\\Foundation\\Application\n     */\n    public function createApplication()\n    {\n        if (!static::$application) $this-&gt;resetStaticApplication();\n\n        return static::$application;\n    }\n\n    /**\n     * Don't call parent::tearDown()\n     *\n     * @return null\n     */\n    public function tearDown()\n    {\n        // don't call parent::tearDown() or your application will be screwed up on next test\n    }\n\n    /**\n     * Resets the application. Reset whenever you do something that might\n     * affect the global $application\n     *\n     * @return null\n     */\n    public function resetStaticApplication()\n    {\n        static::$application = require __DIR__.'/../bootstrap/app.php';\n\n        static::$application-&gt;make(Illuminate\\Contracts\\Console\\Kernel::class)-&gt;bootstrap();\n    }\n}\n</code></pre>\n<p>Now with my changes in place, let’s see how things run. Will we actually be able to complete without the framework blowing up and throwing error exceptions on over half our tests because it used up too many database connections?</p>\n<pre><code>kelvindorothy:~/space/laravel-tests$ phpunit\nPHPUnit 4.8.18 by Sebastian Bergmann and contributors.\n\n..F..FF.F..FFFFFFFFFFFFFF\n\n.FFF.....FS....F.F..F..FFFFF.FSFFSF.FF  63 / 244 ( 25%)\nF..FFFFFFFFF.F.F..F.....SF..F.FF.F.FF..FFFFF.F.SFFFFFF.SF.FFFF. 126 / 244 ( 51%)\nF.F.SFFFFFSFSF...FF.FSFFFFFF.SFFFFFFS.FFFF.FSFF..F..FSFFFFFFF.F 189 / 244 ( 77%)\nF.FFFFF.F..F.F.FS.FF.FFFFF...F.F.FFF.FFFFFF..F...FF....\n\nTime: 27.96 seconds, Memory: 267.25Mb\n\nThere were 145 failures:\n\n1) Account_Edit_Picture::test_route\nFailed asserting that 302 matches expected 200.\n\n\n\n        ... this goes on for a while...\n\n\nFAILURES!\nTests: 244, Assertions: 228, Failures: 145, Skipped: 15.\n</code></pre>\n<p>YAY! We got a lot of failures and some skipped tests, but no weird ass errors. This looks promising. We will try this for a while and see how it turns out. We’ve ran over 600+ tests using a similar method to this on our Devise CMS tests. Hopefully, this will work well.</p>\n<p>Also, take a look at the memory and time now. It is down to <strong>27.96 seconds</strong> and <strong>267.25Mb.</strong> That’s a bit better.</p>\n<h3>Some Potential Problems with our approach to Integration Testing</h3>\n<p>There is some merit to the way Taylor setup the <code>TestCase</code>. So let’s try to understand why Taylor is resetting the application every time. If we understand that, then we’ll understand the dangers of the code I just showed you above to get around the memory problems.</p>\n<p>The application is reset because Taylor wants us to test in isolation. When we create a new application, we are creating a new IoC container. There are variables stored in this IoC container. If those variables are tampered with because of our test, then it could affect every other test. If you don’t reset those everytime, we run the risk of our application container not being isolated and thus causing certain tests to mess with each other. For example, take these two tests,</p>\n<pre><code>class TestMe extends TestCase\n{\n\tpublic function test_me1()\n\t{\n\t\tURL::shouldReceive('route')-&gt;once()-&gt;andReturn('awesome');\n\n\t\tprint URL::route('something-here'); // awesome\n\t}\n\n\t/**\n\t * @expectedException InvalidArgumentException\n\t * @return [type]\n\t */\n\tpublic function test_me2()\n\t{\n\t\tprint URL::route('something-here');\n\t}\n}\n</code></pre>\n<p>Above we don’t actually have a ‘something-here’ route defined. We are mocking it with Mockery on the URL facade. I personally don’t use Mockery on Laravel’s facades often because I don’t use facades that often. However, this will show you the problem.</p>\n<p>Above we are changing the URL facade to expect the <code>route</code> method. In our second <code>test_me2()</code> method we are just asserting that an exception is thrown because we don’t have a route defined for <em>something-here</em>.</p>\n<p>This test should run successfully on the <strong>old out of the box</strong> TestCase.</p>\n<pre><code>kelvindorothy:~/space/laravel-test phpunit\nPHPUnit 4.8.18 by Sebastian Bergmann and contributors.\n\n..awesome.\n\nTime: 627 ms, Memory: 29.50Mb\n\nOK (2 tests, 1 assertion)\n</code></pre>\n<p>However, when we change to our modified <strong>TestCase</strong> we run into a different situation.</p>\n<p>Now our results show that mockery has been applied across both testing methods `test_me1’ and ‘testme_2’. See below.</p>\n<pre><code>kelvindorothy:~/space/laravel-test$ phpunit\nPHPUnit 4.8.18 by Sebastian Bergmann and contributors.\n\n..awesomeFawesome\n\nTime: 425 ms, Memory: 26.75Mb\n\nThere was 1 failure:\n\n1) TestMe::test_me2\nFailed asserting that exception of type &quot;InvalidArgumentException&quot; is thrown.\n\n/Users/K.D./.composer/vendor/phpunit/phpunit/src/TextUI/Command.php:186\n/Users/K.D./.composer/vendor/phpunit/phpunit/src/TextUI/Command.php:138\n\nFAILURES!\nTests: 2, Assertions: 1, Failures: 1.\n</code></pre>\n<p>See how now we no longer get an exception in <code>test_me2</code> because the mock we applied in <code>test_me1</code> bled over. This is why testing in isolation is a good thing. How do we deal with this? Here are some simple steps.</p>\n<h3>A few takeaway tips</h3>\n<ol>\n<li>\n<p>Don’t bootstrap Laravel on unit tests. Only on integration tests. We use Mockery a lot on unit tests. Unit tests however only require a single class to be loaded. Not an entire framework. If you are using Mockery in unit tests, then you should even be extending <code>TestCase</code> and <code>createApplication()</code> Feel free to make different classes such as, <code>TestCase</code> and <code>UnitTestCase</code>.</p>\n</li>\n<li>\n<p>Don’t mock things on integration tests.</p>\n</li>\n<li>\n<p>Don’t try to <em>unit test</em> your models. If you really want to see your models working, write some integration tests on classes which heavily use the models. If you use a <code>Repository</code> then often you can just make calls to your repository and ensure that the models are indeed working.</p>\n</li>\n<li>\n<p>Use a real database and database transactions to rollback. This will save a lot of time compared to seeding your database over and over.</p>\n</li>\n<li>\n<p>Use different phpunit testing suites for different types of tests.</p>\n</li>\n</ol>\n",
             "url": "/2015/11/2015-11-18_laravel-integration-testing-for-large-app/",
             "title": "Laravel Integration Testing for Large Apps",
             "summary": "My work buddy and I were talking about tests. We wanted something to go through every route in our system and check for any obvious errors. That seemed like a pretty simple way to test an application.\nSo I wrote a generator to create tests for me automatically at work. I wanted to test every route we have in the system. We have hundreds of routes on this particular project I’m working on today. On our last large project we had over a thousand routes. What can I say? We like our routes.\n",
             "date_modified": "2015-11-18T06:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2015/11/2015-11-18_laravel-integration-testing-for-large-app/"
             }
         },
@@ -908,7 +908,7 @@
             "image": "/media/rollbar-is-awesome/rollbar.jpg",
             "date_modified": "2015-11-19T06:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2015/11/2015-11-19_rollbar-is-awesome/"
             }
         },
@@ -921,19 +921,19 @@
             "image": "/media/homestead-bash-commands/homestead.jpg",
             "date_modified": "2016-03-09T06:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2016/03/2016-03-09_homestead-bash-commands/"
             }
         },
         {
             "id": "/2016/03/2016-03-31_missing-laravel-tested-routes/",
-            "content_html": "<p>So in this article I’m going to explain how to test <em>every</em> route in a laravel application. I usually name all the routes in my application, so essentially, every route in my application has some sort of sanity test.</p>\n<!-- more --> \n<p>Here is a 1 minute video of me writing all the tests for my application with this script.</p>\n<iframe width=\"100%\" height=\"515\" src=\"https://www.youtube.com/embed/VJO3ZbUf1UI\" frameborder=\"0\" allowfullscreen></iframe>\n<p>The TLDR; gist of this article is that I can run a command</p>\n<pre><code>$ missing-route-tests\n</code></pre>\n<p>And that command will generate some testing code for me based on routes that are missing. Something like this:</p>\n<pre><code>/**\n * @route users.edit\n */\npublic function test_users_edit()\n{\n    $this-&gt;markTestIncomplete('This test is incomplete');\n    $response = $this-&gt;call('GET', '/users/{users}/edit');\n    $this-&gt;assertEquals(200, $response-&gt;status());\n}\n</code></pre>\n<p>This essentially means two things.</p>\n<ol>\n<li>I don’t have to keep up with all routes I have and have not tested.</li>\n<li>It also creates a boilerplate for me to get started testing.</li>\n</ol>\n<p>You can find the <code>missing-routes-test</code> script <a href=\"https://github.com/kdocki/missing-tested-routes\">HERE</a>.</p>\n<h3>Laravel Testing Basics: Getting Started With A Single Test</h3>\n<p>Since most applications have users, let’s create a RESTful resource to manage our users in our application. So let’s add a resourceful route to our <code>routes.php</code> file.</p>\n<pre><code>Route::resource('users', 'UsersController');\n</code></pre>\n<p>Next we need a resource controller, so let’s run the command to create it for us.</p>\n<pre><code>$ php artisan make:controller UsersController --resource\n</code></pre>\n<p>Next we want to <a href=\"https://laravel.com/docs/5.2/testing\">test a route in Laravel</a>, I can create it using <code>artisan</code></p>\n<pre><code>$ php artisan make:test UsersTest\n</code></pre>\n<p>That gets us some code generated out that looks something like this</p>\n<pre><code>class UsersTest extends TestCase\n{\n    /**\n     * A basic test example.\n     *\n     * @return void\n     */\n    public function testExample()\n    {\n        $this-&gt;assertTrue(true);\n    }\n}\n</code></pre>\n<p>At this point, I want to test a route. Therefore, I add a method and use Laravel’s awesome testing methods to call the /users url.</p>\n<pre><code>    /**\n     * Check out the /users index page\n     */\n    public function test_users_index()\n    {\n        $response = $this-&gt;call('GET', '/users');\n\n        $this-&gt;assertEquals(200, $response-&gt;status());\n    }\n</code></pre>\n<p>Now when we run phpunit we get that green that everyone likes.</p>\n<pre><code>Kelvin@videl:~/space/blog$ phpunit\nPHPUnit 4.8.24 by Sebastian Bergmann and contributors.\n\n..\n\nTime: 135 ms, Memory: 13.00Mb\n\nOK (2 tests, 3 assertions)\n</code></pre>\n<p>Granted, our test is <em>really</em> simple. It only checks for a response status of 200. If we navigate to this page it is blank because our <code>UsersController::index()</code> is empty.</p>\n<h3>Testing ALL The Things (Routes)</h3>\n<p>So are we done? No. We’ve only tested 1 route so far. Laravel ships with a nice artisan command to view all our routes.</p>\n<pre><code>$ php artisan route:list\n</code></pre>\n<p>For our basic users management application this spits out the following</p>\n<img src=\"/media/missing-laravel-tested-routes/route-list.png\">\n<p>We could manually go through this list and try to test at our own pace. But this method is prone to human errors and it’d be better to programmatically scan for the routes we have not yet tested.</p>\n<p>Thus I run the following command to see which tests are missing from our users app.</p>\n<pre><code>$ missing-route-tests\n</code></pre>\n<p>This outputs the following</p>\n<pre><code>/**\n * @route users.index\n */\npublic function test_users_index()\n{\n    $this-&gt;markTestIncomplete('This test is incomplete');\n    $response = $this-&gt;call('GET', '/users');\n    $this-&gt;assertEquals(200, $response-&gt;status());\n}\n\n\n/**\n * @route users.create\n */\npublic function test_users_create()\n{\n    $this-&gt;markTestIncomplete('This test is incomplete');\n    $response = $this-&gt;call('GET', '/users/create');\n    $this-&gt;assertEquals(200, $response-&gt;status());\n}\n\n\n/**\n * @route users.store\n */\npublic function test_users_store()\n{\n    $this-&gt;markTestIncomplete('This test is incomplete');\n    $data = [];\n    $response = $this-&gt;call('POST', '/users', $data);\n    $this-&gt;assertEquals(200, $response-&gt;status());\n}\n\n\n/**\n * @route users.show\n */\npublic function test_users_show()\n{\n    $this-&gt;markTestIncomplete('This test is incomplete');\n    $response = $this-&gt;call('GET', '/users/{users}');\n    $this-&gt;assertEquals(200, $response-&gt;status());\n}\n\n\n/**\n * @route users.edit\n */\npublic function test_users_edit()\n{\n    $this-&gt;markTestIncomplete('This test is incomplete');\n    $response = $this-&gt;call('GET', '/users/{users}/edit');\n    $this-&gt;assertEquals(200, $response-&gt;status());\n}\n\n\n/**\n * @route users.update\n */\npublic function test_users_update()\n{\n    $this-&gt;markTestIncomplete('This test is incomplete');\n    $data = [];\n    $response = $this-&gt;call('PUT', '/users/{users}', $data);\n    $this-&gt;assertEquals(200, $response-&gt;status());\n}\n\n\n/**\n * @route users.destroy\n */\npublic function test_users_destroy()\n{\n    $this-&gt;markTestIncomplete('This test is incomplete');\n    $data = [];\n    $response = $this-&gt;call('DELETE', '/users/{users}', $data);\n    $this-&gt;assertEquals(200, $response-&gt;status());\n}\n</code></pre>\n<p>Now when I run <code>phpunit</code> again, I at least have a rough idea of how many routes we have yet to test.</p>\n<h3>How it works?</h3>\n<p>Right now I’m using annotations to mark a named route as tested. I decided for this approach because it seems easy. Another approach that <em>might</em> work is to run phpunit and keep track of which routes were called during the entire process. After that was finished, we could compare our list of routes to the entire list using <code>Route::getRoutes()</code>. I opted for the annotation route just because I wanted something quick and easy.</p>\n<p>Again you can find the script <a href=\"https://github.com/kdocki/missing-tested-routes\">HERE</a>.</p>\n<p>If you find yourself using this or have some sort of improvements or even a better way for testing all the routes in your application, please leave me a comment. Thanks!</p>\n",
+            "content_html": "<p>So in this article I’m going to explain how to test <em>every</em> route in a laravel application. I usually name all the routes in my application, so essentially, every route in my application has some sort of sanity test.</p>\n<!-- more --> \n<p>Here is a 1 minute video of me writing all the tests for my application with this script.</p>\n<iframe width=\"100%\" height=\"515\" src=\"https://www.youtube.com/embed/VJO3ZbUf1UI\" frameborder=\"0\" allowfullscreen></iframe>\n<p>The TLDR; gist of this article is that I can run a command</p>\n<pre><code>$ missing-route-tests\n</code></pre>\n<p>And that command will generate some testing code for me based on routes that are missing. Something like this:</p>\n<pre><code>/**\n * @route users.edit\n */\npublic function test_users_edit()\n{\n    $this-&gt;markTestIncomplete('This test is incomplete');\n    $response = $this-&gt;call('GET', '/users/{users}/edit');\n    $this-&gt;assertEquals(200, $response-&gt;status());\n}\n</code></pre>\n<p>This essentially means two things.</p>\n<ol>\n<li>I don’t have to keep up with all routes I have and have not tested.</li>\n<li>It also creates a boilerplate for me to get started testing.</li>\n</ol>\n<p>You can find the <code>missing-routes-test</code> script <a href=\"https://github.com/kdocki/missing-tested-routes\">HERE</a>.</p>\n<h3>Laravel Testing Basics: Getting Started With A Single Test</h3>\n<p>Since most applications have users, let’s create a RESTful resource to manage our users in our application. So let’s add a resourceful route to our <code>routes.php</code> file.</p>\n<pre><code>Route::resource('users', 'UsersController');\n</code></pre>\n<p>Next we need a resource controller, so let’s run the command to create it for us.</p>\n<pre><code>$ php artisan make:controller UsersController --resource\n</code></pre>\n<p>Next we want to <a href=\"https://laravel.com/docs/5.2/testing\">test a route in Laravel</a>, I can create it using <code>artisan</code></p>\n<pre><code>$ php artisan make:test UsersTest\n</code></pre>\n<p>That gets us some code generated out that looks something like this</p>\n<pre><code>class UsersTest extends TestCase\n{\n    /**\n     * A basic test example.\n     *\n     * @return void\n     */\n    public function testExample()\n    {\n        $this-&gt;assertTrue(true);\n    }\n}\n</code></pre>\n<p>At this point, I want to test a route. Therefore, I add a method and use Laravel’s awesome testing methods to call the /users url.</p>\n<pre><code>    /**\n     * Check out the /users index page\n     */\n    public function test_users_index()\n    {\n        $response = $this-&gt;call('GET', '/users');\n\n        $this-&gt;assertEquals(200, $response-&gt;status());\n    }\n</code></pre>\n<p>Now when we run phpunit we get that green that everyone likes.</p>\n<pre><code>kelvinvidel:~/space/blog$ phpunit\nPHPUnit 4.8.24 by Sebastian Bergmann and contributors.\n\n..\n\nTime: 135 ms, Memory: 13.00Mb\n\nOK (2 tests, 3 assertions)\n</code></pre>\n<p>Granted, our test is <em>really</em> simple. It only checks for a response status of 200. If we navigate to this page it is blank because our <code>UsersController::index()</code> is empty.</p>\n<h3>Testing ALL The Things (Routes)</h3>\n<p>So are we done? No. We’ve only tested 1 route so far. Laravel ships with a nice artisan command to view all our routes.</p>\n<pre><code>$ php artisan route:list\n</code></pre>\n<p>For our basic users management application this spits out the following</p>\n<img src=\"/media/missing-laravel-tested-routes/route-list.png\">\n<p>We could manually go through this list and try to test at our own pace. But this method is prone to human errors and it’d be better to programmatically scan for the routes we have not yet tested.</p>\n<p>Thus I run the following command to see which tests are missing from our users app.</p>\n<pre><code>$ missing-route-tests\n</code></pre>\n<p>This outputs the following</p>\n<pre><code>/**\n * @route users.index\n */\npublic function test_users_index()\n{\n    $this-&gt;markTestIncomplete('This test is incomplete');\n    $response = $this-&gt;call('GET', '/users');\n    $this-&gt;assertEquals(200, $response-&gt;status());\n}\n\n\n/**\n * @route users.create\n */\npublic function test_users_create()\n{\n    $this-&gt;markTestIncomplete('This test is incomplete');\n    $response = $this-&gt;call('GET', '/users/create');\n    $this-&gt;assertEquals(200, $response-&gt;status());\n}\n\n\n/**\n * @route users.store\n */\npublic function test_users_store()\n{\n    $this-&gt;markTestIncomplete('This test is incomplete');\n    $data = [];\n    $response = $this-&gt;call('POST', '/users', $data);\n    $this-&gt;assertEquals(200, $response-&gt;status());\n}\n\n\n/**\n * @route users.show\n */\npublic function test_users_show()\n{\n    $this-&gt;markTestIncomplete('This test is incomplete');\n    $response = $this-&gt;call('GET', '/users/{users}');\n    $this-&gt;assertEquals(200, $response-&gt;status());\n}\n\n\n/**\n * @route users.edit\n */\npublic function test_users_edit()\n{\n    $this-&gt;markTestIncomplete('This test is incomplete');\n    $response = $this-&gt;call('GET', '/users/{users}/edit');\n    $this-&gt;assertEquals(200, $response-&gt;status());\n}\n\n\n/**\n * @route users.update\n */\npublic function test_users_update()\n{\n    $this-&gt;markTestIncomplete('This test is incomplete');\n    $data = [];\n    $response = $this-&gt;call('PUT', '/users/{users}', $data);\n    $this-&gt;assertEquals(200, $response-&gt;status());\n}\n\n\n/**\n * @route users.destroy\n */\npublic function test_users_destroy()\n{\n    $this-&gt;markTestIncomplete('This test is incomplete');\n    $data = [];\n    $response = $this-&gt;call('DELETE', '/users/{users}', $data);\n    $this-&gt;assertEquals(200, $response-&gt;status());\n}\n</code></pre>\n<p>Now when I run <code>phpunit</code> again, I at least have a rough idea of how many routes we have yet to test.</p>\n<h3>How it works?</h3>\n<p>Right now I’m using annotations to mark a named route as tested. I decided for this approach because it seems easy. Another approach that <em>might</em> work is to run phpunit and keep track of which routes were called during the entire process. After that was finished, we could compare our list of routes to the entire list using <code>Route::getRoutes()</code>. I opted for the annotation route just because I wanted something quick and easy.</p>\n<p>Again you can find the script <a href=\"https://github.com/kdocki/missing-tested-routes\">HERE</a>.</p>\n<p>If you find yourself using this or have some sort of improvements or even a better way for testing all the routes in your application, please leave me a comment. Thanks!</p>\n",
             "url": "/2016/03/2016-03-31_missing-laravel-tested-routes/",
             "title": "Test Every Laravel Route?",
             "summary": "So in this article I’m going to explain how to test every route in a laravel application. I usually name all the routes in my application, so essentially, every route in my application has some sort of sanity test.\n",
             "date_modified": "2016-03-31T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2016/03/2016-03-31_missing-laravel-tested-routes/"
             }
         },
@@ -946,7 +946,7 @@
             "image": "/media/when-javascript-excited-me/excited.gif",
             "date_modified": "2016-04-05T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2016/04/2016-04-05_when-javascript-excited-me/"
             }
         },
@@ -958,7 +958,7 @@
             "summary": "Laravel allows us to validate requests before they even make it to our controllers. It does this using named form requests\nThus you might write a controller action like so:\npublic function storeBlog(BlogRequest $request)\n{\n    // request has already been validated\n}\n\n",
             "date_modified": "2016-04-11T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2016/04/2016-04-11_basic-form-request-validations-in-laravel/"
             }
         },
@@ -970,7 +970,7 @@
             "summary": "I started playing around with a variety of databases lately (future posts to come) because I wanted to scrape a bunch of json data, dump those into a database and start sorting and filtering results. The json data is finanical information and has hundreds of data points (some in nested layers) and I wasn’t quite sure what information I even want to search for. There are gigabytes of raw json text being shoved into this database, and as I do exploratory data anaylsis, I wanted a nice place to store and query/filter/order/map the data without the overhead of creating lots of schemas.\nSo some of you might ask. Why not use the json data type on Mysql/PGSQL? Sure. Sure, that works. It’s gets tedious to query those things nested in a json column. Not to mention I want to do indexing to speed up my query searches. I’m scraping this data from varying sources, and I’m not even certain which data is relevant or useful yet. So nosql seemed like a good fit here. I think from a performance standpoint, I’d probably be fine with SQL tables as I’m dealing with 100’s of GB of data. But that isn’t the point. I’m trying to quickly get data imported and start exploring it without any overhead of defining schemas where I’m unsure of data layout.\nIn this project, I’m keeping track of changes over time. So, a time serious database design is useful. I checked out Influx, but decided against it. Currently, I’m adding a column for the snapshot time.\n\nEvery story has an ending, and RethinkDB’s tale ends sadly. RethinkDB has ceased development. The simplicity of this tool is what drew me to it. As previously dicussed, horizontal scaling and sharding is a breeze. The admin panel is really slick. You can run commands straight from the admin website. This would be a really nice tool, a middleground between SQL and no-SQL. Something I could add to the Batman utility belt. Alas, without future development, the project is likely to burn out like a red-dwarf, surely but slowly.\nHere are my ratings for RethinkDB. These are just arbitrary, not based on any sort of benchmarks or anything, so don’t take them too seriously.\n- Getting Started: 9/10\n- Adoption: 3/10\n- Documentation: 7/10\n- Scaling: 9/10\n- Security: 6/10\n- Similarity to SQL: 7/10\n- Production Ready: Probably not due to development shutdown\n\nIn the future I’m going to review some of the following tools.\nPython for big data\n- h5py\n- mpi4py\n- dask - https://towardsdatascience.com/how-to-handle-large-datasets-in-python-with-pandas-and-dask-34f43a897d55\n- blaze\n- PyStore https://medium.com/@aroussi/fast-data-store-for-pandas-time-series-data-using-pystore-89d9caeef4e2\n- Pandas as big data https://www.dataquest.io/blog/pandas-big-data/\nhttps://github.com/wiktorski/opentsdb_pandas\nhttps://towardsdatascience.com/the-best-format-to-save-pandas-data-414dca023e0d\n\tPlain-text CSV — a good old friend of a data scientist\n\tPickle — a Python’s way to serialize things\n\tMessagePack — it’s like JSON but fast and small\n\tHDF5 —a file format designed to store and organize large amounts of data\n\tFeather — a fast, lightweight, and easy-to-use binary file format for storing data frames\n\tParquet — an Apache Hadoop’s columnar storage format\n\n\nTimescale Looks interesting\nhttps://docs.timescale.com/latest/tutorials/tutorial-hello-timescale\n\nOther sqlless databases\n- Couchbase\n- ElasticSearch\n- HBase\n- Cassandra\n- MongoDB\n- DynamoDB\n- neo4j\n- Google Cloud Datastore\n- Aerospike\n",
             "date_modified": "2017-05-13T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2017/05/2017-05-14_rethinkdb_is_really_cool/"
             }
         },
@@ -982,7 +982,7 @@
             "summary": "Sometimes we just need to read in a csv file in php. I’ve tried using thephpleague’s csv package but it is over engineered in my opinion to do something so basic. Really, I want something similar to how file_get_contents gives me the entire content of the file but for the csv (in array format).\nHere is a snippet I made that reads in a csv and returns an array of results.\n",
             "date_modified": "2019-03-21T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2019/03/2019-03-21_easy_csv_in_php/"
             }
         },
@@ -994,7 +994,7 @@
             "summary": "There is an inherient pitfall lurking in each hasMany/belongsToMany relationship. This goes beyond the famous n+1 problem. Allow me to elaborate.\n",
             "date_modified": "2020-05-06T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2020/05/2020-05-07_i_dont_like_has_many_relationships/"
             }
         },
@@ -1006,7 +1006,7 @@
             "summary": "Often I see some image like this designed to spark up public arguments on facebook.\n\nThere is no bad answer for this math problem. Everyone is a winner. Allow me to explain.\n",
             "date_modified": "2020-05-13T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2020/05/2020-05-14_facebook_math_sucks/"
             }
         },
@@ -1018,7 +1018,7 @@
             "summary": "Emmet in VS Code is a great tool to speed up writing html but it always gets confused when I do stuff like w-3/4\n\n",
             "date_modified": "2020-07-08T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2020/07/2020-07-09 emmet in visual studio code makes me sad/"
             }
         },
@@ -1026,11 +1026,11 @@
             "id": "/2020/07/2021-01-21 who says pawns cannot mate/",
             "content_html": "<p>This was a fun quick game I played tonight. I thought this was a neat mate. If that c2 pawn had just 1 more turn then I would have had been forced to draw by repetition.</p>\n<img class=\"mx-auto max-w-md\" src=\"/media/chess/chess fun 2021-01-21_20-29.png\">\n",
             "url": "/2020/07/2021-01-21 who says pawns cannot mate/",
-            "title": "Emmet in Visual Studio Code makes me sad",
+            "title": "Who Says Pawns Cannot Mate Kings?",
             "summary": "This was a fun quick game I played tonight. I thought this was a neat mate. If that c2 pawn had just 1 more turn then I would have had been forced to draw by repetition.\n\n",
             "date_modified": "2020-07-08T05:00:00.000Z",
             "author": {
-                "name": "Kelvin",
+                "name": "K.D.",
                 "url": "/2020/07/2021-01-21 who says pawns cannot mate/"
             }
         }

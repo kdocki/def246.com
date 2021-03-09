@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Kelvin</title>
+        <title>def246</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
@@ -21,7 +21,7 @@
   }
 </script> 
 
-        <meta name="author" content="Kelvin">
+        <meta name="author" content="K.D.">
         <meta name="description" content="Today I fiddled around generating docs for a company package. There are a lot of doc generators out there, here are a few and their examples:
 
 Sami [example]
@@ -73,7 +73,7 @@ I played around with some of these. I like the approach of annotated source code
     <div class="bg-gray-200">
   <div class="container mx-auto px-4">
       <nav class="flex flex-wrap items-center justify-between p-4">
-        <div class="lg:order-2 w-auto lg:w-1/5 sm:text-center"><a class="text-2xl text-gray-900 hover:text-gray-700" href="/">Kelvin</a></div>
+        <div class="lg:order-2 w-auto lg:w-1/5 sm:text-center"><a class="text-2xl text-gray-900 hover:text-gray-700" href="/">def246</a></div>
 
         <div class="navbar-menu lg:order-3 lg:block w-full lg:w-2/5 lg:text-right">
           <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-gray-700" href="/">Home</a>
@@ -137,13 +137,13 @@ I played around with some of these. I like the approach of annotated source code
 <pre><code>- Installing zetacomponents/base (1.9)
 Downloading: connection...
 Could not fetch https://api.github.com/repos/zetacomponents/Base/zipball/f20df24e8de3e48b6b69b2503f917e457281e687, enter your GitHub credentials to go over the API rate limit
-The credentials will be swapped for an OAuth token stored in /home/Kelvin/.composer/auth.json, your password will not be stored
+The credentials will be swapped for an OAuth token stored in /home/K.D./.composer/auth.json, your password will not be stored
 To revoke access to this token you can visit https://github.com/settings/applications
 Username:
 </code></pre>
 <p>Because I didn’t want to give composer my username and password to create an Oauth token, I exited out and told composer to prefer source to get around this issue. Php documentor warns too that there are a lot of dependencies to download so it is likely that I’m just downloading too much. I decided to go a different approach and download the 30 megabyte phar file from <a href="http://www.phpdoc.org/phpDocumentor.phar">http://www.phpdoc.org/phpDocumentor.phar</a>.</p>
 <p>After downloading the phar I ran it and it gave the this error:</p>
-<pre><code>PHP Fatal error:  Class 'phpDocumentor\Application' not found in phar:///home/Kelvin/.bin/phar/phpDocumentor.phar/src/phpDocumentor/Bootstrap.php on line 63
+<pre><code>PHP Fatal error:  Class 'phpDocumentor\Application' not found in phar:///home/K.D./.bin/phar/phpDocumentor.phar/src/phpDocumentor/Bootstrap.php on line 63
 </code></pre>
 <p>So after scouting around some, I found a link on phpDocumentors website that said, “if you have any issues consult: <a href="http://silex.sensiolabs.org/doc/phar.html#pitfalls">http://silex.sensiolabs.org/doc/phar.html#pitfalls</a>”. After looking at this website the first line states:</p>
 <pre><code>Using the Silex phar file is deprecated. You should use Composer instead to install Silex and its dependencies or download one of the archives.
@@ -170,8 +170,8 @@ The class SoftDeletingTrait is in use but has not been found in the defined sour
 <pre><code>ApiGen 2.8.0
 ------------
 Scanning
- /home/Kelvin/workspace/lbm/package-devise/src
- /home/Kelvin/workspace/lbm/package-devise/vendor
+ /home/K.D./workspace/lbm/package-devise/src
+ /home/K.D./workspace/lbm/package-devise/vendor
 [=======&gt;                                                        ]  13.05% 116MB
 Used 91% of the current memory limit, please increase the limit to generate the whole documentation.
 </code></pre>
@@ -218,7 +218,7 @@ use Symfony\Component\Finder\Finder;</p>
                 </div>
 
                 <div class="text-right">
-                    <div>post by Kelvin on 10/30/2014</div>
+                    <div>post by K.D. on 10/30/2014</div>
                 </div>
             </div>
         </div>
